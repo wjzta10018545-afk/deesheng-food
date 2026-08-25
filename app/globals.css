@@ -713,23 +713,28 @@ button, input, select, textarea { font: inherit; }
 .capability-cards article { padding: 25px; border: 1px solid rgba(23,56,43,.18); background: rgba(255,255,255,.5); }
 .capability-cards h3 { margin-bottom: 12px; font-family: Georgia, serif; font-size: 25px; font-weight: 500; }
 .capability-cards p { margin: 0; color: #5e7167; font-size: 15px; line-height: 1.7; }
-.quality-page-proof { display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: 22px; align-items: stretch; }
-.quality-certificate-visual { display: flex; overflow: hidden; min-height: 590px; flex-direction: column; justify-content: center; padding: 28px; border: 1px solid var(--line); background: white; box-shadow: var(--shadow); }
-.quality-halal-marks { display: grid; gap: 12px; }
-.quality-halal-marks > span { display: grid; min-height: 132px; place-items: center; padding: 12px; border: 1px solid var(--line); border-radius: 9px; background: #f7f8f5; text-align: center; }
-.quality-halal-marks img { width: 100%; height: 82px; object-fit: contain; transform: scale(1.28); }
-.quality-halal-marks strong { font-size: 13px; letter-spacing: .02em; }
-.quality-certificate-visual > div { margin-top: 22px; padding-top: 22px; border-top: 1px solid var(--line); }
-.quality-certificate-visual > .quality-halal-marks { margin-top: 0; padding-top: 0; border-top: 0; }
-.quality-certificate-visual > div > strong { display: block; margin-bottom: 8px; font-size: 20px; }
-.quality-certificate-visual > div > p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.65; }
-.quality-certificate-visual > span { display: flex; align-items: center; justify-content: space-between; margin-top: 12px; padding: 14px 4px 2px; border-top: 1px solid var(--line); font-size: 13px; font-weight: 830; text-transform: uppercase; }
-.quality-assurance-visual { position: relative; overflow: hidden; min-height: 590px; background: var(--lime-soft); box-shadow: var(--shadow); }
-.quality-certification-wall { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 9px; padding: 30px 30px 158px; }
-.quality-certification-wall article { display: grid; min-height: 174px; place-items: center; padding: 13px 10px; border: 1px solid rgba(23,56,43,.12); border-radius: 9px; background: rgba(255,255,255,.94); text-align: center; }
-.quality-certification-wall img { width: 100%; height: 98px; object-fit: contain; transform: scale(1.1); }
-.quality-certification-wall strong { align-self: start; font-size: 13px; line-height: 1.25; }
-.quality-assurance-caption { position: absolute; right: 22px; bottom: 22px; left: 22px; padding: 20px 22px; background: rgba(9,23,18,.93); color: white; backdrop-filter: blur(10px); }
+.quality-proof-section { padding-block: 72px 82px; background: #0e3025; color: white; }
+.quality-proof-heading { display: grid; grid-template-columns: 1fr .75fr; gap: 80px; align-items: end; margin-bottom: 34px; }
+.quality-proof-heading h2 { max-width: 720px; margin: 0; color: white; font-size: clamp(42px, 4.8vw, 64px); line-height: 1; }
+.quality-proof-heading > p { max-width: 540px; margin: 0; color: rgba(255,255,255,.7); font-size: 17px; line-height: 1.75; }
+.quality-page-proof { display: grid; grid-template-columns: minmax(390px, .82fr) minmax(0, 1.48fr); gap: 16px; align-items: stretch; }
+.quality-certificate-visual { display: flex; min-width: 0; flex-direction: column; padding: 16px; border-radius: 13px; background: #eef1eb; color: var(--ink); box-shadow: 0 24px 55px rgba(0,0,0,.22); }
+.quality-document-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
+.quality-document-grid figure { display: flex; min-width: 0; min-height: 236px; flex-direction: column; align-items: center; justify-content: center; margin: 0; padding: 12px 10px 9px; border: 1px solid rgba(23,56,43,.11); border-radius: 8px; background: white; }
+.quality-document-grid img { display: block; width: 100%; height: 190px; object-fit: contain; }
+.quality-document-grid figcaption { margin-top: 8px; font-size: 11px; font-weight: 850; letter-spacing: .04em; text-align: center; text-transform: uppercase; }
+.quality-document-access { display: grid; grid-template-columns: 1fr; gap: 14px; align-items: start; margin-top: 14px; padding: 18px 5px 4px; border-top: 1px solid rgba(23,56,43,.15); }
+.quality-document-access span { display: block; margin-bottom: 7px; color: var(--pepper); font-size: 11px; font-weight: 850; letter-spacing: .13em; text-transform: uppercase; }
+.quality-document-access strong { display: block; font-size: 20px; line-height: 1.25; }
+.quality-document-access p { max-width: 420px; margin: 7px 0 0; color: var(--muted); font-size: 13px; line-height: 1.55; }
+.quality-document-access .text-link { justify-self: start; white-space: nowrap; }
+.quality-assurance-visual { display: flex; min-width: 0; flex-direction: column; padding: 16px; border-radius: 13px; background: #dfe9d6; box-shadow: 0 24px 55px rgba(0,0,0,.22); }
+.quality-certification-wall { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 9px; }
+.quality-certification-wall article { display: flex; min-width: 0; min-height: 176px; flex-direction: column; align-items: center; justify-content: center; padding: 13px 9px; border: 1px solid rgba(23,56,43,.12); border-radius: 9px; background: rgba(255,255,255,.96); color: var(--ink); text-align: center; }
+.quality-certification-wall img { display: block; width: 100%; height: 86px; object-fit: contain; }
+.quality-certification-wall strong { margin-top: 8px; font-size: 13px; line-height: 1.22; }
+.quality-certification-wall article > span { margin-top: 5px; color: var(--muted); font-size: 11px; line-height: 1.3; }
+.quality-assurance-caption { display: flex; min-height: 150px; flex: 1; flex-direction: column; justify-content: center; margin-top: 11px; padding: 20px 22px; background: #132b22; color: white; }
 .quality-assurance-caption > span { display: block; margin-bottom: 6px; color: var(--lime); font-size: 12px; font-weight: 820; letter-spacing: .13em; text-transform: uppercase; }
 .quality-assurance-caption > strong { display: block; font-size: 21px; }
 .quality-assurance-caption > p { margin: 7px 0 0; color: #bbcac3; font-size: 13px; line-height: 1.55; }
@@ -874,6 +879,8 @@ button, input, select, textarea { font: inherit; }
   .spec-grid > div:nth-child(2), .about-facts > div:nth-child(2) { border-right: 1px solid var(--line); }
   .oem-steps { grid-template-columns: repeat(2, 1fr); }
   .cert-grid { grid-template-columns: repeat(2, 1fr); }
+  .quality-proof-heading { grid-template-columns: 1fr; gap: 22px; }
+  .quality-page-proof { grid-template-columns: 1fr; }
   .about-values { grid-template-columns: 1fr; }
   .about-values article { border-right: 0; border-bottom: 1px solid var(--line); }
   .about-values article:last-child { border-bottom: 0; }
@@ -917,14 +924,19 @@ button, input, select, textarea { font: inherit; }
   .application-list { grid-template-columns: 1fr; }
   .packing-panel { padding: 28px 22px; }
   .oem-visual-grid > div { border-right: 1px solid rgba(255,255,255,.15); border-bottom: 1px solid rgba(255,255,255,.15); }
-  .quality-page-proof { grid-template-columns: 1fr; }
-  .quality-certificate-visual { width: min(100%, 330px); min-height: 0; }
-  .quality-halal-marks img { height: 82px; }
-  .quality-assurance-visual { min-height: 0; }
-  .quality-certification-wall { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px; padding: 18px 18px 178px; }
-  .quality-certification-wall article { min-height: 126px; padding: 9px 7px; }
-  .quality-certification-wall img { height: 72px; }
+  .quality-proof-section { padding-block: 52px 60px; }
+  .quality-proof-heading h2 { font-size: 41px; }
+  .quality-proof-heading > p { font-size: 15px; }
+  .quality-certificate-visual, .quality-assurance-visual { padding: 11px; }
+  .quality-document-grid figure { min-height: 195px; padding: 8px 7px; }
+  .quality-document-grid img { height: 154px; }
+  .quality-document-access { grid-template-columns: 1fr; align-items: start; }
+  .quality-document-access .text-link { white-space: normal; }
+  .quality-certification-wall { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px; }
+  .quality-certification-wall article { min-height: 142px; padding: 9px 7px; }
+  .quality-certification-wall img { height: 68px; }
   .quality-certification-wall strong { font-size: 12px; }
+  .quality-assurance-caption { padding: 18px; }
   .about-hero { padding-block: 80px; }
   .about-hero h1 { font-size: 51px; }
   .about-values article { min-height: 260px; }

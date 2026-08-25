@@ -16,6 +16,13 @@ const certifications = [
   ["OU Kosher", "Kosher", "Kosher certification support for relevant export products."],
 ];
 
+const certificateDocumentPreviews = [
+  { name: "BRCGS Grade A", image: "/media/certificate-previews/brcgs-document.webp" },
+  { name: "HACCP", image: "/media/certificate-previews/haccp-document.webp" },
+  { name: "SHC HALAL", image: "/media/certificate-previews/shc-halal-document.webp" },
+  { name: "OU Kosher", image: "/media/certificate-previews/ou-kosher-document.webp" },
+];
+
 export default function QualityPage() {
   const data = { "@context": "https://schema.org", "@graph": [
     { "@type": "AboutPage", name: "Deesheng Food Quality and Certifications", about: certifications.map(([name]) => ({ "@type": "DefinedTerm", name })) },
@@ -25,32 +32,62 @@ export default function QualityPage() {
     <main>
       <JsonLd data={data} />
       <section className="inner-hero shell"><div><p className="eyebrow">Food safety & export readiness</p><h1>Quality evidence for professional food buyers.</h1></div><div className="inner-hero-aside"><p>Certification is the starting point. Product specifications, labels, storage, shelf life and batch documents must also match the actual project.</p><Link className="button button-primary" href="/contact?product=documents">Request qualification documents</Link></div></section>
-      <section className="quality-page-proof shell">
-        <Link className="quality-certificate-visual" href="/contact?product=halal-documents">
-          <div className="quality-halal-marks" aria-label="HALAL certification marks">
-            {certificationMarks.filter((mark) => mark.name.includes("HALAL")).map((mark) => (
-              <span key={mark.name}>
-                <img src={mark.image} alt={`${mark.name} mark`} width="400" height="220" />
-                <strong>{mark.name}</strong>
-              </span>
-            ))}
+      <section className="quality-proof-section">
+        <div className="shell">
+          <div className="quality-proof-heading">
+            <div>
+              <p className="eyebrow eyebrow-light">Certifications, registrations & audits</p>
+              <h2>Verified systems supporting global food supply.</h2>
+            </div>
+            <p>
+              Real certification previews are shown for buyer confidence. Current signed documents,
+              certificate numbers and exact product scope are supplied after company and project verification.
+            </p>
           </div>
-          <div><strong>Protected document access</strong><p>Current signed documents are provided after company and project verification.</p></div>
-          <span>Request HALAL documents <b aria-hidden="true">↗</b></span>
-        </Link>
-        <div className="quality-assurance-visual">
-          <div className="quality-certification-wall" aria-label="Deesheng Food certifications, registrations and audit marks">
-            {certificationMarks.map((mark) => (
-              <article key={mark.name}>
-                <img src={mark.image} alt={`${mark.name} mark`} width="400" height="220" />
-                <strong>{mark.name}</strong>
-              </article>
-            ))}
-          </div>
-          <div className="quality-assurance-caption">
-            <span>Current HALAL program</span>
-            <strong>Available for qualified B2B review</strong>
-            <p>Product scope and signed documents are matched to the selected item, formula and destination.</p>
+
+          <div className="quality-page-proof">
+            <div className="quality-certificate-visual">
+              <div className="quality-document-grid" aria-label="Selected Deesheng Food certification document previews">
+                {certificateDocumentPreviews.map((certificate) => (
+                  <figure key={certificate.name}>
+                    <img
+                      src={certificate.image}
+                      alt={`${certificate.name} certificate preview`}
+                      width="400"
+                      height="500"
+                    />
+                    <figcaption>{certificate.name}</figcaption>
+                  </figure>
+                ))}
+              </div>
+              <div className="quality-document-access">
+                <div>
+                  <span>Protected document access</span>
+                  <strong>Current documents for qualified B2B buyers</strong>
+                  <p>Signed copies and applicable product scope are provided after buyer and project verification.</p>
+                </div>
+                <Link className="text-link" href="/contact?product=documents">
+                  Request current documents <b aria-hidden="true">↗</b>
+                </Link>
+              </div>
+            </div>
+
+            <div className="quality-assurance-visual">
+              <div className="quality-certification-wall" aria-label="Deesheng Food certifications, registrations and audit marks">
+                {certificationMarks.map((mark) => (
+                  <article key={mark.name}>
+                    <img src={mark.image} alt={`${mark.name} mark`} width="400" height="220" />
+                    <strong>{mark.name}</strong>
+                    <span>{mark.detail}</span>
+                  </article>
+                ))}
+              </div>
+              <div className="quality-assurance-caption">
+                <span>Ten listed credentials</span>
+                <strong>Certification-backed export readiness</strong>
+                <p>Applicability is confirmed against the exact product, formula and destination market.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
