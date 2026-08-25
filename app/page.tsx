@@ -29,6 +29,13 @@ const halalSauceSpotlight = [
   ["Kimchi & Korean soup sauces", "/products/korean-sauces"],
 ];
 
+const certificateDocumentPreviews = [
+  { name: "BRCGS Grade A", image: "/media/certificate-previews/brcgs-document.webp" },
+  { name: "HACCP", image: "/media/certificate-previews/haccp-document.webp" },
+  { name: "SHC HALAL", image: "/media/certificate-previews/shc-halal-document.webp" },
+  { name: "OU Kosher", image: "/media/certificate-previews/ou-kosher-document.webp" },
+];
+
 const partnerBrands = [
   { name: "Nongshim", image: "/media/partners/nongshim.png" },
   { name: "CJ", image: "/media/partners/cj.png" },
@@ -193,14 +200,21 @@ export default function Home() {
         <div className="shell">
           <div className="home-evidence-main">
             <Link className="home-certificate-thumb" href="/quality-certifications" aria-label="View Deesheng Food certification and assurance details">
-              <div className="home-certification-wall" aria-hidden="true">
-                {certificationMarks.map((mark) => (
-                  <span key={mark.name}>
-                    <img src={mark.image} alt="" width="400" height="220" loading="lazy" />
-                  </span>
+              <div className="home-certificate-documents">
+                {certificateDocumentPreviews.map((certificate) => (
+                  <figure key={certificate.name}>
+                    <img
+                      src={certificate.image}
+                      alt={`${certificate.name} certificate preview`}
+                      width="200"
+                      height="233"
+                      loading="lazy"
+                    />
+                    <figcaption>{certificate.name}</figcaption>
+                  </figure>
                 ))}
               </div>
-              <span>View all credentials <b aria-hidden="true">↗</b></span>
+              <span>View certification details <b aria-hidden="true">↗</b></span>
             </Link>
 
             <div className="home-evidence-copy">
