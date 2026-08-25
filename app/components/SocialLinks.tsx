@@ -1,8 +1,17 @@
 const socialProfiles = [
   {
+    name: "Facebook",
+    handle: "Deesheng Food",
+    href: "https://www.facebook.com/profile.php?id=61591010065654",
+    iconPath: "M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.099 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.413c0-3.024 1.792-4.697 4.533-4.697 1.312 0 2.686.235 2.686.235v2.973H15.83c-1.491 0-1.956.931-1.956 1.887v2.262h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.099 24 12.073Z",
+    platform: "facebook",
+  },
+  {
     name: "TikTok",
     handle: "@deshenghengxin",
     href: "https://www.tiktok.com/@deshenghengxin",
+    iconPath: "M12.53 0h3.91c.08 1.53.63 3.09 1.75 4.17a7.42 7.42 0 0 0 4.24 1.79v4.03a11.18 11.18 0 0 1-4.2-.97 10.7 10.7 0 0 1-1.62-.93c-.01 2.92.01 5.84-.02 8.75a7.32 7.32 0 0 1-1.35 3.94 7.4 7.4 0 0 1-5.91 3.21 7.23 7.23 0 0 1-4.08-1.03 7.53 7.53 0 0 1-3.65-5.72c-.03-.5-.04-1-.01-1.49a7.5 7.5 0 0 1 2.58-4.96 7.38 7.38 0 0 1 6.15-1.72c.02 1.48-.04 2.96-.04 4.44a3.36 3.36 0 0 0-2.98.37 3.3 3.3 0 0 0-1.14 1.88 3.27 3.27 0 0 0 .63 1.87c.5.45 1.21.66 1.88.58a2.6 2.6 0 0 0 2.27-2.56c.02-6.57 0-13.14.01-19.71Z",
+    platform: "tiktok",
   },
 ] as const;
 
@@ -18,6 +27,7 @@ export function SocialLinks({ variant = "footer" }: SocialLinksProps) {
       {socialProfiles.map((profile) => (
         <a
           className="social-link"
+          data-platform={profile.platform}
           href={profile.href}
           key={profile.name}
           target="_blank"
@@ -26,7 +36,7 @@ export function SocialLinks({ variant = "footer" }: SocialLinksProps) {
         >
           <span className="social-link-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" focusable="false">
-              <path d="M12.53 0h3.91c.08 1.53.63 3.09 1.75 4.17a7.42 7.42 0 0 0 4.24 1.79v4.03a11.18 11.18 0 0 1-4.2-.97 10.7 10.7 0 0 1-1.62-.93c-.01 2.92.01 5.84-.02 8.75a7.32 7.32 0 0 1-1.35 3.94 7.4 7.4 0 0 1-5.91 3.21 7.23 7.23 0 0 1-4.08-1.03 7.53 7.53 0 0 1-3.65-5.72c-.03-.5-.04-1-.01-1.49a7.5 7.5 0 0 1 2.58-4.96 7.38 7.38 0 0 1 6.15-1.72c.02 1.48-.04 2.96-.04 4.44a3.36 3.36 0 0 0-2.98.37 3.3 3.3 0 0 0-1.14 1.88 3.27 3.27 0 0 0 .63 1.87c.5.45 1.21.66 1.88.58a2.6 2.6 0 0 0 2.27-2.56c.02-6.57 0-13.14.01-19.71Z" />
+              <path d={profile.iconPath} />
             </svg>
           </span>
           <span className="social-link-copy">

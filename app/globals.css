@@ -396,6 +396,7 @@ button, input, select, textarea { font: inherit; }
 .social-link { display: inline-flex; align-items: center; gap: 10px; min-width: 0; border-radius: 10px; transition: border-color .18s ease, background .18s ease, transform .18s ease; }
 .social-link:hover, .social-link:focus-visible { transform: translateY(-2px); }
 .social-link-icon { display: grid; place-items: center; width: 34px; height: 34px; flex: 0 0 auto; border-radius: 9px; background: white; color: #111; }
+.social-link[data-platform="facebook"] .social-link-icon { background: #1877f2; color: white; }
 .social-link-icon svg { width: 17px; height: 17px; fill: currentColor; }
 .social-link-copy { display: grid; min-width: 0; line-height: 1.15; }
 .social-link-copy strong { font-size: 14px; }
