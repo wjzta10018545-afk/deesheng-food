@@ -1,0 +1,108 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import { JsonLd } from "../../components/JsonLd";
+import { getProduct, productDetails } from "../../data/catalog";
+
+type Props = { params: Promise<{ slug: string }> };
+
+export function generateStaticParams() {
+  return productDetails.map((product) => ({ slug: product.slug }));
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  const product = getProduct(slug);
+  if (!product) return {};
+  const halalPrefix = product.categorySlug === "korean-sauces" || product.categorySlug === "gochujang-pastes" ? "HALAL " : "";
+  return {
+    title: `${halalPrefix}${product.name} Manufacturer & OEM Supplier`,
+    description: `${product.summary} HALAL certificate scope confirmation, export packing, private-label support and an export quotation from Deesheng Food.`,
+    alternates: { canonical: `/product/${product.slug}` },
+    openGraph: {
+      title: `${product.name} | Deesheng Food`,
+      description: product.summary,
+      url: `https://deesheng.food/product/${product.slug}`,
+      images: [{ url: product.image, alt: product.imageAlt }],
+    },
+    twitter: { card: "summary_large_image", images: [product.image] },
+  };
+}
+
+export default async function ProductPage({ params }: Props) {
+  const { slug } = await params;
+  const product = getProduct(slug);
+  if (!product) notFound();
+  const related = productDetails.filter((item) => item.categorySlug === product.categorySlug && item.slug !== product.slug).slice(0, 3);
+
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Product",
+        name: product.name,
+        description: product.summary,
+        image: `https://deesheng.food${product.image}`,
+        category: product.categoryName,
+        audience: { "@type": "BusinessAudience", audienceType: "Food importers, distributors, foodservice operators and private-label brands" },
+        brand: { "@type": "Brand", name: "Deesheng Food" },
+        manufacturer: { "@type": "Organization", name: "Qingdao Deesheng Hengxin Food Co., Ltd.", url: "https://deesheng.food" },
+        hasCertification: {
+          "@type": "Certification",
+          name: "SHC HALAL Certification - product scope confirmation required",
+          issuedBy: { "@type": "Organization", name: "Shandong Halal Certification Service (SHC)" },
+          url: "https://deesheng.food/halal-korean-sauce-manufacturer",
+        },
+        additionalProperty: [
+          { "@type": "PropertyValue", name: "Shelf life", value: product.shelfLife },
+          { "@type": "PropertyValue", name: "Storage", value: product.storage },
+          { "@type": "PropertyValue", name: "Quotation", value: "Confirmed after product, pack, quantity and destination review" },
+          { "@type": "PropertyValue", name: "HALAL document", value: "Current documents are provided to qualified B2B buyers after product and project verification" },
+        ],
+      },
+      {
+        "@type": "FAQPage",
+        mainEntity: product.buyerQuestions.map((faq) => ({ "@type": "Question", name: faq.question, acceptedAnswer: { "@type": "Answer", text: faq.answer } })),
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: "https://deesheng.food" },
+          { "@type": "ListItem", position: 2, name: "Products", item: "https://deesheng.food/products" },
+          { "@type": "ListItem", position: 3, name: product.categoryName, item: `https://deesheng.food/products/${product.categorySlug}` },
+          { "@type": "ListItem", position: 4, name: product.name, item: `https://deesheng.food/product/${product.slug}` },
+        ],
+      },
+    ],
+  };
+
+  return (
+    <main>
+      <JsonLd data={structuredData} />
+      <section className="product-detail-hero shell">
+        <div className="product-detail-image"><img src={product.image} alt={product.imageAlt} width="900" height="650" /></div>
+        <div className="product-detail-copy">
+          <nav className="breadcrumbs" aria-label="Breadcrumb"><Link href="/">Home</Link><span>/</span><Link href={`/products/${product.categorySlug}`}>{product.categoryName}</Link><span>/</span><b>{product.name}</b></nav>
+          <p className="eyebrow">Manufacturer · OEM · wholesale</p>
+          <h1>{product.name}</h1>
+          <h2>{product.headline}</h2>
+          <p>{product.summary}</p>
+          <div className="button-row"><Link className="button button-primary" href={`/contact?product=${product.slug}`}>Request price & samples</Link><Link className="button button-ghost" href={`/products/${product.categorySlug}`}>View full range</Link></div>
+        </div>
+      </section>
+
+      <section className="spec-band"><div className="shell spec-grid"><div><span>Shelf life</span><strong>{product.shelfLife}</strong></div><div><span>Storage</span><strong>{product.storage}</strong></div><div><span>OEM MOQ</span><strong>200 cartons / item</strong></div><div><span>Buyer type</span><strong>B2B export</strong></div></div></section>
+
+      <section className="section shell product-info-grid">
+        <div><p className="eyebrow">Applications</p><h2>Built for commercial use</h2><p>Use the standard formulation as a fast route to market or discuss a project-specific adjustment after your channel and target profile are clear.</p><ul className="application-list">{product.applications.map((item) => <li key={item}><span>✓</span>{item}</li>)}</ul></div>
+        <div className="packing-panel"><p className="eyebrow">Standard export packing</p><h2>Available formats</h2><ul>{product.packing.map((pack) => <li key={pack}><span>{pack}</span><b>Export pack</b></li>)}</ul><p>Carton dimensions, net and gross weight are confirmed with the selected pack and final order.</p></div>
+      </section>
+
+      <section className="section section-tint"><div className="shell faq-layout"><div><p className="eyebrow">Sourcing facts</p><h2>Answers for buyers</h2><p>These are the commercial basics most B2B buyers need before requesting a sample or quotation.</p></div><div className="faq-list">{product.buyerQuestions.map((faq) => <details key={faq.question}><summary>{faq.question}<span>+</span></summary><p>{faq.answer}</p></details>)}</div></div></section>
+
+      {related.length > 0 && <section className="section shell"><div className="section-heading compact-heading"><p className="eyebrow">Related products</p><h2>Build a stronger product mix</h2></div><div className="related-grid">{related.map((item) => <Link href={`/product/${item.slug}`} key={item.slug}><span>{item.categoryName}</span><h3>{item.name}</h3><p>{item.summary}</p><b>View product →</b></Link>)}</div></section>}
+
+      <section className="section shell"><div className="cta-panel"><div><p className="eyebrow eyebrow-light">Qualified B2B inquiry</p><h2>Share your market, pack and target quantity.</h2></div><div><p>We will confirm the best-fit format, sample route and quotation for your project.</p><Link className="button button-light" href={`/contact?product=${product.slug}`}>Ask about {product.name} ↗</Link></div></div></section>
+    </main>
+  );
+}

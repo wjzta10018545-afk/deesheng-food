@@ -1,0 +1,54 @@
+name: Production
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - run: npm ci
+      - name: Export complete website
+        run: npx next build
+        env:
+          GITHUB_PAGES: "true"
+      - name: Fix absolute public-asset paths
+        run: |
+          find out -type f \( -name '*.html' -o -name '*.txt' -o -name '*.xml' -o -name '*.json' -o -name '*.js' -o -name '*.css' \) -print0 | \
+            xargs -0 sed -i \
+              -e 's|"/media/|"/deesheng-food/media/|g' \
+              -e 's|"/downloads/|"/deesheng-food/downloads/|g' \
+              -e 's|"/favicon|"/deesheng-food/favicon|g' \
+              -e 's|url(/media/|url(/deesheng-food/media/|g'
+          touch out/.nojekyll
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./out
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

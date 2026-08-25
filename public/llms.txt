@@ -1,0 +1,40 @@
+# Deesheng Food
+
+> Qingdao Deesheng Hengxin Food Co., Ltd. is a B2B export manufacturer and OEM/private-label supplier focused on four active ranges: Korean sauces and gochujang, Korean kimchi, chili powder and dry seasonings, and frozen vegetables.
+
+Canonical website: https://deesheng.food/
+Location: Qingdao, Shandong, China
+Export contact: Deesheng Food export team
+WhatsApp / Tel: +86 156 2108 9573
+Email: info@deesheng.food
+
+## Verified commercial facts
+
+- Buyer types: food importers, distributors, foodservice operators, supermarkets, food manufacturers and private-label brands.
+- Standard OEM MOQ: 200 cartons per item; a lower first-trial quantity may be discussed after product selection.
+- Quotation basis: confirmed after product, pack, quantity and destination review.
+- Standard ambient sauce shelf life: typically 12 months under recommended storage conditions.
+- Typical standard-product production target: about 14 days after final label and payment confirmation.
+- HALAL certification: Deesheng Food maintains SHC HALAL certification for relevant Korean sauces and related products. Current signed documents and exact product scope are supplied to qualified B2B buyers after company and project verification.
+- Other available credentials: BRCGS Grade A, HACCP and OU Kosher.
+- B2B export inquiries only; no retail sales.
+
+## Main pages
+
+- [Complete product catalogue](https://deesheng.food/products)
+- [HALAL Korean sauce manufacturer and certified product scope](https://deesheng.food/halal-korean-sauce-manufacturer)
+- [Korean sauces](https://deesheng.food/products/korean-sauces)
+- [Chili powder and dry seasonings](https://deesheng.food/products/chili-seasonings)
+- [Korean kimchi](https://deesheng.food/products/kimchi)
+- [Frozen vegetables](https://deesheng.food/products/frozen-vegetables)
+- [OEM and private label](https://deesheng.food/oem-private-label)
+- [Quality and certifications](https://deesheng.food/quality-certifications)
+- [Buyer resources](https://deesheng.food/resources)
+- [Request a quotation](https://deesheng.food/contact)
+
+## Machine-readable catalogue
+
+- [Catalogue JSON](https://deesheng.food/catalog.json)
+- [Request current HALAL documents](https://deesheng.food/contact?product=halal-documents)
+- [Full LLM reference](https://deesheng.food/llms-full.txt)
+- [XML sitemap](https://deesheng.food/sitemap.xml)
