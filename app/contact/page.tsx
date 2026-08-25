@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ContactLinks } from "../components/ContactLinks";
 import { JsonLd } from "../components/JsonLd";
 import { officialSocialProfileUrls, SocialLinks } from "../components/SocialLinks";
 import { QuoteForm } from "./QuoteForm";
@@ -36,8 +37,7 @@ export default function ContactPage() {
         <div><p className="eyebrow">B2B export inquiry</p><h1>Tell us what you plan to buy.</h1><p>Product, pack, quantity, market and channel are the fastest route to a useful answer.</p></div>
         <div className="contact-direct">
           <span>Direct export sales</span>
-          <a href="https://wa.me/8615621089573" target="_blank" rel="noreferrer"><small>WhatsApp / Tel</small><strong>+86 156 2108 9573</strong></a>
-          <a href="mailto:info@deesheng.food"><small>Email</small><strong>info@deesheng.food</strong></a>
+          <ContactLinks variant="contact" />
           <div className="contact-social-block">
             <small>Official social media</small>
             <SocialLinks variant="contact" />

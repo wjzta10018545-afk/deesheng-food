@@ -389,7 +389,8 @@ button, input, select, textarea { font: inherit; }
 .footer-grid > div:not(.footer-brand) { display: flex; flex-direction: column; gap: 11px; }
 .footer-grid a, .footer-grid span { color: #aebdb6; font-size: 15px; line-height: 1.5; }
 .footer-grid a:hover { color: white; }
-.footer-contact b { color: white; font-size: 18px; }
+.contact-links { display: flex; flex-direction: column; gap: 10px; }
+.footer-location { padding: 2px 2px 0; }
 .footer-social-block { margin-top: 10px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,.12); }
 .footer-grid .footer-social-label { display: block; margin-bottom: 10px; color: #80968b; font-size: 11px; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; }
 .social-links { display: flex; flex-wrap: wrap; gap: 10px; }
@@ -397,14 +398,17 @@ button, input, select, textarea { font: inherit; }
 .social-link:hover, .social-link:focus-visible { transform: translateY(-2px); }
 .social-link-icon { display: grid; place-items: center; width: 34px; height: 34px; flex: 0 0 auto; border-radius: 9px; background: white; color: #111; }
 .social-link[data-platform="facebook"] .social-link-icon { background: #1877f2; color: white; }
+.social-link[data-platform="tiktok"] .social-link-icon { background: #050505; color: white; box-shadow: inset 0 0 0 1px rgba(255,255,255,.16); }
+.social-link[data-platform="whatsapp"] .social-link-icon { background: #25d366; color: white; }
+.social-link[data-platform="email"] .social-link-icon { background: var(--pepper); color: white; }
 .social-link-icon svg { width: 17px; height: 17px; fill: currentColor; }
 .social-link-copy { display: grid; min-width: 0; line-height: 1.15; }
 .social-link-copy strong { font-size: 14px; }
 .social-link-copy small { margin-top: 3px; font-size: 11px; }
 .social-link-arrow { margin-left: auto; font-size: 15px; }
-.social-links-footer .social-link { width: 100%; padding: 10px 12px; border: 1px solid rgba(255,255,255,.14); background: rgba(255,255,255,.055); }
-.footer-grid .social-links-footer .social-link { color: white; }
-.footer-grid .social-links-footer .social-link:hover, .footer-grid .social-links-footer .social-link:focus-visible { border-color: rgba(255,255,255,.3); background: rgba(255,255,255,.1); color: white; }
+.social-links-footer .social-link, .contact-links-footer .social-link { width: 100%; padding: 10px 12px; border: 1px solid rgba(255,255,255,.14); background: rgba(255,255,255,.055); }
+.footer-grid .social-links-footer .social-link, .footer-grid .contact-links-footer .social-link { color: white; }
+.footer-grid .social-links-footer .social-link:hover, .footer-grid .social-links-footer .social-link:focus-visible, .footer-grid .contact-links-footer .social-link:hover, .footer-grid .contact-links-footer .social-link:focus-visible { border-color: rgba(255,255,255,.3); background: rgba(255,255,255,.1); color: white; }
 .footer-grid .social-link-copy small { color: #91a59b; }
 .footer-bottom { display: flex; justify-content: space-between; margin-top: 60px; padding-block: 22px; border-top: 1px solid rgba(255,255,255,.12); color: #8fa49a; font-size: 14px; }
 
@@ -857,6 +861,7 @@ button, input, select, textarea { font: inherit; }
 .contact-direct small { margin-bottom: 5px; color: #9eb2a8; font-size: 12px; text-transform: uppercase; }
 .contact-direct strong { font-family: Georgia, serif; font-size: 23px; font-weight: 500; }
 .contact-direct p { margin: 25px 0 0; color: #9eb2a8; font-size: 13px; line-height: 1.6; }
+.contact-links-contact { margin-top: 20px; }
 .contact-social-block { margin-top: 20px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,.14); }
 .contact-social-block > small { display: block; margin-bottom: 10px; color: #9eb2a8; font-size: 11px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
 .contact-direct .social-link { display: flex; margin-top: 0; padding: 10px 12px; border: 1px solid rgba(255,255,255,.16); background: rgba(255,255,255,.06); }
