@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { JsonLd } from "./components/JsonLd";
 import { FactoryHero } from "./components/FactoryHero";
+import { officialSocialProfileUrls } from "./components/SocialLinks";
 import { catalogCategories } from "./data/catalog";
 import { certificationMarks } from "./data/certifications";
 
@@ -119,6 +120,7 @@ export default function Home() {
           "https://qd-deesheng.en.made-in-china.com/",
           "https://www.ife.co.uk/exhibitors/qingdao-deeshenghengxin-food-co",
           "https://certificat.ecocert.com/company/1A0B3E17-E3D9-49C2-A068-5040376A4388",
+          ...officialSocialProfileUrls,
         ],
         hasCertification: [
           {
