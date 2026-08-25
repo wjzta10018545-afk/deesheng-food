@@ -5,7 +5,7 @@ import { catalogCategories } from "./data/catalog";
 import { certificationMarks } from "./data/certifications";
 
 const highlights = [
-  ["Verified HALAL", "Current documents supplied to qualified B2B buyers"],
+  ["10 credentials", "Certifications, registrations and audits for global markets"],
   ["90+", "Products and variants across four active ranges"],
   ["4 ranges", "Sauces, kimchi, chili seasonings and frozen vegetables"],
   ["B2B OEM", "Private-label product and packaging support"],
@@ -98,7 +98,7 @@ export default function Home() {
         email: "info@deesheng.food",
         telephone: "+86-156-2108-9573",
         description:
-          "HALAL-certified export manufacturer and OEM supplier of Korean-style sauces, gochujang, kimchi, chili powder, dry seasonings and frozen vegetables.",
+          "Export-ready food manufacturer providing Korean sauces, kimchi, chili seasonings, frozen vegetables and OEM or private-label supply solutions for global B2B buyers.",
         address: {
           "@type": "PostalAddress",
           streetAddress: "Shanghetou Village, Baishahe Street Agency",
@@ -120,15 +120,34 @@ export default function Home() {
           "https://www.ife.co.uk/exhibitors/qingdao-deeshenghengxin-food-co",
           "https://certificat.ecocert.com/company/1A0B3E17-E3D9-49C2-A068-5040376A4388",
         ],
-        hasCertification: {
-          "@type": "Certification",
-          name: "SHC HALAL Certification for Deesheng Food Products",
-          issuedBy: {
-            "@type": "Organization",
-            name: "Shandong Halal Certification Service (SHC)",
+        hasCertification: [
+          {
+            "@type": "Certification",
+            name: "BRCGS Food Safety Grade A",
+            issuedBy: { "@type": "Organization", name: "BRCGS" },
+            url: "https://deesheng.food/quality-certifications",
           },
-          url: "https://deesheng.food/halal-korean-sauce-manufacturer",
-        },
+          {
+            "@type": "Certification",
+            name: "SHC HALAL Certification for Deesheng Food Products",
+            issuedBy: {
+              "@type": "Organization",
+              name: "Shandong Halal Certification Service (SHC)",
+            },
+            url: "https://deesheng.food/halal-korean-sauce-manufacturer",
+          },
+          {
+            "@type": "Certification",
+            name: "HACCP Food Safety Control System",
+            url: "https://deesheng.food/quality-certifications",
+          },
+          {
+            "@type": "Certification",
+            name: "OU Kosher Certification Support",
+            issuedBy: { "@type": "Organization", name: "Orthodox Union" },
+            url: "https://deesheng.food/quality-certifications",
+          },
+        ],
       },
       {
         "@type": "WebSite",

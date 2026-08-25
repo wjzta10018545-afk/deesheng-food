@@ -66,18 +66,18 @@ export function FactoryHero() {
       <div className="shell factory-showcase-inner">
         <div className="factory-showcase-copy reveal">
           <p className="factory-kicker">
-            <span>HALAL-certified manufacturer</span>
+            <span>Export-ready food manufacturer</span>
             <b>Qingdao · China</b>
           </p>
-          <h1>Korean sauces made for global markets.</h1>
+          <h1>Food supply solutions for global markets.</h1>
           <p className="factory-showcase-lede">
-            Factory-direct gochujang, Korean sauces, seasonings and private-label
-            food solutions for importers, distributors and foodservice buyers.
+            Factory-direct Korean sauces, kimchi, chili seasonings and frozen vegetables,
+            with OEM and private-label support for importers, distributors and foodservice buyers.
           </p>
           <div className="button-row factory-actions">
             <a
               className="button button-primary"
-              href="https://wa.me/8615621089573?text=Hello%20Deesheng%20Food%20export%20team%2C%20I%20am%20interested%20in%20your%20HALAL%20Korean%20sauces."
+              href="https://wa.me/8615621089573?text=Hello%20Deesheng%20Food%20export%20team%2C%20I%20am%20interested%20in%20your%20food%20products%20and%20OEM%2Fprivate-label%20solutions."
               target="_blank"
               rel="noreferrer"
             >
@@ -87,11 +87,13 @@ export function FactoryHero() {
               Explore 90+ products
             </Link>
           </div>
-          <ul className="factory-trust" aria-label="Factory certifications">
+          <ul className="factory-trust" aria-label="Factory certifications, registrations and audits">
             <li>HALAL</li>
             <li>BRCGS Grade A</li>
             <li>HACCP</li>
             <li>OU Kosher</li>
+            <li>FDA Registered</li>
+            <li>SMETA Audited</li>
           </ul>
         </div>
 

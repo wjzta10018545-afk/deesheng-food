@@ -6,12 +6,14 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://deesheng.food"),
   title: {
-    default: "Deesheng Food | HALAL Korean Sauce Manufacturer & OEM Supplier",
+    default: "Deesheng Food | Global Food Supply & OEM Manufacturer",
     template: "%s | Deesheng Food",
   },
   description:
-    "HALAL-certified Qingdao manufacturer and OEM supplier of Korean sauces, gochujang, kimchi, chili powder, dry seasonings and frozen vegetables for global B2B buyers.",
+    "Export-ready food supply solutions from Qingdao: Korean sauces, kimchi, chili seasonings and frozen vegetables, backed by HALAL, BRCGS Grade A, HACCP, Kosher and additional market credentials.",
   keywords: [
+    "global food supply solutions",
+    "food OEM manufacturer China",
     "Korean sauce manufacturer",
     "Korean sauce OEM",
     "private label gochujang",
@@ -25,23 +27,23 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://deesheng.food",
     siteName: "Deesheng Food",
-    title: "Deesheng Food | HALAL Korean Sauce Manufacturer",
+    title: "Deesheng Food | Global Food Supply & OEM Manufacturer",
     description:
-      "Certificate-backed Korean sauces, gochujang and OEM/private-label support with direct export contact from Qingdao, China.",
+      "Export-ready Korean sauces, kimchi, chili seasonings and frozen vegetables with OEM and private-label support from Qingdao, China.",
     images: [
       {
         url: "/og.png",
         width: 1200,
         height: 630,
-        alt: "Deesheng Food — HALAL Korean Sauce Manufacturer and OEM Supplier",
+        alt: "Deesheng Food — Global Food Supply and OEM Manufacturer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Deesheng Food | HALAL Korean Sauce Manufacturer",
+    title: "Deesheng Food | Global Food Supply & OEM Manufacturer",
     description:
-      "Certificate-backed Korean sauces, gochujang, seasonings and private-label manufacturing.",
+      "Export-ready food supply solutions across sauces, kimchi, seasonings and frozen vegetables.",
     images: ["/og.png"],
   },
   icons: {
