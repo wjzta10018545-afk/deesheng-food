@@ -34,43 +34,77 @@ export default async function ProductPage({ params }: Props) {
   const product = getProduct(slug);
   if (!product) notFound();
   const related = productDetails.filter((item) => item.categorySlug === product.categorySlug && item.slug !== product.slug).slice(0, 3);
+  const pageUrl = `https://deesheng.food/product/${product.slug}`;
+  const imageUrl = `https://deesheng.food${product.image}`;
+  const organizationId = "https://deesheng.food/#organization";
 
   const structuredData = {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Product",
-        name: product.name,
-        description: product.summary,
-        image: `https://deesheng.food${product.image}`,
-        category: product.categoryName,
-        audience: { "@type": "BusinessAudience", audienceType: "Food importers, distributors, foodservice operators and private-label brands" },
+        "@type": "Organization",
+        "@id": organizationId,
+        name: "Qingdao Deesheng Hengxin Food Co., Ltd.",
+        alternateName: "Deesheng Food",
+        url: "https://deesheng.food",
         brand: { "@type": "Brand", name: "Deesheng Food" },
-        manufacturer: { "@type": "Organization", name: "Qingdao Deesheng Hengxin Food Co., Ltd.", url: "https://deesheng.food" },
         hasCertification: {
           "@type": "Certification",
           name: "SHC HALAL Certification - product scope confirmation required",
           issuedBy: { "@type": "Organization", name: "Shandong Halal Certification Service (SHC)" },
           url: "https://deesheng.food/halal-korean-sauce-manufacturer",
         },
-        additionalProperty: [
-          { "@type": "PropertyValue", name: "Shelf life", value: product.shelfLife },
-          { "@type": "PropertyValue", name: "Storage", value: product.storage },
-          { "@type": "PropertyValue", name: "Quotation", value: "Confirmed after product, pack, quantity and destination review" },
-          { "@type": "PropertyValue", name: "HALAL document", value: "Current documents are provided to qualified B2B buyers after product and project verification" },
+      },
+      {
+        "@type": "WebPage",
+        "@id": `${pageUrl}#webpage`,
+        url: pageUrl,
+        name: `${product.name} Manufacturer & OEM Supplier`,
+        description: product.summary,
+        primaryImageOfPage: {
+          "@type": "ImageObject",
+          url: imageUrl,
+          caption: product.imageAlt,
+        },
+        publisher: { "@id": organizationId },
+        audience: {
+          "@type": "BusinessAudience",
+          audienceType: "Food importers, distributors, foodservice operators and private-label brands",
+        },
+        about: [
+          { "@type": "Thing", name: product.name, description: product.summary },
+          { "@type": "Thing", name: product.categoryName },
+          { "@type": "Thing", name: "Food OEM and private-label manufacturing" },
         ],
+        mainEntity: { "@id": `${pageUrl}#service` },
+      },
+      {
+        "@type": "Service",
+        "@id": `${pageUrl}#service`,
+        name: `${product.name} B2B supply and OEM service`,
+        description: `${product.summary} Export packing, samples, wholesale supply and private-label support are confirmed for each B2B project.`,
+        serviceType: ["B2B food supply", "Food OEM manufacturing", "Private-label manufacturing", "Export support"],
+        category: product.categoryName,
+        provider: { "@id": organizationId },
+        areaServed: "Worldwide",
+        audience: {
+          "@type": "BusinessAudience",
+          audienceType: "Food importers, distributors, foodservice operators and private-label brands",
+        },
       },
       {
         "@type": "FAQPage",
+        "@id": `${pageUrl}#faq`,
         mainEntity: product.buyerQuestions.map((faq) => ({ "@type": "Question", name: faq.question, acceptedAnswer: { "@type": "Answer", text: faq.answer } })),
       },
       {
         "@type": "BreadcrumbList",
+        "@id": `${pageUrl}#breadcrumb`,
         itemListElement: [
           { "@type": "ListItem", position: 1, name: "Home", item: "https://deesheng.food" },
           { "@type": "ListItem", position: 2, name: "Products", item: "https://deesheng.food/products" },
           { "@type": "ListItem", position: 3, name: product.categoryName, item: `https://deesheng.food/products/${product.categorySlug}` },
-          { "@type": "ListItem", position: 4, name: product.name, item: `https://deesheng.food/product/${product.slug}` },
+          { "@type": "ListItem", position: 4, name: product.name, item: pageUrl },
         ],
       },
     ],
