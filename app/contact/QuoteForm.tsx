@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useEffect, useRef, useState } from "react";
+import { trackAnalyticsEvent } from "../components/GoogleAnalytics";
 
 export function QuoteForm({ initialProduct = "" }: { initialProduct?: string }) {
   const [sent, setSent] = useState(false);
@@ -26,6 +27,7 @@ export function QuoteForm({ initialProduct = "" }: { initialProduct?: string }) 
       `Sales channel: ${form.get("channel") || "Not provided"}`,
       `Requirements: ${form.get("message") || "None added"}`,
     ];
+    trackAnalyticsEvent("generate_lead", { method: "whatsapp_quote_form" });
     setSent(true);
     window.open(`https://wa.me/8615621089573?text=${encodeURIComponent(lines.join("\n"))}`, "_blank", "noopener,noreferrer");
   }
