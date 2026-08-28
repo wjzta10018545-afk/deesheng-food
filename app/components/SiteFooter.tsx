@@ -27,7 +27,13 @@ export function SiteFooter() {
           </div>
         </div>
       </div>
-      <div className="shell footer-bottom"><span>© {new Date().getFullYear()} Qingdao Deesheng Hengxin Food Co., Ltd.</span><span>B2B export inquiries only</span></div>
+      <div className="shell footer-bottom">
+        <span>© {new Date().getFullYear()} Qingdao Deesheng Hengxin Food Co., Ltd.</span>
+        <div className="footer-bottom-actions">
+          <span>B2B export inquiries only</span>
+          <button type="button" data-analytics-settings>Privacy choices</button>
+        </div>
+      </div>
     </footer>
   );
 }
