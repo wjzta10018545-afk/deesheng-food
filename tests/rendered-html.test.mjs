@@ -26,14 +26,14 @@ test("renders the branded homepage and four active product entrances", async () 
   const { default: worker } = await import(workerUrl.href);
 
   const html = await fetchHtml(worker);
-  assert.match(html, /<title>Deesheng Food \| HALAL Korean Sauce Manufacturer/);
+  assert.match(html, /<title>Deesheng Food \| Global Food Supply &amp; OEM Manufacturer/);
   assert.equal((html.match(/class="primary-category-card"/g) ?? []).length, 4);
   assert.match(html, /Korean Sauces/);
   assert.match(html, /Korean Kimchi/);
   assert.match(html, /Korean Chili Powder &amp; Seasonings/);
   assert.match(html, /Frozen Vegetables/);
-  assert.match(html, /Current documents supplied to qualified B2B buyers/);
-  assert.match(html, /shc-halal\.png/);
+  assert.match(html, /Request current documents/);
+  assert.match(html, /shc-halal-document\.webp/);
   assert.doesNotMatch(html, /certificate no\./i);
   assert.match(html, /BRCGS Food Safety/);
   assert.match(html, /SHC HALAL/);
@@ -41,6 +41,23 @@ test("renders the branded homepage and four active product entrances", async () 
   assert.match(html, /From brief to export-ready product/);
   assert.equal((html.match(/class="home-assurance-card/g) ?? []).length, 10);
   assert.equal((html.match(/<li><span>0[1-4]<\/span><div><h3>/g) ?? []).length, 4);
+});
+
+test("renders buyer-decision content and the export-facing company identity", async () => {
+  const workerUrl = new URL("../dist/server/index.js", import.meta.url);
+  workerUrl.searchParams.set("test", `${process.pid}-${Date.now()}`);
+  const { default: worker } = await import(workerUrl.href);
+
+  const productHtml = await fetchHtml(worker, "/product/gochujang/");
+  assert.match(productHtml, /B2B buying guide/);
+  assert.match(productHtml, /Best-fit buyers/);
+  assert.match(productHtml, /Supermarket and Asian-grocery distributors/);
+  assert.match(productHtml, /Send this buyer brief/);
+
+  const aboutHtml = await fetchHtml(worker, "/about/");
+  assert.match(aboutHtml, /Factory-backed export support/);
+  assert.match(aboutHtml, /Export inquiry website/);
+  assert.doesNotMatch(aboutHtml, /deesheng\.com/);
 });
 
 test("renders every brochure product with its own catalogue image", async () => {
