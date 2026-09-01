@@ -731,6 +731,15 @@ button, input, select, textarea { font: inherit; }
 .product-info-grid { display: grid; grid-template-columns: 1fr .9fr; gap: 100px; }
 .product-info-grid h2, .packing-panel h2 { margin-bottom: 22px; font-size: 46px; line-height: 1.05; }
 .product-info-grid > div:first-child > p:not(.eyebrow) { color: var(--muted); font-size: 18px; line-height: 1.75; }
+.buying-guide-heading { display: grid; grid-template-columns: 1fr .9fr; gap: 80px; align-items: end; margin-bottom: 34px; }
+.buying-guide-heading h2 { max-width: 720px; font-size: clamp(42px, 4.5vw, 60px); line-height: 1; }
+.buying-guide-heading > p { color: var(--muted); font-size: 18px; line-height: 1.75; }
+.buying-guide-grid { display: grid; grid-template-columns: repeat(3, 1fr); border: 1px solid var(--line); background: white; }
+.buying-guide-grid article { min-height: 330px; padding: 30px; border-right: 1px solid var(--line); }
+.buying-guide-grid article:last-child { border-right: 0; }
+.buying-guide-grid article > span { font-family: Georgia, serif; font-size: 16px; }
+.buying-guide-grid h3 { margin: 65px 0 18px; font-family: Georgia, serif; font-size: 29px; font-weight: 500; }
+.buying-guide-grid ul { display: grid; gap: 10px; margin: 0; padding-left: 20px; color: var(--muted); font-size: 16px; line-height: 1.55; }
 .application-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin: 28px 0 0; padding: 0; list-style: none; }
 .application-list li { display: flex; align-items: center; gap: 9px; padding: 13px; border: 1px solid var(--line); color: #50645a; font-size: 16px; }
 .application-list span { color: var(--pepper); font-weight: 900; }
@@ -823,6 +832,13 @@ button, input, select, textarea { font: inherit; }
 .about-facts strong, .about-facts span { display: block; }
 .about-facts strong { font-family: Georgia, serif; font-size: 31px; font-weight: 500; }
 .about-facts span { margin-top: 10px; color: var(--muted); font-size: 15px; line-height: 1.5; }
+.entity-facts { display: grid; grid-template-columns: .8fr 1.2fr; gap: 90px; align-items: start; }
+.entity-facts h2 { max-width: 600px; font-size: 52px; line-height: 1.05; }
+.entity-facts > div > p:not(.eyebrow) { color: var(--muted); font-size: 18px; line-height: 1.8; }
+.entity-facts dl { margin: 0; border-top: 1px solid var(--line); }
+.entity-facts dl > div { display: grid; grid-template-columns: .7fr 1.3fr; gap: 24px; padding: 20px 0; border-bottom: 1px solid var(--line); }
+.entity-facts dt { color: var(--muted); font-size: 14px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.entity-facts dd { margin: 0; font-size: 18px; line-height: 1.5; }
 .about-portfolio { display: grid; grid-template-columns: .7fr 1.3fr; gap: 80px; }
 .about-portfolio h2 { font-size: 55px; }
 .about-portfolio > div:first-child > p:not(.eyebrow) { color: var(--muted); font-size: 18px; }
@@ -932,7 +948,7 @@ button, input, select, textarea { font: inherit; }
 .not-found p { color: var(--muted); }
 
 @media (max-width: 980px) {
-  .inner-hero, .category-hero, .product-detail-hero, .product-info-grid, .capability-grid, .quality-system, .about-intro, .about-portfolio, .resource-principles, .contact-hero, .quote-layout, .contact-expect { grid-template-columns: 1fr; gap: 40px; }
+  .inner-hero, .category-hero, .product-detail-hero, .product-info-grid, .buying-guide-heading, .entity-facts, .capability-grid, .quality-system, .about-intro, .about-portfolio, .resource-principles, .contact-hero, .quote-layout, .contact-expect { grid-template-columns: 1fr; gap: 40px; }
   .category-jump-grid, .product-card-grid { grid-template-columns: repeat(2, 1fr); }
   .category-hero-image, .product-detail-image { height: 460px; }
   .faq-layout { grid-template-columns: 1fr; gap: 45px; }
@@ -944,6 +960,9 @@ button, input, select, textarea { font: inherit; }
   .quality-proof-heading { grid-template-columns: 1fr; gap: 22px; }
   .quality-page-proof { grid-template-columns: 1fr; }
   .about-values { grid-template-columns: 1fr; }
+  .buying-guide-grid { grid-template-columns: 1fr; }
+  .buying-guide-grid article { min-height: 0; border-right: 0; border-bottom: 1px solid var(--line); }
+  .buying-guide-grid article:last-child { border-bottom: 0; }
   .about-values article { border-right: 0; border-bottom: 1px solid var(--line); }
   .about-values article:last-child { border-bottom: 0; }
   .featured-guide { grid-template-columns: 1fr; }
