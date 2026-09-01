@@ -6,6 +6,61 @@ import { getProduct, productDetails } from "../../data/catalog";
 
 type Props = { params: Promise<{ slug: string }> };
 
+const productBuyingGuides: Record<string, {
+  buyerFit: string[];
+  customization: string[];
+  brief: string[];
+}> = {
+  gochujang: {
+    buyerFit: ["Supermarket and Asian-grocery distributors", "Korean restaurant and foodservice suppliers", "Private-label sauce brands", "Meal-kit and prepared-food manufacturers"],
+    customization: ["Heat and sweetness balance", "Retail tub or 14 kg foodservice format", "Private-label artwork and export label", "Application-led sample selection"],
+    brief: ["Target market and sales channel", "Required heat profile", "500 g retail or 14 kg foodservice pack", "Estimated cartons per item"],
+  },
+  "bibimbap-sauce": {
+    buyerFit: ["Retail sauce importers", "Restaurant and central-kitchen suppliers", "Rice-bowl and meal-kit brands", "Private-label Korean food ranges"],
+    customization: ["Spicy or non-spicy profile", "Sweetness, heat and viscosity", "Retail bottle or 1 kg foodservice pouch", "Label and carton artwork"],
+    brief: ["Spicy or non-spicy version", "Retail, foodservice or meal-kit channel", "Preferred bottle or pouch size", "Target quantity and destination"],
+  },
+  "classic-buldak-sauce": {
+    buyerFit: ["Noodle and convenience-food brands", "Korean fried-chicken operators", "Retail sauce distributors", "Private-label spicy-sauce programs"],
+    customization: ["Heat level and flavor balance", "Noodle, chicken or dipping application", "Retail bottle or foodservice pouch", "Private-label packaging"],
+    brief: ["Target heat level", "Primary menu or retail application", "Required pack size", "Estimated order quantity"],
+  },
+  "tteokbokki-sauce": {
+    buyerFit: ["Korean street-food distributors", "Ready-to-cook and meal-kit brands", "Restaurant suppliers", "Asian-grocery private labels"],
+    customization: ["Original or creamy profile", "Heat, sweetness and sauce body", "Retail or foodservice packing", "Private-label artwork"],
+    brief: ["Original or creamy version", "Rice-cake pack or standalone sauce", "Target pack size", "Market, quantity and channel"],
+  },
+  "sweet-spicy-fried-chicken-sauce": {
+    buyerFit: ["Fried-chicken chains", "Restaurant and foodservice distributors", "Central kitchens", "Retail Korean-sauce brands"],
+    customization: ["Heat and sweetness balance", "Glaze viscosity and coating performance", "Retail bottle or 1 kg pouch", "Matching marinade and coating mix"],
+    brief: ["Chicken format and serving method", "Target flavor profile", "Outlet count or expected volume", "Pack size and destination"],
+  },
+  "soy-garlic-fried-chicken-sauce": {
+    buyerFit: ["Fried-chicken restaurants", "Foodservice wholesalers", "Central kitchens", "Retail and private-label sauce brands"],
+    customization: ["Soy, garlic and sweetness balance", "Glaze viscosity", "Retail bottle or 1 kg foodservice pouch", "Complete fried-chicken sauce system"],
+    brief: ["Restaurant or retail use", "Target soy-garlic profile", "Required pack size", "Estimated cartons and destination"],
+  },
+  "korean-cabbage-kimchi": {
+    buyerFit: ["Refrigerated-food importers", "Asian supermarkets", "Restaurant and foodservice distributors", "Korean side-dish suppliers"],
+    customization: ["Whole or cut cabbage", "Retail bag or 10 kg bulk carton", "Flavor and fermentation target", "Export label and refrigerated shipment plan"],
+    brief: ["Required retail or foodservice pack", "Whole or cut format", "Destination and cold-chain route", "Estimated order quantity"],
+  },
+  "frozen-spinach": {
+    buyerFit: ["Frozen-food importers", "Bibimbap and prepared-meal producers", "Central kitchens", "Foodservice distributors"],
+    customization: ["Cut and preparation format", "Retail or foodservice packing", "Bibimbap product mix", "Carton and export specification"],
+    brief: ["Required cut or preparation", "Standalone item or mixed container", "Pack size", "Destination and estimated volume"],
+  },
+};
+
+const defaultBuyingGuide = (product: { categorySlug: string; applications: string[]; packing: string[] }) => ({
+  buyerFit: product.categorySlug === "frozen-vegetables"
+    ? ["Frozen-food importers", "Foodservice distributors", "Central kitchens", "Food manufacturers"]
+    : ["Food importers and distributors", "Foodservice suppliers", "Restaurant operators", "Private-label brands"],
+  customization: ["Product specification", "Standard export packing", "OEM or private-label presentation", "Carton and export label"],
+  brief: ["Target market and sales channel", `Primary use: ${product.applications.slice(0, 2).join(" or ")}`, `Preferred pack: ${product.packing[0]}`, "Estimated quantity and destination"],
+});
+
 export function generateStaticParams() {
   return productDetails.map((product) => ({ slug: product.slug }));
 }
@@ -37,6 +92,7 @@ export default async function ProductPage({ params }: Props) {
   const pageUrl = `https://deesheng.food/product/${product.slug}`;
   const imageUrl = `https://deesheng.food${product.image}`;
   const organizationId = "https://deesheng.food/#organization";
+  const buyingGuide = productBuyingGuides[product.slug] ?? defaultBuyingGuide(product);
 
   const structuredData = {
     "@context": "https://schema.org",
@@ -132,7 +188,19 @@ export default async function ProductPage({ params }: Props) {
         <div className="packing-panel"><p className="eyebrow">Standard export packing</p><h2>Available formats</h2><ul>{product.packing.map((pack) => <li key={pack}><span>{pack}</span><b>Export pack</b></li>)}</ul><p>Carton dimensions, net and gross weight are confirmed with the selected pack and final order.</p></div>
       </section>
 
-      <section className="section section-tint"><div className="shell faq-layout"><div><p className="eyebrow">Sourcing facts</p><h2>Answers for buyers</h2><p>These are the commercial basics most B2B buyers need before requesting a sample or quotation.</p></div><div className="faq-list">{product.buyerQuestions.map((faq) => <details key={faq.question}><summary>{faq.question}<span>+</span></summary><p>{faq.answer}</p></details>)}</div></div></section>
+      <section className="section section-tint">
+        <div className="shell buying-guide-heading">
+          <div><p className="eyebrow">B2B buying guide</p><h2>Is this product right for your project?</h2></div>
+          <p><strong>Direct answer:</strong> {product.name} is available for qualified importers, distributors, foodservice buyers and private-label projects. The fastest route to a useful sample and quotation is to confirm the application, pack, quantity and destination.</p>
+        </div>
+        <div className="shell buying-guide-grid">
+          <article><span>01</span><h3>Best-fit buyers</h3><ul>{buyingGuide.buyerFit.map((item) => <li key={item}>{item}</li>)}</ul></article>
+          <article><span>02</span><h3>What can be confirmed</h3><ul>{buyingGuide.customization.map((item) => <li key={item}>{item}</li>)}</ul></article>
+          <article><span>03</span><h3>Send this buyer brief</h3><ul>{buyingGuide.brief.map((item) => <li key={item}>{item}</li>)}</ul></article>
+        </div>
+      </section>
+
+      <section className="section"><div className="shell faq-layout"><div><p className="eyebrow">Sourcing facts</p><h2>Answers for buyers</h2><p>These are the commercial basics most B2B buyers need before requesting a sample or quotation.</p></div><div className="faq-list">{product.buyerQuestions.map((faq) => <details key={faq.question}><summary>{faq.question}<span>+</span></summary><p>{faq.answer}</p></details>)}</div></div></section>
 
       {related.length > 0 && <section className="section shell"><div className="section-heading compact-heading"><p className="eyebrow">Related products</p><h2>Build a stronger product mix</h2></div><div className="related-grid">{related.map((item) => <Link href={`/product/${item.slug}`} key={item.slug}><span>{item.categoryName}</span><h3>{item.name}</h3><p>{item.summary}</p><b>View product →</b></Link>)}</div></section>}
 
