@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "HALAL Korean Sauce & Food Product Catalogue",
   description:
     "Search Deesheng Food's four active export ranges: Korean sauces and gochujang, kimchi, chili powder and dry seasonings, and frozen vegetables.",
-  alternates: { canonical: "/products" },
+  alternates: { canonical: "/products/" },
 };
 
 export default function ProductsPage() {
@@ -20,7 +20,7 @@ export default function ProductsPage() {
       "@type": "ListItem",
       position: index + 1,
       name: category.name,
-      url: `https://deesheng.food/products/${category.slug}`,
+      url: `https://deesheng.food/products/${category.slug}/`,
     })),
   };
 
@@ -42,7 +42,7 @@ export default function ProductsPage() {
 
       <section className="shell category-jump-grid" aria-label="Product families">
         {catalogCategories.map((category) => (
-          <Link href={`/products/${category.slug}`} className="category-jump" key={category.slug}>
+          <Link href={`/products/${category.slug}/`} className="category-jump" key={category.slug}>
             <img src={category.image} alt={category.imageAlt} width="1200" height="537" />
             <div><span>{category.eyebrow}</span><h2>{category.name}</h2><p>{category.items.length} listed products and variants</p></div>
           </Link>

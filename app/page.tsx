@@ -20,14 +20,14 @@ const categoryHighlights: Record<string, string[]> = {
 };
 
 const halalSauceSpotlight = [
-  ["Gochujang / red pepper paste", "/product/gochujang"],
-  ["Classic & non-spicy bibimbap sauce", "/product/bibimbap-sauce"],
-  ["Soy garlic fried chicken sauce", "/product/soy-garlic-fried-chicken-sauce"],
-  ["Spicy fried chicken sauce", "/products/korean-sauces"],
-  ["Tteokbokki sauce", "/product/tteokbokki-sauce"],
-  ["Honey mustard sauce", "/product/honey-mustard-sauce"],
-  ["Doenjang & ssamjang", "/products/korean-sauces#korean-paste"],
-  ["Kimchi & Korean soup sauces", "/products/korean-sauces"],
+  ["Gochujang / red pepper paste", "/product/gochujang/"],
+  ["Classic & non-spicy bibimbap sauce", "/product/bibimbap-sauce/"],
+  ["Soy garlic fried chicken sauce", "/product/soy-garlic-fried-chicken-sauce/"],
+  ["Spicy fried chicken sauce", "/products/korean-sauces/"],
+  ["Tteokbokki sauce", "/product/tteokbokki-sauce/"],
+  ["Honey mustard sauce", "/product/honey-mustard-sauce/"],
+  ["Doenjang & ssamjang", "/products/korean-sauces/#korean-paste"],
+  ["Kimchi & Korean soup sauces", "/products/korean-sauces/"],
 ];
 
 const certificateDocumentPreviews = [
@@ -94,7 +94,7 @@ export default function Home() {
         "@id": "https://deesheng.food/#organization",
         name: "Qingdao Deesheng Hengxin Food Co., Ltd.",
         alternateName: "Deesheng Food",
-        url: "https://deesheng.food",
+        url: "https://deesheng.food/",
         logo: "https://deesheng.food/media/deesheng-ds-logo.png",
         email: "info@deesheng.food",
         telephone: "+86-156-2108-9573",
@@ -127,7 +127,7 @@ export default function Home() {
             "@type": "Certification",
             name: "BRCGS Food Safety Grade A",
             issuedBy: { "@type": "Organization", name: "BRCGS" },
-            url: "https://deesheng.food/quality-certifications",
+            url: "https://deesheng.food/quality-certifications/",
           },
           {
             "@type": "Certification",
@@ -136,25 +136,25 @@ export default function Home() {
               "@type": "Organization",
               name: "Shandong Halal Certification Service (SHC)",
             },
-            url: "https://deesheng.food/halal-korean-sauce-manufacturer",
+            url: "https://deesheng.food/halal-korean-sauce-manufacturer/",
           },
           {
             "@type": "Certification",
             name: "HACCP Food Safety Control System",
-            url: "https://deesheng.food/quality-certifications",
+            url: "https://deesheng.food/quality-certifications/",
           },
           {
             "@type": "Certification",
             name: "OU Kosher Certification Support",
             issuedBy: { "@type": "Organization", name: "Orthodox Union" },
-            url: "https://deesheng.food/quality-certifications",
+            url: "https://deesheng.food/quality-certifications/",
           },
         ],
       },
       {
         "@type": "WebSite",
         "@id": "https://deesheng.food/#website",
-        url: "https://deesheng.food",
+        url: "https://deesheng.food/",
         name: "Deesheng Food",
         publisher: { "@id": "https://deesheng.food/#organization" },
       },
@@ -190,7 +190,7 @@ export default function Home() {
         </div>
         <div className="primary-category-grid">
           {catalogCategories.map((category, index) => (
-            <Link className="primary-category-card" href={`/products/${category.slug}`} key={category.slug}>
+            <Link className="primary-category-card" href={`/products/${category.slug}/`} key={category.slug}>
               <img src={category.image} alt={category.imageAlt} width="1600" height="1000" loading="lazy" />
               <span className="primary-category-shade" aria-hidden="true" />
               <div className="primary-category-topline">
@@ -211,7 +211,7 @@ export default function Home() {
           ))}
         </div>
         <div className="center-action">
-          <Link className="text-link" href="/products">
+          <Link className="text-link" href="/products/">
             Search the complete product index <span aria-hidden="true">→</span>
           </Link>
         </div>
@@ -220,7 +220,7 @@ export default function Home() {
       <section className="home-evidence">
         <div className="shell">
           <div className="home-evidence-main">
-            <Link className="home-certificate-thumb" href="/quality-certifications" aria-label="View Deesheng Food certification and assurance details">
+            <Link className="home-certificate-thumb" href="/quality-certifications/" aria-label="View Deesheng Food certification and assurance details">
               <div className="home-certificate-documents">
                 {certificateDocumentPreviews.map((certificate) => (
                   <figure key={certificate.name}>
@@ -260,7 +260,7 @@ export default function Home() {
                 <div><dt>Product scope</dt><dd>Confirmed per selected item</dd></div>
                 <div><dt>Document access</dt><dd>Qualified B2B buyers</dd></div>
               </dl>
-              <Link className="button button-light" href="/contact?product=halal-documents">
+              <Link className="button button-light" href="/contact/?product=halal-documents">
                 Request current documents <span aria-hidden="true">→</span>
               </Link>
             </aside>
@@ -271,7 +271,7 @@ export default function Home() {
               <span>Certifications, registrations & audits</span>
               <strong>Buyer assurance at a glance</strong>
             </div>
-            <Link className="text-link" href="/quality-certifications">Quality details <span aria-hidden="true">→</span></Link>
+            <Link className="text-link" href="/quality-certifications/">Quality details <span aria-hidden="true">→</span></Link>
           </div>
           <div className="home-assurance-grid" aria-label="Deesheng Food certifications, registrations and audits">
             {certificationMarks.map((mark) => (
@@ -301,7 +301,7 @@ export default function Home() {
               Standard products, flavor adjustment, private-label packaging and
               export support from one manufacturing team.
             </p>
-            <Link className="button button-dark" href="/oem-private-label">See how OEM works</Link>
+            <Link className="button button-dark" href="/oem-private-label/">See how OEM works</Link>
           </div>
           <ol className="home-oem-steps">
             <li><span>01</span><div><h3>Define the brief</h3><p>Product, flavor, pack, channel and quantity.</p></div></li>
@@ -345,7 +345,7 @@ export default function Home() {
               Send your product, pack size, destination market and estimated quantity.
               We will confirm the suitable product and document route.
             </p>
-            <Link className="button button-light" href="/contact">
+            <Link className="button button-light" href="/contact/">
               Contact Deesheng Food <span aria-hidden="true">↗</span>
             </Link>
           </div>

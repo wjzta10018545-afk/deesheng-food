@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { readFile } from "node:fs/promises";
 import test from "node:test";
 
 const fetchHtml = async (worker, path = "/") => {
@@ -58,6 +59,24 @@ test("renders buyer-decision content and the export-facing company identity", as
   assert.match(aboutHtml, /Factory-backed export support/);
   assert.match(aboutHtml, /Export inquiry website/);
   assert.doesNotMatch(aboutHtml, /deesheng\.com/);
+});
+
+test("publishes one trailing-slash URL format for search engines", async () => {
+  const workerUrl = new URL("../dist/server/index.js", import.meta.url);
+  workerUrl.searchParams.set("test", `${process.pid}-${Date.now()}`);
+  const { default: worker } = await import(workerUrl.href);
+
+  const productHtml = await fetchHtml(worker, "/product/gochujang/");
+  assert.match(productHtml, /<link rel="canonical" href="https:\/\/deesheng\.food\/product\/gochujang\/"/);
+  assert.match(productHtml, /<meta property="og:url" content="https:\/\/deesheng\.food\/product\/gochujang\/"/);
+  assert.match(productHtml, /href="\/products\/korean-sauces\/"/);
+  assert.match(productHtml, /href="\/contact\/\?product=gochujang"/);
+
+  const sitemap = await readFile(new URL("../public/sitemap.xml", import.meta.url), "utf8");
+  const locations = [...sitemap.matchAll(/<loc>(https:\/\/deesheng\.food\/[^<]*)<\/loc>/g)].map((match) => match[1]);
+  assert.equal(locations.length, 36);
+  assert.ok(locations.every((location) => new URL(location).pathname.endsWith("/")));
+  assert.equal((sitemap.match(/<lastmod>2026-09-07<\/lastmod>/g) ?? []).length, locations.length);
 });
 
 test("renders every brochure product with its own catalogue image", async () => {

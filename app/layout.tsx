@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://deesheng.food",
+    url: "https://deesheng.food/",
     siteName: "Deesheng Food",
     title: "Deesheng Food | Global Food Supply & OEM Manufacturer",
     description:

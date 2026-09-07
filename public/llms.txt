@@ -21,20 +21,20 @@ Email: info@deesheng.food
 
 ## Main pages
 
-- [Complete product catalogue](https://deesheng.food/products)
-- [HALAL Korean sauce manufacturer and certified product scope](https://deesheng.food/halal-korean-sauce-manufacturer)
-- [Korean sauces](https://deesheng.food/products/korean-sauces)
-- [Chili powder and dry seasonings](https://deesheng.food/products/chili-seasonings)
-- [Korean kimchi](https://deesheng.food/products/kimchi)
-- [Frozen vegetables](https://deesheng.food/products/frozen-vegetables)
-- [OEM and private label](https://deesheng.food/oem-private-label)
-- [Quality and certifications](https://deesheng.food/quality-certifications)
-- [Buyer resources](https://deesheng.food/resources)
-- [Request a quotation](https://deesheng.food/contact)
+- [Complete product catalogue](https://deesheng.food/products/)
+- [HALAL Korean sauce manufacturer and certified product scope](https://deesheng.food/halal-korean-sauce-manufacturer/)
+- [Korean sauces](https://deesheng.food/products/korean-sauces/)
+- [Chili powder and dry seasonings](https://deesheng.food/products/chili-seasonings/)
+- [Korean kimchi](https://deesheng.food/products/kimchi/)
+- [Frozen vegetables](https://deesheng.food/products/frozen-vegetables/)
+- [OEM and private label](https://deesheng.food/oem-private-label/)
+- [Quality and certifications](https://deesheng.food/quality-certifications/)
+- [Buyer resources](https://deesheng.food/resources/)
+- [Request a quotation](https://deesheng.food/contact/)
 
 ## Machine-readable catalogue
 
 - [Catalogue JSON](https://deesheng.food/catalog.json)
-- [Request current HALAL documents](https://deesheng.food/contact?product=halal-documents)
+- [Request current HALAL documents](https://deesheng.food/contact/?product=halal-documents)
 - [Full LLM reference](https://deesheng.food/llms-full.txt)
 - [XML sitemap](https://deesheng.food/sitemap.xml)

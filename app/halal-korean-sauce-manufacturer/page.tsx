@@ -13,13 +13,13 @@ export const metadata: Metadata = {
     "Korean sauce OEM supplier",
     "private label Korean sauce",
   ],
-  alternates: { canonical: "/halal-korean-sauce-manufacturer" },
+  alternates: { canonical: "/halal-korean-sauce-manufacturer/" },
   openGraph: {
     type: "website",
     title: "HALAL Korean Sauce Manufacturer | Deesheng Food",
     description:
       "Certificate-backed Korean sauces, gochujang and OEM/private-label support with direct export contact.",
-    url: "https://deesheng.food/halal-korean-sauce-manufacturer",
+    url: "https://deesheng.food/halal-korean-sauce-manufacturer/",
     images: [{ url: "/media/fried-chicken-sauces.webp", alt: "Deesheng Food HALAL Korean sauce range" }],
   },
   twitter: { card: "summary_large_image", images: ["/media/fried-chicken-sauces.webp"] },
@@ -102,8 +102,8 @@ export default function HalalSaucePage() {
     "@graph": [
       {
         "@type": "WebPage",
-        "@id": "https://deesheng.food/halal-korean-sauce-manufacturer#webpage",
-        url: "https://deesheng.food/halal-korean-sauce-manufacturer",
+        "@id": "https://deesheng.food/halal-korean-sauce-manufacturer/#webpage",
+        url: "https://deesheng.food/halal-korean-sauce-manufacturer/",
         name: "HALAL Korean Sauce Manufacturer & OEM Supplier",
         description:
           "Certificate-backed product scope and direct export contact for Deesheng Food HALAL Korean sauces.",
@@ -114,7 +114,7 @@ export default function HalalSaucePage() {
         "@id": "https://deesheng.food/#organization",
         name: "Qingdao Deesheng Hengxin Food Co., Ltd.",
         alternateName: "Deesheng Food",
-        url: "https://deesheng.food",
+        url: "https://deesheng.food/",
         email: "info@deesheng.food",
         telephone: "+86-156-2108-9573",
         contactPoint: {
@@ -130,7 +130,7 @@ export default function HalalSaucePage() {
         "@type": "Certification",
         name: "SHC HALAL Certification - Qingdao Deesheng Hengxin Food Co., Ltd.",
         issuedBy: { "@type": "Organization", name: "Shandong Halal Certification Service (SHC)" },
-        url: "https://deesheng.food/halal-korean-sauce-manufacturer",
+        url: "https://deesheng.food/halal-korean-sauce-manufacturer/",
         about: { "@id": "https://deesheng.food/#organization" },
       },
       {
@@ -174,7 +174,7 @@ export default function HalalSaucePage() {
             <a className="button button-primary" href="https://wa.me/8615621089573" target="_blank" rel="noreferrer">
               WhatsApp our export team <span aria-hidden="true">↗</span>
             </a>
-            <Link className="button button-ghost" href="/contact?product=halal-sauces">Request a quotation</Link>
+            <Link className="button button-ghost" href="/contact/?product=halal-sauces">Request a quotation</Link>
           </div>
         </div>
         <aside className="halal-certificate-card">
@@ -186,7 +186,7 @@ export default function HalalSaucePage() {
             <div><dt>Document access</dt><dd>Qualified B2B buyers</dd></div>
             <div><dt>Verification</dt><dd>Company & project review</dd></div>
           </dl>
-          <Link className="text-link" href="/contact?product=halal-documents">
+          <Link className="text-link" href="/contact/?product=halal-documents">
             Request current documents <span aria-hidden="true">→</span>
           </Link>
           <small>Signed documents are not published openly. Approved buyers receive the current set relevant to their project.</small>
@@ -227,8 +227,8 @@ export default function HalalSaucePage() {
           ))}
         </div>
         <div className="halal-scope-actions">
-          <Link className="button button-primary" href="/products/korean-sauces">Browse the full sauce catalogue</Link>
-          <Link className="button button-ghost" href="/contact?product=halal-documents">Request current HALAL documents</Link>
+          <Link className="button button-primary" href="/products/korean-sauces/">Browse the full sauce catalogue</Link>
+          <Link className="button button-ghost" href="/contact/?product=halal-documents">Request current HALAL documents</Link>
         </div>
       </section>
 
@@ -269,7 +269,7 @@ export default function HalalSaucePage() {
       <section className="section shell">
         <div className="cta-panel">
           <div><p className="eyebrow eyebrow-light">HALAL sauce inquiry</p><h2>Send the product, market, pack and quantity.</h2></div>
-          <div><p>We will confirm the relevant certificate entry, available packing, sample route and quotation.</p><Link className="button button-light" href="/contact?product=halal-sauces">Contact our export team ↗</Link></div>
+          <div><p>We will confirm the relevant certificate entry, available packing, sample route and quotation.</p><Link className="button button-light" href="/contact/?product=halal-sauces">Contact our export team ↗</Link></div>
         </div>
       </section>
     </main>

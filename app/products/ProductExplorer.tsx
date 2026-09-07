@@ -59,17 +59,17 @@ export function ProductExplorer() {
               {results.map((item) => (
                 <tr key={`${item.categorySlug}-${item.name}`}>
                   <td><strong>{item.name}</strong><span>{item.group}</span></td>
-                  <td><Link href={`/products/${item.categorySlug}`}>{item.categoryName}</Link></td>
+                  <td><Link href={`/products/${item.categorySlug}/`}>{item.categoryName}</Link></td>
                   <td>{item.packing}</td>
                   <td>{item.storage}<span>{item.shelfLife}</span></td>
-                  <td>{item.detailSlug ? <Link className="row-link" href={`/product/${item.detailSlug}`} aria-label={`View ${item.name}`}>→</Link> : <Link className="row-link" href="/contact" aria-label={`Ask about ${item.name}`}>↗</Link>}</td>
+                  <td>{item.detailSlug ? <Link className="row-link" href={`/product/${item.detailSlug}/`} aria-label={`View ${item.name}`}>→</Link> : <Link className="row-link" href="/contact/" aria-label={`Ask about ${item.name}`}>↗</Link>}</td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
       ) : (
-        <div className="empty-state"><h2>No exact match yet.</h2><p>Try a broader term or send us the product you want to source.</p><Link className="button button-primary" href="/contact">Ask our export team</Link></div>
+        <div className="empty-state"><h2>No exact match yet.</h2><p>Try a broader term or send us the product you want to source.</p><Link className="button button-primary" href="/contact/">Ask our export team</Link></div>
       )}
     </section>
   );

@@ -5,7 +5,7 @@ import { JsonLd } from "../components/JsonLd";
 export const metadata: Metadata = {
   title: "Korean Sauce OEM & Private Label Manufacturing",
   description: "Develop Korean sauces, gochujang, seasonings and related foods under your own brand with samples, flavor adjustment, packaging and export support.",
-  alternates: { canonical: "/oem-private-label" },
+  alternates: { canonical: "/oem-private-label/" },
 };
 
 const steps = [
@@ -36,12 +36,12 @@ export default function OemPage() {
   return (
     <main>
       <JsonLd data={data} />
-      <section className="inner-hero shell"><div><p className="eyebrow">OEM / ODM / Private label</p><h1>Turn a market opportunity into your own food brand.</h1></div><div className="inner-hero-aside"><p>Work with one export team from product selection and samples through label, production and shipment.</p><Link className="button button-primary" href="/contact?product=oem">Discuss an OEM project</Link></div></section>
+      <section className="inner-hero shell"><div><p className="eyebrow">OEM / ODM / Private label</p><h1>Turn a market opportunity into your own food brand.</h1></div><div className="inner-hero-aside"><p>Work with one export team from product selection and samples through label, production and shipment.</p><Link className="button button-primary" href="/contact/?product=oem">Discuss an OEM project</Link></div></section>
       <section className="oem-visual-band"><div className="shell oem-visual-grid"><div><span>YOUR BRAND</span><h2>Standard formula</h2><p>Fastest route: select a proven export product, pack and label.</p></div><div><span>YOUR MARKET</span><h2>Adjusted flavor</h2><p>Refine heat, sweetness, texture or application against a clear brief.</p></div><div><span>YOUR PRODUCT</span><h2>Custom development</h2><p>Build from a reference product or more detailed formulation requirement.</p></div></div></section>
       <section className="section shell"><div className="section-heading split-heading"><div><p className="eyebrow">Development process</p><h2>Six clear steps from brief to shipment.</h2></div><p>A strong project starts with a specific channel, pack and order plan. That allows the factory to recommend the right technical and commercial route.</p></div><ol className="oem-steps">{steps.map(([number, title, text]) => <li key={number}><span>{number}</span><h3>{title}</h3><p>{text}</p></li>)}</ol></section>
       <section className="section section-tint"><div className="shell capability-grid"><div><p className="eyebrow">What can be customized</p><h2>Commercial flexibility without losing production discipline.</h2></div><div className="capability-cards"><article><h3>Flavor profile</h3><p>Heat, sweetness, salt, texture, color and application can be discussed for suitable volume.</p></article><article><h3>Pack format</h3><p>Retail bottles and tubs, foodservice pouches, bulk cartons and selected custom formats.</p></article><article><h3>Branding</h3><p>Private label, export label, carton mark and customized packaging artwork.</p></article><article><h3>Product mix</h3><p>Coordinate sauces, dry mixes, seasonings and related items for one market launch.</p></article></div></div></section>
       <section className="section shell"><div className="faq-layout"><div><p className="eyebrow">OEM buyer FAQ</p><h2>Commercial questions, answered.</h2><p>Precise product and quantity information allows us to give a precise answer.</p></div><div className="faq-list">{faq.map((item) => <details key={item.question}><summary>{item.question}<span>+</span></summary><p>{item.answer}</p></details>)}</div></div></section>
-      <section className="section shell"><div className="cta-panel"><div><p className="eyebrow eyebrow-light">Start with a useful brief</p><h2>Product, market, channel, pack and quantity.</h2></div><div><p>Send these five points and we can quickly judge whether a stock formula, adjusted product or new development route fits best.</p><Link className="button button-light" href="/contact?product=oem">Send your project brief ↗</Link></div></div></section>
+      <section className="section shell"><div className="cta-panel"><div><p className="eyebrow eyebrow-light">Start with a useful brief</p><h2>Product, market, channel, pack and quantity.</h2></div><div><p>Send these five points and we can quickly judge whether a stock formula, adjusted product or new development route fits best.</p><Link className="button button-light" href="/contact/?product=oem">Send your project brief ↗</Link></div></div></section>
     </main>
   );
 }

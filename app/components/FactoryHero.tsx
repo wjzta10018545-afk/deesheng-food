@@ -83,7 +83,7 @@ export function FactoryHero() {
             >
               Contact our export team <span aria-hidden="true">↗</span>
             </a>
-            <Link className="button button-ghost" href="/products">
+            <Link className="button button-ghost" href="/products/">
               Explore 250+ products & variants
             </Link>
           </div>

@@ -63,8 +63,8 @@ Mixed-product container planning can be discussed, subject to MOQ, carton data, 
 Available factory credentials: BRCGS Grade A, HACCP, HALAL and OU Kosher.
 Deesheng Food maintains SHC HALAL certification for relevant Korean sauces and related products. Current signed documents and exact product scope are supplied to qualified B2B buyers after company and project verification.
 HALAL sauce examples named in the annex include Chili Sauce / Gochujang / Red Pepper Paste, soy-garlic, spicy and super-spicy fried chicken sauces, Honey Mustard Sauce, Japchae Sauce, normal and slightly spicy Jajangmyun Sauce, Kimchi Sauce, classic and non-spicy Stone Pot Bibimbap Sauce, Tteokbokki Sauce, Turkey Noodle Sauce, Tender Tofu Soup Sauce and Yukgaejang / Spicy Beef Soup Sauce.
-Commercial HALAL sauce page: https://deesheng.food/halal-korean-sauce-manufacturer
-HALAL document request: https://deesheng.food/contact?product=halal-documents
+Commercial HALAL sauce page: https://deesheng.food/halal-korean-sauce-manufacturer/
+HALAL document request: https://deesheng.food/contact/?product=halal-documents
 Certification is product-, formula- and scope-sensitive. A buyer should request the current document relevant to the selected product and destination.
 Qualified projects can request company information, relevant certificates, product specifications, ingredient and allergen information, packing data and export documents.
 
@@ -78,6 +78,6 @@ Qualified projects can request company information, relevant certificates, produ
 
 ## Contact
 
-Request a quote: https://deesheng.food/contact
+Request a quote: https://deesheng.food/contact/
 WhatsApp: https://wa.me/8615621089573
 Email: info@deesheng.food

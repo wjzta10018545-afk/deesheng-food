@@ -18,11 +18,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${halalPrefix}${category.name} Manufacturer & OEM Supplier`,
     description: `${category.description} Certificate-backed HALAL product scope, standard export packs, OEM/private-label support and export quotations for B2B buyers.`,
-    alternates: { canonical: `/products/${category.slug}` },
+    alternates: { canonical: `/products/${category.slug}/` },
     openGraph: {
       title: `${category.name} | Deesheng Food`,
       description: category.description,
-      url: `https://deesheng.food/products/${category.slug}`,
+      url: `https://deesheng.food/products/${category.slug}/`,
       images: [{ url: category.image, alt: category.imageAlt }],
     },
     twitter: { card: "summary_large_image", images: [category.image] },
@@ -65,8 +65,8 @@ export default async function CategoryPage({ params }: Props) {
         "@type": "CollectionPage",
         name: category.name,
         description: category.description,
-        url: `https://deesheng.food/products/${category.slug}`,
-        isPartOf: { "@type": "WebSite", name: "Deesheng Food", url: "https://deesheng.food" },
+        url: `https://deesheng.food/products/${category.slug}/`,
+        isPartOf: { "@type": "WebSite", name: "Deesheng Food", url: "https://deesheng.food/" },
       },
       {
         "@type": "ItemList",
@@ -78,8 +78,8 @@ export default async function CategoryPage({ params }: Props) {
           name: item.name,
           image: `https://deesheng.food${getCatalogItemImage(category.slug, item)}`,
           url: item.detailSlug
-            ? `https://deesheng.food/product/${item.detailSlug}`
-            : `https://deesheng.food/products/${category.slug}`,
+            ? `https://deesheng.food/product/${item.detailSlug}/`
+            : `https://deesheng.food/products/${category.slug}/`,
         })),
       },
       {
@@ -98,11 +98,11 @@ export default async function CategoryPage({ params }: Props) {
       <JsonLd data={structuredData} />
       <section className="category-hero shell">
         <div className="category-hero-copy">
-          <nav className="breadcrumbs" aria-label="Breadcrumb"><Link href="/">Home</Link><span>/</span><Link href="/products">Products</Link><span>/</span><b>{category.shortName}</b></nav>
+          <nav className="breadcrumbs" aria-label="Breadcrumb"><Link href="/">Home</Link><span>/</span><Link href="/products/">Products</Link><span>/</span><b>{category.shortName}</b></nav>
           <p className="eyebrow">{category.eyebrow}</p>
           <h1>{category.name}</h1>
           <p>{category.description}</p>
-          <div className="button-row"><Link className="button button-primary" href={`/contact?product=${category.slug}`}>Request a quote</Link><a className="button button-ghost" href="/downloads/Deesheng-Food-Product-Catalogue-2026.pdf" download>Download catalogue</a></div>
+          <div className="button-row"><Link className="button button-primary" href={`/contact/?product=${category.slug}`}>Request a quote</Link><a className="button button-ghost" href="/downloads/Deesheng-Food-Product-Catalogue-2026.pdf" download>Download catalogue</a></div>
         </div>
         <div className="category-hero-image"><img src={category.image} alt={category.imageAlt} width="1200" height="537" /></div>
       </section>
@@ -123,10 +123,10 @@ export default async function CategoryPage({ params }: Props) {
                       <img src={getCatalogItemImage(category.slug, item)} alt={`${item.name} from the Deesheng Food catalogue`} width="900" height="650" loading="lazy" />
                     </div>
                     <div className="product-card-body">
-                      <div className="product-card-top"><span>{category.shortName}</span>{item.detailSlug && <Link href={`/product/${item.detailSlug}`} aria-label={`Open ${item.name}`}>↗</Link>}</div>
+                      <div className="product-card-top"><span>{category.shortName}</span>{item.detailSlug && <Link href={`/product/${item.detailSlug}/`} aria-label={`Open ${item.name}`}>↗</Link>}</div>
                       <h3>{item.name}</h3>
                       <dl><div><dt>Packing</dt><dd>{item.packing}</dd></div><div><dt>Shelf life</dt><dd>{item.shelfLife}</dd></div><div><dt>Storage</dt><dd>{item.storage}</dd></div></dl>
-                      {item.detailSlug ? <Link className="card-link" href={`/product/${item.detailSlug}`}>Product details <span>→</span></Link> : <Link className="card-link" href={`/contact?product=${encodeURIComponent(item.name)}`}>Ask about this item <span>↗</span></Link>}
+                      {item.detailSlug ? <Link className="card-link" href={`/product/${item.detailSlug}/`}>Product details <span>→</span></Link> : <Link className="card-link" href={`/contact/?product=${encodeURIComponent(item.name)}`}>Ask about this item <span>↗</span></Link>}
                     </div>
                   </article>
                 ))}
@@ -143,7 +143,7 @@ export default async function CategoryPage({ params }: Props) {
         </div>
       </section>
 
-      <section className="section shell"><div className="cta-panel"><div><p className="eyebrow eyebrow-light">Ready to shortlist?</p><h2>Send your channel, pack and estimated quantity.</h2></div><div><p>We will recommend a practical starting mix and confirm sample or quotation details for your market.</p><Link className="button button-light" href={`/contact?product=${category.slug}`}>Discuss this range ↗</Link></div></div></section>
+      <section className="section shell"><div className="cta-panel"><div><p className="eyebrow eyebrow-light">Ready to shortlist?</p><h2>Send your channel, pack and estimated quantity.</h2></div><div><p>We will recommend a practical starting mix and confirm sample or quotation details for your market.</p><Link className="button button-light" href={`/contact/?product=${category.slug}`}>Discuss this range ↗</Link></div></div></section>
     </main>
   );
 }

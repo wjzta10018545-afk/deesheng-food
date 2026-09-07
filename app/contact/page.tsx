@@ -7,7 +7,7 @@ import { QuoteForm } from "./QuoteForm";
 export const metadata: Metadata = {
   title: "Request a B2B Quote",
   description: "Contact Deesheng Food for Korean sauce, gochujang, seasoning, kimchi and frozen vegetable samples, OEM projects and export quotations.",
-  alternates: { canonical: "/contact" },
+  alternates: { canonical: "/contact/" },
 };
 
 export default function ContactPage() {
