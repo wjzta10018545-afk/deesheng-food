@@ -18,7 +18,7 @@ The website provides individual product pages, OEM/private-label information, do
 
 ## Quality and certification
 
-The public website presents the factory's certification and audit scope, including BRCGS Grade A, HACCP, HALAL, OU Kosher, SMETA, FDA registration support, USDA Organic, EU Organic and ASTA-related quality information. Buyers should confirm the current certificate and exact product/formula scope before ordering.
+The public website presents the factory's certification and audit scope, including BRCGS Grade A, HACCP, HALAL, OU Kosher, SMETA, FDA registration support and ASTA-related quality information. Buyers should confirm the current certificate and exact product/formula scope before ordering.
 
 ## Technology
 

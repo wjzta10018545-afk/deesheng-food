@@ -40,7 +40,8 @@ test("renders the branded homepage and four active product entrances", async () 
   assert.match(html, /SHC HALAL/);
   assert.match(html, /OU Kosher/);
   assert.match(html, /From brief to export-ready product/);
-  assert.equal((html.match(/class="home-assurance-card/g) ?? []).length, 10);
+  assert.equal((html.match(/class="home-assurance-card/g) ?? []).length, 8);
+  assert.doesNotMatch(html, /USDA Organic|EU Organic/);
   assert.equal((html.match(/<li><span>0[1-4]<\/span><div><h3>/g) ?? []).length, 4);
 });
 

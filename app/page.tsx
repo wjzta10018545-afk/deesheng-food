@@ -6,7 +6,7 @@ import { catalogCategories } from "./data/catalog";
 import { certificationMarks } from "./data/certifications";
 
 const highlights = [
-  ["10 credentials", "Certifications, registrations and audits for global markets"],
+  ["8 credentials", "Certifications, registrations and audits for global markets"],
   ["250+", "Products and variants across four active ranges"],
   ["4 ranges", "Sauces, kimchi, chili seasonings and frozen vegetables"],
   ["B2B OEM", "Private-label product and packaging support"],
