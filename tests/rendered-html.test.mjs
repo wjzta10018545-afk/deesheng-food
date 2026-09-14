@@ -75,9 +75,29 @@ test("publishes one trailing-slash URL format for search engines", async () => {
 
   const sitemap = await readFile(new URL("../public/sitemap.xml", import.meta.url), "utf8");
   const locations = [...sitemap.matchAll(/<loc>(https:\/\/deesheng\.food\/[^<]*)<\/loc>/g)].map((match) => match[1]);
-  assert.equal(locations.length, 36);
+  assert.equal(locations.length, 38);
   assert.ok(locations.every((location) => new URL(location).pathname.endsWith("/")));
-  assert.equal((sitemap.match(/<lastmod>2026-09-07<\/lastmod>/g) ?? []).length, locations.length);
+  assert.ok(locations.includes("https://deesheng.food/markets/mongolia/"));
+  assert.ok(locations.includes("https://deesheng.food/markets/singapore/"));
+  assert.equal((sitemap.match(/<lastmod>2026-09-14<\/lastmod>/g) ?? []).length, 5);
+  assert.equal((sitemap.match(/<lastmod>2026-09-07<\/lastmod>/g) ?? []).length, locations.length - 5);
+});
+
+test("renders country buyer pages with qualified B2B search intent", async () => {
+  const workerUrl = new URL("../dist/server/index.js", import.meta.url);
+  workerUrl.searchParams.set("test", `${process.pid}-${Date.now()}`);
+  const { default: worker } = await import(workerUrl.href);
+
+  const mongoliaHtml = await fetchHtml(worker, "/markets/mongolia/");
+  assert.match(mongoliaHtml, /Korean Sauce Supplier for Mongolia \| HALAL OEM &amp; Wholesale/);
+  assert.match(mongoliaHtml, /How can a Mongolia importer source wholesale Korean sauce from China/);
+  assert.match(mongoliaHtml, /14 kg foodservice cartons/);
+  assert.match(mongoliaHtml, /does not claim destination-market approval/);
+
+  const singaporeHtml = await fetchHtml(worker, "/markets/singapore/");
+  assert.match(singaporeHtml, /Korean Sauce Supplier for Singapore \| HALAL OEM &amp; Wholesale/);
+  assert.match(singaporeHtml, /restaurant and central-kitchen supply/);
+  assert.match(singaporeHtml, /local acceptance, registration and label requirements/);
 });
 
 test("renders every brochure product with its own catalogue image", async () => {
