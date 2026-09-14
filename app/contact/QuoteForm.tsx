@@ -16,7 +16,7 @@ export function QuoteForm({ initialProduct = "" }: { initialProduct?: string }) 
     event.preventDefault();
     const form = new FormData(event.currentTarget);
     const lines = [
-      "Hello Deesheng Food export team, I would like to request a B2B quotation.",
+      "Hello Kevin, I would like to request a B2B quotation from Deesheng Food.",
       "",
       `Company: ${form.get("company") || "Not provided"}`,
       `Country / market: ${form.get("country") || "Not provided"}`,
