@@ -3,9 +3,9 @@ import Link from "next/link";
 import { JsonLd } from "../components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "HALAL Korean Sauce Manufacturer & OEM Supplier",
+  title: { absolute: "HALAL Korean Sauce Manufacturer in China | OEM Supplier" },
   description:
-    "Contact Deesheng Food for HALAL-certified Korean sauces, gochujang, bibimbap sauce, fried chicken sauce, tteokbokki sauce and private-label manufacturing from Qingdao, China.",
+    "Source HALAL Korean sauces from a Qingdao, China manufacturer. Review gochujang, fried chicken, tteokbokki and bibimbap sauces for bulk, foodservice, OEM and private-label projects.",
   keywords: [
     "HALAL Korean sauce manufacturer",
     "HALAL sauce supplier China",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/halal-korean-sauce-manufacturer/" },
   openGraph: {
     type: "website",
-    title: "HALAL Korean Sauce Manufacturer | Deesheng Food",
+    title: "HALAL Korean Sauce Manufacturer in China | OEM Supplier",
     description:
       "Certificate-backed Korean sauces, gochujang and OEM/private-label support with direct export contact.",
     url: "https://deesheng.food/halal-korean-sauce-manufacturer/",
@@ -119,6 +119,7 @@ export default function HalalSaucePage() {
         telephone: "+86-156-2108-9573",
         contactPoint: {
           "@type": "ContactPoint",
+          name: "Kevin Wang",
           contactType: "export sales",
           telephone: "+86-156-2108-9573",
           email: "info@deesheng.food",
@@ -247,7 +248,7 @@ export default function HalalSaucePage() {
               and commercial route.
             </p>
             <div className="contact-inline-card">
-              <span>Deesheng Food · Export sales</span>
+              <span>Kevin Wang · Deesheng Food export sales</span>
               <a href="https://wa.me/8615621089573" target="_blank" rel="noreferrer">WhatsApp / Tel: +86 156 2108 9573</a>
               <a href="mailto:info@deesheng.food">info@deesheng.food</a>
               <small>Qingdao, Shandong, China</small>

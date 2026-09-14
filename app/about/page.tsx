@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
-  const data = { "@context": "https://schema.org", "@type": "Organization", "@id": "https://deesheng.food/#organization", name: "Qingdao Deesheng Hengxin Food Co., Ltd.", alternateName: "Deesheng Food", url: "https://deesheng.food/", logo: "https://deesheng.food/media/deesheng-ds-logo.png", email: "info@deesheng.food", telephone: "+86-156-2108-9573", address: { "@type": "PostalAddress", streetAddress: "Shanghetou Village, Baishahe Street Agency", addressLocality: "Pingdu, Qingdao", addressRegion: "Shandong", postalCode: "266700", addressCountry: "CN" }, sameAs: ["https://qd-deesheng.en.made-in-china.com/", ...officialSocialProfileUrls] };
+  const data = { "@context": "https://schema.org", "@type": "Organization", "@id": "https://deesheng.food/#organization", name: "Qingdao Deesheng Hengxin Food Co., Ltd.", alternateName: "Deesheng Food", url: "https://deesheng.food/", logo: "https://deesheng.food/media/deesheng-ds-logo.png", email: "info@deesheng.food", telephone: "+86-156-2108-9573", contactPoint: { "@type": "ContactPoint", name: "Kevin Wang", contactType: "export sales", url: "https://deesheng.food/contact/", email: "info@deesheng.food", telephone: "+86-156-2108-9573", availableLanguage: ["English", "Chinese"], areaServed: "Worldwide" }, address: { "@type": "PostalAddress", streetAddress: "Shanghetou Village, Baishahe Street Agency", addressLocality: "Pingdu, Qingdao", addressRegion: "Shandong", postalCode: "266700", addressCountry: "CN" }, sameAs: ["https://qd-deesheng.en.made-in-china.com/", ...officialSocialProfileUrls] };
   return (
     <main>
       <JsonLd data={data} />

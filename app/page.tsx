@@ -110,6 +110,7 @@ export default function Home() {
         },
         contactPoint: {
           "@type": "ContactPoint",
+          name: "Kevin Wang",
           contactType: "export sales",
           telephone: "+86-156-2108-9573",
           email: "info@deesheng.food",
@@ -338,7 +339,7 @@ export default function Home() {
         <div className="cta-panel">
           <div>
             <p className="eyebrow eyebrow-light">Direct export contact</p>
-            <h2>Ask our export team for products, samples or a quotation.</h2>
+            <h2>Ask Kevin Wang for products, samples or a quotation.</h2>
           </div>
           <div>
             <p>

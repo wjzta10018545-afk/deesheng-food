@@ -23,6 +23,7 @@ export default function ContactPage() {
       sameAs: officialSocialProfileUrls,
       contactPoint: {
         "@type": "ContactPoint",
+        name: "Kevin Wang",
         contactType: "sales",
         telephone: "+86-156-2108-9573",
         email: "info@deesheng.food",
@@ -42,7 +43,7 @@ export default function ContactPage() {
             <small>Official social media</small>
             <SocialLinks variant="contact" />
           </div>
-          <p>Deesheng Food export team<br />Qingdao, Shandong, China</p>
+          <p><strong>Kevin Wang</strong><br />Deesheng Food export sales<br /><a href="https://deesheng.food/">deesheng.food</a><br />Qingdao, Shandong, China</p>
         </div>
       </section>
       <section className="section section-tint"><div className="shell quote-layout"><div><p className="eyebrow">Request price or samples</p><h2>Build a complete inquiry</h2><p>This form prepares a structured WhatsApp message. We use the information to qualify the project and narrow the right product, pack and commercial route.</p><ul><li><span>1</span>Company and market</li><li><span>2</span>Product and pack</li><li><span>3</span>Estimated quantity</li><li><span>4</span>OEM or sample requirement</li></ul></div><QuoteForm /></div></section>

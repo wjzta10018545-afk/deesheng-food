@@ -757,6 +757,13 @@ button, input, select, textarea { font: inherit; }
 .related-grid h3 { margin: 23px 0 13px; font-family: Georgia, serif; font-size: 27px; font-weight: 500; line-height: 1.08; }
 .related-grid p { color: var(--muted); font-size: 16px; line-height: 1.65; }
 .related-grid b { margin-top: auto; font-size: 15px; }
+.market-route-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.market-route-grid > a { display: flex; min-height: 275px; flex-direction: column; padding: 28px; border: 1px solid var(--line); background: white; transition: transform .2s ease, box-shadow .2s ease; }
+.market-route-grid > a:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+.market-route-grid > a > span { color: var(--pepper); font-size: 14px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.market-route-grid h3 { margin: 23px 0 13px; font-family: Georgia, serif; font-size: 29px; font-weight: 500; line-height: 1.08; }
+.market-route-grid p { color: var(--muted); font-size: 16px; line-height: 1.65; }
+.market-route-grid b { margin-top: auto; font-size: 15px; }
 
 .oem-visual-band { padding-block: 45px; background: var(--ink); color: white; }
 .oem-visual-grid { display: grid; grid-template-columns: repeat(3, 1fr); }
@@ -980,7 +987,7 @@ button, input, select, textarea { font: inherit; }
   .footer-bottom-actions { align-items: flex-start; flex-direction: column; gap: 7px; }
   .inner-hero { padding-block: 70px 50px; }
   .inner-hero h1, .contact-hero h1 { font-size: 49px; }
-  .primary-category-grid, .category-jump-grid, .product-card-grid, .oem-visual-grid, .oem-steps, .capability-cards, .cert-grid, .guide-grid, .resource-principles > div:last-child, .related-grid, .contact-expect ol { grid-template-columns: 1fr; }
+  .primary-category-grid, .category-jump-grid, .product-card-grid, .oem-visual-grid, .oem-steps, .capability-cards, .cert-grid, .guide-grid, .resource-principles > div:last-child, .related-grid, .market-route-grid, .contact-expect ol { grid-template-columns: 1fr; }
   .primary-category-card { min-height: 410px; }
   .primary-category-content { padding: 25px 22px 22px; }
   .primary-category-topline { padding: 20px 21px; }

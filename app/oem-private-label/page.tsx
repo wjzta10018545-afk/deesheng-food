@@ -3,9 +3,23 @@ import Link from "next/link";
 import { JsonLd } from "../components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Korean Sauce OEM & Private Label Manufacturing",
-  description: "Develop Korean sauces, gochujang, seasonings and related foods under your own brand with samples, flavor adjustment, packaging and export support.",
+  title: { absolute: "Korean Sauce OEM Manufacturer in China | Private Label" },
+  description: "Develop private-label Korean sauces with a China manufacturer. Compare stock formulas, flavor adjustment, retail or foodservice packs, samples and export project requirements.",
+  keywords: [
+    "Korean sauce OEM manufacturer China",
+    "private label Korean sauce manufacturer",
+    "custom Korean sauce factory",
+    "bulk Korean sauce supplier",
+    "foodservice Korean sauce OEM",
+  ],
   alternates: { canonical: "/oem-private-label/" },
+  openGraph: {
+    type: "website",
+    title: "Korean Sauce OEM Manufacturer in China | Private Label",
+    description: "OEM and private-label Korean sauce development for importers, distributors, foodservice groups and brands.",
+    url: "https://deesheng.food/oem-private-label/",
+    images: [{ url: "/media/fried-chicken-sauces.webp", alt: "Deesheng Food Korean sauce OEM range" }],
+  },
 };
 
 const steps = [
