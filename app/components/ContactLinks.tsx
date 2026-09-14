@@ -23,7 +23,7 @@ type ContactLinksProps = {
 
 export function ContactLinks({ variant = "footer" }: ContactLinksProps) {
   return (
-    <div className={`contact-links contact-links-${variant}`} aria-label="Contact Deesheng Food export sales">
+    <div className={`contact-links contact-links-${variant}`} aria-label="Contact Kevin Wang at Deesheng Food export sales">
       {contactChannels.map((channel) => (
         <a
           className="social-link contact-channel-link"
