@@ -77,7 +77,7 @@ export function FactoryHero() {
           <div className="button-row factory-actions">
             <a
               className="button button-primary"
-              href="https://wa.me/8615621089573?text=Hello%20Deesheng%20Food%20export%20team%2C%20I%20am%20interested%20in%20your%20food%20products%20and%20OEM%2Fprivate-label%20solutions."
+              href="https://wa.me/8615621089573?text=Hello%20Kevin%2C%20I%20am%20interested%20in%20Deesheng%20Food%20products%20and%20OEM%2Fprivate-label%20solutions."
               target="_blank"
               rel="noreferrer"
             >
