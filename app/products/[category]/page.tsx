@@ -15,12 +15,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const category = getCategory(slug);
   if (!category) return {};
   const halalPrefix = category.slug === "korean-sauces" || category.slug === "gochujang-pastes" ? "HALAL " : "";
+  const isKoreanSauce = category.slug === "korean-sauces";
   return {
-    title: `${halalPrefix}${category.name} Manufacturer & OEM Supplier`,
-    description: `${category.description} Certificate-backed HALAL product scope, standard export packs, OEM/private-label support and export quotations for B2B buyers.`,
+    title: isKoreanSauce
+      ? { absolute: "Korean Sauce Manufacturer in China | HALAL OEM & Wholesale" }
+      : `${halalPrefix}${category.name} Manufacturer & OEM Supplier`,
+    description: isKoreanSauce
+      ? "Source bulk and wholesale Korean sauces from a China manufacturer. Compare foodservice packs, HALAL scope review, OEM/private label, samples and export quotation requirements."
+      : `${category.description} Review standard export packs, OEM/private-label support and quotation requirements for B2B buyers.`,
     alternates: { canonical: `/products/${category.slug}/` },
     openGraph: {
-      title: `${category.name} | Deesheng Food`,
+      title: isKoreanSauce
+        ? "Korean Sauce Manufacturer in China | HALAL OEM & Wholesale"
+        : `${category.name} | Deesheng Food`,
       description: category.description,
       url: `https://deesheng.food/products/${category.slug}/`,
       images: [{ url: category.image, alt: category.imageAlt }],
