@@ -27,7 +27,10 @@ test("renders the branded homepage and four active product entrances", async () 
   const { default: worker } = await import(workerUrl.href);
 
   const html = await fetchHtml(worker);
-  assert.match(html, /<title>Deesheng Food \| Global Food Supply &amp; OEM Manufacturer/);
+  assert.match(html, /<title>Korean Sauce Manufacturer &amp; Food OEM China \| Deesheng/);
+  assert.match(html, /Korean food manufacturing for global buyers/);
+  assert.equal((html.match(/class="sourcing-shortcuts-grid"/g) ?? []).length, 1);
+  assert.match(html, /Private-label gochujang buyer guide/);
   assert.equal((html.match(/class="primary-category-card"/g) ?? []).length, 4);
   assert.match(html, /Korean Sauces/);
   assert.match(html, /Korean Kimchi/);
@@ -79,8 +82,9 @@ test("publishes one trailing-slash URL format for search engines", async () => {
   assert.ok(locations.every((location) => new URL(location).pathname.endsWith("/")));
   assert.ok(locations.includes("https://deesheng.food/markets/mongolia/"));
   assert.ok(locations.includes("https://deesheng.food/markets/singapore/"));
+  assert.equal((sitemap.match(/<lastmod>2026-09-17<\/lastmod>/g) ?? []).length, 19);
   assert.equal((sitemap.match(/<lastmod>2026-09-14<\/lastmod>/g) ?? []).length, 5);
-  assert.equal((sitemap.match(/<lastmod>2026-09-07<\/lastmod>/g) ?? []).length, locations.length - 5);
+  assert.equal((sitemap.match(/<lastmod>2026-09-07<\/lastmod>/g) ?? []).length, locations.length - 24);
 });
 
 test("renders country buyer pages with qualified B2B search intent", async () => {

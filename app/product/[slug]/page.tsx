@@ -69,10 +69,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const product = getProduct(slug);
   if (!product) return {};
-  const halalPrefix = product.categorySlug === "korean-sauces" || product.categorySlug === "gochujang-pastes" ? "HALAL " : "";
+  const isKoreanSauce = product.categorySlug === "korean-sauces" || product.categorySlug === "gochujang-pastes";
+  const halalPrefix = isKoreanSauce ? "HALAL " : "";
+  const qualification = isKoreanSauce
+    ? "HALAL scope review, private label, samples and export packing"
+    : "Wholesale supply, samples, export packing and private-label support";
   return {
-    title: `${halalPrefix}${product.name} Manufacturer & OEM Supplier`,
-    description: `${product.summary} HALAL certificate scope confirmation, export packing, private-label support and an export quotation from Deesheng Food.`,
+    title: `${halalPrefix}${product.name} Manufacturer & Wholesale Supplier`,
+    description: `${product.summary} ${qualification} from Qingdao, China. Standard OEM MOQ: 200 cartons per item.`,
     alternates: { canonical: `/product/${product.slug}/` },
     openGraph: {
       title: `${product.name} | Deesheng Food`,

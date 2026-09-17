@@ -30,6 +30,44 @@ const halalSauceSpotlight = [
   ["Kimchi & Korean soup sauces", "/products/korean-sauces/"],
 ];
 
+const sourcingShortcuts = [
+  {
+    title: "Korean sauces & pastes",
+    links: [
+      ["Extra-hot gochujang", "/product/extra-hot-gochujang/"],
+      ["Creamy Buldak sauce wholesale", "/product/creamy-buldak-sauce/"],
+      ["Korean garlic sauce", "/product/korean-garlic-sauce/"],
+      ["Korean BBQ sauce", "/product/korean-bbq-sauce/"],
+      ["Honey mustard sauce", "/product/honey-mustard-sauce/"],
+    ],
+  },
+  {
+    title: "Fried chicken system",
+    links: [
+      ["Sweet & spicy fried chicken sauce", "/product/sweet-spicy-fried-chicken-sauce/"],
+      ["Soy garlic fried chicken sauce", "/product/soy-garlic-fried-chicken-sauce/"],
+      ["Fried chicken coating mix", "/product/fried-chicken-coating-mix/"],
+    ],
+  },
+  {
+    title: "Seasonings & frozen",
+    links: [
+      ["Coarse Korean chili powder", "/product/coarse-korean-chili-powder/"],
+      ["Fine Korean chili powder", "/product/fine-korean-chili-powder/"],
+      ["Pure sesame oil", "/product/pure-sesame-oil/"],
+      ["IQF frozen spinach", "/product/frozen-spinach/"],
+    ],
+  },
+  {
+    title: "Private-label planning",
+    links: [
+      ["Private-label gochujang buyer guide", "/resources/private-label-gochujang-supplier/"],
+      ["Korean sauce OEM service", "/oem-private-label/"],
+      ["Request price and samples", "/contact/"],
+    ],
+  },
+];
+
 const certificateDocumentPreviews = [
   { name: "BRCGS Grade A", image: "/media/certificate-previews/brcgs-document.webp" },
   { name: "HACCP", image: "/media/certificate-previews/haccp-document.webp" },
@@ -159,6 +197,18 @@ export default function Home() {
         name: "Deesheng Food",
         publisher: { "@id": "https://deesheng.food/#organization" },
       },
+      {
+        "@type": "ItemList",
+        "@id": "https://deesheng.food/#priority-sourcing-pages",
+        name: "Priority Deesheng Food sourcing pages",
+        numberOfItems: sourcingShortcuts.flatMap((group) => group.links).length,
+        itemListElement: sourcingShortcuts.flatMap((group) => group.links).map(([name, href], index) => ({
+          "@type": "ListItem",
+          position: index + 1,
+          name,
+          url: `https://deesheng.food${href}`,
+        })),
+      },
     ],
   };
 
@@ -215,6 +265,33 @@ export default function Home() {
           <Link className="text-link" href="/products/">
             Search the complete product index <span aria-hidden="true">→</span>
           </Link>
+        </div>
+      </section>
+
+      <section className="sourcing-shortcuts" aria-labelledby="sourcing-shortcuts-title">
+        <div className="shell sourcing-shortcuts-layout">
+          <div className="sourcing-shortcuts-intro">
+            <p className="eyebrow eyebrow-light">Fast sourcing paths</p>
+            <h2 id="sourcing-shortcuts-title">Go straight to the products buyers ask for most.</h2>
+            <p>
+              Review product applications, export packs, the standard 200-carton OEM MOQ
+              and the direct route to samples and quotation.
+            </p>
+          </div>
+          <div className="sourcing-shortcuts-grid">
+            {sourcingShortcuts.map((group) => (
+              <article key={group.title}>
+                <h3>{group.title}</h3>
+                <nav aria-label={group.title}>
+                  {group.links.map(([name, href]) => (
+                    <Link href={href} key={href}>
+                      <span>{name}</span><b aria-hidden="true">→</b>
+                    </Link>
+                  ))}
+                </nav>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 

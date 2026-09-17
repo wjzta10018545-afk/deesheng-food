@@ -69,7 +69,7 @@ export function FactoryHero() {
             <span>Export-ready food manufacturer</span>
             <b>Qingdao · China</b>
           </p>
-          <h1>Food supply solutions for global markets.</h1>
+          <h1>Korean food manufacturing for global buyers.</h1>
           <p className="factory-showcase-lede">
             Factory-direct Korean sauces, kimchi, chili seasonings and frozen vegetables,
             with OEM and private-label support for importers, distributors and foodservice buyers.

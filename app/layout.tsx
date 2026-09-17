@@ -7,11 +7,11 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://deesheng.food"),
   title: {
-    default: "Deesheng Food | Global Food Supply & OEM Manufacturer",
+    default: "Korean Sauce Manufacturer & Food OEM China | Deesheng",
     template: "%s | Deesheng Food",
   },
   description:
-    "Export-ready food supply solutions from Qingdao: Korean sauces, kimchi, chili seasonings and frozen vegetables, backed by HALAL, BRCGS Grade A, HACCP, Kosher and additional market credentials.",
+    "Korean sauce, kimchi, chili seasoning and frozen vegetable manufacturer in Qingdao, China. B2B wholesale, OEM and private-label supply for global buyers.",
   keywords: [
     "global food supply solutions",
     "food OEM manufacturer China",
@@ -28,9 +28,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://deesheng.food/",
     siteName: "Deesheng Food",
-    title: "Deesheng Food | Global Food Supply & OEM Manufacturer",
+    title: "Korean Sauce Manufacturer & Food OEM China | Deesheng",
     description:
-      "Export-ready Korean sauces, kimchi, chili seasonings and frozen vegetables with OEM and private-label support from Qingdao, China.",
+      "Factory-direct Korean sauces, kimchi, chili seasonings and frozen vegetables with OEM and private-label support from Qingdao, China.",
     images: [
       {
         url: "/og.png",
@@ -42,9 +42,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Deesheng Food | Global Food Supply & OEM Manufacturer",
+    title: "Korean Sauce Manufacturer & Food OEM China | Deesheng",
     description:
-      "Export-ready food supply solutions across sauces, kimchi, seasonings and frozen vegetables.",
+      "Factory-direct Korean sauces, kimchi, seasonings and frozen vegetables for B2B buyers.",
     images: ["/og.png"],
   },
   icons: {
