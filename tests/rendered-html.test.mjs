@@ -83,8 +83,9 @@ test("publishes one trailing-slash URL format for search engines", async () => {
   assert.ok(locations.includes("https://deesheng.food/markets/mongolia/"));
   assert.ok(locations.includes("https://deesheng.food/markets/singapore/"));
   assert.equal((sitemap.match(/<lastmod>2026-09-17<\/lastmod>/g) ?? []).length, 19);
-  assert.equal((sitemap.match(/<lastmod>2026-09-14<\/lastmod>/g) ?? []).length, 5);
-  assert.equal((sitemap.match(/<lastmod>2026-09-07<\/lastmod>/g) ?? []).length, locations.length - 24);
+  assert.equal((sitemap.match(/<lastmod>2026-09-25<\/lastmod>/g) ?? []).length, 3);
+  assert.equal((sitemap.match(/<lastmod>2026-09-14<\/lastmod>/g) ?? []).length, 4);
+  assert.equal((sitemap.match(/<lastmod>2026-09-07<\/lastmod>/g) ?? []).length, locations.length - 26);
 });
 
 test("renders country buyer pages with qualified B2B search intent", async () => {
@@ -119,5 +120,13 @@ test("renders every brochure product with its own catalogue image", async () => 
     assert.equal((html.match(/class="product-card"/g) ?? []).length, expectedCount);
     const images = [...html.matchAll(new RegExp(`/media/catalog-products/${folder}/[^"?]+\\.webp`, "g"))].map((match) => match[0]);
     assert.equal(new Set(images).size, expectedCount);
+    if (path === "/products/kimchi/") {
+      assert.match(html, /Source Korean kimchi for a refrigerated supply chain/);
+      assert.match(html, /href="\/product\/korean-cabbage-kimchi\/"/);
+    }
+    if (path === "/products/korean-sauces/") {
+      assert.match(html, /Build a Korean sauce range around your sales channel/);
+      assert.match(html, /href="\/product\/korean-bbq-sauce\/"/);
+    }
   }
 });

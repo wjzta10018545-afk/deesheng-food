@@ -684,6 +684,14 @@ button, input, select, textarea { font: inherit; }
 .note-band .shell { display: flex; gap: 25px; align-items: center; min-height: 78px; }
 .note-band span { flex: 0 0 auto; padding: 7px 10px; background: var(--pepper); color: white; font-size: 14px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
 .note-band p { margin: 0; color: #52655d; font-size: 16px; line-height: 1.6; }
+.category-sourcing { padding-bottom: 12px; }
+.category-sourcing-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.category-sourcing-grid article { padding: 28px; border: 1px solid var(--line); border-radius: 12px; background: var(--cream); }
+.category-sourcing-grid span { color: var(--pepper); font-weight: 800; }
+.category-sourcing-grid h3 { margin: 14px 0 10px; font-size: 22px; }
+.category-sourcing-grid p { margin: 0; color: var(--muted); line-height: 1.65; }
+.category-sourcing-links { display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px 20px; margin: 24px 0 0; }
+.category-sourcing-links a { color: var(--pepper); font-weight: 700; text-decoration: underline; text-underline-offset: 4px; }
 .group-nav { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 60px; }
 .group-nav a { padding: 9px 13px; border: 1px solid var(--line); border-radius: 999px; background: white; color: #53675e; font-size: 15px; font-weight: 750; }
 .group-nav a:hover { border-color: var(--ink); color: var(--ink); }
@@ -971,6 +979,7 @@ button, input, select, textarea { font: inherit; }
   .inner-hero, .category-hero, .product-detail-hero, .product-info-grid, .buying-guide-heading, .entity-facts, .capability-grid, .quality-system, .about-intro, .about-portfolio, .resource-principles, .contact-hero, .quote-layout, .contact-expect { grid-template-columns: 1fr; gap: 40px; }
   .category-jump-grid, .product-card-grid { grid-template-columns: repeat(2, 1fr); }
   .category-hero-image, .product-detail-image { height: 460px; }
+  .category-sourcing-grid { grid-template-columns: 1fr; }
   .faq-layout { grid-template-columns: 1fr; gap: 45px; }
   .faq-layout > div:first-child, .quote-layout > div:first-child { position: static; }
   .spec-grid, .about-facts { grid-template-columns: repeat(2, 1fr); }

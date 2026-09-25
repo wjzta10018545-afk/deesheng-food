@@ -6,6 +6,38 @@ import { catalogCategories, getCatalogItemImage, getCategory } from "../../data/
 
 type Props = { params: Promise<{ category: string }> };
 
+const sourcingGuides: Record<string, {
+  heading: string;
+  introduction: string;
+  steps: { title: string; description: string }[];
+  startingPoints: { name: string; slug: string }[];
+}> = {
+  kimchi: {
+    heading: "Source Korean kimchi for a refrigerated supply chain",
+    introduction: "Compare retail and foodservice formats first, then confirm the SKU-specific shelf life and temperature plan for your destination.",
+    steps: [
+      { title: "Choose the format", description: "Start with 1 kg cabbage kimchi bags for retail or a 10 kg carton for foodservice. Radish and specialty variants can complete the range." },
+      { title: "Plan cold-chain delivery", description: "Share the destination and refrigerated route. Storage ranges and shelf life differ by item; request the current specification before ordering." },
+      { title: "Brief the OEM project", description: "Specify cut, flavor target, pack, label language and estimated cartons. The standard OEM MOQ is 200 cartons per item; discuss trial quantities separately." },
+    ],
+    startingPoints: [{ name: "Cabbage kimchi specification", slug: "korean-cabbage-kimchi" }],
+  },
+  "korean-sauces": {
+    heading: "Build a Korean sauce range around your sales channel",
+    introduction: "Shortlist the flavor and application before comparing retail bottles, foodservice pouches, samples and OEM label requirements.",
+    steps: [
+      { title: "Pick an application", description: "Compare fried-chicken glazes, buldak, bibimbap, tteokbokki and Korean BBQ sauces by menu use and target heat level." },
+      { title: "Match pack and volume", description: "Review listed retail packs and 1 kg foodservice pouches. Confirm the exact carton, estimated volume and destination for a quotation." },
+      { title: "Confirm project scope", description: "Ask about samples, flavor adjustment and private label. HALAL documents and coverage must be checked against the selected formula and order." },
+    ],
+    startingPoints: [
+      { name: "Korean BBQ sauce", slug: "korean-bbq-sauce" },
+      { name: "Classic buldak sauce", slug: "classic-buldak-sauce" },
+      { name: "Fried chicken sauce", slug: "sweet-spicy-fried-chicken-sauce" },
+    ],
+  },
+};
+
 export function generateStaticParams() {
   return catalogCategories.map((category) => ({ category: category.slug }));
 }
@@ -16,17 +48,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!category) return {};
   const halalPrefix = category.slug === "korean-sauces" || category.slug === "gochujang-pastes" ? "HALAL " : "";
   const isKoreanSauce = category.slug === "korean-sauces";
+  const isKimchi = category.slug === "kimchi";
   return {
     title: isKoreanSauce
-      ? { absolute: "Korean Sauce Manufacturer in China | HALAL OEM & Wholesale" }
+      ? { absolute: "Korean Sauce Manufacturer in China | OEM & Wholesale" }
+      : isKimchi ? { absolute: "Korean Kimchi Manufacturer in China | Wholesale & OEM" }
       : `${halalPrefix}${category.name} Manufacturer & OEM Supplier`,
     description: isKoreanSauce
-      ? "Source bulk and wholesale Korean sauces from a China manufacturer. Compare foodservice packs, HALAL scope review, OEM/private label, samples and export quotation requirements."
+      ? "Source Korean sauces in retail and foodservice packs from Qingdao. Compare fried-chicken, buldak and BBQ sauces, OEM options and product-specific HALAL scope."
+      : isKimchi ? "Source wholesale Korean cabbage, radish and specialty kimchi from Qingdao. Compare retail and 10 kg foodservice packs, refrigerated shipping, OEM options and samples."
       : `${category.description} Review standard export packs, OEM/private-label support and quotation requirements for B2B buyers.`,
     alternates: { canonical: `/products/${category.slug}/` },
     openGraph: {
       title: isKoreanSauce
-        ? "Korean Sauce Manufacturer in China | HALAL OEM & Wholesale"
+        ? "Korean Sauce Manufacturer in China | OEM & Wholesale"
         : `${category.name} | Deesheng Food`,
       description: category.description,
       url: `https://deesheng.food/products/${category.slug}/`,
@@ -42,6 +77,7 @@ export default async function CategoryPage({ params }: Props) {
   if (!category) notFound();
 
   const groups = [...new Set(category.items.map((item) => item.group))];
+  const sourcingGuide = sourcingGuides[category.slug];
   const faqs = [
     {
       question: `Can ${category.name.toLowerCase()} be supplied under our own brand?`,
@@ -63,6 +99,14 @@ export default async function CategoryPage({ params }: Props) {
       question: `Are relevant ${category.name.toLowerCase()} covered by HALAL certification?`,
       answer: "Deesheng Food maintains SHC HALAL certification for relevant products. Qualified B2B buyers can request current documents and exact scope confirmation for the selected product, formula and order.",
     },
+    ...(category.slug === "kimchi" ? [{
+      question: "What temperature should imported kimchi be kept at?",
+      answer: "Most listed kimchi items specify 0–4°C storage, while some specialty items specify 0–10°C. Confirm the current SKU specification, shelf life and refrigerated shipping plan before ordering.",
+    }] : []),
+    ...(category.slug === "korean-sauces" ? [{
+      question: "Which Korean sauces are suitable for restaurants or private label?",
+      answer: "The range includes fried-chicken glazes, buldak, bibimbap, tteokbokki and Korean BBQ sauces. Share the application, flavor target, pack size, market and estimated volume to shortlist foodservice or retail options.",
+    }] : []),
   ];
 
   const structuredData = {
@@ -115,6 +159,12 @@ export default async function CategoryPage({ params }: Props) {
       </section>
 
       <section className="note-band"><div className="shell"><span>Buyer note</span><p>{category.buyerNote}</p></div></section>
+
+      {sourcingGuide && <section className="section shell category-sourcing">
+        <div className="section-heading compact-heading"><p className="eyebrow">Buyer selection guide</p><h2>{sourcingGuide.heading}</h2><p>{sourcingGuide.introduction}</p></div>
+        <div className="category-sourcing-grid">{sourcingGuide.steps.map((step, index) => <article key={step.title}><span>0{index + 1}</span><h3>{step.title}</h3><p>{step.description}</p></article>)}</div>
+        <p className="category-sourcing-links">Start with: {sourcingGuide.startingPoints.map((item) => <Link key={item.slug} href={`/product/${item.slug}/`}>{item.name} ↗</Link>)}</p>
+      </section>}
 
       <section className="section shell">
         <div className="section-heading compact-heading"><p className="eyebrow">Export selection</p><h2>{category.items.length} listed products and variants</h2><p>Choose products and standard packs below. Final carton specification, pricing and production details are confirmed for each inquiry.</p></div>

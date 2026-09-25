@@ -24,6 +24,8 @@ The public website presents the factory's certification and audit scope, includi
 
 The application uses Vinext/Vite for OpenAI Sites and a static Next.js export for GitHub Pages. GitHub Pages hosts the complete public catalogue, product routes, buyer resources, downloads and browser-side WhatsApp inquiry flow directly; it does not redirect to the application origin.
 
+The contact form records a **prepared** inquiry in the Sites D1 database before opening WhatsApp. The reference in the prepared message lets sales match an actual WhatsApp conversation to its landing page and source. A prepared row is not proof that the visitor pressed send in WhatsApp or that the lead qualified. If the recording endpoint is unavailable, WhatsApp still opens and the page states that the request was not saved. GA4 loads only after analytics consent; form fields are not sent to GA4.
+
 The GitHub `production` environment validates every commit to `main` against the full production build.
 
 ```bash
