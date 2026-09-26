@@ -81,13 +81,13 @@ const markets: Market[] = [
   {
     slug: "singapore",
     country: "Singapore",
-    title: "Korean Sauce Supplier for Singapore | HALAL OEM & Wholesale",
+    title: "Korean Sauce & Kimchi OEM Supplier for Singapore | Deesheng",
     description:
-      "Source Korean sauces, gochujang, kimchi, chili powder and frozen vegetables for Singapore import, foodservice, retail and private-label projects.",
+      "Source Korean sauces and refrigerated cabbage kimchi from Qingdao for Singapore importers. Compare 1 kg retail bags, 10 kg foodservice cartons and private-label options.",
     summary:
-      "Deesheng Food supplies Korean sauces and related food products from Qingdao, China for qualified Singapore importers, distributors, foodservice suppliers, central kitchens, retailers and private-label buyers.",
+      "Deesheng Food supplies Korean sauces and refrigerated Korean kimchi from Qingdao, China for qualified Singapore importers, distributors, foodservice suppliers, central kitchens, retailers and private-label buyers.",
     buyerNote:
-      "Tell us whether the project is for retail, wholesale, restaurants or a central kitchen, then add the product, pack, estimated quantity and purchase month. Product documents and destination requirements are checked per project.",
+      "Tell us the sales channel, product, pack, estimated quantity and purchase month. For kimchi, also specify whole or cut cabbage, 1 kg bag or 10 kg carton and the refrigerated route. Documents and destination requirements are checked for the selected order.",
     buyerTypes: [
       "Food importers, distributors and wholesale suppliers",
       "Restaurant groups, caterers, central kitchens and foodservice buyers",
@@ -110,8 +110,8 @@ const markets: Market[] = [
         link: "/oem-private-label/",
       },
       {
-        title: "Kimchi & frozen range",
-        copy: "Cabbage and radish kimchi plus frozen vegetables can be reviewed with the importer’s refrigerated or frozen supply-chain plan.",
+        title: "Refrigerated kimchi OEM",
+        copy: "Review cabbage kimchi in 1 kg bags or 10 kg cartons, with a standard OEM MOQ of 200 cartons per item. Confirm 0–4°C storage and a typical 4–6-month shelf life against the selected specification.",
         link: "/products/kimchi/",
       },
     ],
@@ -135,6 +135,11 @@ const markets: Market[] = [
         question: "Is private-label Korean sauce available for Singapore retail?",
         answer:
           "Yes, for suitable products and order quantities. Share the target channel, reference taste, pack, estimated volume and launch timing for a practical OEM assessment.",
+      },
+      {
+        question: "Can a Singapore importer source private-label kimchi from China?",
+        answer:
+          "Yes. Deesheng Food can discuss whole or cut cabbage kimchi in 1 kg bags or 10 kg cartons with a private label. The standard OEM MOQ is 200 cartons per item. Cabbage kimchi is typically stored at 0–4°C with a 4–6-month shelf life; confirm the selected specification, refrigerated route and local import requirements before ordering.",
       },
     ],
   },
@@ -215,7 +220,7 @@ export default async function MarketPage({ params }: Props) {
         <div>
           <nav className="breadcrumbs" aria-label="Breadcrumb"><Link href="/">Home</Link><span>/</span><b>{market.country}</b></nav>
           <p className="eyebrow">China manufacturer · B2B export · OEM · wholesale</p>
-          <h1>Korean food supply for {market.country} buyers.</h1>
+          <h1>{market.slug === "singapore" ? "Korean sauces and kimchi for Singapore buyers." : `Korean food supply for ${market.country} buyers.`}</h1>
         </div>
         <div className="inner-hero-aside">
           <p>{market.summary}</p>

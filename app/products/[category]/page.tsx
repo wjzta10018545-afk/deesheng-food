@@ -163,7 +163,7 @@ export default async function CategoryPage({ params }: Props) {
       {sourcingGuide && <section className="section shell category-sourcing">
         <div className="section-heading compact-heading"><p className="eyebrow">Buyer selection guide</p><h2>{sourcingGuide.heading}</h2><p>{sourcingGuide.introduction}</p></div>
         <div className="category-sourcing-grid">{sourcingGuide.steps.map((step, index) => <article key={step.title}><span>0{index + 1}</span><h3>{step.title}</h3><p>{step.description}</p></article>)}</div>
-        <p className="category-sourcing-links">Start with: {sourcingGuide.startingPoints.map((item) => <Link key={item.slug} href={`/product/${item.slug}/`}>{item.name} ↗</Link>)}</p>
+        <p className="category-sourcing-links">Start with: {sourcingGuide.startingPoints.map((item) => <Link key={item.slug} href={`/product/${item.slug}/`}>{item.name} ↗</Link>)}{category.slug === "kimchi" && <Link href="/markets/singapore/">Singapore kimchi buyer guide ↗</Link>}</p>
       </section>}
 
       <section className="section shell">
