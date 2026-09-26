@@ -87,7 +87,7 @@ const markets: Market[] = [
     summary:
       "Deesheng Food supplies Korean sauces and refrigerated Korean kimchi from Qingdao, China for qualified Singapore importers, distributors, foodservice suppliers, central kitchens, retailers and private-label buyers.",
     buyerNote:
-      "For kimchi, tell us whether you need whole or cut cabbage, a 1 kg bag or 10 kg carton, estimated cartons, and your refrigerated route. Product documents, shelf life and destination requirements are checked for the selected order.",
+      "Tell us the sales channel, product, pack, estimated quantity and purchase month. For kimchi, also specify whole or cut cabbage, 1 kg bag or 10 kg carton and the refrigerated route. Documents and destination requirements are checked for the selected order.",
     buyerTypes: [
       "Food importers, distributors and wholesale suppliers",
       "Restaurant groups, caterers, central kitchens and foodservice buyers",
