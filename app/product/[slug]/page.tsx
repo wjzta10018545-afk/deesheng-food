@@ -13,8 +13,18 @@ const productBuyingGuides: Record<string, {
 }> = {
   gochujang: {
     buyerFit: ["Supermarket and Asian-grocery distributors", "Korean restaurant and foodservice suppliers", "Private-label sauce brands", "Meal-kit and prepared-food manufacturers"],
-    customization: ["Heat and sweetness balance", "Retail tub or 14 kg foodservice format", "Private-label artwork and export label", "Application-led sample selection"],
+    customization: ["Heat and sweetness balance", "Retail tub or 14 kg foodservice format", "Private-label artwork and export label", "Current HALAL documents for the selected formula"],
     brief: ["Target market and sales channel", "Required heat profile", "500 g retail or 14 kg foodservice pack", "Estimated cartons per item"],
+  },
+  "coarse-korean-chili-powder": {
+    buyerFit: ["Kimchi and food manufacturers", "Ingredient importers and distributors", "Foodservice suppliers", "Private-label spice brands"],
+    customization: ["Coarse cut or target mesh", "Seed content, color and heat", "Retail bottle or 1 kg pouch", "Current specification for the selected grade"],
+    brief: ["Kimchi, foodservice or retail use", "Target cut, color and heat", "Seed preference and pack", "Estimated quantity and destination"],
+  },
+  "fine-korean-chili-powder": {
+    buyerFit: ["Sauce and seasoning manufacturers", "Ingredient importers and distributors", "Foodservice suppliers", "Private-label spice brands"],
+    customization: ["Fine grind for the intended process", "Target color and heat", "Retail bottle or 1 kg pouch", "Current specification for the selected grade"],
+    brief: ["Sauce, marinade or dry-seasoning use", "Target fineness, color and heat", "Preferred pack", "Estimated quantity and destination"],
   },
   "bibimbap-sauce": {
     buyerFit: ["Retail sauce importers", "Restaurant and central-kitchen suppliers", "Rice-bowl and meal-kit brands", "Private-label Korean food ranges"],
@@ -61,6 +71,23 @@ const defaultBuyingGuide = (product: { categorySlug: string; applications: strin
   brief: ["Target market and sales channel", `Primary use: ${product.applications.slice(0, 2).join(" or ")}`, `Preferred pack: ${product.packing[0]}`, "Estimated quantity and destination"],
 });
 
+const curatedRelated: Record<string, string[]> = {
+  "sweet-spicy-fried-chicken-sauce": ["soy-garlic-fried-chicken-sauce", "fried-chicken-coating-mix", "honey-mustard-sauce"],
+  "soy-garlic-fried-chicken-sauce": ["sweet-spicy-fried-chicken-sauce", "fried-chicken-coating-mix", "honey-mustard-sauce"],
+  "fried-chicken-coating-mix": ["sweet-spicy-fried-chicken-sauce", "soy-garlic-fried-chicken-sauce"],
+  "coarse-korean-chili-powder": ["fine-korean-chili-powder", "korean-cabbage-kimchi", "gochujang"],
+  "fine-korean-chili-powder": ["coarse-korean-chili-powder", "gochujang", "bibimbap-sauce"],
+};
+
+const sourcingResources: Record<string, { href: string; label: string }> = {
+  gochujang: { href: "/resources/private-label-gochujang-supplier/", label: "Private-label gochujang buyer guide" },
+  "coarse-korean-chili-powder": { href: "/resources/korean-chili-powder-sourcing/", label: "Korean chili powder sourcing checklist" },
+  "fine-korean-chili-powder": { href: "/resources/korean-chili-powder-sourcing/", label: "Korean chili powder sourcing checklist" },
+  "sweet-spicy-fried-chicken-sauce": { href: "/resources/korean-fried-chicken-sauce-system/", label: "Korean fried chicken sauce system guide" },
+  "soy-garlic-fried-chicken-sauce": { href: "/resources/korean-fried-chicken-sauce-system/", label: "Korean fried chicken sauce system guide" },
+  "fried-chicken-coating-mix": { href: "/resources/korean-fried-chicken-sauce-system/", label: "Korean fried chicken sauce system guide" },
+};
+
 export function generateStaticParams() {
   return productDetails.map((product) => ({ slug: product.slug }));
 }
@@ -92,7 +119,10 @@ export default async function ProductPage({ params }: Props) {
   const { slug } = await params;
   const product = getProduct(slug);
   if (!product) notFound();
-  const related = productDetails.filter((item) => item.categorySlug === product.categorySlug && item.slug !== product.slug).slice(0, 3);
+  const related = productDetails.filter((item) => curatedRelated[slug]
+    ? curatedRelated[slug].includes(item.slug)
+    : item.categorySlug === product.categorySlug && item.slug !== product.slug).slice(0, 3);
+  const sourcingResource = sourcingResources[slug];
   const pageUrl = `https://deesheng.food/product/${product.slug}/`;
   const imageUrl = `https://deesheng.food${product.image}`;
   const organizationId = "https://deesheng.food/#organization";
@@ -195,7 +225,7 @@ export default async function ProductPage({ params }: Props) {
       <section className="section section-tint">
         <div className="shell buying-guide-heading">
           <div><p className="eyebrow">B2B buying guide</p><h2>Is this product right for your project?</h2></div>
-          <p><strong>Direct answer:</strong> {product.name} is available for qualified importers, distributors, foodservice buyers and private-label projects. The fastest route to a useful sample and quotation is to confirm the application, pack, quantity and destination.</p>
+          <p><strong>Direct answer:</strong> {product.buyerAnswer ?? `${product.name} is available for qualified importers, distributors, foodservice buyers and private-label projects. The fastest route to a useful sample and quotation is to confirm the application, pack, quantity and destination.`}</p>
         </div>
         <div className="shell buying-guide-grid">
           <article><span>01</span><h3>Best-fit buyers</h3><ul>{buyingGuide.buyerFit.map((item) => <li key={item}>{item}</li>)}</ul></article>
@@ -204,7 +234,7 @@ export default async function ProductPage({ params }: Props) {
         </div>
       </section>
 
-      <section className="section"><div className="shell faq-layout"><div><p className="eyebrow">Sourcing facts</p><h2>Answers for buyers</h2><p>These are the commercial basics most B2B buyers need before requesting a sample or quotation.</p></div><div className="faq-list">{product.buyerQuestions.map((faq) => <details key={faq.question}><summary>{faq.question}<span>+</span></summary><p>{faq.answer}</p></details>)}</div></div></section>
+      <section className="section"><div className="shell faq-layout"><div><p className="eyebrow">Sourcing facts</p><h2>Answers for buyers</h2><p>These are the commercial basics most B2B buyers need before requesting a sample or quotation.{sourcingResource && <><br /><Link className="text-link" style={{ marginTop: 18, color: "var(--pepper)" }} href={sourcingResource.href}>{sourcingResource.label} →</Link></>}</p></div><div className="faq-list">{product.buyerQuestions.map((faq) => <details key={faq.question}><summary>{faq.question}<span>+</span></summary><p>{faq.answer}</p></details>)}</div></div></section>
 
       {related.length > 0 && <section className="section shell"><div className="section-heading compact-heading"><p className="eyebrow">Related products</p><h2>Build a stronger product mix</h2></div><div className="related-grid">{related.map((item) => <Link href={`/product/${item.slug}/`} key={item.slug}><span>{item.categoryName}</span><h3>{item.name}</h3><p>{item.summary}</p><b>View product →</b></Link>)}</div></section>}
 
