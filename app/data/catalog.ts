@@ -492,6 +492,7 @@ export type ProductDetail = {
   storage: string;
   image: string;
   imageAlt: string;
+  buyerAnswer?: string;
   buyerQuestions: { question: string; answer: string }[];
 };
 
@@ -506,8 +507,13 @@ export const productDetails: ProductDetail[] = [
   {
     slug: "gochujang", name: "Gochujang — Korean Chili Paste", categorySlug: "korean-sauces", categoryName: "Korean Sauces",
     headline: "Private-label gochujang for retail and foodservice.",
-    summary: "A smooth Korean-style fermented chili paste with a savory, sweet and moderately spicy profile for bibimbap, marinades, stir-fries and Korean menus.",
-    applications: ["Bibimbap", "Marinades", "Stir-fry", "Dipping sauces", "Soup and stew bases"], packing: ["500 g tub × 20 per carton", "14 kg foodservice carton"], shelfLife: "12 months", storage: "Ambient; cool and dry", image: "/media/catalog-products/sauces/gochujang-chili-sauce.webp", imageAlt: "Gochujang retail tub and 14 kg foodservice carton", buyerQuestions: standardFaq("gochujang"),
+    summary: "Gochujang is a Korean-style red pepper paste with a savory, sweet and moderately spicy profile for bibimbap, marinades, stir-fries and Korean menus.",
+    applications: ["Bibimbap", "Marinades", "Stir-fry", "Dipping sauces", "Soup and stew bases"], packing: ["500 g tub × 20 per carton", "14 kg foodservice carton"], shelfLife: "12 months", storage: "Ambient; cool and dry", image: "/media/catalog-products/sauces/gochujang-chili-sauce.webp", imageAlt: "Gochujang retail tub and 14 kg foodservice carton",
+    buyerAnswer: "Deesheng Food supplies gochujang (Korean red pepper paste) in 500 g retail tubs and 14 kg foodservice cartons for qualified importers, distributors and private-label projects. Share the destination, target heat, pack and quantity to request the right sample and current product-scope documents.",
+    buyerQuestions: [
+      ...standardFaq("gochujang"),
+      { question: "Which gochujang pack should I choose for retail or foodservice?", answer: "The listed retail format is a 500 g tub packed 20 per carton; the foodservice format is a 14 kg carton. Confirm the channel, handling needs and estimated cartons before requesting a quotation." },
+    ],
   },
   {
     slug: "extra-hot-gochujang", name: "Extra Hot Gochujang", categorySlug: "korean-sauces", categoryName: "Korean Sauces", headline: "A hotter gochujang option for spice-led markets.", summary: "An extra-hot Korean-style chili paste for buyers who need a stronger heat profile while retaining the familiar fermented, savory and slightly sweet character of gochujang.", applications: ["Spicy bibimbap", "Hot marinades", "Korean fried chicken", "Stir-fry", "Foodservice sauces"], packing: ["500 g tub × 20 per carton", "14 kg foodservice carton"], shelfLife: "12 months", storage: "Ambient; cool and dry", image: "/media/catalog-products/sauces/gochujang-chili-sauce.webp", imageAlt: "Gochujang retail tub and foodservice carton used for the extra-hot specification", buyerQuestions: standardFaq("extra-hot gochujang"),
@@ -543,10 +549,20 @@ export const productDetails: ProductDetail[] = [
     slug: "korean-cabbage-kimchi", name: "Korean Cabbage Kimchi", categorySlug: "kimchi", categoryName: "Korean Kimchi", headline: "Korean-style cabbage kimchi for retail and foodservice.", summary: "Refrigerated cabbage kimchi in 1 kg retail/foodservice bags and 10 kg bulk cartons, available as whole or cut product by specification.", applications: ["Retail grocery", "Restaurants", "Korean menus", "Side dishes", "Foodservice distribution"], packing: ["1 kg bag × 10", "10 kg carton — whole or cut"], shelfLife: "Typically 4–6 months", storage: "Refrigerated at 0–4°C", image: "/media/catalog-products/kimchi/cabbage-kimchi-mat-retail.webp", imageAlt: "Retail jar of cut Korean cabbage kimchi", buyerQuestions: standardFaq("Korean cabbage kimchi"),
   },
   {
-    slug: "coarse-korean-chili-powder", name: "Coarse Korean Chili Powder", categorySlug: "chili-seasonings", categoryName: "Chili Powder & Dry Seasonings", headline: "Coarse Korean chili powder for kimchi and foodservice.", summary: "Grade A coarse chili powder for kimchi seasoning, marinades, soups and Korean food production. Heat, color and particle size are confirmed against the buyer brief.", applications: ["Kimchi production", "Marinades", "Soup bases", "Korean seasoning", "Further processing"], packing: ["100 g bottle × 110", "200 g bottle × 60", "1 kg pouch × 10"], shelfLife: "12 months", storage: "Ambient; cool and dry", image: "/media/catalog-products/chili/coarse-chili-powder-packaged.webp", imageAlt: "Coarse Korean chili powder in a 200 g retail bottle", buyerQuestions: standardFaq("coarse Korean chili powder"),
+    slug: "coarse-korean-chili-powder", name: "Coarse Korean Chili Powder", categorySlug: "chili-seasonings", categoryName: "Chili Powder & Dry Seasonings", headline: "Coarse Korean chili powder for kimchi and foodservice.", summary: "Grade A coarse Korean chili powder for kimchi and food production. Buyers sourcing gochugaru or Korean chili flakes can specify the cut, seed content, color and heat to match the selected grade.", applications: ["Kimchi production", "Marinades", "Soup bases", "Korean seasoning", "Further processing"], packing: ["100 g bottle × 110", "200 g bottle × 60", "1 kg pouch × 10"], shelfLife: "12 months", storage: "Ambient; cool and dry", image: "/media/catalog-products/chili/coarse-chili-powder-packaged.webp", imageAlt: "Coarse Korean chili powder in a 200 g retail bottle",
+    buyerAnswer: "For a gochugaru or Korean chili flakes sourcing brief, Deesheng Food can review a coarse chili powder grade for kimchi and foodservice. Specify particle size, seed content, color, heat, pack, quantity and destination; the exact grade is confirmed against the product specification.",
+    buyerQuestions: [
+      ...standardFaq("coarse Korean chili powder"),
+      { question: "What should I specify when asking for gochugaru or Korean chili flakes?", answer: "Tell us the intended use, target particle size or mesh, seed preference, color, heat level, pack size, expected quantity and destination. We will confirm the matching product specification before sampling or quoting." },
+    ],
   },
   {
-    slug: "fine-korean-chili-powder", name: "Fine Korean Chili Powder", categorySlug: "chili-seasonings", categoryName: "Chili Powder & Dry Seasonings", headline: "Fine Korean chili powder for sauces and seasoning blends.", summary: "Grade A fine chili powder for sauces, dry seasoning, marinades and processed foods, with specification matched to the required application.", applications: ["Sauce production", "Dry seasoning", "Marinades", "Processed foods", "Retail spice packs"], packing: ["100 g bottle × 110", "200 g bottle × 60", "1 kg pouch × 10"], shelfLife: "12 months", storage: "Ambient; cool and dry", image: "/media/catalog-products/chili/fine-chili-powder-packaged.webp", imageAlt: "Fine Korean chili powder in a 200 g retail bottle", buyerQuestions: standardFaq("fine Korean chili powder"),
+    slug: "fine-korean-chili-powder", name: "Fine Korean Chili Powder", categorySlug: "chili-seasonings", categoryName: "Chili Powder & Dry Seasonings", headline: "Fine Korean chili powder for sauces and seasoning blends.", summary: "Grade A fine Korean chili powder for sauces, marinades and dry seasoning. Buyers using gochugaru as a sourcing term can specify a fine grind, color and heat for the intended application.", applications: ["Sauce production", "Dry seasoning", "Marinades", "Processed foods", "Retail spice packs"], packing: ["100 g bottle × 110", "200 g bottle × 60", "1 kg pouch × 10"], shelfLife: "12 months", storage: "Ambient; cool and dry", image: "/media/catalog-products/chili/fine-chili-powder-packaged.webp", imageAlt: "Fine Korean chili powder in a 200 g retail bottle",
+    buyerAnswer: "Deesheng Food offers a fine Korean chili powder option for sauces and seasoning blends. If your brief uses the term gochugaru, specify the fine grind, target color and heat, pack, quantity and destination so the matching grade can be confirmed before sampling.",
+    buyerQuestions: [
+      ...standardFaq("fine Korean chili powder"),
+      { question: "How do I choose a fine Korean chili powder grade?", answer: "Share the sauce or seasoning application, required fineness, color, heat level and pack. The selected grade and supporting specification are confirmed for the order rather than assumed from a generic product name." },
+    ],
   },
   {
     slug: "fried-chicken-coating-mix", name: "Fried Chicken Coating Mix", categorySlug: "chili-seasonings", categoryName: "Chili Powder & Dry Seasonings", headline: "Korean fried chicken coating mix for foodservice systems.", summary: "A dry coating mix designed to support a crisp fried-chicken finish, supplied as part of a complete sauce, marinade and coating system.", applications: ["Korean fried chicken", "Restaurant chains", "Central kitchens", "Cloud kitchens", "Foodservice distribution"], packing: ["1 kg pouch × 10"], shelfLife: "12 months", storage: "Ambient; cool and dry", image: "/media/catalog-products/sauces/fried-chicken-coating-powder-normal.webp", imageAlt: "One kilogram foodservice pouch of fried chicken coating powder", buyerQuestions: standardFaq("fried chicken coating mix"),
