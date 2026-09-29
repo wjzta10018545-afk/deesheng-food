@@ -2,19 +2,9 @@
 
 import { FormEvent, useEffect, useRef, useState } from "react";
 import { trackAnalyticsEvent } from "../components/GoogleAnalytics";
-import { INQUIRY_SOURCE_KEY, type InquirySource } from "../components/InquiryAttribution";
+import { getInquirySource, inquirySourceLines } from "../lib/inquiry-source";
 
 const INQUIRY_API = "https://deesheng-food.wjzta10018545.chatgpt.site/api/inquiries";
-
-function getInquirySource(): InquirySource {
-  try {
-    const stored = JSON.parse(sessionStorage.getItem(INQUIRY_SOURCE_KEY) || "null");
-    if (stored && typeof stored.landingPath === "string") return stored;
-  } catch {
-    // Use the current page when session storage is unavailable.
-  }
-  return { landingPath: location.pathname, source: "unknown", medium: "unknown", campaign: "", referrerHost: "" };
-}
 
 export function QuoteForm({ initialProduct = "" }: { initialProduct?: string }) {
   const [sent, setSent] = useState(false);
@@ -32,15 +22,20 @@ export function QuoteForm({ initialProduct = "" }: { initialProduct?: string }) 
     if (preparing) return;
     setPreparing(true);
     const form = new FormData(event.currentTarget);
+    const source = getInquirySource();
+    const sourceLines = inquirySourceLines(source, location.pathname);
     const fields = Object.fromEntries(["company", "country", "businessType", "product", "packing", "quantity", "channel", "message"]
       .map((key) => [key, String(form.get(key) || "")]));
+    const annotatedMessage = `${fields.message}\n\n${sourceLines.join("\n")}`;
     const inquiryTab = window.open("", "_blank");
     let inquiryId = "";
     try {
       const response = await fetch(INQUIRY_API, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...fields, ...getInquirySource() }),
+        body: JSON.stringify({ ...fields, ...source,
+          message: annotatedMessage.length <= 1200 ? annotatedMessage : fields.message,
+        }),
         signal: AbortSignal.timeout(6000),
       });
       if (!response.ok) throw new Error("Inquiry was not recorded");
@@ -62,6 +57,8 @@ export function QuoteForm({ initialProduct = "" }: { initialProduct?: string }) 
       `Estimated quantity: ${form.get("quantity") || "To be discussed"}`,
       `Sales channel: ${form.get("channel") || "Not provided"}`,
       `Requirements: ${form.get("message") || "None added"}`,
+      "",
+      ...sourceLines,
     ];
     trackAnalyticsEvent("inquiry_prepared", { method: "whatsapp_quote_form", recorded: !!inquiryId });
     setSent(true);

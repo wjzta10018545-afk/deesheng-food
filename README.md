@@ -26,6 +26,10 @@ The application uses Vinext/Vite for OpenAI Sites and a static Next.js export fo
 
 The contact form records a **prepared** inquiry in the Sites D1 database before opening WhatsApp. The reference in the prepared message lets sales match an actual WhatsApp conversation to its landing page and source. A prepared row is not proof that the visitor pressed send in WhatsApp or that the lead qualified. If the recording endpoint is unavailable, WhatsApp still opens and the page states that the request was not saved. GA4 loads only after analytics consent; form fields are not sent to GA4.
 
+Website WhatsApp and email links include the session's source, medium, campaign, ad variant (`utm_content`) and entry page in the editable message. The same details accompany the quotation draft even if database recording fails. A new explicitly tagged visit replaces the session source; ordinary internal navigation preserves it. These labels are attribution hints and may be removed by the visitor; they are not verified conversions or cross-device attribution. Meta ads that open WhatsApp directly must be reconciled using Meta/WhatsApp's own ad referral information. GA4 inquiry events carry the source labels only after analytics consent.
+
+The public `deesheng.food` domain is served by a separately managed static server. Updating GitHub Pages or the Sites application does **not** establish that the canonical domain was updated. Build the canonical export without `GITHUB_PAGES=true`, synchronize the complete `out/` directory through the authorized production deployment channel, then verify the live contact links. The server synchronization is managed separately from this repository's GitHub Pages workflow.
+
 The GitHub `production` environment validates every commit to `main` against the full production build.
 
 ```bash

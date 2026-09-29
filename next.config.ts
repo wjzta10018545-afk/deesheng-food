@@ -7,7 +7,7 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
   basePath: isGitHubPages ? "/deesheng-food" : "",
   assetPrefix: isGitHubPages ? "/deesheng-food/" : undefined,
-  typescript: { ignoreBuildErrors: isGitHubPages },
+  typescript: { tsconfigPath: "tsconfig.next.json" },
 };
 
 export default nextConfig;

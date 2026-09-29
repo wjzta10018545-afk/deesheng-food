@@ -2,6 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { getInquirySource } from "../lib/inquiry-source";
 
 const GA_MEASUREMENT_ID = "G-KJY4L6SDBZ";
 const CONSENT_STORAGE_KEY = "deesheng.analytics-consent";
@@ -67,21 +68,27 @@ function initializeAnalytics() {
 
 export function trackAnalyticsEvent(eventName: string, params: AnalyticsParams = {}) {
   if (typeof window === "undefined" || readConsent() !== "granted") return;
+  const source = getInquirySource();
   window.gtag?.("event", eventName, {
     page_path: window.location.pathname,
+    inquiry_source: source.source,
+    inquiry_medium: source.medium,
+    inquiry_campaign: source.campaign,
+    ad_variant: source.content,
+    landing_path: source.landingPath,
     ...params,
   });
 }
 
-function classifyLink(anchor: HTMLAnchorElement) {
-  const platform = anchor.dataset.platform;
+function classifyLink(anchor: HTMLAnchorElement): { eventName: string; params: AnalyticsParams } | null {
+  const url = new URL(anchor.href, window.location.href);
+  const platform = anchor.dataset.platform || (url.hostname === "wa.me" ? "whatsapp" : url.protocol === "mailto:" ? "email" : "");
   if (platform === "whatsapp") return { eventName: "whatsapp_click", params: { channel: "whatsapp" } };
   if (platform === "email") return { eventName: "email_click", params: { channel: "email" } };
   if (platform === "facebook") return { eventName: "facebook_click", params: { channel: "facebook" } };
   if (platform === "tiktok") return { eventName: "tiktok_click", params: { channel: "tiktok" } };
 
-  const url = new URL(anchor.href, window.location.href);
-  if (url.origin === window.location.origin && url.pathname === "/contact") {
+  if (url.origin === window.location.origin && /\/(?:deesheng-food\/)?contact\/?$/.test(url.pathname)) {
     return { eventName: "quote_click", params: { channel: "contact_page" } };
   }
   if (anchor.hasAttribute("download") || url.pathname.startsWith("/downloads/")) {

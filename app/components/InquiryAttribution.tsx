@@ -1,35 +1,32 @@
 "use client";
 
 import { useEffect } from "react";
+import { usePathname } from "next/navigation";
+import { attributedContactUrl, getInquirySource } from "../lib/inquiry-source";
 
-export const INQUIRY_SOURCE_KEY = "deesheng.inquiry-source";
-
-export type InquirySource = {
-  landingPath: string;
-  source: string;
-  medium: string;
-  campaign: string;
-  referrerHost: string;
-};
+const originalLinks = new WeakMap<HTMLAnchorElement, string>();
 
 export function InquiryAttribution() {
+  const pathname = usePathname();
   useEffect(() => {
-    try {
-      if (sessionStorage.getItem(INQUIRY_SOURCE_KEY)) return;
-      const params = new URLSearchParams(location.search);
-      const referrer = document.referrer ? new URL(document.referrer) : null;
-      const externalReferrer = referrer?.hostname !== location.hostname ? referrer?.hostname ?? "" : "";
-      const source: InquirySource = {
-        landingPath: location.pathname,
-        source: params.get("utm_source") || (externalReferrer ? externalReferrer : "direct"),
-        medium: params.get("utm_medium") || (externalReferrer ? "referral" : "none"),
-        campaign: params.get("utm_campaign") || "",
-        referrerHost: externalReferrer,
-      };
-      sessionStorage.setItem(INQUIRY_SOURCE_KEY, JSON.stringify(source));
-    } catch {
-      // A visitor can still prepare a quote if browser storage is unavailable.
+    function annotate(anchor: HTMLAnchorElement) {
+      const original = originalLinks.get(anchor) || anchor.href;
+      originalLinks.set(anchor, original);
+      anchor.href = attributedContactUrl(original, getInquirySource(), location.pathname);
     }
-  }, []);
+    getInquirySource();
+    document.querySelectorAll<HTMLAnchorElement>('a[href^="https://wa.me/8615621089573"], a[href^="mailto:info@deesheng.food"]').forEach(annotate);
+    function beforeContact(event: MouseEvent) {
+      if (!(event.target instanceof Element)) return;
+      const anchor = event.target.closest<HTMLAnchorElement>('a[href^="https://wa.me/8615621089573"], a[href^="mailto:info@deesheng.food"]');
+      if (anchor) annotate(anchor);
+    }
+    document.addEventListener("click", beforeContact, true);
+    document.addEventListener("auxclick", beforeContact, true);
+    return () => {
+      document.removeEventListener("click", beforeContact, true);
+      document.removeEventListener("auxclick", beforeContact, true);
+    };
+  }, [pathname]);
   return null;
 }
