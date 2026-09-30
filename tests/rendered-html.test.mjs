@@ -82,10 +82,11 @@ test("publishes one trailing-slash URL format for search engines", async () => {
   assert.ok(locations.every((location) => new URL(location).pathname.endsWith("/")));
   assert.ok(locations.includes("https://deesheng.food/markets/mongolia/"));
   assert.ok(locations.includes("https://deesheng.food/markets/singapore/"));
-  assert.equal((sitemap.match(/<lastmod>2026-09-17<\/lastmod>/g) ?? []).length, 19);
-  assert.equal((sitemap.match(/<lastmod>2026-09-25<\/lastmod>/g) ?? []).length, 3);
-  assert.equal((sitemap.match(/<lastmod>2026-09-14<\/lastmod>/g) ?? []).length, 4);
-  assert.equal((sitemap.match(/<lastmod>2026-09-07<\/lastmod>/g) ?? []).length, locations.length - 26);
+  assert.equal((sitemap.match(/<lastmod>2026-09-17<\/lastmod>/g) ?? []).length, 13);
+  assert.equal((sitemap.match(/<lastmod>2026-09-25<\/lastmod>/g) ?? []).length, 2);
+  assert.equal((sitemap.match(/<lastmod>2026-09-14<\/lastmod>/g) ?? []).length, 3);
+  assert.equal((sitemap.match(/<lastmod>2026-09-07<\/lastmod>/g) ?? []).length, 12);
+  assert.equal((sitemap.match(/<lastmod>2026-09-26<\/lastmod>/g) ?? []).length, 8);
 });
 
 test("renders country buyer pages with qualified B2B search intent", async () => {
@@ -100,7 +101,7 @@ test("renders country buyer pages with qualified B2B search intent", async () =>
   assert.match(mongoliaHtml, /does not claim destination-market approval/);
 
   const singaporeHtml = await fetchHtml(worker, "/markets/singapore/");
-  assert.match(singaporeHtml, /Korean Sauce Supplier for Singapore \| HALAL OEM &amp; Wholesale/);
+  assert.match(singaporeHtml, /Korean Sauce &amp; Kimchi OEM Supplier for Singapore \| Deesheng/);
   assert.match(singaporeHtml, /restaurant and central-kitchen supply/);
   assert.match(singaporeHtml, /local acceptance, registration and label requirements/);
 });

@@ -19,16 +19,19 @@ declare global {
   }
 }
 
+let memoryConsent: ConsentChoice | null = null;
+
 function readConsent(): ConsentChoice | null {
   try {
     const value = window.localStorage.getItem(CONSENT_STORAGE_KEY);
-    return value === "granted" || value === "denied" ? value : null;
+    return value === "granted" || value === "denied" ? value : memoryConsent;
   } catch {
-    return null;
+    return memoryConsent;
   }
 }
 
 function saveConsent(value: ConsentChoice) {
+  memoryConsent = value;
   try {
     window.localStorage.setItem(CONSENT_STORAGE_KEY, value);
   } catch {
@@ -38,7 +41,9 @@ function saveConsent(value: ConsentChoice) {
 
 function initializeAnalytics() {
   window.dataLayer = window.dataLayer || [];
-  window.gtag = window.gtag || ((...args: unknown[]) => window.dataLayer?.push(args));
+  window.gtag = window.gtag || function (..._args: unknown[]) {
+    window.dataLayer?.push(arguments);
+  };
 
   if (window.deeshengAnalyticsReady) {
     window.gtag("consent", "update", { analytics_storage: "granted" });
@@ -111,7 +116,7 @@ export function GoogleAnalytics() {
   useEffect(() => {
     if (consent !== "granted") return;
     initializeAnalytics();
-    window.gtag?.("event", "page_view", {
+    trackAnalyticsEvent("page_view", {
       page_title: document.title,
       page_location: window.location.href,
       page_path: pathname,
