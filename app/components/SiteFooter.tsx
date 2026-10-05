@@ -16,7 +16,7 @@ export function SiteFooter() {
           <p>Export-ready Korean food manufacturing for importers, distributors, foodservice operators and private-label brands.</p>
         </div>
         <div><h2>Products</h2><Link href="/products/korean-sauces/">Korean sauces & gochujang</Link><Link href="/products/kimchi/">Korean kimchi</Link><Link href="/products/chili-seasonings/">Chili powder & seasonings</Link><Link href="/products/frozen-vegetables/">Frozen vegetables</Link></div>
-        <div><h2>Company</h2><Link href="/halal-korean-sauce-manufacturer/">HALAL sauce manufacturer</Link><Link href="/oem-private-label/">OEM / Private Label</Link><Link href="/quality-certifications/">Quality & certifications</Link><Link href="/markets/mongolia/">Supply for Mongolia</Link><Link href="/markets/singapore/">Supply for Singapore</Link><Link href="/resources/">Buyer resources</Link><Link href="/about/">About us</Link><Link href="/contact/">Contact</Link></div>
+        <div><h2>Company</h2><Link href="/halal-korean-sauce-manufacturer/">HALAL sauce manufacturer</Link><Link href="/oem-private-label/">OEM / Private Label</Link><Link href="/quality-certifications/">Quality & certifications</Link><Link href="/markets/mongolia/">Supply for Mongolia</Link><Link href="/markets/singapore/">Supply for Singapore</Link><Link href="/resources/">Buyer resources</Link><Link href="/about/">About us</Link><Link href="/contact/">Contact</Link><a href="https://mamazan-legend.vercel.app/?utm_source=deesheng&utm_medium=referral&utm_campaign=mamazan" target="_blank" rel="noopener noreferrer">Play MAMAZAN</a></div>
         <div className="footer-contact">
           <h2>Export sales</h2>
           <span>Kevin Wang</span>
