@@ -1,4 +1,4 @@
-/* Mama Chan Legend – original vector art (inline SVG, no external assets) */
+/* MAMAZAN Legend – original vector art (inline SVG, no external assets) */
 window.ART = (() => {
   const BLOB = 'M10 50 Q5 32 22 26 Q30 11 47 19 Q58 9 70 22 Q90 22 89 42 Q96 60 77 67 Q62 79 46 71 Q26 78 16 66 Q4 61 10 50Z';
   const BLOB2 = 'M40 40 Q36 28 50 25 Q58 16 68 25 Q82 26 80 40 Q84 52 70 55 Q58 62 50 55 Q38 57 40 40Z';
@@ -12,7 +12,7 @@ window.ART = (() => {
     return `<svg viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg"><path class="ck-body" d="${BLOB}" fill="${fill}" stroke="${stroke}" stroke-width="3" stroke-linejoin="round"/><path class="ck-body2" d="${BLOB2}" fill="${fill}" stroke="${stroke}" stroke-width="2" opacity=".9"/>${crumbs('#8a4a12')}${g}<ellipse cx="34" cy="34" rx="11" ry="5" fill="#fff" opacity=".45" transform="rotate(-18 34 34)"/>${extra}</svg>`;
   }
   function sauceBottle(color, label = '엄마찬') {
-    return `<svg viewBox="0 0 40 70" xmlns="http://www.w3.org/2000/svg"><path d="M18 1 L22 1 L23 10 L17 10Z" fill="#fff" stroke="#3a1a08" stroke-width="1.5"/><rect x="10.5" y="9" width="19" height="9" rx="2.5" fill="#fff" stroke="#3a1a08" stroke-width="2"/><rect x="4" y="16" width="32" height="52" rx="10" fill="${color}" stroke="#3a1a08" stroke-width="2.5"/><rect x="7.5" y="32" width="25" height="19" rx="4" fill="#fff8e8"/><text x="20" y="41" font-size="7.5" text-anchor="middle" font-weight="900" fill="${color}" font-family="sans-serif">${label}</text><text x="20" y="48" font-size="4.6" text-anchor="middle" font-weight="900" fill="#3a1a08" font-family="sans-serif">MAMA CHAN</text><rect x="8" y="20" width="5" height="40" rx="2.5" fill="#fff" opacity=".35"/></svg>`;
+    return `<svg viewBox="0 0 40 70" xmlns="http://www.w3.org/2000/svg"><path d="M18 1 L22 1 L23 10 L17 10Z" fill="#fff" stroke="#3a1a08" stroke-width="1.5"/><rect x="10.5" y="9" width="19" height="9" rx="2.5" fill="#fff" stroke="#3a1a08" stroke-width="2"/><rect x="4" y="16" width="32" height="52" rx="10" fill="${color}" stroke="#3a1a08" stroke-width="2.5"/><rect x="7.5" y="32" width="25" height="19" rx="4" fill="#fff8e8"/><text x="20" y="41" font-size="7.5" text-anchor="middle" font-weight="900" fill="${color}" font-family="sans-serif">${label}</text><text x="20" y="48" font-size="4.6" text-anchor="middle" font-weight="900" fill="#3a1a08" font-family="sans-serif">MAMAZAN</text><rect x="8" y="20" width="5" height="40" rx="2.5" fill="#fff" opacity=".35"/></svg>`;
   }
   const TOP_ICON = {
     sesame: `<svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><ellipse cx="20" cy="26" rx="17" ry="10" fill="#c8732e" stroke="#5a2a0a" stroke-width="2"/><ellipse cx="20" cy="22" rx="15" ry="6" fill="#f7e7c4"/><g fill="#fffdf5" stroke="#bfa774" stroke-width=".6"><ellipse cx="12" cy="21" rx="2.2" ry="1.3" transform="rotate(20 12 21)"/><ellipse cx="18" cy="19" rx="2.2" ry="1.3" transform="rotate(-30 18 19)"/><ellipse cx="25" cy="21" rx="2.2" ry="1.3" transform="rotate(40 25 21)"/><ellipse cx="29" cy="23" rx="2.2" ry="1.3"/><ellipse cx="16" cy="24" rx="2.2" ry="1.3" transform="rotate(-10 16 24)"/><ellipse cx="22" cy="25" rx="2.2" ry="1.3" transform="rotate(60 22 25)"/></g><g fill="#2a2a2a"><ellipse cx="21" cy="16" rx="1.8" ry="1.1"/><ellipse cx="14" cy="17" rx="1.8" ry="1.1"/></g></svg>`,
@@ -64,3 +64,4 @@ window.ART = (() => {
   }
   return { chicken, sauceBottle, TOP_ICON, TOP_OVER, person, randLook, plate, logo };
 })();
+
