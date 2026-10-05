@@ -1,5 +1,5 @@
-/* Mama Chan Legend (妈妈赞传奇 · 엄마찬 레전드) – K-Chicken Sauce Master
-   Time-management cooking prototype for Mama Chan sauces by Qingdao Deesheng Hengxin Food (deesheng.food). */
+/* MAMAZAN Legend (妈妈赞传奇 · 엄마찬 레전드) – K-Chicken Sauce Master
+   Time-management cooking game for MAMAZAN sauces by Qingdao Deesheng Hengxin Food (deesheng.food). */
 (() => {
   'use strict';
   const $ = s => document.querySelector(s);
@@ -18,7 +18,14 @@
     { id: 'sweet', name: 'Sweet & Spicy', color: '#e5391f', day: 1 },
     { id: 'gochu', name: 'Gochujang', color: '#a0141f', day: 2 },
     { id: 'honey', name: 'Honey Mustard', color: '#e9ad00', day: 3 },
-    { id: 'yang', name: 'Yangnyeom', color: '#d8501a', day: 4 }
+    { id: 'yang', name: 'Extra Spicy', color: '#d8501a', day: 4 }
+  ];
+  const PRODUCTS = [
+    { id: 'soy', name: 'Soy Garlic Fried Chicken Sauce', note: 'Glaze fried chicken with our soy garlic sauce.', interest: 'Korean fried chicken sauces' },
+    { id: 'sweet', name: 'Sweet & Spicy Fried Chicken Sauce', note: 'Coat fried chicken with a sweet and spicy finish.', interest: 'Korean fried chicken sauces' },
+    { id: 'gochu', name: 'Korean Gochujang', note: 'Use Korean gochujang as a base for marinades, sauces and rice dishes.', interest: 'Gochujang / Korean pastes' },
+    { id: 'honey', name: 'Honey Mustard Sauce', note: 'Serve honey mustard as a dip alongside fried chicken.', interest: 'Korean fried chicken sauces' },
+    { id: 'yang', name: 'Extra Spicy Fried Chicken Sauce', note: 'Give fried chicken an extra spicy coating.', interest: 'Korean fried chicken sauces' }
   ];
   const TOPS = [
     { id: 'sesame', name: 'Sesame', day: 1 },
@@ -114,6 +121,19 @@
   function renderTitle() {
     const b = store.get(LS.best, null);
     $('#bestLine').textContent = b && b.score ? `🏆 Best: $${b.score} · reached Day ${b.day}` : '';
+  }
+  const overlayOpeners = new Map();
+  function openOverlay(selector, opener = document.activeElement) {
+    const panel = $(selector);
+    overlayOpeners.set(selector, opener);
+    panel.classList.remove('hidden');
+    const firstControl = panel.querySelector('input, button, a, select, textarea');
+    if (firstControl) firstControl.focus();
+  }
+  function closeOverlay(selector) {
+    $(selector).classList.add('hidden');
+    const opener = overlayOpeners.get(selector);
+    if (opener && typeof opener.focus === 'function') opener.focus();
   }
 
   /* ---------- game flow ---------- */
@@ -448,7 +468,7 @@
 
   /* ---------- tutorial ---------- */
   const TUT = [
-    { key: 'box', text: '👋 Welcome to <b>Mama Chan Legend</b>! Your first customer wants <b>Soy Garlic</b> chicken with <b>Sesame</b>.<br>👇 Tap the <b>Raw Chicken</b> box to start frying.', target: () => $('#chickenBox') },
+    { key: 'box', text: '👋 Welcome to <b>MAMAZAN Legend</b>! Your first customer wants <b>Soy Garlic</b> chicken with <b>Sesame</b>.<br>👇 Tap the <b>Raw Chicken</b> box to start frying.', target: () => $('#chickenBox') },
     { key: 'fryer', text: 'Wait until it turns <b>golden – READY!</b> ✨ then tap the fryer.<br>Careful: later on, chicken <b>burns</b> if you wait too long!', target: () => fryerEls[0] },
     { key: 'sauce:soy', text: 'Now tap the <b>Soy Garlic</b> sauce to glaze it.', target: () => sauceEls.soy },
     { key: 'top:sesame', text: 'Sprinkle on the <b>Sesame</b> topping.', target: () => topEls.sesame },
@@ -531,19 +551,30 @@
   $('#btnQuit').addEventListener('click', () => { S.ended = true; $('#tutBanner').classList.add('hidden'); showScreen('title'); });
 
   /* ---------- share ---------- */
+  function gameplayShareUrl() {
+    const url = new URL(location.href);
+    ['daylen', 'channel', 'fbclid', 'gclid'].forEach(key => url.searchParams.delete(key));
+    Array.from(url.searchParams.keys()).filter(key => key.startsWith('utm_')).forEach(key => url.searchParams.delete(key));
+    url.hash = '';
+    url.searchParams.set('utm_source', 'x');
+    url.searchParams.set('utm_medium', 'social');
+    url.searchParams.set('utm_campaign', 'mamazan_legend');
+    return url.toString();
+  }
   function shareX() {
     const sc = S ? S.score : 0, d = S ? S.day : 1;
     const text = S && S.screen === 'day'
-      ? `I just cleared Day ${d} of Mama Chan Legend 🍗🔥 with $${sc} earned! Fry, sauce & serve Korean fried chicken – can you beat me?`
-      : `I scored $${sc} and reached Day ${d} in Mama Chan Legend 🍗🔥 Fry, sauce & serve Korean fried chicken – can you beat me?`;
+      ? `I just cleared Day ${d} of MAMAZAN Legend 🍗🔥 with $${sc} earned! Fry, sauce & serve Korean fried chicken – can you beat me?`
+      : `I scored $${sc} and reached Day ${d} in MAMAZAN Legend 🍗🔥 Fry, sauce & serve Korean fried chicken – can you beat me?`;
     const url = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(text) +
-      '&hashtags=' + encodeURIComponent('MamaChanLegend,KoreanFriedChicken') + '&url=' + encodeURIComponent('https://deesheng.food');
+      '&hashtags=' + encodeURIComponent('MAMAZANLegend,KoreanFriedChicken') + '&url=' + encodeURIComponent(gameplayShareUrl());
     window.open(url, '_blank', 'noopener');
   }
   $$('[data-share]').forEach(b => b.addEventListener('click', shareX));
 
   /* ---------- sample request form ---------- */
   const form = $('#sampleForm');
+  let sampleSending = false;
   function formData() {
     const fd = new FormData(form);
     return {
@@ -555,77 +586,128 @@
   const SAMPLE_EMAIL = 'wjzta10018545@gmail.com';
   function mailtoFor(d) {
     const body = [
-      'Hello Mama Chan / Deesheng team,', '', 'I would like to request free Mama Chan sauce samples.', '',
+      'Hello MAMAZAN / Deesheng team,', '', 'I would like to request MAMAZAN sauce samples for my business.', '',
       `Name: ${d.name}`, `Company: ${d.company}`, `Country: ${d.country}`, `Business type: ${d.business}`, `Email: ${d.email}`,
-      `Products of interest: ${d.products.join(', ') || '-'}`, `Message: ${d.message || '-'}`, '', '(Sent from the Mama Chan Legend game)'
+      `Products of interest: ${d.products.join(', ') || '-'}`, `Message: ${d.message || '-'}`, '', '(Sent from the MAMAZAN Legend game)'
     ].join('\n');
-    return 'mailto:' + SAMPLE_EMAIL + '?subject=' + encodeURIComponent(`Free sample request – ${d.company || 'Mama Chan Legend'}`) + '&body=' + encodeURIComponent(body);
+    return 'mailto:' + SAMPLE_EMAIL + '?subject=' + encodeURIComponent(`Sample request – ${d.company || 'MAMAZAN Legend'}`) + '&body=' + encodeURIComponent(body);
   }
   form.addEventListener('input', () => { $('#formErr').textContent = ''; });
   $('#mailFallback').addEventListener('click', e => { e.currentTarget.href = mailtoFor(formData()); });
   form.addEventListener('submit', async e => {
     e.preventDefault();
+    if (sampleSending) return;
     const d = formData(), err = $('#formErr');
     const miss = ['name', 'company', 'country', 'business', 'email'].filter(k => !d[k]);
     if (miss.length) { err.textContent = 'Please fill in: ' + miss.join(', '); return; }
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(d.email)) { err.textContent = 'Please enter a valid email address'; return; }
     err.textContent = '';
+    sampleSending = true;
     const btn = form.querySelector('button[type="submit"]');
     if (btn) { btn.disabled = true; btn.textContent = 'Sending…'; }
-    const rec = { ...d, submittedAt: new Date().toISOString(), source: 'mama-chan-legend', gameScore: S ? S.score : null, gameDay: S ? S.day : null, lang: navigator.language };
-    const list = store.get(LS.samples, []); list.push(rec); store.set(LS.samples, list);
     $('#mailSend').href = mailtoFor(d);
+    $('#mailFallback').href = mailtoFor(d);
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 15000);
     try {
       const res = await fetch('https://formsubmit.co/ajax/' + SAMPLE_EMAIL, {
         method: 'POST',
+        signal: controller.signal,
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify({
-          _subject: `Mama Chan Legend sample request – ${d.company}`,
+          _subject: `MAMAZAN Legend sample request – ${d.company}`,
           _template: 'table',
           _captcha: 'false',
           name: d.name,
           company: d.company,
           country: d.country,
           business_type: d.business,
-          reply_to: d.email,
+          email: d.email,
+          _replyto: d.email,
           products: d.products.join(', ') || '-',
           message: d.message || '-',
           game_score: S ? S.score : '',
           game_day: S ? S.day : '',
-          source: 'Mama Chan Legend game'
+          source: 'MAMAZAN Legend game',
+          landing_page: location.origin + location.pathname,
+          utm_source: (qs.get('utm_source') || 'direct').slice(0, 100),
+          utm_medium: (qs.get('utm_medium') || '').slice(0, 100),
+          utm_campaign: (qs.get('utm_campaign') || '').slice(0, 100)
         })
       });
       if (!res.ok) throw new Error('HTTP ' + res.status);
+      const result = await res.json();
+      if (!result || (result.success !== true && result.success !== 'true')) throw new Error('Submission was not accepted');
       form.classList.add('hidden'); $('#formDone').classList.remove('hidden');
-      SFX.init(); SFX.win();
+      // Audio is optional; a blocked audio context must not undo confirmed delivery.
+      try { SFX.init(); SFX.win(); } catch (soundError) {}
     } catch (ex) {
-      err.textContent = 'Could not send automatically. Please use the email button below, or try again.';
-      $('#mailSend').href = mailtoFor(d);
-      form.classList.add('hidden'); $('#formDone').classList.remove('hidden');
+      err.textContent = 'We could not confirm your request was sent. Your details are still here. Please try again or use the email link below.';
+      form.classList.remove('hidden'); $('#formDone').classList.add('hidden');
     } finally {
+      clearTimeout(timeout);
+      sampleSending = false;
       if (btn) { btn.disabled = false; btn.textContent = 'Request free samples'; }
     }
   });
-  function openSamples() {
+  function openSamples(e) {
     form.classList.remove('hidden'); $('#formDone').classList.add('hidden'); $('#formErr').textContent = '';
-    $('#scrSample').classList.remove('hidden');
+    openOverlay('#scrSample', e && e.currentTarget ? e.currentTarget : document.activeElement);
   }
   $$('[data-cta]').forEach(b => b.addEventListener('click', openSamples));
-  $$('#scrSample [data-close]').forEach(b => b.addEventListener('click', () => $('#scrSample').classList.add('hidden')));
-  $$('#scrHow [data-close]').forEach(b => b.addEventListener('click', () => $('#scrHow').classList.add('hidden')));
+  $$('#scrSample [data-close]').forEach(b => b.addEventListener('click', () => closeOverlay('#scrSample')));
+  $$('#scrHow [data-close]').forEach(b => b.addEventListener('click', () => closeOverlay('#scrHow')));
+
+  /* ---------- real products ---------- */
+  function openProducts(e) {
+    const panel = $('#scrProducts'), list = $('#productList');
+    if (!panel || !list) return;
+    list.innerHTML = PRODUCTS.map(p => `<article class="product-card">
+      <div class="product-swatch">${ART.sauceBottle(sauceById(p.id).color)}</div>
+      <div class="product-copy"><h3>${p.name}</h3><p class="product-note">${p.note}</p>
+      <button class="btn small product-select" type="button" data-product="${p.id}">Request this sample →</button></div>
+    </article>`).join('');
+    openOverlay('#scrProducts', e && e.currentTarget ? e.currentTarget : document.activeElement);
+  }
+  const productsButton = $('#btnProducts');
+  if (productsButton) productsButton.addEventListener('click', openProducts);
+  $$('[data-products]').filter(b => b !== productsButton).forEach(b => b.addEventListener('click', openProducts));
+  const productList = $('#productList');
+  if (productList) productList.addEventListener('click', e => {
+    const button = e.target.closest('[data-product]');
+    if (!button || !productList.contains(button)) return;
+    const product = PRODUCTS.find(p => p.id === button.dataset.product);
+    if (!product) return;
+    Array.from(form.querySelectorAll('input[name="products"]')).forEach(input => {
+      if (input.value === product.interest) input.checked = true;
+    });
+    const message = form.querySelector('[name="message"]');
+    if (message && !message.value.includes(product.name)) {
+      message.value = (message.value ? message.value + '\n' : '') + 'Interested in: ' + product.name;
+    }
+    closeOverlay('#scrProducts');
+    openSamples();
+  });
+  $$('#scrProducts [data-close]').forEach(b => b.addEventListener('click', () => closeOverlay('#scrProducts')));
 
   /* ---------- wiring ---------- */
   tap($('#chickenBox'), onChickenBox);
   tap($('#trash'), onTrash);
   $('#btnPlay').addEventListener('click', () => { SFX.init(); SFX.tap(); newGame(); });
-  $('#btnHow').addEventListener('click', () => $('#scrHow').classList.remove('hidden'));
+  $('#btnHow').addEventListener('click', e => openOverlay('#scrHow', e.currentTarget));
   $('#btnNextDay').addEventListener('click', () => { SFX.tap(); S.hearts = Math.min(5, S.hearts + 1); startDay(S.day + 1); });
   $('#btnRetryDay').addEventListener('click', () => { SFX.tap(); const sn = S.snapshot; Object.assign(S, { wallet: sn.wallet, score: sn.score, hearts: Math.max(3, sn.hearts), upgrades: { ...sn.upgrades }, totalServed: sn.totalServed, totalAngry: sn.totalAngry }); startDay(sn.day); });
   $('#btnRestart').addEventListener('click', () => { SFX.tap(); newGame(); });
   $('#tutNext').addEventListener('click', endTutorial);
   $('#tutSkip').addEventListener('click', endTutorial);
   $('#logoChicken').innerHTML = ART.logo();
-  addEventListener('keydown', e => { if (e.key === 'Escape') { if (S && S.paused) resume(); else pause(); } });
+  addEventListener('keydown', e => {
+    if (e.key !== 'Escape') return;
+    const overlay = ['#scrSample', '#scrProducts', '#scrHow'].find(selector => !$(selector).classList.contains('hidden'));
+    if (overlay) { e.preventDefault(); closeOverlay(overlay); }
+    else if (S && S.paused) resume();
+    else pause();
+  });
 
   // read-only hook for automated tests
   window.__MCL = { get state() { return S; }, SAUCES, TOPS };

@@ -4,16 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
 <meta name="theme-color" content="#ff7a1a">
-<meta name="description" content="Mama Chan Legend – a fast & fun Korean fried chicken cooking game by Mama Chan (妈妈赞 · 엄마찬) sauces from Qingdao Deesheng Hengxin Food.">
-<meta property="og:title" content="Mama Chan Legend – K-Chicken Sauce Master">
+<meta name="description" content="MAMAZAN Legend – a fast & fun Korean fried chicken cooking game by MAMAZAN (妈妈赞 · 엄마찬) sauces from Qingdao Deesheng Hengxin Food.">
+<meta property="og:title" content="MAMAZAN Legend – K-Chicken Sauce Master">
 <meta property="og:description" content="Fry, sauce and serve Korean fried chicken before your customers lose patience!">
-<title>Mama Chan Legend · 妈妈赞传奇 · 엄마찬 레전드</title>
+<title>MAMAZAN Legend · 妈妈赞传奇 · 엄마찬 레전드</title>
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 <div id="viewport">
-<div id="stage" aria-label="Mama Chan Legend game">
+<div id="stage" aria-label="MAMAZAN Legend game">
 
   <!-- HUD -->
   <div id="hud">
@@ -28,7 +28,7 @@
 
   <!-- Shop front -->
   <div id="shop">
-    <div id="sign"><span class="sign-ko">엄마찬</span><span class="sign-en">MAMA CHAN CHICKEN</span><span class="sign-zh">妈妈赞</span></div>
+    <div id="sign"><span class="sign-ko">엄마찬</span><span class="sign-en">MAMAZAN CHICKEN</span><span class="sign-zh">妈妈赞</span></div>
     <div id="lanterns"><i></i><i></i><i></i><i></i><i></i></div>
     <div id="customers"></div>
   </div>
@@ -61,14 +61,15 @@
   <div class="overlay" id="scrTitle">
     <div class="title-card">
       <div class="logo-chicken" id="logoChicken"></div>
-      <h1 class="logo"><span>Mama Chan</span><span class="legend">LEGEND</span></h1>
+      <h1 class="logo"><span>MAMAZAN</span><span class="legend">LEGEND</span></h1>
       <div class="logo-sub">妈妈赞传奇 · 엄마찬 레전드</div>
       <p class="tag">Fry it golden. Sauce it right. Serve it fast!</p>
       <button class="btn big" id="btnPlay">▶ Play</button>
       <button class="btn ghost" id="btnHow">How to play</button>
+      <button class="btn ghost product-entry" id="btnProducts">Meet the real sauces</button>
       <div id="bestLine" class="best-line"></div>
-      <button class="cta-mini" data-cta>🍯 Restaurant, importer or distributor? <u>Get free Mama Chan sauce samples</u></button>
-      <div class="brand-foot">Mama Chan (妈妈赞 · 엄마찬) sauces by Qingdao Deesheng Hengxin Food Co., Ltd. · <a href="https://deesheng.food" target="_blank" rel="noopener">deesheng.food</a></div>
+      <button class="cta-mini" data-cta>🍯 Restaurant, importer or distributor? <u>Get free MAMAZAN sauce samples</u></button>
+      <div class="brand-foot">MAMAZAN (妈妈赞 · 엄마찬) sauces by Qingdao Deesheng Hengxin Food Co., Ltd. · <a href="https://deesheng.food" target="_blank" rel="noopener">deesheng.food</a></div>
     </div>
   </div>
 
@@ -111,10 +112,11 @@
       <button class="btn big" id="btnNextDay">Next day ▶</button>
       <div class="row2">
         <button class="btn x" data-share>Share on 𝕏</button>
+        <button class="btn ghost" data-products>Meet the sauces</button>
       </div>
       <button class="cta-card" data-cta>
         <b>Restaurant, importer or distributor?</b>
-        <span>Get free Mama Chan sauce samples →</span>
+        <span>Get free MAMAZAN sauce samples →</span>
       </button>
     </div>
   </div>
@@ -131,10 +133,23 @@
         <button class="btn ghost" id="btnRestart">New game</button>
       </div>
       <button class="btn x" data-share>Share my score on 𝕏</button>
+      <button class="btn ghost" data-products>Meet the real sauces</button>
       <button class="cta-card" data-cta>
         <b>Restaurant, importer or distributor?</b>
-        <span>Get free Mama Chan sauce samples →</span>
+        <span>Get free MAMAZAN sauce samples →</span>
       </button>
+    </div>
+  </div>
+
+  <!-- The real sauces behind the game -->
+  <div class="overlay hidden" id="scrProducts" role="dialog" aria-modal="true" aria-labelledby="productsTitle">
+    <div class="card products-card">
+      <button class="close-x" data-close aria-label="Close sauce guide">✕</button>
+      <h2 id="productsTitle">From the game to your kitchen</h2>
+      <p class="small-note">Explore real Deesheng sauces for fried chicken, dipping and Korean-style cooking. OEM / private label available.</p>
+      <div id="productList" class="product-list"></div>
+      <p class="small-note">Tell us your preferred packaging and quantity. We’ll confirm available options with your quotation.</p>
+      <button class="btn ghost" data-close>Back to game</button>
     </div>
   </div>
 
@@ -142,8 +157,9 @@
   <div class="overlay hidden" id="scrSample">
     <div class="card form-card">
       <button class="close-x" data-close aria-label="Close">✕</button>
-      <h2>Free Mama Chan sauce samples</h2>
-      <p class="small-note">From the Mama Chan Legend kitchen to yours. Factory-direct Korean-style sauces, gochujang &amp; chili powder by Qingdao Deesheng Hengxin Food. OEM / private label welcome.</p>
+      <h2>Free MAMAZAN sauce samples</h2>
+      <p class="small-note">From the MAMAZAN Legend kitchen to yours. Factory-direct Korean-style sauces, gochujang &amp; chili powder by Qingdao Deesheng Hengxin Food. OEM / private label welcome.</p>
+      <p class="sample-terms">For business buyers. Sample selection and shipping costs are confirmed before dispatch.</p>
       <form id="sampleForm" novalidate>
         <label>Your name*<input name="name" required autocomplete="name"></label>
         <label>Company*<input name="company" required autocomplete="organization"></label>
@@ -172,14 +188,14 @@
           <label class="chk"><input type="checkbox" name="products" value="OEM / private label">OEM / private label</label>
         </fieldset>
         <label>Message (optional)<textarea name="message" rows="2" placeholder="Volumes, packaging, target market…"></textarea></label>
-        <div id="formErr" class="form-err"></div>
+        <div id="formErr" class="form-err" role="alert" aria-live="polite"></div>
         <button class="btn big" type="submit">Request free samples</button>
         <a class="mail-fallback" id="mailFallback" href="mailto:wjzta10018545@gmail.com">Or email us: wjzta10018545@gmail.com</a>
       </form>
-      <div id="formDone" class="hidden">
+      <div id="formDone" class="hidden" role="status" aria-live="polite">
         <div class="done-ic">✅</div>
-        <h3>Thank you! Request received.</h3>
-        <p class="small-note proto-note">Your request has been sent to our sales team. If you do not hear back within 1–2 business days, please also email us:</p>
+        <h3>Thank you! Request submitted.</h3>
+        <p class="small-note">We’ll review your request and contact you to confirm products and shipping. If you do not hear back within 1–2 business days, please also email us:</p>
         <a class="btn" id="mailSend" href="mailto:wjzta10018545@gmail.com">✉ Send by email</a>
         <button class="btn ghost" data-close>Back to game</button>
       </div>
@@ -188,7 +204,7 @@
 
 </div>
 </div>
-<noscript>Please enable JavaScript to play Mama Chan Legend.</noscript>
+<noscript>Please enable JavaScript to play MAMAZAN Legend.</noscript>
 <script src="assets/js/art.js"></script>
 <script src="assets/js/audio.js"></script>
 <script src="assets/js/game.js"></script>
