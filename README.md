@@ -28,7 +28,7 @@ The standalone browser game lives in `public/game/` and is available at `/game/`
 
 Sample requests use the existing Gmail destination through FormSubmit. Only an explicit successful service response shows the submitted screen; failure or a 15-second timeout preserves the form and provides an email fallback. Service acceptance is not proof of inbox delivery or sample dispatch. A new hosting origin may require FormSubmit email activation. X sharing links directly back to the current game route with campaign attribution.
 
-Run the game conversion checks independently with `node --test tests/game-conversion.test.mjs`. These checks isolate network responses and do not send real sample requests. The separately hosted `mamazan-legend.vercel.app` deployment must be updated through its existing deployment connection; committing this folder does not prove that Vercel has updated.
+Run the game conversion checks independently with `node --test tests/game-conversion.test.mjs`. These checks isolate network responses and do not send real sample requests. The existing `mamazan-legend.vercel.app` Vercel project is configured as an independent static deployment of this repository: root directory `public/game`, framework `Other`, empty build and install commands, output directory `.`, and production branch `main`. The website footer links to the game without importing game scripts. GitHub Pages builds the complete website separately, while the canonical `deesheng.food` server requires its own synchronization. Verify the Vercel deployment status and live game after each release; a repository commit alone is not deployment proof.
 
 ### Agreed game direction — planned, not implemented
 
