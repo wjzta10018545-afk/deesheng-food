@@ -50,7 +50,20 @@ Website WhatsApp and email links include the session's source, medium, campaign,
 
 The public `deesheng.food` domain is served by a separately managed static server. Updating GitHub Pages or the Sites application does **not** establish that the canonical domain was updated. Build the canonical export without `GITHUB_PAGES=true`, synchronize the complete `out/` directory through the authorized production deployment channel, then verify the live contact links. The server synchronization is managed separately from this repository's GitHub Pages workflow.
 
-The GitHub `production` environment validates every commit to `main` against the full production build.
+The GitHub `Production` workflow exports and publishes the GitHub Pages website on each push to `main`. It uses the `/deesheng-food/` base path and does not synchronize the canonical server.
+
+### Canonical server export
+
+After pulling the latest `main`, build the root-path static website with Node.js 22 or newer on Linux/macOS:
+
+```bash
+npm ci
+npm run export:canonical
+```
+
+Synchronize the complete generated `out/` directory to the canonical server using your normal release procedure. This command explicitly removes `GITHUB_PAGES` from the build environment. Do not use the `gh-pages` output for `deesheng.food`, because that output uses a different base path. Server synchronization is performed by Kevin; the GitHub update alone does not update the canonical domain.
+
+For the separate Sites application build and regression checks:
 
 ```bash
 npm ci
@@ -58,13 +71,19 @@ npm run build
 npm test
 ```
 
-## Commercial baseline
-
 ## Inquiry repair release — 2026-10-09
 
 Form inputs and the API share length and required-field validation. The form shows the requirements limit and field-specific errors, preserves inputs on failure, and provides a current WhatsApp draft link when a popup is blocked. Optional reply contact, ad content and inquiry page are separate database columns; inquiry text no longer competes with attribution for its 1200-character allowance. These details are not sent to analytics. Existing inquiry payloads remain accepted.
 
 Apply the new Drizzle migration through Sites before deploying the updated worker, then publish the front end. The canonical domain still requires its separately authorized server synchronization; a successful Sites or GitHub Pages release does not update that domain. Verify a marked QA submission and database row after synchronization, including a 1200-character requirement, attribution and optional contact. A prepared inquiry remains distinct from a sent WhatsApp message.
+
+## Buyer content release — 2026-10-09
+
+The Korean sauce category, OEM landing page and fried-chicken coating mix page now give clearer wholesale buying information, existing pack specifications and relevant product/guide links. Six buyer guides now answer their main question directly and link to the relevant products, and the coating mix page includes additional purchasing questions grounded in the current catalogue. Publication dates are preserved separately from actual revision dates.
+
+See [the research and buyer-intent map](docs/seo-geo-content-map-20261009.md) for sources, covered questions, remaining evidence needs and measurement boundaries. Search phrases in that map are topic hypotheses, not measured search volumes. No rankings, AI citations or growth targets are guaranteed.
+
+## Commercial baseline
 
 B2B export · Standard OEM MOQ 200 cartons per item · FOB Qingdao · Typical standard-product lead time about 14 days after final confirmation.
 
