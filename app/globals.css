@@ -963,6 +963,9 @@ button, input, select, textarea { font: inherit; }
 .form-consent { display: flex; align-items: center; justify-content: space-between; gap: 25px; margin-top: 24px; padding-top: 22px; border-top: 1px solid var(--line); }
 .form-consent p { max-width: 340px; margin: 0; color: #7a8982; font-size: 14px; line-height: 1.5; }
 .form-success { margin: 17px 0 0; padding: 12px; background: var(--lime-soft); color: var(--ink); font-size: 16px; }
+.quote-form small { display: block; margin-top: 6px; font-size: 14px; }
+.quote-form [aria-invalid="true"] { border-color: #ad2929; }
+.quote-form small[id$="-error"] { color: #ad2929; }
 .contact-expect { display: grid; grid-template-columns: .7fr 1.3fr; gap: 80px; }
 .contact-expect h2 { font-size: 48px; }
 .contact-expect ol { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 0; padding: 0; list-style: none; }
