@@ -3,7 +3,11 @@ export type BuyerGuide = {
   title: string;
   description: string;
   question: string;
+  directAnswer: string;
+  productLinks: { label: string; href: string }[];
+  relatedGuideSlugs: string[];
   audience: string;
+  published: string;
   updated: string;
   readTime: string;
   category: string;
@@ -17,8 +21,12 @@ export const buyerGuides: BuyerGuide[] = [
     title: "Korean Sauce OEM: A Practical Buyer Guide",
     description: "What importers and brand owners should prepare before asking a Korean-style sauce manufacturer for samples and pricing.",
     question: "How does Korean sauce OEM manufacturing work?",
+    directAnswer: "Korean sauce OEM starts with your target market, sales channel, product, pack and estimated quantity. Choose an existing formula, request an adjustment or provide a reference for development. Test samples in the intended application, then confirm specifications, artwork and commercial terms before production. Deesheng's standard OEM MOQ is 200 cartons per item; trial quantities are discussed separately.",
+    productLinks: [{ label: "Korean BBQ sauce", href: "/product/korean-bbq-sauce/" }, { label: "Sweet-spicy fried chicken sauce", href: "/product/sweet-spicy-fried-chicken-sauce/" }, { label: "Private-label service", href: "/oem-private-label/" }],
+    relatedGuideSlugs: ["private-label-gochujang-supplier", "import-korean-sauces-from-china", "halal-korean-sauce-manufacturer"],
     audience: "Importers, distributors and private-label brands",
-    updated: "2026-08-24",
+    published: "2026-08-24",
+    updated: "2026-10-09",
     readTime: "6 min",
     category: "OEM",
     sections: [
@@ -39,8 +47,12 @@ export const buyerGuides: BuyerGuide[] = [
     title: "How to Source Private-Label Gochujang",
     description: "A buyer-focused checklist covering product profile, 500 g and 14 kg packs, private label, MOQ, samples and export quotation.",
     question: "What should I check when choosing a private-label gochujang supplier?",
+    directAnswer: "Check the gochujang's flavor and heat in your intended recipe, then confirm its ingredients, allergens, storage and relevant product documents. Deesheng lists 500 g tubs packed 20 per carton and 14 kg foodservice cartons, with standard and extra-hot options. Share your market, label requirements and expected quantity before sampling; the standard OEM MOQ is 200 cartons per item.",
+    productLinks: [{ label: "Gochujang packs and specification", href: "/product/gochujang/" }, { label: "Extra-hot gochujang", href: "/product/extra-hot-gochujang/" }],
+    relatedGuideSlugs: ["korean-sauce-oem-guide", "halal-korean-sauce-manufacturer", "import-korean-sauces-from-china"],
     audience: "Food importers, supermarket suppliers and restaurant distributors",
-    updated: "2026-08-24",
+    published: "2026-08-24",
+    updated: "2026-10-09",
     readTime: "5 min",
     category: "Gochujang",
     sections: [
@@ -61,8 +73,12 @@ export const buyerGuides: BuyerGuide[] = [
     title: "Choosing a HALAL Korean Sauce Manufacturer",
     description: "How Muslim-market buyers can evaluate certification, product scope, ingredients, labels, packing and OEM readiness.",
     question: "How do I evaluate a HALAL Korean sauce manufacturer?",
+    directAnswer: "Evaluate a HALAL sauce manufacturer against the exact product and destination. Request current certification documents and check the selected formula, manufacturing location and applicable scope. Review ingredients and allergens separately, then confirm destination requirements with the importer. At Deesheng, current SHC documents are available to qualified B2B buyers after company and project verification; confirm coverage before approving the order.",
+    productLinks: [{ label: "Gochujang specification", href: "/product/gochujang/" }, { label: "Soy-garlic fried chicken sauce", href: "/product/soy-garlic-fried-chicken-sauce/" }, { label: "Certification scope and documents", href: "/quality-certifications/" }],
+    relatedGuideSlugs: ["korean-sauce-oem-guide", "private-label-gochujang-supplier", "import-korean-sauces-from-china"],
     audience: "Importers and distributors serving Muslim markets",
-    updated: "2026-08-24",
+    published: "2026-08-24",
+    updated: "2026-10-09",
     readTime: "5 min",
     category: "HALAL",
     sections: [
@@ -83,8 +99,12 @@ export const buyerGuides: BuyerGuide[] = [
     title: "How to Import Korean-Style Sauces from China",
     description: "A step-by-step sourcing sequence from product shortlist and samples to export quotation, label approval, production and shipping.",
     question: "What is the process for importing Korean-style sauces from China?",
+    directAnswer: "Start with a product shortlist, then confirm each item's pack, carton quantity, shelf life, storage and destination. Review supplier and product documents and test samples in the intended application. Agree the quotation, label artwork, payment terms and Incoterm before production and shipping. Plan freight and clearance around the selected products' temperature requirements; ambient sauces and frozen products are normally planned separately.",
+    productLinks: [{ label: "Wholesale Korean sauce catalogue", href: "/products/korean-sauces/" }, { label: "Gochujang", href: "/product/gochujang/" }, { label: "Korean BBQ sauce", href: "/product/korean-bbq-sauce/" }],
+    relatedGuideSlugs: ["korean-sauce-oem-guide", "halal-korean-sauce-manufacturer", "korean-fried-chicken-sauce-system"],
     audience: "First-time and experienced food importers",
-    updated: "2026-08-24",
+    published: "2026-08-24",
+    updated: "2026-10-09",
     readTime: "7 min",
     category: "Importing",
     sections: [
@@ -106,8 +126,12 @@ export const buyerGuides: BuyerGuide[] = [
     title: "Building a Korean Fried Chicken Sauce System",
     description: "How foodservice buyers combine marinade, coating mix and finishing sauces for consistent Korean fried chicken.",
     question: "What products are needed for a Korean fried chicken system?",
+    directAnswer: "A Korean fried chicken system combines marinade seasoning, coating or frying mix, and a finishing sauce; dry seasonings can add further flavors. Deesheng lists sweet-spicy and soy-garlic sauces in 1 kg pouches packed 12 per carton, and coating mix in 1 kg pouches packed 10. Test the components together using your chicken cut, frying method and serving conditions before approval.",
+    productLinks: [{ label: "Fried chicken coating mix", href: "/product/fried-chicken-coating-mix/" }, { label: "Sweet-spicy finishing sauce", href: "/product/sweet-spicy-fried-chicken-sauce/" }, { label: "Soy-garlic finishing sauce", href: "/product/soy-garlic-fried-chicken-sauce/" }],
+    relatedGuideSlugs: ["korean-sauce-oem-guide", "korean-chili-powder-sourcing", "halal-korean-sauce-manufacturer"],
     audience: "Restaurant suppliers, chains and central kitchens",
-    updated: "2026-08-24",
+    published: "2026-08-24",
+    updated: "2026-10-09",
     readTime: "5 min",
     category: "Foodservice",
     sections: [
@@ -128,8 +152,12 @@ export const buyerGuides: BuyerGuide[] = [
     title: "Korean Chili Powder Sourcing Checklist",
     description: "How buyers should specify grind, color, heat, application, packing and documentation for Korean-style chili powder.",
     question: "What specifications matter when buying Korean chili powder?",
+    directAnswer: "Specify the intended use, particle size or reference sample, color and heat separately when sourcing Korean chili powder. Test the selected grade in the actual recipe rather than relying on coarse or fine alone. Deesheng lists 100 g bottles, 200 g bottles and 1 kg pouches, packed 110, 60 and 10 per carton respectively. Confirm the product specification and destination-required documents.",
+    productLinks: [{ label: "Coarse Korean chili powder", href: "/product/coarse-korean-chili-powder/" }, { label: "Fine Korean chili powder", href: "/product/fine-korean-chili-powder/" }],
+    relatedGuideSlugs: ["korean-fried-chicken-sauce-system", "import-korean-sauces-from-china", "halal-korean-sauce-manufacturer"],
     audience: "Kimchi producers, food manufacturers and spice distributors",
-    updated: "2026-08-24",
+    published: "2026-08-24",
+    updated: "2026-10-09",
     readTime: "5 min",
     category: "Chili Powder",
     sections: [

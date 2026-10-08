@@ -23,14 +23,15 @@ const sourcingGuides: Record<string, {
     startingPoints: [{ name: "Cabbage kimchi specification", slug: "korean-cabbage-kimchi" }],
   },
   "korean-sauces": {
-    heading: "Build a Korean sauce range around your sales channel",
-    introduction: "Shortlist the flavor and application before comparing retail bottles, foodservice pouches, samples and OEM label requirements.",
+    heading: "Choose Korean sauces for wholesale and private label",
+    introduction: "Compare the product, pack and order quantity for your channel. The standard OEM MOQ is 200 cartons per item; trial quantities are assessed after product and packing selection.",
     steps: [
       { title: "Pick an application", description: "Compare fried-chicken glazes, buldak, bibimbap, tteokbokki and Korean BBQ sauces by menu use and target heat level." },
-      { title: "Match pack and volume", description: "Review listed retail packs and 1 kg foodservice pouches. Confirm the exact carton, estimated volume and destination for a quotation." },
+      { title: "Match the pack to the channel", description: "Review retail bottles and 1 kg sauce pouches. Gochujang also has 500 g tubs and 14 kg foodservice cartons. Sizes and carton quantities are product-specific." },
       { title: "Confirm project scope", description: "Ask about samples, flavor adjustment and private label. HALAL documents and coverage must be checked against the selected formula and order." },
     ],
     startingPoints: [
+      { name: "Gochujang packs", slug: "gochujang" },
       { name: "Korean BBQ sauce", slug: "korean-bbq-sauce" },
       { name: "Classic buldak sauce", slug: "classic-buldak-sauce" },
       { name: "Fried chicken sauce", slug: "sweet-spicy-fried-chicken-sauce" },
@@ -51,23 +52,23 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isKimchi = category.slug === "kimchi";
   return {
     title: isKoreanSauce
-      ? { absolute: "Korean Sauce Manufacturer in China | OEM & Wholesale" }
+      ? { absolute: "Wholesale Korean Sauces & Private Label | Deesheng Food" }
       : isKimchi ? { absolute: "Korean Kimchi Manufacturer in China | Wholesale & OEM" }
       : `${halalPrefix}${category.name} Manufacturer & OEM Supplier`,
     description: isKoreanSauce
-      ? "Source Korean sauces in retail and foodservice packs from Qingdao. Compare fried-chicken, buldak and BBQ sauces, OEM options and product-specific HALAL scope."
+      ? "Source Korean sauces from Qingdao: gochujang, fried-chicken, buldak and BBQ. Compare retail and foodservice packs, private label and standard OEM MOQ of 200 cartons per item."
       : isKimchi ? "Source wholesale Korean cabbage, radish and specialty kimchi from Qingdao. Compare retail and 10 kg foodservice packs, refrigerated shipping, OEM options and samples."
       : `${category.description} Review standard export packs, OEM/private-label support and quotation requirements for B2B buyers.`,
     alternates: { canonical: `/products/${category.slug}/` },
     openGraph: {
       title: isKoreanSauce
-        ? "Korean Sauce Manufacturer in China | OEM & Wholesale"
+        ? "Wholesale Korean Sauces & Private Label | Deesheng Food"
         : `${category.name} | Deesheng Food`,
       description: category.description,
       url: `https://deesheng.food/products/${category.slug}/`,
       images: [{ url: category.image, alt: category.imageAlt }],
     },
-    twitter: { card: "summary_large_image", images: [category.image] },
+    twitter: { card: "summary_large_image", title: isKoreanSauce ? "Wholesale Korean Sauces & Private Label | Deesheng Food" : category.name, description: category.description, images: [category.image] },
   };
 }
 
@@ -151,7 +152,7 @@ export default async function CategoryPage({ params }: Props) {
         <div className="category-hero-copy">
           <nav className="breadcrumbs" aria-label="Breadcrumb"><Link href="/">Home</Link><span>/</span><Link href="/products/">Products</Link><span>/</span><b>{category.shortName}</b></nav>
           <p className="eyebrow">{category.eyebrow}</p>
-          <h1>{category.name}</h1>
+          <h1>{category.slug === "korean-sauces" ? "Wholesale Korean sauces & private-label supply." : category.name}</h1>
           <p>{category.description}</p>
           <div className="button-row"><Link className="button button-primary" href={`/contact/?product=${category.slug}`}>Request a quote</Link><a className="button button-ghost" href="/downloads/Deesheng-Food-Product-Catalogue-2026.pdf" download>Download catalogue</a></div>
         </div>
@@ -163,7 +164,7 @@ export default async function CategoryPage({ params }: Props) {
       {sourcingGuide && <section className="section shell category-sourcing">
         <div className="section-heading compact-heading"><p className="eyebrow">Buyer selection guide</p><h2>{sourcingGuide.heading}</h2><p>{sourcingGuide.introduction}</p></div>
         <div className="category-sourcing-grid">{sourcingGuide.steps.map((step, index) => <article key={step.title}><span>0{index + 1}</span><h3>{step.title}</h3><p>{step.description}</p></article>)}</div>
-        <p className="category-sourcing-links">Start with: {sourcingGuide.startingPoints.map((item) => <Link key={item.slug} href={`/product/${item.slug}/`}>{item.name} ↗</Link>)}{category.slug === "kimchi" && <Link href="/markets/singapore/">Singapore kimchi buyer guide ↗</Link>}</p>
+        <p className="category-sourcing-links">Start with: {sourcingGuide.startingPoints.map((item) => <Link key={item.slug} href={`/product/${item.slug}/`}>{item.name} ↗</Link>)}{category.slug === "kimchi" && <Link href="/markets/singapore/">Singapore kimchi buyer guide ↗</Link>}{category.slug === "korean-sauces" && <><Link href="/oem-private-label/">Private-label process and MOQ</Link><Link href="/quality-certifications/">Certification scope and documents</Link></>}</p>
       </section>}
 
       <section className="section shell">

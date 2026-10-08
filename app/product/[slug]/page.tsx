@@ -11,6 +11,11 @@ const productBuyingGuides: Record<string, {
   customization: string[];
   brief: string[];
 }> = {
+  "fried-chicken-coating-mix": {
+    buyerFit: ["Fried-chicken chains", "Foodservice importers and wholesalers", "Central kitchens", "Private-label dry-mix brands"],
+    customization: ["1 kg pouch × 10 carton specification", "Coating texture for the intended chicken format", "Matching marinade and finishing sauce", "Ingredient, allergen and certification documents"],
+    brief: ["Chicken cut and current preparation method", "Target coating texture and serving method", "Expected cartons or monthly usage", "Destination, sales channel and label requirements"],
+  },
   gochujang: {
     buyerFit: ["Supermarket and Asian-grocery distributors", "Korean restaurant and foodservice suppliers", "Private-label sauce brands", "Meal-kit and prepared-food manufacturers"],
     customization: ["Heat and sweetness balance", "Retail tub or 14 kg foodservice format", "Private-label artwork and export label", "Current HALAL documents for the selected formula"],
@@ -98,20 +103,22 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!product) return {};
   const isKoreanSauce = product.categorySlug === "korean-sauces" || product.categorySlug === "gochujang-pastes";
   const halalPrefix = isKoreanSauce ? "HALAL " : "";
+  const isCoatingMix = product.slug === "fried-chicken-coating-mix";
+  const title = isCoatingMix ? "Fried Chicken Coating Mix Supplier | 1 kg Wholesale" : `${halalPrefix}${product.name} Manufacturer & Wholesale Supplier`;
   const qualification = isKoreanSauce
     ? "HALAL scope review, private label, samples and export packing"
     : "Wholesale supply, samples, export packing and private-label support";
   return {
-    title: `${halalPrefix}${product.name} Manufacturer & Wholesale Supplier`,
-    description: `${product.summary} ${qualification} from Qingdao, China. Standard OEM MOQ: 200 cartons per item.`,
+    title: isCoatingMix ? { absolute: title } : title,
+    description: isCoatingMix ? "Source fried chicken coating mix in 1 kg × 10 cartons. 12-month shelf life, OEM options and sauce-pairing support for B2B foodservice buyers." : `${product.summary} ${qualification} from Qingdao, China. Standard OEM MOQ: 200 cartons per item.`,
     alternates: { canonical: `/product/${product.slug}/` },
     openGraph: {
-      title: `${product.name} | Deesheng Food`,
+      title: isCoatingMix ? title : `${product.name} | Deesheng Food`,
       description: product.summary,
       url: `https://deesheng.food/product/${product.slug}/`,
       images: [{ url: product.image, alt: product.imageAlt }],
     },
-    twitter: { card: "summary_large_image", images: [product.image] },
+    twitter: { card: "summary_large_image", title: isCoatingMix ? title : product.name, description: product.summary, images: [product.image] },
   };
 }
 

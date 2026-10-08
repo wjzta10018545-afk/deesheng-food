@@ -3,8 +3,8 @@ import Link from "next/link";
 import { JsonLd } from "../components/JsonLd";
 
 export const metadata: Metadata = {
-  title: { absolute: "Korean Sauce OEM Manufacturer in China | Private Label" },
-  description: "Develop private-label Korean sauces with a China manufacturer. Compare stock formulas, flavor adjustment, retail or foodservice packs, samples and export project requirements.",
+  title: { absolute: "Private Label Korean Sauce Manufacturer | MOQ 200 Cartons" },
+  description: "Build a private-label Korean sauce range: standard OEM MOQ 200 cartons per item, retail or foodservice packs, sample approval and export support from Qingdao, China.",
   keywords: [
     "Korean sauce OEM manufacturer China",
     "private label Korean sauce manufacturer",
@@ -15,10 +15,16 @@ export const metadata: Metadata = {
   alternates: { canonical: "/oem-private-label/" },
   openGraph: {
     type: "website",
-    title: "Korean Sauce OEM Manufacturer in China | Private Label",
+    title: "Private Label Korean Sauce Manufacturer | MOQ 200 Cartons",
     description: "OEM and private-label Korean sauce development for importers, distributors, foodservice groups and brands.",
     url: "https://deesheng.food/oem-private-label/",
     images: [{ url: "/media/fried-chicken-sauces.webp", alt: "Deesheng Food Korean sauce OEM range" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Private Label Korean Sauce Manufacturer | MOQ 200 Cartons",
+    description: "Compare formulas, packs and the sample-to-shipment process for your Korean sauce brand.",
+    images: ["/media/fried-chicken-sauces.webp"],
   },
 };
 
@@ -50,8 +56,17 @@ export default function OemPage() {
   return (
     <main>
       <JsonLd data={data} />
-      <section className="inner-hero shell"><div><p className="eyebrow">OEM / ODM / Private label</p><h1>Turn a market opportunity into your own food brand.</h1></div><div className="inner-hero-aside"><p>Work with one export team from product selection and samples through label, production and shipment.</p><Link className="button button-primary" href="/contact/?product=oem">Discuss an OEM project</Link></div></section>
+      <section className="inner-hero shell"><div><p className="eyebrow">OEM / ODM / Private label</p><h1>Private-label Korean sauces, from brief to shipment.</h1></div><div className="inner-hero-aside"><p>For food brands, importers and foodservice distributors. Standard OEM MOQ: 200 cartons per item. Choose your product and pack, then confirm samples, label, price and shipment terms with our export team.</p><Link className="button button-primary" href="/contact/?product=oem">Request an OEM quotation</Link></div></section>
       <section className="oem-visual-band"><div className="shell oem-visual-grid"><div><span>YOUR BRAND</span><h2>Standard formula</h2><p>Fastest route: select a proven export product, pack and label.</p></div><div><span>YOUR MARKET</span><h2>Adjusted flavor</h2><p>Refine heat, sweetness, texture or application against a clear brief.</p></div><div><span>YOUR PRODUCT</span><h2>Custom development</h2><p>Build from a reference product or more detailed formulation requirement.</p></div></div></section>
+      <section className="section shell category-sourcing">
+        <div className="section-heading compact-heading"><p className="eyebrow">Choose your starting product</p><h2>Match the range to how your customers buy.</h2><p>Start with a product and standard pack before asking for a custom formula or packaging format.</p></div>
+        <div className="category-sourcing-grid">
+          <article><span>RETAIL & DISTRIBUTION</span><h3>Gochujang and Korean sauces</h3><p>Compare 500 g gochujang tubs, sauce bottles and the exact carton configuration for each item.</p><p><Link href="/product/gochujang/">Compare gochujang packs</Link></p></article>
+          <article><span>RESTAURANTS & FOODSERVICE</span><h3>Fried-chicken sauce range</h3><p>Shortlist sweet-spicy or soy-garlic glaze, then discuss the matching coating mix and menu application.</p><p><Link href="/resources/korean-fried-chicken-sauce-system/">Plan a fried-chicken product range</Link></p></article>
+          <article><span>MARKET REQUIREMENTS</span><h3>Confirm the selected formula</h3><p>Share required certification, label language and product specifications before approving samples or artwork.</p><p><Link href="/quality-certifications/">Review certification scope</Link></p></article>
+        </div>
+        <p className="category-sourcing-links"><Link href="/products/korean-sauces/">Browse wholesale Korean sauces</Link><Link href="/resources/korean-sauce-oem-guide/">Read the sauce OEM buyer guide</Link></p>
+      </section>
       <section className="section shell"><div className="section-heading split-heading"><div><p className="eyebrow">Development process</p><h2>Six clear steps from brief to shipment.</h2></div><p>A strong project starts with a specific channel, pack and order plan. That allows the factory to recommend the right technical and commercial route.</p></div><ol className="oem-steps">{steps.map(([number, title, text]) => <li key={number}><span>{number}</span><h3>{title}</h3><p>{text}</p></li>)}</ol></section>
       <section className="section section-tint"><div className="shell capability-grid"><div><p className="eyebrow">What can be customized</p><h2>Commercial flexibility without losing production discipline.</h2></div><div className="capability-cards"><article><h3>Flavor profile</h3><p>Heat, sweetness, salt, texture, color and application can be discussed for suitable volume.</p></article><article><h3>Pack format</h3><p>Retail bottles and tubs, foodservice pouches, bulk cartons and selected custom formats.</p></article><article><h3>Branding</h3><p>Private label, export label, carton mark and customized packaging artwork.</p></article><article><h3>Product mix</h3><p>Coordinate sauces, dry mixes, seasonings and related items for one market launch.</p></article></div></div></section>
       <section className="section shell"><div className="faq-layout"><div><p className="eyebrow">OEM buyer FAQ</p><h2>Commercial questions, answered.</h2><p>Precise product and quantity information allows us to give a precise answer.</p></div><div className="faq-list">{faq.map((item) => <details key={item.question}><summary>{item.question}<span>+</span></summary><p>{item.answer}</p></details>)}</div></div></section>

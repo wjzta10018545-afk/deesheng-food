@@ -441,9 +441,9 @@ export const catalogCategories: CatalogCategory[] = [
     ...sauceSource,
     eyebrow: "Korean sauce series",
     description:
-      "The complete Deesheng catalogue range outside kimchi and frozen vegetables: Korean sauces, pastes, dry seasonings, cooking oils, essentials and supermarket packs for retail and foodservice buyers.",
+      "Wholesale Korean sauces from Qingdao for food importers, distributors, restaurant suppliers and private-label brands. Compare gochujang, fried-chicken glazes, buldak, BBQ sauces and related seasonings in retail and foodservice packs.",
     buyerNote:
-      "Choose from 114 catalogue products and pack formats, or request flavor, heat level and packing adjustment for your channel and target market.",
+      "Tell us your target market, sales channel, products, preferred packs and estimated cartons. We will confirm the formula, label requirements and quotation for your order.",
     image: "/media/categories/korean-sauces.webp",
     imageAlt: "Korean fried chicken sauces, gochujang and seasoning products",
     items: sauceBrochureItems,
@@ -565,7 +565,13 @@ export const productDetails: ProductDetail[] = [
     ],
   },
   {
-    slug: "fried-chicken-coating-mix", name: "Fried Chicken Coating Mix", categorySlug: "chili-seasonings", categoryName: "Chili Powder & Dry Seasonings", headline: "Korean fried chicken coating mix for foodservice systems.", summary: "A dry coating mix designed to support a crisp fried-chicken finish, supplied as part of a complete sauce, marinade and coating system.", applications: ["Korean fried chicken", "Restaurant chains", "Central kitchens", "Cloud kitchens", "Foodservice distribution"], packing: ["1 kg pouch × 10"], shelfLife: "12 months", storage: "Ambient; cool and dry", image: "/media/catalog-products/sauces/fried-chicken-coating-powder-normal.webp", imageAlt: "One kilogram foodservice pouch of fried chicken coating powder", buyerQuestions: standardFaq("fried chicken coating mix"),
+    slug: "fried-chicken-coating-mix", name: "Fried Chicken Coating Mix", categorySlug: "chili-seasonings", categoryName: "Chili Powder & Dry Seasonings", headline: "Wholesale 1 kg coating mix for fried-chicken foodservice.", summary: "A dry fried-chicken coating mix for restaurant chains, central kitchens and foodservice distributors. Compare the coating, marinade and finishing sauce together for your menu.", applications: ["Korean fried chicken", "Restaurant chains", "Central kitchens", "Cloud kitchens", "Foodservice distribution"], packing: ["1 kg pouch × 10"], shelfLife: "12 months", storage: "Ambient; cool and dry", image: "/media/catalog-products/sauces/fried-chicken-coating-powder-normal.webp", imageAlt: "One kilogram foodservice pouch of fried chicken coating powder",
+    buyerAnswer: "Deesheng Food supplies fried chicken coating mix in 1 kg pouches, 10 per carton, with a listed 12-month shelf life and cool, dry storage. Share your chicken format, preparation method, expected usage and destination so the selected mix and matching sauces can be assessed before an order.",
+    buyerQuestions: [
+      ...standardFaq("fried chicken coating mix"),
+      { question: "What information is needed to assess a coating-mix sample?", answer: "Share the chicken cut, your current preparation and frying method, target coating texture, and whether the chicken is served immediately or for takeaway. Compare samples using the same kitchen process; confirm preparation instructions for the selected mix with the factory." },
+      { question: "Can I order a coating mix with fried-chicken sauces?", answer: "The range includes sweet-spicy and soy-garlic fried-chicken sauces. Share the quantities and packs needed for each item so the product mix and shipment requirements can be confirmed together." },
+    ],
   },
   {
     slug: "pure-sesame-oil", name: "Pure Sesame Oil", categorySlug: "korean-sauces", categoryName: "Korean Sauces & Essentials", headline: "Pure sesame oil from retail bottles to bulk foodservice packs.", summary: "A versatile Korean cooking essential offered across retail, foodservice and bulk formats for distributors and food manufacturers.", applications: ["Korean cooking", "Seasoning", "Marinades", "Salad dressing", "Further processing"], packing: ["180 ml bottle × 28", "245 ml bottle × 24", "500 ml can × 12", "1 L × 12", "1.8 L × 6", "5 L × 4", "16.5 kg pail"], shelfLife: "12 months", storage: "Ambient; away from light", image: "/media/catalog-products/sauces/sesame-oil.webp", imageAlt: "Pure sesame oil in a 245 ml retail bottle", buyerQuestions: standardFaq("pure sesame oil"),
