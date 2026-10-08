@@ -17,5 +17,8 @@ export const inquiries = sqliteTable("inquiries", {
   medium: text("medium").notNull(),
   campaign: text("campaign").notNull(),
   referrerHost: text("referrer_host").notNull(),
+  contact: text("contact").notNull().default(""),
+  content: text("content").notNull().default(""),
+  inquiryPath: text("inquiry_path").notNull().default(""),
   status: text("status").notNull().default("prepared"),
 });

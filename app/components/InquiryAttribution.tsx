@@ -10,6 +10,8 @@ export function InquiryAttribution() {
   const pathname = usePathname();
   useEffect(() => {
     function annotate(anchor: HTMLAnchorElement) {
+      // Form drafts already contain current fields and attribution; never cache or rewrite them.
+      if (anchor.dataset.inquiryPrepared === "true") return;
       const original = originalLinks.get(anchor) || anchor.href;
       originalLinks.set(anchor, original);
       anchor.href = attributedContactUrl(original, getInquirySource(), location.pathname);

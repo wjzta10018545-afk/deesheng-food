@@ -60,6 +60,12 @@ npm test
 
 ## Commercial baseline
 
+## Inquiry repair release — 2026-10-09
+
+Form inputs and the API share length and required-field validation. The form shows the requirements limit and field-specific errors, preserves inputs on failure, and provides a current WhatsApp draft link when a popup is blocked. Optional reply contact, ad content and inquiry page are separate database columns; inquiry text no longer competes with attribution for its 1200-character allowance. These details are not sent to analytics. Existing inquiry payloads remain accepted.
+
+Apply the new Drizzle migration through Sites before deploying the updated worker, then publish the front end. The canonical domain still requires its separately authorized server synchronization; a successful Sites or GitHub Pages release does not update that domain. Verify a marked QA submission and database row after synchronization, including a 1200-character requirement, attribution and optional contact. A prepared inquiry remains distinct from a sent WhatsApp message.
+
 B2B export · Standard OEM MOQ 200 cartons per item · FOB Qingdao · Typical standard-product lead time about 14 days after final confirmation.
 
 All specifications, availability, certification scope and commercial terms remain subject to final written confirmation.

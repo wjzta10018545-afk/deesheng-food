@@ -3,6 +3,7 @@ import test from 'node:test';
 import vm from 'node:vm';
 import fs from 'node:fs';
 import ts from 'typescript';
+import * as inquiryValidation from '../app/lib/inquiry-validation.ts';
 function moduleFor(file, context, modules) {
  const source=fs.readFileSync(new URL(file,import.meta.url),'utf8');
  const code=ts.transpileModule(source,{compilerOptions:{module:ts.ModuleKind.CommonJS,jsx:ts.JsxEmit.ReactJSX,target:ts.ScriptTarget.ES2022}}).outputText;
@@ -18,7 +19,8 @@ test('analytics uses Arguments commands and respects consent even with blocked s
 });
 for(const popup of [true,false]) test(`WhatsApp opens immediately, independent of failed save (popup=${popup})`,async()=>{
  const calls=[],events=[];let reject;const pending=new Promise((_,r)=>reject=r);const window={location:{search:'',assign:url=>calls.push(['assign',url])},open:url=>{calls.push(['open',url]);return popup?{}:null}};
- const api=moduleFor('../app/contact/QuoteForm.tsx',{window,location:{pathname:'/contact/'},FormData:class{get(k){return k==='company'?'QA company':''}},URLSearchParams,AbortSignal,fetch:(url,opts)=>{calls.push(['fetch',opts]);return pending}},{'react':{useEffect(){},useRef:()=>({}),useState:v=>[v,()=>{}]},'../components/GoogleAnalytics':{trackAnalyticsEvent:(...x)=>events.push(x)},'../lib/inquiry-source':{getInquirySource:()=>source,inquirySourceLines:()=>['Website source: chatgpt / paid']},'react/jsx-runtime':{jsx:(type,props)=>({type,props}),jsxs:(type,props)=>({type,props})}});
+ const fields={company:'QA company',country:'Australia',businessType:'Importer / Distributor',product:'Kimchi',quantity:'Container'};
+ const api=moduleFor('../app/contact/QuoteForm.tsx',{window,location:{pathname:'/contact/'},FormData:class{get(k){return fields[k]||''}},URLSearchParams,AbortSignal,fetch:(url,opts)=>{calls.push(['fetch',opts]);return pending}},{'react':{useEffect(){},useRef:()=>({}),useState:v=>[v,()=>{}]},'../components/GoogleAnalytics':{trackAnalyticsEvent:(...x)=>events.push(x)},'../lib/inquiry-validation':inquiryValidation,'../lib/inquiry-source':{getInquirySource:()=>source,inquirySourceLines:()=>['Website source: chatgpt / paid']},'react/jsx-runtime':{jsx:(type,props)=>({type,props}),jsxs:(type,props)=>({type,props})}});
  const work=api.QuoteForm({}).props.onSubmit({preventDefault(){},currentTarget:{}});
- assert.equal(calls[0][0],'open');assert.match(calls[0][1],/^https:\/\/wa.me\//);assert.equal(calls[1][1].keepalive,true);assert.equal(calls.some(x=>x[0]==='assign'),!popup);reject(Error('offline'));await work;assert.ok(events.some(x=>x[0]==='inquiry_record_failed'));assert.ok(!JSON.stringify(events).includes('QA company'));
+ assert.equal(calls[0][0],'open');assert.match(calls[0][1],/^https:\/\/wa.me\//);assert.equal(calls[1][1].keepalive,true);assert.equal(calls.some(x=>x[0]==='assign'),false);reject(Error('offline'));await work;assert.ok(events.some(x=>x[0]==='inquiry_record_failed'));assert.ok(!JSON.stringify(events).includes('QA company'));
 });

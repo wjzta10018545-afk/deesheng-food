@@ -35,7 +35,7 @@ test("stores a prepared inquiry and returns a reference without exposing the for
   assert.deepEqual(saved.slice(1), [
     "Example Foods", "Malaysia", "Importer / Distributor", "Korean BBQ Sauce", "1 kg",
     "200 cartons", "Restaurants", "Sample request", "/products/korean-sauces/",
-    "google", "organic", "", "google.com",
+    "google", "organic", "", "google.com", "", "", "",
   ]);
 });
 
@@ -43,4 +43,29 @@ test("rejects unapproved origins and incomplete inquiries before database access
   const env = { DB: { prepare() { throw new Error("Should not be called"); } } };
   assert.equal((await worker.fetch(request("https://example.com"), env, context)).status, 403);
   assert.equal((await worker.fetch(request("https://deesheng.food", { ...inquiry, company: "" }), env, context)).status, 400);
+});
+
+test("keeps a full-length requirement and attribution in separate columns", async () => {
+  let saved;
+  const env = { DB: { prepare() {
+    return { bind(...values) { saved = values; return { async run() { return { success: true }; } }; } };
+  } } };
+  const response = await worker.fetch(request("https://deesheng.food", {
+    ...inquiry, message: "x".repeat(1200), contact: "buyer@example.com",
+    content: "uae-sauce-a", inquiryPath: "/contact/",
+  }), env, context);
+  assert.equal(response.status, 201);
+  assert.equal(saved[8].length, 1200);
+  assert.deepEqual(saved.slice(-3), ["buyer@example.com", "uae-sauce-a", "/contact/"]);
+});
+
+test("reports the specific invalid field without saving or echoing customer data", async () => {
+  const env = { DB: { prepare() { throw new Error("Should not save"); } } };
+  for (const [key, value] of [["message", "x".repeat(1201)], ["company", "   "], ["product", "x".repeat(241)]]) {
+    const response = await worker.fetch(request("https://deesheng.food", {...inquiry, [key]: value}), env, context);
+    assert.equal(response.status, 400);
+    const body = await response.json();
+    assert.ok(body.fields[key]);
+    assert.equal(JSON.stringify(body).includes("Example Foods"), false);
+  }
 });
