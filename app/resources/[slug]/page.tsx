@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { BuyerFaqLink } from "../../components/BuyerFaqLink";
 import { notFound } from "next/navigation";
 import { JsonLd } from "../../components/JsonLd";
 import { buyerGuides, getGuide, type BuyerGuide } from "../../data/guides";
@@ -35,6 +36,7 @@ export default async function GuidePage({ params }: Props) {
       </article>
       <section className="section section-tint"><div className="shell"><div className="section-heading compact-heading"><p className="eyebrow">Continue researching</p><h2>Related buyer guides</h2></div><div className="related-grid">{related.map((item) => <Link href={`/resources/${item.slug}/`} key={item.slug}><span>{item.category}</span><h3>{item.title}</h3><p>{item.description}</p><b>Read guide →</b></Link>)}</div></div></section>
       <section className="section shell"><div className="cta-panel"><div><p className="eyebrow eyebrow-light">Turn research into a shortlist</p><h2>Tell us what you plan to sell and where.</h2></div><div><p>We can connect your market brief to specific products, packs, samples and a practical quotation route.</p><Link className="button button-light" href="/contact/">Start an inquiry ↗</Link></div></div></section>
+      <BuyerFaqLink />
     </main>
   );
 }

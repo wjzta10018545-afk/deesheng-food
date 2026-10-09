@@ -111,7 +111,7 @@ const markets: Market[] = [
       },
       {
         title: "Refrigerated kimchi OEM",
-        copy: "Review cabbage kimchi in 1 kg bags or 10 kg cartons, with a standard OEM MOQ of 200 cartons per item. Confirm 0–4°C storage and a typical 4–6-month shelf life against the selected specification.",
+        copy: "Review cabbage kimchi in 1 kg bags or 10 kg cartons, with MOQ confirmed for the selected kimchi format and packaging. Confirm 0–4°C storage and a typical 4–6-month shelf life against the selected specification.",
         link: "/products/kimchi/",
       },
     ],
@@ -139,7 +139,7 @@ const markets: Market[] = [
       {
         question: "Can a Singapore importer source private-label kimchi from China?",
         answer:
-          "Yes. Deesheng Food can discuss whole or cut cabbage kimchi in 1 kg bags or 10 kg cartons with a private label. The standard OEM MOQ is 200 cartons per item. Cabbage kimchi is typically stored at 0–4°C with a 4–6-month shelf life; confirm the selected specification, refrigerated route and local import requirements before ordering.",
+          "Yes. Deesheng Food can discuss whole or cut cabbage kimchi in 1 kg bags or 10 kg cartons with a private label. MOQ is confirmed for the selected kimchi format and packaging. Cabbage kimchi is typically stored at 0–4°C with a 4–6-month shelf life; confirm the selected specification, refrigerated route and local import requirements before ordering.",
       },
     ],
   },

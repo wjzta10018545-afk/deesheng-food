@@ -340,7 +340,7 @@ const kimchiBrochureItems = brochureItems("kimchi", [
   ["Pickled Lettuce", "Pickled Vegetables", "pickled-lettuce", "10 kg"],
   ["Pickled Yamakurage", "Pickled Vegetables", "pickled-yamakurage", "10 kg"],
   ["Sweet & Sour Yamakurage", "Pickled Vegetables", "sweet-sour-yamakurage", "5 kg / 10 kg"],
-] as const, { packing: "Pack size confirmed per order", shelfLife: "4–6 months", storage: "0–4°C" });
+] as const, { packing: "Pack size confirmed per order", shelfLife: "Confirm for the selected SKU", storage: "Refrigerated; confirm SKU temperature" });
 
 const frozenBrochureItems = brochureItems("frozen", [
   ["IQF Red Pepper — Dice / Slice", "Peppers & Aromatics", "iqf-red-pepper"],
@@ -433,7 +433,7 @@ const frozenBrochureItems = brochureItems("frozen", [
   ["Mirepoix Mixed Vegetables", "Prepared & Mixed Vegetables", "mirepoix-mixed"],
   ["Hawaiian Mixed Vegetables", "Prepared & Mixed Vegetables", "hawaiian-mixed"],
   ["Winter Mixed Vegetables", "Prepared & Mixed Vegetables", "winter-mixed"],
-] as const, { packing: "1 kg × 10; bulk formats available", shelfLife: "12 months", storage: "−18°C" });
+] as const, { packing: "Confirm pack and carton quantity by SKU", shelfLife: "Confirm for the selected SKU", storage: "Frozen; confirm SKU temperature" });
 
 /** The four product lines currently offered by Deesheng Food. */
 export const catalogCategories: CatalogCategory[] = [
@@ -498,9 +498,9 @@ export type ProductDetail = {
 
 const standardFaq = (product: string) => [
   { question: `Can ${product} be private labelled?`, answer: "Yes. OEM/private-label service can cover the label, packaging and, where the project requires it, flavor adjustment." },
-  { question: "What is the standard OEM MOQ?", answer: "The standard MOQ is 200 cartons per item. A lower quantity may be discussed for an initial market test after the product mix is confirmed." },
+  { question: "What is the standard OEM MOQ?", answer: "MOQ is confirmed for the selected product, formula and pack. Ask for the quantity and SKU scope in your quotation; trial orders are assessed separately." },
   { question: "How is an export quotation prepared?", answer: "Quotations are prepared after the product, pack size, quantity and destination requirements are confirmed." },
-  { question: `Is ${product} available with HALAL documentation?`, answer: "Deesheng Food maintains SHC HALAL certification for relevant products. Qualified B2B buyers can request current documents and exact scope confirmation for the selected formula, label and order." },
+  { question: `Is ${product} available with HALAL documentation?`, answer: "Please identify the product, formula, destination and required documents. We will check the actual manufacturing site, current certificate and product scope before confirming applicability to your order." },
 ];
 
 export const productDetails: ProductDetail[] = [
@@ -546,7 +546,7 @@ export const productDetails: ProductDetail[] = [
     slug: "honey-mustard-sauce", name: "Honey Mustard Sauce", categorySlug: "korean-sauces", categoryName: "Korean Sauces", headline: "Creamy honey mustard for retail and foodservice.", summary: "A sweet and tangy creamy sauce for fried chicken, snacks, sandwiches and dipping applications.", applications: ["Fried chicken", "Dipping", "Sandwiches", "Salads", "Snack foods"], packing: ["180 g bottle × 24", "320 g bottle × 24", "360 g bottle × 24", "1 kg pouch × 12"], shelfLife: "12 months", storage: "Ambient", image: "/media/catalog-products/sauces/honey-mustard-sauce.webp", imageAlt: "Honey mustard sauce in retail bottle and foodservice pouch formats", buyerQuestions: standardFaq("honey mustard sauce"),
   },
   {
-    slug: "korean-cabbage-kimchi", name: "Korean Cabbage Kimchi", categorySlug: "kimchi", categoryName: "Korean Kimchi", headline: "Korean-style cabbage kimchi for retail and foodservice.", summary: "Refrigerated cabbage kimchi in 1 kg retail/foodservice bags and 10 kg bulk cartons, available as whole or cut product by specification.", applications: ["Retail grocery", "Restaurants", "Korean menus", "Side dishes", "Foodservice distribution"], packing: ["1 kg bag × 10", "10 kg carton — whole or cut"], shelfLife: "Typically 4–6 months", storage: "Refrigerated at 0–4°C", image: "/media/catalog-products/kimchi/cabbage-kimchi-mat-retail.webp", imageAlt: "Retail jar of cut Korean cabbage kimchi", buyerQuestions: standardFaq("Korean cabbage kimchi"),
+    slug: "korean-cabbage-kimchi", name: "Korean Cabbage Kimchi", categorySlug: "kimchi", categoryName: "Korean Kimchi", headline: "Korean-style cabbage kimchi for retail and foodservice.", summary: "Refrigerated cabbage kimchi in 1 kg retail/foodservice bags and 10 kg bulk cartons, with cut and pack availability confirmed for each order.", applications: ["Retail grocery", "Restaurants", "Korean menus", "Side dishes", "Foodservice distribution"], packing: ["1 kg bag × 10", "10 kg carton — confirm cut and current availability"], shelfLife: "Typically 4–6 months", storage: "Refrigerated at 0–4°C", image: "/media/catalog-products/kimchi/cabbage-kimchi-mat-retail.webp", imageAlt: "Retail jar of cut Korean cabbage kimchi", buyerQuestions: standardFaq("Korean cabbage kimchi"),
   },
   {
     slug: "coarse-korean-chili-powder", name: "Coarse Korean Chili Powder", categorySlug: "chili-seasonings", categoryName: "Chili Powder & Dry Seasonings", headline: "Coarse Korean chili powder for kimchi and foodservice.", summary: "Grade A coarse Korean chili powder for kimchi and food production. Buyers sourcing gochugaru or Korean chili flakes can specify the cut, seed content, color and heat to match the selected grade.", applications: ["Kimchi production", "Marinades", "Soup bases", "Korean seasoning", "Further processing"], packing: ["100 g bottle × 110", "200 g bottle × 60", "1 kg pouch × 10"], shelfLife: "12 months", storage: "Ambient; cool and dry", image: "/media/catalog-products/chili/coarse-chili-powder-packaged.webp", imageAlt: "Coarse Korean chili powder in a 200 g retail bottle",

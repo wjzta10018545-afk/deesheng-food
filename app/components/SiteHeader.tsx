@@ -46,6 +46,7 @@ export function SiteHeader() {
             <Link href="/oem-private-label/">OEM / Private Label</Link>
             <Link href="/quality-certifications/">Quality</Link>
             <Link href="/resources/">Buyer Resources</Link>
+            <Link href="/buyer-faq/">Buyer FAQ</Link>
             <Link href="/about/">About</Link>
             <Link href="/contact/">Get a quote</Link>
           </nav>

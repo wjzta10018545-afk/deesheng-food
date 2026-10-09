@@ -5,7 +5,7 @@ import { catalogCategories } from "../data/catalog";
 import { ProductExplorer } from "./ProductExplorer";
 
 export const metadata: Metadata = {
-  title: "HALAL Korean Sauce & Food Product Catalogue",
+  title: "Korean Sauce & Food Product Catalogue",
   description:
     "Search Deesheng Food's four active export ranges: Korean sauces and gochujang, kimchi, chili powder and dry seasonings, and frozen vegetables.",
   alternates: { canonical: "/products/" },
@@ -29,7 +29,7 @@ export default function ProductsPage() {
       <JsonLd data={itemList} />
       <section className="inner-hero shell">
         <div>
-          <p className="eyebrow">2026 export catalogue · HALAL certificate-backed range</p>
+          <p className="eyebrow">2026 export catalogue · Product-specific document review</p>
           <h1>Find the right product for your market.</h1>
         </div>
         <div className="inner-hero-aside">

@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { JsonLd } from "../../components/JsonLd";
+import { BuyerFaqLink } from "../../components/BuyerFaqLink";
+import { faqTopicForCategory } from "../../data/buyer-faqs";
 import { getProduct, productDetails } from "../../data/catalog";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -110,7 +112,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     : "Wholesale supply, samples, export packing and private-label support";
   return {
     title: isCoatingMix ? { absolute: title } : title,
-    description: isCoatingMix ? "Source fried chicken coating mix in 1 kg × 10 cartons. 12-month shelf life, OEM options and sauce-pairing support for B2B foodservice buyers." : `${product.summary} ${qualification} from Qingdao, China. Standard OEM MOQ: 200 cartons per item.`,
+    description: isCoatingMix ? "Source fried chicken coating mix in 1 kg × 10 cartons. 12-month shelf life, OEM options and sauce-pairing support for B2B foodservice buyers." : `${product.summary} ${qualification} from Qingdao, China. MOQ confirmed for the selected product and pack.`,
     alternates: { canonical: `/product/${product.slug}/` },
     openGraph: {
       title: isCoatingMix ? title : `${product.name} | Deesheng Food`,
@@ -222,7 +224,7 @@ export default async function ProductPage({ params }: Props) {
         </div>
       </section>
 
-      <section className="spec-band"><div className="shell spec-grid"><div><span>Shelf life</span><strong>{product.shelfLife}</strong></div><div><span>Storage</span><strong>{product.storage}</strong></div><div><span>OEM MOQ</span><strong>200 cartons / item</strong></div><div><span>Buyer type</span><strong>B2B export</strong></div></div></section>
+      <section className="spec-band"><div className="shell spec-grid"><div><span>Shelf life</span><strong>{product.shelfLife}</strong></div><div><span>Storage</span><strong>{product.storage}</strong></div><div><span>OEM MOQ</span><strong>Confirm by SKU &amp; pack</strong></div><div><span>Buyer type</span><strong>B2B export</strong></div></div></section>
 
       <section className="section shell product-info-grid">
         <div><p className="eyebrow">Applications</p><h2>Built for commercial use</h2><p>Use the standard formulation as a fast route to market or discuss a project-specific adjustment after your channel and target profile are clear.</p><ul className="application-list">{product.applications.map((item) => <li key={item}><span>✓</span>{item}</li>)}</ul></div>
@@ -246,6 +248,7 @@ export default async function ProductPage({ params }: Props) {
       {related.length > 0 && <section className="section shell"><div className="section-heading compact-heading"><p className="eyebrow">Related products</p><h2>Build a stronger product mix</h2></div><div className="related-grid">{related.map((item) => <Link href={`/product/${item.slug}/`} key={item.slug}><span>{item.categoryName}</span><h3>{item.name}</h3><p>{item.summary}</p><b>View product →</b></Link>)}</div></section>}
 
       <section className="section shell"><div className="cta-panel"><div><p className="eyebrow eyebrow-light">Qualified B2B inquiry</p><h2>Share your market, pack and target quantity.</h2></div><div><p>We will confirm the best-fit format, sample route and quotation for your project.</p><Link className="button button-light" href={`/contact/?product=${product.slug}`}>Ask about {product.name} ↗</Link></div></div></section>
+      <BuyerFaqLink topic={faqTopicForCategory[product.categorySlug] ?? "ordering"} />
     </main>
   );
 }

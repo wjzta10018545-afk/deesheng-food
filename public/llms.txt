@@ -13,10 +13,10 @@ Email: info@deesheng.food
 ## Verified commercial facts
 
 - Buyer types: food importers, distributors, foodservice operators, supermarkets, food manufacturers and private-label brands.
-- Standard OEM MOQ: 200 cartons per item; a lower first-trial quantity may be discussed after product selection.
+- MOQ: Some standard-pack sauce OEM projects use 200 cartons per item as a quotation starting point. Confirm the formula, pack and SKU scope. Kimchi, bulk packs, dry ingredients and frozen products have separate conditions; trials are assessed individually.
 - Quotation basis: confirmed after product, pack, quantity and destination review.
 - Standard ambient sauce shelf life: typically 12 months under recommended storage conditions.
-- Typical standard-product production target: about 14 days after final label and payment confirmation.
+- Production timing: about 14 days may be a planning estimate for selected confirmed standard sauce formulas and packs after label and payment approval. Confirm the order schedule; custom projects, kimchi and frozen products require separate scheduling.
 - HALAL certification: Deesheng Food maintains SHC HALAL certification for relevant Korean sauces and related products. Current signed documents and exact product scope are supplied to qualified B2B buyers after company and project verification.
 - Other available credentials: BRCGS Grade A, HACCP and OU Kosher.
 - B2B export inquiries only; no retail sales.
@@ -58,3 +58,8 @@ Email: info@deesheng.food
 - [Request current HALAL documents](https://deesheng.food/contact/?product=halal-documents)
 - [Full LLM reference](https://deesheng.food/llms-full.txt)
 - [XML sitemap](https://deesheng.food/sitemap.xml)
+
+## Buyer questions
+- Food importer FAQ: https://deesheng.food/buyer-faq/
+- Topics: orders and shipping, kimchi, Korean sauces, private label, documents and ingredients, chili products, frozen vegetables.
+- Product availability, specifications, certificates, MOQ and sample transport must be confirmed for the actual SKU and order.

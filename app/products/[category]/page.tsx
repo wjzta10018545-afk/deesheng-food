@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { BuyerFaqLink } from "../../components/BuyerFaqLink";
+import { faqTopicForCategory } from "../../data/buyer-faqs";
 import { JsonLd } from "../../components/JsonLd";
 import { catalogCategories, getCatalogItemImage, getCategory } from "../../data/catalog";
 
@@ -18,13 +20,13 @@ const sourcingGuides: Record<string, {
     steps: [
       { title: "Choose the format", description: "Start with 1 kg cabbage kimchi bags for retail or a 10 kg carton for foodservice. Radish and specialty variants can complete the range." },
       { title: "Plan cold-chain delivery", description: "Share the destination and refrigerated route. Storage ranges and shelf life differ by item; request the current specification before ordering." },
-      { title: "Brief the OEM project", description: "Specify cut, flavor target, pack, label language and estimated cartons. The standard OEM MOQ is 200 cartons per item; discuss trial quantities separately." },
+      { title: "Brief the OEM project", description: "Specify cut, flavor target, pack, label language and estimated cartons. MOQ and trial quantities depend on the kimchi specification and packaging and must be confirmed in the quotation." },
     ],
     startingPoints: [{ name: "Cabbage kimchi specification", slug: "korean-cabbage-kimchi" }],
   },
   "korean-sauces": {
     heading: "Choose Korean sauces for wholesale and private label",
-    introduction: "Compare the product, pack and order quantity for your channel. The standard OEM MOQ is 200 cartons per item; trial quantities are assessed after product and packing selection.",
+    introduction: "Compare the product, pack and order quantity for your channel. Some standard-pack sauce OEM projects use 200 cartons per item as a quotation starting point. Confirm the applicable SKU, formula and pack; trials are assessed separately.",
     steps: [
       { title: "Pick an application", description: "Compare fried-chicken glazes, buldak, bibimbap, tteokbokki and Korean BBQ sauces by menu use and target heat level." },
       { title: "Match the pack to the channel", description: "Review retail bottles and 1 kg sauce pouches. Gochujang also has 500 g tubs and 14 kg foodservice cartons. Sizes and carton quantities are product-specific." },
@@ -56,7 +58,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       : isKimchi ? { absolute: "Korean Kimchi Manufacturer in China | Wholesale & OEM" }
       : `${halalPrefix}${category.name} Manufacturer & OEM Supplier`,
     description: isKoreanSauce
-      ? "Source Korean sauces from Qingdao: gochujang, fried-chicken, buldak and BBQ. Compare retail and foodservice packs, private label and standard OEM MOQ of 200 cartons per item."
+      ? "Source Korean sauces from Qingdao: gochujang, fried-chicken, buldak and BBQ. Compare retail and foodservice packs, private label and product-specific order quantities."
       : isKimchi ? "Source wholesale Korean cabbage, radish and specialty kimchi from Qingdao. Compare retail and 10 kg foodservice packs, refrigerated shipping, OEM options and samples."
       : `${category.description} Review standard export packs, OEM/private-label support and quotation requirements for B2B buyers.`,
     alternates: { canonical: `/products/${category.slug}/` },
@@ -86,11 +88,11 @@ export default async function CategoryPage({ params }: Props) {
     },
     {
       question: "What is the normal minimum order quantity?",
-      answer: "The standard OEM MOQ is 200 cartons per item. A lower quantity may be discussed for an initial trial after the selected products and packing are confirmed.",
+      answer: "MOQ depends on the selected product, formula, packaging and order plan. Confirm the quantity and SKU scope in the quotation. Trial orders are assessed separately.",
     },
     {
       question: "Can we request samples before placing an order?",
-      answer: "Yes. Qualified B2B buyers can request samples after sharing their company, sales channel, target products and expected order quantity.",
+      answer: "Sample availability, costs and transport are confirmed after you share the products, packs, intended use and expected quantity. Kimchi and frozen samples require a suitable cold-chain plan; ordinary courier delivery should not be assumed.",
     },
     {
       question: "How is an export quotation prepared?",
@@ -98,11 +100,11 @@ export default async function CategoryPage({ params }: Props) {
     },
     {
       question: `Are relevant ${category.name.toLowerCase()} covered by HALAL certification?`,
-      answer: "Deesheng Food maintains SHC HALAL certification for relevant products. Qualified B2B buyers can request current documents and exact scope confirmation for the selected product, formula and order.",
+      answer: "Please specify the product, formula, destination and required recognition. We will check the actual manufacturing site, current certificate and product coverage before confirming whether the order meets your requirements.",
     },
     ...(category.slug === "kimchi" ? [{
       question: "What temperature should imported kimchi be kept at?",
-      answer: "Most listed kimchi items specify 0–4°C storage, while some specialty items specify 0–10°C. Confirm the current SKU specification, shelf life and refrigerated shipping plan before ordering.",
+      answer: "Kimchi needs a refrigerated supply chain. The cabbage kimchi detail page lists 0–4°C, but temperature and shelf life must be checked against the current specification for each SKU. Confirm the complete refrigerated shipping plan before ordering.",
     }] : []),
     ...(category.slug === "korean-sauces" ? [{
       question: "Which Korean sauces are suitable for restaurants or private label?",
@@ -202,6 +204,7 @@ export default async function CategoryPage({ params }: Props) {
       </section>
 
       <section className="section shell"><div className="cta-panel"><div><p className="eyebrow eyebrow-light">Ready to shortlist?</p><h2>Send your channel, pack and estimated quantity.</h2></div><div><p>We will recommend a practical starting mix and confirm sample or quotation details for your market.</p><Link className="button button-light" href={`/contact/?product=${category.slug}`}>Discuss this range ↗</Link></div></div></section>
+      <BuyerFaqLink topic={faqTopicForCategory[category.slug] ?? "ordering"} />
     </main>
   );
 }
