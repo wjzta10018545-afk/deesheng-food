@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { BuyerFaqLink } from "../components/BuyerFaqLink";
 import { JsonLd } from "../components/JsonLd";
 
 export const metadata: Metadata = {
-  title: { absolute: "Private Label Korean Sauce Manufacturer | MOQ 200 Cartons" },
-  description: "Build a private-label Korean sauce range: standard OEM MOQ 200 cartons per item, retail or foodservice packs, sample approval and export support from Qingdao, China.",
+  title: { absolute: "Private Label Korean Sauce Manufacturer | Deesheng Food" },
+  description: "Build a private-label Korean sauce range: product-specific order quantities, retail or foodservice packs, sample approval and export support from Qingdao, China.",
   keywords: [
     "Korean sauce OEM manufacturer China",
     "private label Korean sauce manufacturer",
@@ -15,14 +16,14 @@ export const metadata: Metadata = {
   alternates: { canonical: "/oem-private-label/" },
   openGraph: {
     type: "website",
-    title: "Private Label Korean Sauce Manufacturer | MOQ 200 Cartons",
+    title: "Private Label Korean Sauce Manufacturer | Deesheng Food",
     description: "OEM and private-label Korean sauce development for importers, distributors, foodservice groups and brands.",
     url: "https://deesheng.food/oem-private-label/",
     images: [{ url: "/media/fried-chicken-sauces.webp", alt: "Deesheng Food Korean sauce OEM range" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Private Label Korean Sauce Manufacturer | MOQ 200 Cartons",
+    title: "Private Label Korean Sauce Manufacturer | Deesheng Food",
     description: "Compare formulas, packs and the sample-to-shipment process for your Korean sauce brand.",
     images: ["/media/fried-chicken-sauces.webp"],
   },
@@ -38,10 +39,10 @@ const steps = [
 ];
 
 const faq = [
-  { question: "What is the standard OEM minimum order quantity?", answer: "The standard MOQ is 200 cartons per item. For a first market test, a lower quantity may be discussed after the selected products and packs are confirmed." },
+  { question: "What is the standard OEM minimum order quantity?", answer: "Some standard-pack sauce OEM projects use 200 cartons per item as a quotation starting point. The applicable MOQ depends on the product, formula and pack; kimchi, bulk packs and frozen products have separate conditions. Confirm the SKU scope in your quotation. Trials are assessed separately." },
   { question: "Is private label priced differently from the factory brand?", answer: "The product price is normally assessed on the same commercial basis. Final cost depends on formula, pack, label, packaging materials, quantity and any new tooling or design requirements." },
   { question: "Can Deesheng help create a formula from a reference product?", answer: "Yes. A reference brand, target ingredient direction or detailed flavor brief can be used to start development. The more precise the benchmark, the faster sample rounds can be evaluated." },
-  { question: "How long does production take?", answer: "For confirmed standard export products, a typical target is about 14 days after label approval and payment confirmation. New formula or custom packaging projects require a separate schedule." },
+  { question: "How long does production take?", answer: "For selected confirmed standard sauce formulas and packs, about 14 days after label approval and payment confirmation may be used as a planning estimate. Confirm the actual schedule in your order. Custom formulas, packaging, kimchi and frozen products require separate scheduling." },
   { question: "Can several products be mixed in one container?", answer: "Yes. Mixed-product container planning can be discussed, subject to the MOQ, carton dimensions, weight, storage temperature and production availability of each item." },
 ];
 
@@ -56,7 +57,7 @@ export default function OemPage() {
   return (
     <main>
       <JsonLd data={data} />
-      <section className="inner-hero shell"><div><p className="eyebrow">OEM / ODM / Private label</p><h1>Private-label Korean sauces, from brief to shipment.</h1></div><div className="inner-hero-aside"><p>For food brands, importers and foodservice distributors. Standard OEM MOQ: 200 cartons per item. Choose your product and pack, then confirm samples, label, price and shipment terms with our export team.</p><Link className="button button-primary" href="/contact/?product=oem">Request an OEM quotation</Link></div></section>
+      <section className="inner-hero shell"><div><p className="eyebrow">OEM / ODM / Private label</p><h1>Private-label Korean sauces, from brief to shipment.</h1></div><div className="inner-hero-aside"><p>For food brands, importers and foodservice distributors. MOQ is confirmed by product, formula and pack. Choose your product and pack, then confirm samples, label, price and shipment terms with our export team.</p><Link className="button button-primary" href="/contact/?product=oem">Request an OEM quotation</Link></div></section>
       <section className="oem-visual-band"><div className="shell oem-visual-grid"><div><span>YOUR BRAND</span><h2>Standard formula</h2><p>Fastest route: select a proven export product, pack and label.</p></div><div><span>YOUR MARKET</span><h2>Adjusted flavor</h2><p>Refine heat, sweetness, texture or application against a clear brief.</p></div><div><span>YOUR PRODUCT</span><h2>Custom development</h2><p>Build from a reference product or more detailed formulation requirement.</p></div></div></section>
       <section className="section shell category-sourcing">
         <div className="section-heading compact-heading"><p className="eyebrow">Choose your starting product</p><h2>Match the range to how your customers buy.</h2><p>Start with a product and standard pack before asking for a custom formula or packaging format.</p></div>
@@ -71,6 +72,7 @@ export default function OemPage() {
       <section className="section section-tint"><div className="shell capability-grid"><div><p className="eyebrow">What can be customized</p><h2>Commercial flexibility without losing production discipline.</h2></div><div className="capability-cards"><article><h3>Flavor profile</h3><p>Heat, sweetness, salt, texture, color and application can be discussed for suitable volume.</p></article><article><h3>Pack format</h3><p>Retail bottles and tubs, foodservice pouches, bulk cartons and selected custom formats.</p></article><article><h3>Branding</h3><p>Private label, export label, carton mark and customized packaging artwork.</p></article><article><h3>Product mix</h3><p>Coordinate sauces, dry mixes, seasonings and related items for one market launch.</p></article></div></div></section>
       <section className="section shell"><div className="faq-layout"><div><p className="eyebrow">OEM buyer FAQ</p><h2>Commercial questions, answered.</h2><p>Precise product and quantity information allows us to give a precise answer.</p></div><div className="faq-list">{faq.map((item) => <details key={item.question}><summary>{item.question}<span>+</span></summary><p>{item.answer}</p></details>)}</div></div></section>
       <section className="section shell"><div className="cta-panel"><div><p className="eyebrow eyebrow-light">Start with a useful brief</p><h2>Product, market, channel, pack and quantity.</h2></div><div><p>Send these five points and we can quickly judge whether a stock formula, adjusted product or new development route fits best.</p><Link className="button button-light" href="/contact/?product=oem">Send your project brief ↗</Link></div></div></section>
+      <BuyerFaqLink topic="oem" />
     </main>
   );
 }

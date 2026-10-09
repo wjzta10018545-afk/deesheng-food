@@ -1078,3 +1078,19 @@ button, input, select, textarea { font: inherit; }
   .form-consent { align-items: flex-start; flex-direction: column; }
   .contact-direct strong { font-size: 20px; }
 }
+
+/* Importer FAQ: server-rendered answers and topic navigation. */
+.buyer-faq-topics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; padding-bottom: 32px; }
+.buyer-faq-topics a { display: grid; gap: 9px; padding: 20px; border: 1px solid var(--line, #ddd); border-radius: 12px; text-decoration: none; }
+.buyer-faq-topics a:hover { background: #f4f6ef; }
+.buyer-faq-topics span { font-size: .85rem; color: #52614a; }
+.buyer-faq-topic, .buyer-faq-topic details { scroll-margin-top: 110px; }
+.buyer-faq-topic + .buyer-faq-topic { border-top: 1px solid #e5e7df; }
+.buyer-faq-topic .faq-list p { line-height: 1.75; }
+.buyer-faq-topic details:target { background: #f4f6ef; }
+.buyer-faq-link { display: flex; align-items: center; justify-content: space-between; gap: 32px; padding-top: 36px; padding-bottom: 48px; }
+.buyer-faq-link h2 { font-size: clamp(1.5rem, 3vw, 2rem); margin: 0 0 12px; }
+.buyer-faq-link p { max-width: 680px; }
+.buyer-faq-link .button { flex-shrink: 0; }
+@media (max-width: 800px) { .buyer-faq-topics { grid-template-columns: repeat(2, minmax(0, 1fr)); } .buyer-faq-link { align-items: flex-start; flex-direction: column; gap: 16px; } }
+@media (max-width: 480px) { .buyer-faq-topics { grid-template-columns: 1fr; } }

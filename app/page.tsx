@@ -274,7 +274,7 @@ export default function Home() {
             <p className="eyebrow eyebrow-light">Fast sourcing paths</p>
             <h2 id="sourcing-shortcuts-title">Go straight to the products buyers ask for most.</h2>
             <p>
-              Review product applications, export packs, the standard 200-carton OEM MOQ
+              Review product applications, export packs, product-specific order quantities
               and the direct route to samples and quotation.
             </p>
           </div>
