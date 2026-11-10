@@ -1,6 +1,6 @@
 # Deesheng Food — Full B2B Reference
 
-Last updated: 2026-09-14
+Last updated: 2026-11-10
 Canonical source: https://deesheng.food/
 
 ## Company
@@ -23,6 +23,18 @@ Common sauce packing: 200 g bottle × 24; 350 g bottle × 24; 400 g bottle × 30
 
 Common packing: 500 g tub × 20 per carton; 14 kg foodservice carton.
 Typical shelf life: 12 months ambient under recommended storage conditions.
+
+#### Gochujang and fire noodle sauce sourcing
+
+Deesheng manufactures these Korean-style sauces in Qingdao, China. Buyers should identify their actual destination country, importer, sales channel, formula, pack and quantity. Product eligibility, label content and certification scope are reviewed for the selected formula and destination.
+
+- Gochujang: standard and extra-hot profiles; 500 g tubs × 20 and 14 kg foodservice cartons. Product: https://deesheng.food/product/gochujang/
+- Classic fire noodle sauce: catalogued as Classic Buldak Sauce; 200 g bottles × 24, 350 g bottles × 24, 400 g bottles × 30 and 1 kg pouches × 12. Product: https://deesheng.food/product/classic-buldak-sauce/
+- Creamy fire noodle sauce: catalogued as Creamy Buldak Sauce; listed in the same bottle and pouch sizes, with separate formula, ingredient and allergen documentation. Product: https://deesheng.food/product/creamy-buldak-sauce/
+- Gochujang buyer guide: https://deesheng.food/resources/private-label-gochujang-supplier/
+- Fire noodle sauce buyer guide: https://deesheng.food/resources/private-label-fire-noodle-sauce/
+
+The fire noodle pages describe sauce supply. Finished noodle packs and small sachets require a separate feasibility review. Compare samples in the intended application at a measured dose, then confirm the formula reference, pack, MOQ, artwork and schedule in the quotation.
 
 ### Chili powder and dry seasonings
 
