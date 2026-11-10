@@ -41,7 +41,12 @@ const productBuyingGuides: Record<string, {
   "classic-buldak-sauce": {
     buyerFit: ["Noodle and convenience-food brands", "Korean fried-chicken operators", "Retail sauce distributors", "Private-label spicy-sauce programs"],
     customization: ["Heat level and flavor balance", "Noodle, chicken or dipping application", "Retail bottle or foodservice pouch", "Private-label packaging"],
-    brief: ["Target heat level", "Primary menu or retail application", "Required pack size", "Estimated order quantity"],
+    brief: ["Destination country and sales channel", "Noodle type, sauce dose and target heat", "Required bottle or pouch size", "Estimated order quantity and required documents"],
+  },
+  "creamy-buldak-sauce": {
+    buyerFit: ["Noodle and convenience-food brands", "Foodservice importers", "Retail sauce distributors", "Private-label creamy-sauce ranges"],
+    customization: ["Creamy flavor and heat target", "Noodle application and serving method", "Bottle or foodservice pouch", "Formula-specific ingredients, allergens and documents"],
+    brief: ["Destination country and sales channel", "Creamy formula and reference flavor", "Noodle type, sauce dose and required pack", "Expected quantity and document requirements"],
   },
   "tteokbokki-sauce": {
     buyerFit: ["Korean street-food distributors", "Ready-to-cook and meal-kit brands", "Restaurant suppliers", "Asian-grocery private labels"],
@@ -79,6 +84,9 @@ const defaultBuyingGuide = (product: { categorySlug: string; applications: strin
 });
 
 const curatedRelated: Record<string, string[]> = {
+  gochujang: ["extra-hot-gochujang", "classic-buldak-sauce", "creamy-buldak-sauce"],
+  "classic-buldak-sauce": ["creamy-buldak-sauce", "gochujang", "tteokbokki-sauce"],
+  "creamy-buldak-sauce": ["classic-buldak-sauce", "gochujang", "tteokbokki-sauce"],
   "sweet-spicy-fried-chicken-sauce": ["soy-garlic-fried-chicken-sauce", "fried-chicken-coating-mix", "honey-mustard-sauce"],
   "soy-garlic-fried-chicken-sauce": ["sweet-spicy-fried-chicken-sauce", "fried-chicken-coating-mix", "honey-mustard-sauce"],
   "fried-chicken-coating-mix": ["sweet-spicy-fried-chicken-sauce", "soy-garlic-fried-chicken-sauce"],
@@ -88,6 +96,8 @@ const curatedRelated: Record<string, string[]> = {
 
 const sourcingResources: Record<string, { href: string; label: string }> = {
   gochujang: { href: "/resources/private-label-gochujang-supplier/", label: "Private-label gochujang buyer guide" },
+  "classic-buldak-sauce": { href: "/resources/private-label-fire-noodle-sauce/", label: "Fire noodle sauce OEM buyer guide" },
+  "creamy-buldak-sauce": { href: "/resources/private-label-fire-noodle-sauce/", label: "Fire noodle sauce OEM buyer guide" },
   "coarse-korean-chili-powder": { href: "/resources/korean-chili-powder-sourcing/", label: "Korean chili powder sourcing checklist" },
   "fine-korean-chili-powder": { href: "/resources/korean-chili-powder-sourcing/", label: "Korean chili powder sourcing checklist" },
   "sweet-spicy-fried-chicken-sauce": { href: "/resources/korean-fried-chicken-sauce-system/", label: "Korean fried chicken sauce system guide" },
@@ -106,21 +116,27 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isKoreanSauce = product.categorySlug === "korean-sauces" || product.categorySlug === "gochujang-pastes";
   const halalPrefix = isKoreanSauce ? "HALAL " : "";
   const isCoatingMix = product.slug === "fried-chicken-coating-mix";
-  const title = isCoatingMix ? "Fried Chicken Coating Mix Supplier | 1 kg Wholesale" : `${halalPrefix}${product.name} Manufacturer & Wholesale Supplier`;
+  const focusedMetadata: Record<string, { title: string; description: string }> = {
+    gochujang: { title: "Korean-Style Gochujang Manufacturer | OEM & Bulk Supply", description: "Source Korean-style gochujang from Qingdao, China: 500 g × 20 tubs and 14 kg foodservice cartons. Request private-label samples and product documents." },
+    "classic-buldak-sauce": { title: "Fire Noodle Sauce Manufacturer | Korean-Style OEM", description: "Korean-style fire noodle sauce for importers, noodle brands and foodservice buyers. Compare classic and creamy formulas, bottle and pouch formats, and OEM options." },
+    "creamy-buldak-sauce": { title: "Creamy Fire Noodle Sauce Supplier | Private Label", description: "Creamy Korean-style fire noodle sauce for private-label and foodservice projects. Review formula-specific documents, sample testing and export packing." },
+  };
+  const focused = focusedMetadata[slug];
+  const title = focused?.title ?? (isCoatingMix ? "Fried Chicken Coating Mix Supplier | 1 kg Wholesale" : `${halalPrefix}${product.name} Manufacturer & Wholesale Supplier`);
   const qualification = isKoreanSauce
     ? "HALAL scope review, private label, samples and export packing"
     : "Wholesale supply, samples, export packing and private-label support";
   return {
     title: isCoatingMix ? { absolute: title } : title,
-    description: isCoatingMix ? "Source fried chicken coating mix in 1 kg × 10 cartons. 12-month shelf life, OEM options and sauce-pairing support for B2B foodservice buyers." : `${product.summary} ${qualification} from Qingdao, China. MOQ confirmed for the selected product and pack.`,
+    description: focused?.description ?? (isCoatingMix ? "Source fried chicken coating mix in 1 kg × 10 cartons. 12-month shelf life, OEM options and sauce-pairing support for B2B foodservice buyers." : `${product.summary} ${qualification} from Qingdao, China. MOQ confirmed for the selected product and pack.`),
     alternates: { canonical: `/product/${product.slug}/` },
     openGraph: {
-      title: isCoatingMix ? title : `${product.name} | Deesheng Food`,
+      title: focused || isCoatingMix ? title : `${product.name} | Deesheng Food`,
       description: product.summary,
       url: `https://deesheng.food/product/${product.slug}/`,
       images: [{ url: product.image, alt: product.imageAlt }],
     },
-    twitter: { card: "summary_large_image", title: isCoatingMix ? title : product.name, description: product.summary, images: [product.image] },
+    twitter: { card: "summary_large_image", title: focused || isCoatingMix ? title : product.name, description: product.summary, images: [product.image] },
   };
 }
 
