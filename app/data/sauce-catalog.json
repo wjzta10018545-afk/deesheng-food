@@ -21,8 +21,8 @@
   { "page": 6, "slot": 4, "name": "Cold Noodle Sauce", "group": "Noodle Sauces", "image": "cold-noodle-sauce", "packing": "1 kg × 10", "detailSlug": null },
   { "page": 6, "slot": 5, "name": "Spicy Seafood Noodle Sauce", "group": "Noodle Sauces", "image": "spicy-seafood-noodle-sauce", "packing": "1 kg × 10", "detailSlug": null },
 
-  { "page": 7, "slot": 1, "name": "Classic Turkey Noodle Sauce — Foodservice", "group": "Turkey Noodle Sauces", "image": "turkey-noodle-sauce-classic", "packing": "400 g × 30; 1 kg × 10", "detailSlug": "classic-buldak-sauce" },
-  { "page": 7, "slot": 2, "name": "Creamy Turkey Noodle Sauce — Foodservice", "group": "Turkey Noodle Sauces", "image": "turkey-noodle-sauce-milk-flavor", "packing": "400 g × 30; 1 kg × 10", "detailSlug": "creamy-buldak-sauce" },
+  { "page": 7, "slot": 1, "name": "Classic Korean-Style Fire Noodle Sauce — Foodservice", "group": "Turkey Noodle Sauces", "image": "turkey-noodle-sauce-classic", "packing": "400 g × 30; 1 kg × 10; 1 kg × 12", "detailSlug": "classic-buldak-sauce" },
+  { "page": 7, "slot": 2, "name": "Creamy Korean-Style Noodle Sauce — Foodservice", "group": "Turkey Noodle Sauces", "image": "turkey-noodle-sauce-milk-flavor", "packing": "400 g × 30; 1 kg × 10; 1 kg × 12", "detailSlug": "creamy-buldak-sauce" },
   { "page": 7, "slot": 3, "name": "Mild Spicy Turkey Noodle Sauce", "group": "Turkey Noodle Sauces", "image": "mild-spicy-turkey-noodle-sauce", "packing": "400 g × 30; 1 kg × 10", "detailSlug": null },
   { "page": 7, "slot": 4, "name": "Non-spicy Turkey Noodle Sauce", "group": "Turkey Noodle Sauces", "image": "non-spicy-turkey-noodle-sauce", "packing": "400 g × 30; 1 kg × 10", "detailSlug": null },
   { "page": 7, "slot": 5, "name": "Extra Hot Sesame Paste Turkey Noodle Sauce", "group": "Turkey Noodle Sauces", "image": "extra-hot-sesame-paste-turkey-noodle-sauce", "packing": "30 g × 350; 400 g × 30", "detailSlug": null },
@@ -70,7 +70,7 @@
   { "page": 14, "slot": 1, "name": "Korean Gochujang — 500 g Retail Tub", "group": "Korean Basic Pastes", "image": "gochujang-chili-sauce", "packing": "500 g × 20", "detailSlug": "gochujang" },
   { "page": 14, "slot": 2, "name": "Korean Doenjang — 500 g Retail Tub", "group": "Korean Basic Pastes", "image": "korean-doenjang-500g", "packing": "500 g × 20", "detailSlug": null },
   { "page": 14, "slot": 3, "name": "Korean Garlic Sauce — 500 g Retail Tub", "group": "Korean Basic Pastes", "image": "garlic-sauce-ssamjang", "packing": "500 g × 20", "detailSlug": "korean-garlic-sauce" },
-  { "page": 14, "slot": 4, "name": "Korean Gochujang — 14 kg Foodservice", "group": "Korean Basic Pastes", "image": "korean-gochujang-14kg", "packing": "14 kg", "detailSlug": null },
+  { "page": 14, "slot": 4, "name": "Korean Gochujang — 14 kg Foodservice", "group": "Korean Basic Pastes", "image": "korean-gochujang-14kg", "packing": "14 kg", "detailSlug": "gochujang" },
   { "page": 14, "slot": 5, "name": "Korean Doenjang — 14 kg Foodservice", "group": "Korean Basic Pastes", "image": "korean-doenjang-14kg", "packing": "14 kg", "detailSlug": null },
   { "page": 14, "slot": 6, "name": "Korean Garlic Sauce — 14 kg Foodservice", "group": "Korean Basic Pastes", "image": "korean-garlic-sauce-14kg", "packing": "14 kg", "detailSlug": null },
 
@@ -106,8 +106,8 @@
 
   { "page": 19, "slot": 1, "name": "Sweet & Spicy Bibimbap Sauce — Retail", "group": "Supermarket Series", "image": "retail-sweet-spicy-bibimbap-sauce", "packing": "200 g × 24", "detailSlug": null },
   { "page": 19, "slot": 2, "name": "Non-spicy Bibimbap Sauce — Retail", "group": "Supermarket Series", "image": "retail-non-spicy-bibimbap-sauce", "packing": "200 g × 24", "detailSlug": null },
-  { "page": 19, "slot": 3, "name": "Classic Turkey Noodle Sauce — Retail", "group": "Supermarket Series", "image": "retail-classic-turkey-noodle-sauce", "packing": "200 g × 24", "detailSlug": null },
-  { "page": 19, "slot": 4, "name": "Creamy Turkey Noodle Sauce — Retail", "group": "Supermarket Series", "image": "retail-creamy-turkey-noodle-sauce", "packing": "200 g × 24", "detailSlug": null },
+  { "page": 19, "slot": 3, "name": "Classic Korean-Style Fire Noodle Sauce — Retail", "group": "Supermarket Series", "image": "retail-classic-turkey-noodle-sauce", "packing": "200 g × 24; 350 g × 24", "detailSlug": "classic-buldak-sauce" },
+  { "page": 19, "slot": 4, "name": "Creamy Korean-Style Noodle Sauce — Retail", "group": "Supermarket Series", "image": "retail-creamy-turkey-noodle-sauce", "packing": "200 g × 24; 350 g × 24", "detailSlug": "creamy-buldak-sauce" },
   { "page": 19, "slot": 5, "name": "Scallion Pancake Sauce", "group": "Supermarket Series", "image": "retail-scallion-pancake-sauce", "packing": "200 g × 24", "detailSlug": null },
   { "page": 19, "slot": 6, "name": "Egg Pancake Sauce", "group": "Supermarket Series", "image": "retail-egg-pancake-sauce", "packing": "200 g × 24", "detailSlug": null },
 

@@ -106,21 +106,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isKoreanSauce = product.categorySlug === "korean-sauces" || product.categorySlug === "gochujang-pastes";
   const halalPrefix = isKoreanSauce ? "HALAL " : "";
   const isCoatingMix = product.slug === "fried-chicken-coating-mix";
-  const title = isCoatingMix ? "Fried Chicken Coating Mix Supplier | 1 kg Wholesale" : `${halalPrefix}${product.name} Manufacturer & Wholesale Supplier`;
+  const title = product.seoTitle ?? (isCoatingMix ? "Fried Chicken Coating Mix Supplier | 1 kg Wholesale" : `${halalPrefix}${product.name} Manufacturer & Wholesale Supplier`);
   const qualification = isKoreanSauce
     ? "HALAL scope review, private label, samples and export packing"
     : "Wholesale supply, samples, export packing and private-label support";
   return {
-    title: isCoatingMix ? { absolute: title } : title,
-    description: isCoatingMix ? "Source fried chicken coating mix in 1 kg × 10 cartons. 12-month shelf life, OEM options and sauce-pairing support for B2B foodservice buyers." : `${product.summary} ${qualification} from Qingdao, China. MOQ confirmed for the selected product and pack.`,
+    title: product.seoTitle || isCoatingMix ? { absolute: title } : title,
+    description: product.metaDescription ?? (isCoatingMix ? "Source fried chicken coating mix in 1 kg × 10 cartons. 12-month shelf life, OEM options and sauce-pairing support for B2B foodservice buyers." : `${product.summary} ${qualification} from Qingdao, China. MOQ confirmed for the selected product and pack.`),
     alternates: { canonical: `/product/${product.slug}/` },
     openGraph: {
-      title: isCoatingMix ? title : `${product.name} | Deesheng Food`,
-      description: product.summary,
+      title: product.seoTitle || isCoatingMix ? title : `${product.name} | Deesheng Food`,
+      description: product.metaDescription ?? product.summary,
       url: `https://deesheng.food/product/${product.slug}/`,
       images: [{ url: product.image, alt: product.imageAlt }],
     },
-    twitter: { card: "summary_large_image", title: isCoatingMix ? title : product.name, description: product.summary, images: [product.image] },
+    twitter: { card: "summary_large_image", title: product.seoTitle || isCoatingMix ? title : product.name, description: product.metaDescription ?? product.summary, images: [product.image] },
   };
 }
 
@@ -228,7 +228,7 @@ export default async function ProductPage({ params }: Props) {
 
       <section className="section shell product-info-grid">
         <div><p className="eyebrow">Applications</p><h2>Built for commercial use</h2><p>Use the standard formulation as a fast route to market or discuss a project-specific adjustment after your channel and target profile are clear.</p><ul className="application-list">{product.applications.map((item) => <li key={item}><span>✓</span>{item}</li>)}</ul></div>
-        <div className="packing-panel"><p className="eyebrow">Standard export packing</p><h2>Available formats</h2><ul>{product.packing.map((pack) => <li key={pack}><span>{pack}</span><b>Export pack</b></li>)}</ul><p>Carton dimensions, net and gross weight are confirmed with the selected pack and final order.</p></div>
+        <div className="packing-panel"><p className="eyebrow">Standard export packing</p><h2>Available formats</h2><ul>{product.packing.map((pack) => <li key={pack}><span>{pack}</span><b>Export pack</b></li>)}</ul><p>{product.packingNote ?? "Carton dimensions, net and gross weight are confirmed with the selected pack and final order."}</p></div>
       </section>
 
       <section className="section section-tint">

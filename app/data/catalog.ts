@@ -486,8 +486,11 @@ export type ProductDetail = {
   categoryName: string;
   headline: string;
   summary: string;
+  seoTitle?: string;
+  metaDescription?: string;
   applications: string[];
   packing: string[];
+  packingNote?: string;
   shelfLife: string;
   storage: string;
   image: string;
@@ -507,12 +510,18 @@ export const productDetails: ProductDetail[] = [
   {
     slug: "gochujang", name: "Gochujang — Korean Chili Paste", categorySlug: "korean-sauces", categoryName: "Korean Sauces",
     headline: "Private-label gochujang for retail and foodservice.",
-    summary: "Gochujang is a Korean-style red pepper paste with a savory, sweet and moderately spicy profile for bibimbap, marinades, stir-fries and Korean menus.",
-    applications: ["Bibimbap", "Marinades", "Stir-fry", "Dipping sauces", "Soup and stew bases"], packing: ["500 g tub × 20 per carton", "14 kg foodservice carton"], shelfLife: "12 months", storage: "Ambient; cool and dry", image: "/media/catalog-products/sauces/gochujang-chili-sauce.webp", imageAlt: "Gochujang retail tub and 14 kg foodservice carton",
-    buyerAnswer: "Deesheng Food supplies gochujang (Korean red pepper paste) in 500 g retail tubs and 14 kg foodservice cartons for qualified importers, distributors and private-label projects. Share the destination, target heat, pack and quantity to request the right sample and current product-scope documents.",
+    summary: "Korean-style red pepper paste for bibimbap, marinades, stir-fries and dipping sauces. Choose 500 g retail tubs or a 14 kg foodservice format for wholesale and private-label supply.",
+    seoTitle: "Gochujang Wholesale & Private Label | 500 g and 14 kg",
+    metaDescription: "Source Korean-style gochujang in 500 g tubs × 20 or 14 kg foodservice cartons. Compare packing, 12-month shelf life and private-label options with Deesheng.",
+    applications: ["Bibimbap", "Marinades", "Stir-fry", "Dipping sauces", "Soup and stew bases"], packing: ["500 g tub × 20 per carton", "14 kg foodservice carton"], shelfLife: "12 months", storage: "Ambient; cool, dry and away from light", image: "/media/catalog-products/sauces/gochujang-chili-sauce.webp", imageAlt: "Gochujang retail tub and 14 kg foodservice carton",
+    packingNote: "500 g × 20: carton net weight 10 kg, gross weight 11.5 kg, dimensions 490 × 260 × 175 mm. 14 kg format: carton net weight 14 kg, gross weight 14.8 kg, dimensions 245 × 240 × 255 mm. Dimensions are length × width × height; confirm the final shipping specification with your order.",
+    buyerAnswer: "Deesheng Food supplies Korean-style gochujang for importers, distributors, restaurant suppliers and private-label brands. The listed formats are 500 g tubs packed 20 per carton and a 14 kg foodservice carton. Both have a 12-month shelf life under the stated ambient storage conditions. Use the retail format for a packaged sauce range or the larger format for commercial kitchens and food preparation. Send your market, intended use, preferred pack and estimated quantity so we can match a sample and confirm the formula, ingredient information, label and applicable product documents.",
     buyerQuestions: [
       ...standardFaq("gochujang"),
       { question: "Which gochujang pack should I choose for retail or foodservice?", answer: "The listed retail format is a 500 g tub packed 20 per carton; the foodservice format is a 14 kg carton. Confirm the channel, handling needs and estimated cartons before requesting a quotation." },
+      { question: "What heat level does this gochujang have?", answer: "Select the heat and sweetness profile by tasting the proposed formula in your intended dish. No single Scoville value is specified here; request the current specification for the sample you approve." },
+      { question: "How can I check ingredients, allergens and dietary suitability?", answer: "Request the ingredient list, allergen statement and relevant documents for the exact formula and pack. Do not infer gluten-free, vegan or other dietary suitability from the product name." },
+      { question: "What are the shelf life and storage conditions?", answer: "The listed shelf life is 12 months under ambient storage, in a cool, dry place away from light. Follow the approved label for the selected formula, including its instructions after opening." },
     ],
   },
   {
@@ -525,10 +534,38 @@ export const productDetails: ProductDetail[] = [
     slug: "bibimbap-sauce", name: "Stone Pot Bibimbap Sauce", categorySlug: "korean-sauces", categoryName: "Korean Sauces", headline: "Bibimbap sauce for retail bottles and restaurant kitchens.", summary: "A balanced Korean-style bibimbap sauce available in spicy and non-spicy versions for supermarkets, restaurants and private-label programs.", applications: ["Stone pot bibimbap", "Rice bowls", "Vegetable bowls", "Dipping", "Meal kits"], packing: ["200 g bottle × 24", "350 g bottle × 24", "400 g bottle × 30", "1 kg pouch × 12"], shelfLife: "12 months", storage: "Ambient", image: "/media/catalog-products/sauces/stone-pot-bibimbap-classic.webp", imageAlt: "Stone pot bibimbap sauce in retail bottle, pouch and sachet formats", buyerQuestions: standardFaq("bibimbap sauce"),
   },
   {
-    slug: "classic-buldak-sauce", name: "Classic Buldak Sauce", categorySlug: "korean-sauces", categoryName: "Korean Sauces", headline: "Classic Korean fire-chicken flavor for retail and foodservice.", summary: "A spicy, savory Korean-style buldak sauce designed for noodles, fried chicken, rice dishes and menu innovation.", applications: ["Buldak noodles", "Fried chicken", "Rice bowls", "Dips", "Menu sauces"], packing: ["200 g bottle × 24", "350 g bottle × 24", "400 g bottle × 30", "1 kg pouch × 12"], shelfLife: "12 months", storage: "Ambient", image: "/media/catalog-products/sauces/turkey-noodle-sauce-classic.webp", imageAlt: "Classic Korean fire-noodle sauce in bottle and foodservice pouch formats", buyerQuestions: standardFaq("classic buldak sauce"),
+    slug: "classic-buldak-sauce", name: "Classic Korean-Style Fire Noodle Sauce", categorySlug: "korean-sauces", categoryName: "Korean Sauces",
+    headline: "Fire noodle sauce for retail, foodservice and private label.",
+    summary: "A spicy Korean-style noodle sauce for noodles, fried chicken, rice bowls and dipping. Retail bottles and 1 kg foodservice pouches support wholesale and private-label projects.",
+    seoTitle: "Fire Noodle Sauce Wholesale & Private Label | Deesheng",
+    metaDescription: "Source Korean-style fire noodle sauce in 200 g, 350 g and 400 g bottles or 1 kg pouches. Compare 10- and 12-pouch cartons for wholesale and private label.",
+    applications: ["Spicy noodles", "Fried chicken", "Rice bowls", "Dips", "Menu sauces"], packing: ["200 g bottle × 24", "350 g bottle × 24", "400 g bottle × 30", "1 kg pouch × 12", "1 kg pouch × 10"], shelfLife: "12 months", storage: "Ambient; cool, dry and away from light", image: "/media/catalog-products/sauces/turkey-noodle-sauce-classic.webp", imageAlt: "Classic Korean fire-noodle sauce in bottle and foodservice pouch formats",
+    packingNote: "For 1 kg × 12, carton net weight is 12 kg, gross weight is 12.85 kg and dimensions are 320 × 240 × 250 mm (length × width × height). The 1 kg × 10 option is a separate carton configuration; request its shipping dimensions and gross weight when ordering.",
+    buyerAnswer: "Deesheng Food supplies classic Korean-style fire noodle sauce for food importers, distributors, noodle brands and restaurant suppliers. Choose 200 g bottles × 24, 350 g bottles × 24, 400 g bottles × 30, or 1 kg pouches in 10- or 12-pouch cartons. The listed shelf life is 12 months with ambient storage away from light. Select the carton configuration explicitly when comparing quotations. For private label, share your target market, intended dish, heat preference, pack and quantity; approve a sample and confirm the ingredient, allergen and label information for the selected formula.",
+    buyerQuestions: [
+      ...standardFaq("classic fire noodle sauce"),
+      { question: "Which retail and foodservice packs are available?", answer: "Listed retail packs are 200 g bottles × 24, 350 g bottles × 24 and 400 g bottles × 30. The 1 kg pouch comes in both 10-pouch and 12-pouch carton configurations. State the required carton count in your inquiry." },
+      { question: "How should I choose the heat level?", answer: "The classic formula is a spicy option. Confirm the target heat by testing the selected sample with your noodles or other application; this page does not specify a measured Scoville value." },
+      { question: "Does the catalogue name Turkey Noodle Sauce mean it contains turkey?", answer: "The catalogue name identifies the fire-noodle sauce range; it is not an ingredient declaration. Request the exact ingredient list and allergen statement before making meat-content or dietary claims." },
+      { question: "What are the shelf life and storage conditions?", answer: "The listed shelf life is 12 months under ambient storage, in a cool, dry place away from light. Follow the approved pack label for storage and handling after opening." },
+    ],
   },
   {
-    slug: "creamy-buldak-sauce", name: "Creamy Buldak Sauce", categorySlug: "korean-sauces", categoryName: "Korean Sauces", headline: "Creamy heat for noodles, chicken and modern Korean menus.", summary: "A creamy variation of Korean-style buldak sauce that balances chili heat with a smoother, richer finish.", applications: ["Creamy spicy noodles", "Fried chicken", "Rice cakes", "Dips", "Restaurant menu sauces"], packing: ["200 g bottle × 24", "350 g bottle × 24", "400 g bottle × 30", "1 kg pouch × 12"], shelfLife: "12 months", storage: "Ambient", image: "/media/catalog-products/sauces/turkey-noodle-sauce-milk-flavor.webp", imageAlt: "Creamy Korean fire-noodle sauce in bottle and foodservice pouch formats", buyerQuestions: standardFaq("creamy buldak sauce"),
+    slug: "creamy-buldak-sauce", name: "Creamy Korean-Style Noodle Sauce", categorySlug: "korean-sauces", categoryName: "Korean Sauces",
+    headline: "Creamy noodle sauce for retail and foodservice buyers.",
+    summary: "A creamy Korean-style noodle sauce for noodles, chicken, rice cakes and dipping. Choose retail bottles or 1 kg foodservice pouches, then confirm the heat profile of the selected formula.",
+    seoTitle: "Creamy Noodle Sauce Wholesale & Private Label | Deesheng",
+    metaDescription: "Source creamy Korean-style noodle sauce in retail bottles or 1 kg pouches. Compare 10- and 12-pouch cartons, shelf life and private-label options with Deesheng.",
+    applications: ["Creamy noodles", "Fried chicken", "Rice cakes", "Dips", "Restaurant menu sauces"], packing: ["200 g bottle × 24", "350 g bottle × 24", "400 g bottle × 30", "1 kg pouch × 12", "1 kg pouch × 10"], shelfLife: "12 months", storage: "Ambient; cool, dry and away from light", image: "/media/catalog-products/sauces/turkey-noodle-sauce-milk-flavor.webp", imageAlt: "Creamy Korean fire-noodle sauce in bottle and foodservice pouch formats",
+    packingNote: "For 1 kg × 12, carton net weight is 12 kg, gross weight is 12.85 kg and dimensions are 320 × 240 × 250 mm (length × width × height). The 1 kg × 10 option is a separate carton configuration; request its shipping dimensions and gross weight when ordering. Confirm the heat profile for the selected formula and pack.",
+    buyerAnswer: "Deesheng Food supplies creamy Korean-style noodle sauce for importers, distributors, foodservice operators and private-label brands. Available formats include 200 g bottles × 24, 350 g bottles × 24, 400 g bottles × 30, and 1 kg pouches packed 10 or 12 per carton. The listed shelf life is 12 months under ambient storage away from light. Creamy describes the flavor style and does not establish one heat level for every format. Send your intended dish, market, preferred pack and quantity, then approve a sample and the ingredient, allergen and label information for that exact formula.",
+    buyerQuestions: [
+      ...standardFaq("creamy noodle sauce"),
+      { question: "Which creamy noodle sauce packs can I order?", answer: "Choose 200 g bottles × 24, 350 g bottles × 24, 400 g bottles × 30, or 1 kg pouches in 10-pouch or 12-pouch cartons. Specify the carton configuration when requesting samples and a quotation." },
+      { question: "Is every creamy version mild?", answer: "No single heat level is specified across the range. Creamy describes the flavor style; confirm the heat of the selected formula and pack with an approved sample." },
+      { question: "How do I check milk, meat content and allergens?", answer: "Request the ingredient list and allergen statement for the exact formula. The names creamy, milk flavor and Turkey Noodle Sauce are not a substitute for these documents, and do not establish dairy-free, vegan or meat-content claims." },
+      { question: "What are the shelf life and storage conditions?", answer: "The listed shelf life is 12 months under ambient storage, in a cool, dry place away from light. Follow the approved label for the selected formula, including handling after opening." },
+    ],
   },
   {
     slug: "tteokbokki-sauce", name: "Tteokbokki Sauce", categorySlug: "korean-sauces", categoryName: "Korean Sauces", headline: "Tteokbokki sauce for retail, foodservice and meal kits.", summary: "Korean-style rice cake sauce available in original and creamy variants for street-food concepts and ready-to-cook formats.", applications: ["Tteokbokki", "Rice cake meal kits", "Street-food menus", "Noodles", "Dipping"], packing: ["200 g bottle × 24", "350 g bottle × 24", "400 g bottle × 30", "1 kg pouch × 12"], shelfLife: "12 months", storage: "Ambient", image: "/media/catalog-products/sauces/tteokbokki-sauce-classic.webp", imageAlt: "Classic tteokbokki sauce in bottle and foodservice pouch formats", buyerQuestions: standardFaq("tteokbokki sauce"),
