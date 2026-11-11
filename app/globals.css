@@ -771,6 +771,18 @@ button, input, select, textarea { font: inherit; }
 .packing-panel li span { font-size: 16px; }
 .packing-panel li b { color: #9eb5aa; font-size: 14px; letter-spacing: .1em; text-transform: uppercase; }
 .packing-panel > p:last-child { margin: 0; color: #9eb5aa; font-size: 16px; line-height: 1.65; }
+.pack-spec-section { padding-top: 0; }
+.pack-spec-scroll { max-width: 100%; overflow-x: auto; border: 1px solid var(--line); background: white; }
+.pack-spec-scroll:focus-visible { outline: 3px solid var(--pepper); outline-offset: 4px; }
+.pack-spec-table { width: 100%; min-width: 850px; border-collapse: collapse; text-align: left; font-size: 16px; line-height: 1.5; }
+.pack-spec-table caption { padding: 18px; color: var(--muted); text-align: left; }
+.pack-spec-table th, .pack-spec-table td { padding: 16px 18px; border-top: 1px solid var(--line); vertical-align: top; }
+.pack-spec-table thead { background: var(--ink); color: white; }
+.pack-spec-table tbody th { min-width: 175px; font-weight: 600; }
+.pack-spec-table tbody tr:nth-child(even) { background: #f5f7f3; }
+.pack-spec-note { margin-top: 18px; color: var(--muted); font-size: 16px; line-height: 1.65; }
+.product-resource-links { display: grid; gap: 16px; padding-left: 20px; margin-top: 24px; }
+.product-resource-links .text-link { color: var(--pepper); }
 .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .related-grid > a { display: flex; min-height: 270px; flex-direction: column; padding: 25px; border: 1px solid var(--line); background: white; transition: transform .2s ease, box-shadow .2s ease; }
 .related-grid > a:hover { transform: translateY(-4px); box-shadow: var(--shadow); }

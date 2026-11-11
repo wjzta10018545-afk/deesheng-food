@@ -78,15 +78,16 @@ test("publishes one trailing-slash URL format for search engines", async () => {
 
   const sitemap = await readFile(new URL("../public/sitemap.xml", import.meta.url), "utf8");
   const locations = [...sitemap.matchAll(/<loc>(https:\/\/deesheng\.food\/[^<]*)<\/loc>/g)].map((match) => match[1]);
-  assert.equal(locations.length, 38);
+  assert.equal(locations.length, 48);
+  assert.equal(new Set(locations).size, locations.length);
   assert.ok(locations.every((location) => new URL(location).pathname.endsWith("/")));
   assert.ok(locations.includes("https://deesheng.food/markets/mongolia/"));
   assert.ok(locations.includes("https://deesheng.food/markets/singapore/"));
-  assert.equal((sitemap.match(/<lastmod>2026-09-17<\/lastmod>/g) ?? []).length, 13);
-  assert.equal((sitemap.match(/<lastmod>2026-09-25<\/lastmod>/g) ?? []).length, 2);
-  assert.equal((sitemap.match(/<lastmod>2026-09-14<\/lastmod>/g) ?? []).length, 3);
-  assert.equal((sitemap.match(/<lastmod>2026-09-07<\/lastmod>/g) ?? []).length, 12);
-  assert.equal((sitemap.match(/<lastmod>2026-09-26<\/lastmod>/g) ?? []).length, 8);
+  const optimizedSauces = JSON.parse(await readFile(new URL("../app/data/aeo-sauces.json", import.meta.url), "utf8"));
+  for (const product of optimizedSauces) {
+    assert.ok(locations.includes(`https://deesheng.food/product/${product.slug}/`));
+  }
+  assert.equal((sitemap.match(/<lastmod>\d{4}-\d{2}-\d{2}<\/lastmod>/g) ?? []).length, locations.length);
 });
 
 test("renders country buyer pages with qualified B2B search intent", async () => {
@@ -126,7 +127,7 @@ test("renders every brochure product with its own catalogue image", async () => 
       assert.match(html, /href="\/product\/korean-cabbage-kimchi\/"/);
     }
     if (path === "/products/korean-sauces/") {
-      assert.match(html, /Build a Korean sauce range around your sales channel/);
+      assert.match(html, /Choose Korean sauces for wholesale and private label/);
       assert.match(html, /href="\/product\/korean-bbq-sauce\/"/);
     }
   }

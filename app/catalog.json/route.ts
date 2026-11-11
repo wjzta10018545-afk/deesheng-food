@@ -7,7 +7,7 @@ export function GET() {
     name: "Deesheng Food Export Catalogue",
     company: "Qingdao Deesheng Hengxin Food Co., Ltd.",
     canonical_url: "https://deesheng.food/products/",
-    updated: "2026-10-09",
+    updated: "2026-11-12",
     buyer_faq_url: "https://deesheng.food/buyer-faq/",
     contact: { name: "Kevin Wang", website: "https://deesheng.food/", whatsapp: "+86 156 2108 9573", email: "info@deesheng.food" },
     commercial_baseline: { business_type: "B2B export", standard_oem_moq: "Some standard-pack sauce OEM projects use 200 cartons per item as a quotation starting point. Confirm SKU, formula and pack. Kimchi, bulk packs, dry ingredients and frozen products have separate conditions.", quotation_basis: "Confirmed for the selected product, pack, quantity and destination", currency: "USD", typical_standard_product_lead_time: "About 14 days may be a planning estimate for selected confirmed standard sauce formulas and packs after label and payment approval; confirm the actual order schedule. Other products and custom projects require separate scheduling." },

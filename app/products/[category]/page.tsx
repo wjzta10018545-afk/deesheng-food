@@ -28,14 +28,16 @@ const sourcingGuides: Record<string, {
     heading: "Choose Korean sauces for wholesale and private label",
     introduction: "Compare the product, pack and order quantity for your channel. Some standard-pack sauce OEM projects use 200 cartons per item as a quotation starting point. Confirm the applicable SKU, formula and pack; trials are assessed separately.",
     steps: [
-      { title: "Pick an application", description: "Compare fried-chicken glazes, buldak, bibimbap, tteokbokki and Korean BBQ sauces by menu use and target heat level." },
+      { title: "Pick an application", description: "Compare fried-chicken, fire-noodle, bibimbap, tteokbokki, BBQ and soup sauces by menu use and target heat level. Classic, creamy and non-spicy variants have separate specifications." },
       { title: "Match the pack to the channel", description: "Review retail bottles and 1 kg sauce pouches. Gochujang also has 500 g tubs and 14 kg foodservice cartons. Sizes and carton quantities are product-specific." },
       { title: "Confirm project scope", description: "Ask about samples, flavor adjustment and private label. HALAL documents and coverage must be checked against the selected formula and order." },
     ],
     startingPoints: [
       { name: "Gochujang packs", slug: "gochujang" },
       { name: "Korean BBQ sauce", slug: "korean-bbq-sauce" },
-      { name: "Classic buldak sauce", slug: "classic-buldak-sauce" },
+      { name: "Classic fire noodle sauce", slug: "classic-buldak-sauce" },
+      { name: "Creamy noodle sauce", slug: "creamy-buldak-sauce" },
+      { name: "Mild spicy noodle sauce", slug: "mild-spicy-fire-noodle-sauce" },
       { name: "Fried chicken sauce", slug: "sweet-spicy-fried-chicken-sauce" },
     ],
   },
