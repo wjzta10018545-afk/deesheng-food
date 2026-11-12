@@ -1,4 +1,5 @@
 import sauceCatalog from "./sauce-catalog.json";
+import aeoSauces from "./aeo-sauces.json";
 
 export type CatalogItem = {
   name: string;
@@ -486,14 +487,27 @@ export type ProductDetail = {
   categoryName: string;
   headline: string;
   summary: string;
+  seoTitle?: string;
+  metaDescription?: string;
   applications: string[];
   packing: string[];
+  packSpecifications?: {
+    pack: string;
+    shelfLife: string;
+    storage: string;
+    netWeightKg?: number;
+    grossWeightKg?: number;
+    dimensionsMm?: string;
+  }[];
+  packingNote?: string;
   shelfLife: string;
   storage: string;
   image: string;
   imageAlt: string;
   buyerAnswer?: string;
   buyerQuestions: { question: string; answer: string }[];
+  relatedProductSlugs?: string[];
+  resourceLinks?: { href: string; label: string }[];
 };
 
 const standardFaq = (product: string) => [
@@ -504,46 +518,12 @@ const standardFaq = (product: string) => [
 ];
 
 export const productDetails: ProductDetail[] = [
-  {
-    slug: "gochujang", name: "Gochujang — Korean Chili Paste", categorySlug: "korean-sauces", categoryName: "Korean Sauces",
-    headline: "Private-label gochujang for retail and foodservice.",
-    summary: "Gochujang is a Korean-style red pepper paste with a savory, sweet and moderately spicy profile for bibimbap, marinades, stir-fries and Korean menus.",
-    applications: ["Bibimbap", "Marinades", "Stir-fry", "Dipping sauces", "Soup and stew bases"], packing: ["500 g tub × 20 per carton", "14 kg foodservice carton"], shelfLife: "12 months", storage: "Ambient; cool and dry", image: "/media/catalog-products/sauces/gochujang-chili-sauce.webp", imageAlt: "Gochujang retail tub and 14 kg foodservice carton",
-    buyerAnswer: "Deesheng Food supplies gochujang (Korean red pepper paste) in 500 g retail tubs and 14 kg foodservice cartons for qualified importers, distributors and private-label projects. Share the destination, target heat, pack and quantity to request the right sample and current product-scope documents.",
-    buyerQuestions: [
-      ...standardFaq("gochujang"),
-      { question: "Which gochujang pack should I choose for retail or foodservice?", answer: "The listed retail format is a 500 g tub packed 20 per carton; the foodservice format is a 14 kg carton. Confirm the channel, handling needs and estimated cartons before requesting a quotation." },
-    ],
-  },
+  ...aeoSauces,
   {
     slug: "extra-hot-gochujang", name: "Extra Hot Gochujang", categorySlug: "korean-sauces", categoryName: "Korean Sauces", headline: "A hotter gochujang option for spice-led markets.", summary: "An extra-hot Korean-style chili paste for buyers who need a stronger heat profile while retaining the familiar fermented, savory and slightly sweet character of gochujang.", applications: ["Spicy bibimbap", "Hot marinades", "Korean fried chicken", "Stir-fry", "Foodservice sauces"], packing: ["500 g tub × 20 per carton", "14 kg foodservice carton"], shelfLife: "12 months", storage: "Ambient; cool and dry", image: "/media/catalog-products/sauces/gochujang-chili-sauce.webp", imageAlt: "Gochujang retail tub and foodservice carton used for the extra-hot specification", buyerQuestions: standardFaq("extra-hot gochujang"),
   },
   {
-    slug: "korean-garlic-sauce", name: "Korean Garlic Sauce", categorySlug: "korean-sauces", categoryName: "Korean Sauces", headline: "Versatile Korean garlic sauce in retail and bulk packs.", summary: "A savory garlic-forward sauce for Korean cooking, marinades and foodservice production.", applications: ["Marinades", "Grilled meat", "Stir-fry", "Rice dishes", "Foodservice bases"], packing: ["500 g tub × 20 per carton", "14 kg foodservice carton"], shelfLife: "12 months", storage: "Ambient; cool and dry", image: "/media/catalog-products/sauces/garlic-sauce-ssamjang.webp", imageAlt: "Korean garlic sauce retail tub and 14 kg foodservice carton", buyerQuestions: standardFaq("Korean garlic sauce"),
-  },
-  {
     slug: "bibimbap-sauce", name: "Stone Pot Bibimbap Sauce", categorySlug: "korean-sauces", categoryName: "Korean Sauces", headline: "Bibimbap sauce for retail bottles and restaurant kitchens.", summary: "A balanced Korean-style bibimbap sauce available in spicy and non-spicy versions for supermarkets, restaurants and private-label programs.", applications: ["Stone pot bibimbap", "Rice bowls", "Vegetable bowls", "Dipping", "Meal kits"], packing: ["200 g bottle × 24", "350 g bottle × 24", "400 g bottle × 30", "1 kg pouch × 12"], shelfLife: "12 months", storage: "Ambient", image: "/media/catalog-products/sauces/stone-pot-bibimbap-classic.webp", imageAlt: "Stone pot bibimbap sauce in retail bottle, pouch and sachet formats", buyerQuestions: standardFaq("bibimbap sauce"),
-  },
-  {
-    slug: "classic-buldak-sauce", name: "Classic Buldak Sauce", categorySlug: "korean-sauces", categoryName: "Korean Sauces", headline: "Classic Korean fire-chicken flavor for retail and foodservice.", summary: "A spicy, savory Korean-style buldak sauce designed for noodles, fried chicken, rice dishes and menu innovation.", applications: ["Buldak noodles", "Fried chicken", "Rice bowls", "Dips", "Menu sauces"], packing: ["200 g bottle × 24", "350 g bottle × 24", "400 g bottle × 30", "1 kg pouch × 12"], shelfLife: "12 months", storage: "Ambient", image: "/media/catalog-products/sauces/turkey-noodle-sauce-classic.webp", imageAlt: "Classic Korean fire-noodle sauce in bottle and foodservice pouch formats", buyerQuestions: standardFaq("classic buldak sauce"),
-  },
-  {
-    slug: "creamy-buldak-sauce", name: "Creamy Buldak Sauce", categorySlug: "korean-sauces", categoryName: "Korean Sauces", headline: "Creamy heat for noodles, chicken and modern Korean menus.", summary: "A creamy variation of Korean-style buldak sauce that balances chili heat with a smoother, richer finish.", applications: ["Creamy spicy noodles", "Fried chicken", "Rice cakes", "Dips", "Restaurant menu sauces"], packing: ["200 g bottle × 24", "350 g bottle × 24", "400 g bottle × 30", "1 kg pouch × 12"], shelfLife: "12 months", storage: "Ambient", image: "/media/catalog-products/sauces/turkey-noodle-sauce-milk-flavor.webp", imageAlt: "Creamy Korean fire-noodle sauce in bottle and foodservice pouch formats", buyerQuestions: standardFaq("creamy buldak sauce"),
-  },
-  {
-    slug: "tteokbokki-sauce", name: "Tteokbokki Sauce", categorySlug: "korean-sauces", categoryName: "Korean Sauces", headline: "Tteokbokki sauce for retail, foodservice and meal kits.", summary: "Korean-style rice cake sauce available in original and creamy variants for street-food concepts and ready-to-cook formats.", applications: ["Tteokbokki", "Rice cake meal kits", "Street-food menus", "Noodles", "Dipping"], packing: ["200 g bottle × 24", "350 g bottle × 24", "400 g bottle × 30", "1 kg pouch × 12"], shelfLife: "12 months", storage: "Ambient", image: "/media/catalog-products/sauces/tteokbokki-sauce-classic.webp", imageAlt: "Classic tteokbokki sauce in bottle and foodservice pouch formats", buyerQuestions: standardFaq("tteokbokki sauce"),
-  },
-  {
-    slug: "korean-bbq-sauce", name: "Korean BBQ Sauce", categorySlug: "korean-sauces", categoryName: "Korean Sauces", headline: "One Korean BBQ range for marinating, dipping and grilling.", summary: "Korean-style BBQ sauces for meat marinades, table dipping and grill applications in retail and foodservice packs.", applications: ["Beef and pork marinade", "Korean barbecue", "Grilled chicken", "Table dipping", "Central kitchens"], packing: ["200 g bottle × 24", "350 g bottle × 24", "400 g bottle × 30", "1 kg pouch × 12"], shelfLife: "12 months", storage: "Ambient", image: "/media/catalog-products/sauces/barbecue-bbq-sauce.webp", imageAlt: "Korean barbecue sauce in retail bottle and foodservice pouch formats", buyerQuestions: standardFaq("Korean BBQ sauce"),
-  },
-  {
-    slug: "sweet-spicy-fried-chicken-sauce", name: "Sweet & Spicy Fried Chicken Sauce", categorySlug: "korean-sauces", categoryName: "Korean Sauces", headline: "Korean sweet-spicy glaze for fried chicken brands.", summary: "A glossy sweet, savory and moderately spicy Korean-style coating sauce for chicken, rice dishes and casual dining concepts.", applications: ["Korean fried chicken", "Chicken tenders", "Rice bowls", "Dipping", "Central kitchens"], packing: ["200 g bottle × 24", "350 g bottle × 24", "400 g bottle × 30", "1 kg pouch × 12"], shelfLife: "12 months", storage: "Ambient", image: "/media/catalog-products/sauces/fried-chicken-sauce-spicy.webp", imageAlt: "Spicy Korean fried chicken sauce in retail bottle and foodservice pouch formats", buyerQuestions: standardFaq("sweet and spicy fried chicken sauce"),
-  },
-  {
-    slug: "soy-garlic-fried-chicken-sauce", name: "Soy Garlic Fried Chicken Sauce", categorySlug: "korean-sauces", categoryName: "Korean Sauces", headline: "Savory soy-garlic glaze for Korean fried chicken.", summary: "A balanced savory soy profile with rich garlic aroma, suitable for Korean fried chicken, stir-fries and rice cakes.", applications: ["Korean fried chicken", "Stir-fry", "Rice cakes", "Grilled chicken", "Dipping"], packing: ["200 g bottle × 24", "350 g bottle × 24", "400 g bottle × 30", "1 kg pouch × 12"], shelfLife: "12 months", storage: "Ambient", image: "/media/catalog-products/sauces/fried-chicken-sauce-soy-garlic.webp", imageAlt: "Soy-garlic Korean fried chicken sauce in retail bottle and foodservice pouch formats", buyerQuestions: standardFaq("soy garlic fried chicken sauce"),
-  },
-  {
-    slug: "honey-mustard-sauce", name: "Honey Mustard Sauce", categorySlug: "korean-sauces", categoryName: "Korean Sauces", headline: "Creamy honey mustard for retail and foodservice.", summary: "A sweet and tangy creamy sauce for fried chicken, snacks, sandwiches and dipping applications.", applications: ["Fried chicken", "Dipping", "Sandwiches", "Salads", "Snack foods"], packing: ["180 g bottle × 24", "320 g bottle × 24", "360 g bottle × 24", "1 kg pouch × 12"], shelfLife: "12 months", storage: "Ambient", image: "/media/catalog-products/sauces/honey-mustard-sauce.webp", imageAlt: "Honey mustard sauce in retail bottle and foodservice pouch formats", buyerQuestions: standardFaq("honey mustard sauce"),
   },
   {
     slug: "korean-cabbage-kimchi", name: "Korean Cabbage Kimchi", categorySlug: "kimchi", categoryName: "Korean Kimchi", headline: "Korean-style cabbage kimchi for retail and foodservice.", summary: "Refrigerated cabbage kimchi in 1 kg retail/foodservice bags and 10 kg bulk cartons, with cut and pack availability confirmed for each order.", applications: ["Retail grocery", "Restaurants", "Korean menus", "Side dishes", "Foodservice distribution"], packing: ["1 kg bag × 10", "10 kg carton — confirm cut and current availability"], shelfLife: "Typically 4–6 months", storage: "Refrigerated at 0–4°C", image: "/media/catalog-products/kimchi/cabbage-kimchi-mat-retail.webp", imageAlt: "Retail jar of cut Korean cabbage kimchi", buyerQuestions: standardFaq("Korean cabbage kimchi"),
