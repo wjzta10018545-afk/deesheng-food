@@ -83,11 +83,11 @@ const markets: Market[] = [
     country: "Singapore",
     title: "Korean Sauce & Kimchi OEM Supplier for Singapore | Deesheng",
     description:
-      "Source Korean sauces and refrigerated cabbage kimchi from Qingdao for Singapore importers. Compare 1 kg retail bags, 10 kg foodservice cartons and private-label options.",
+      "Source Korean sauces and refrigerated cabbage kimchi from Qingdao for Singapore importers. Compare jar and bulk formats, product-specific carton sizes and private-label options.",
     summary:
       "Deesheng Food supplies Korean sauces and refrigerated Korean kimchi from Qingdao, China for qualified Singapore importers, distributors, foodservice suppliers, central kitchens, retailers and private-label buyers.",
     buyerNote:
-      "Tell us the sales channel, product, pack, estimated quantity and purchase month. For kimchi, also specify whole or cut cabbage, 1 kg bag or 10 kg carton and the refrigerated route. Documents and destination requirements are checked for the selected order.",
+      "Tell us the sales channel, product, pack, estimated quantity and purchase month. For kimchi, also specify the cut, exact jar or bulk pack and delivery route; confirm the required storage and transport conditions for that selection. Documents and destination requirements are checked for the selected order.",
     buyerTypes: [
       "Food importers, distributors and wholesale suppliers",
       "Restaurant groups, caterers, central kitchens and foodservice buyers",
@@ -111,7 +111,7 @@ const markets: Market[] = [
       },
       {
         title: "Refrigerated kimchi OEM",
-        copy: "Review cabbage kimchi in 1 kg bags or 10 kg cartons, with MOQ confirmed for the selected kimchi format and packaging. Confirm 0–4°C storage and a typical 4–6-month shelf life against the selected specification.",
+        copy: "Review whole, cut and diced cabbage kimchi, with jarred formats listed separately. Packaging, storage, shelf life and MOQ must be confirmed for the selected product and order.",
         link: "/products/kimchi/",
       },
     ],
@@ -139,7 +139,7 @@ const markets: Market[] = [
       {
         question: "Can a Singapore importer source private-label kimchi from China?",
         answer:
-          "Yes. Deesheng Food can discuss whole or cut cabbage kimchi in 1 kg bags or 10 kg cartons with a private label. MOQ is confirmed for the selected kimchi format and packaging. Cabbage kimchi is typically stored at 0–4°C with a 4–6-month shelf life; confirm the selected specification, refrigerated route and local import requirements before ordering.",
+          "Yes. Deesheng Food can discuss whole, cut or diced cabbage kimchi and separate jarred formats for a private-label project. Confirm the selected pack, MOQ, shelf life, storage, shipment conditions and local import requirements before ordering; a specification for one format does not establish the conditions for every format.",
       },
     ],
   },

@@ -60,8 +60,8 @@ const productBuyingGuides: Record<string, {
   },
   "korean-cabbage-kimchi": {
     buyerFit: ["Refrigerated-food importers", "Asian supermarkets", "Restaurant and foodservice distributors", "Korean side-dish suppliers"],
-    customization: ["Whole or cut cabbage", "Retail bag or 10 kg bulk carton", "Flavor and fermentation target", "Export label and refrigerated shipment plan"],
-    brief: ["Required retail or foodservice pack", "Whole or cut format", "Destination and cold-chain route", "Estimated order quantity"],
+    customization: ["Whole, mat cut or mini mat diced cabbage", "Listed 5 kg, 10 kg and 5 kg × 2 formats", "Selected product's sample and specification", "Export label and shipment requirements"],
+    brief: ["Required cut and application", "Selected listed pack", "Destination and shipment requirements", "Estimated order quantity"],
   },
   "frozen-spinach": {
     buyerFit: ["Frozen-food importers", "Bibimbap and prepared-meal producers", "Central kitchens", "Foodservice distributors"],
@@ -104,9 +104,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const product = getProduct(slug);
   if (!product) return {};
   const isKoreanSauce = product.categorySlug === "korean-sauces" || product.categorySlug === "gochujang-pastes";
-  const halalPrefix = isKoreanSauce ? "HALAL " : "";
   const isCoatingMix = product.slug === "fried-chicken-coating-mix";
-  const title = product.seoTitle ?? (isCoatingMix ? "Fried Chicken Coating Mix Supplier | 1 kg Wholesale" : `${halalPrefix}${product.name} Manufacturer & Wholesale Supplier`);
+  const title = product.seoTitle ?? (isCoatingMix ? "Fried Chicken Coating Mix Supplier | 1 kg Wholesale" : `${product.name} Manufacturer & Wholesale Supplier`);
   const qualification = isKoreanSauce
     ? "HALAL scope review, private label, samples and export packing"
     : "Wholesale supply, samples, export packing and private-label support";
@@ -140,6 +139,7 @@ export default async function ProductPage({ params }: Props) {
   const imageUrl = `https://deesheng.food${product.image}`;
   const organizationId = "https://deesheng.food/#organization";
   const buyingGuide = productBuyingGuides[product.slug] ?? defaultBuyingGuide(product);
+  const hasPackVariants = product.packSpecifications?.some((spec) => Boolean(spec.variant)) ?? false;
 
   const structuredData = {
     "@context": "https://schema.org",
@@ -240,8 +240,8 @@ export default async function ProductPage({ params }: Props) {
         <div className="pack-spec-scroll" role="region" aria-label="Packaging specifications; scroll horizontally for all columns" tabIndex={0}>
           <table className="pack-spec-table">
             <caption>{product.name} — weights per carton; dimensions in millimetres (L × W × H)</caption>
-            <thead><tr><th scope="col">Pack per carton</th><th scope="col">Shelf life</th><th scope="col">Storage</th><th scope="col">Net weight</th><th scope="col">Gross weight</th><th scope="col">Carton dimensions</th></tr></thead>
-            <tbody>{product.packSpecifications.map((spec) => <tr key={spec.pack}><th scope="row">{spec.pack}</th><td>{spec.shelfLife}</td><td>{spec.storage}</td><td>{spec.netWeightKg !== undefined ? `${spec.netWeightKg} kg` : "Confirm"}</td><td>{spec.grossWeightKg !== undefined ? `${spec.grossWeightKg} kg` : "Confirm"}</td><td>{spec.dimensionsMm ? `${spec.dimensionsMm} mm` : "Confirm"}</td></tr>)}</tbody>
+            <thead><tr>{hasPackVariants && <th scope="col">Variant</th>}<th scope="col">Pack per carton</th><th scope="col">Shelf life</th><th scope="col">Storage</th><th scope="col">Net weight</th><th scope="col">Gross weight</th><th scope="col">Carton dimensions</th></tr></thead>
+            <tbody>{product.packSpecifications.map((spec) => <tr key={hasPackVariants ? `${spec.variant ?? ""}:${spec.pack}` : spec.pack}>{hasPackVariants ? <><th scope="row">{spec.variant ?? "Confirm variant"}</th><td>{spec.pack}</td></> : <th scope="row">{spec.pack}</th>}<td>{spec.shelfLife}</td><td>{spec.storage}</td><td>{spec.netWeightKg !== undefined ? `${spec.netWeightKg} kg` : "Carton logistics available on request"}</td><td>{spec.grossWeightKg !== undefined ? `${spec.grossWeightKg} kg` : "Carton logistics available on request"}</td><td>{spec.dimensionsMm ? `${spec.dimensionsMm} mm` : "Carton logistics available on request"}</td></tr>)}</tbody>
           </table>
         </div>
         <p className="pack-spec-note">{product.packingNote}</p>
