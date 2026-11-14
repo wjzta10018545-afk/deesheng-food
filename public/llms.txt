@@ -15,7 +15,7 @@ WhatsApp / Tel: +86 156 2108 9573
 
 - Product and pack specifications are specific to the named variant. Catalogue entries can represent flavors or pack formats and are not a count of unique formulas.
 - Where a field requires confirmation, request the current specification for the exact SKU. Do not infer shelf life, storage, carton logistics, ingredients or allergens from another product or packaging format.
-- The cabbage kimchi detail page lists 1 kg bags × 10 and 10 kg bulk packs with 0–4°C storage. Shelf life is confirmed for the selected product and pack. Retail jars and frozen kimchi projects require separate specifications.
+- Kimchi and pickled-vegetable packs and carton dimensions are listed by named product or variant. Whole, cut and diced cabbage kimchi and retail jars have separate pack specifications. Shelf life, storage and transport conditions require confirmation for the selected product and order; frozen kimchi projects require their own specification.
 - MOQ, samples, quotation, production timing and shipment terms are confirmed for the selected product, formula, pack, quantity and destination. Prices are not published.
 - Relevant factory credentials include BRCGS Grade A, HACCP, HALAL and OU Kosher. Check current validity, manufacturing site, product and formula coverage, and destination recognition before order approval; a credential list does not certify every catalogue item.
 
@@ -55,9 +55,15 @@ WhatsApp / Tel: +86 156 2108 9573
 - [Honey Mustard Sauce](https://deesheng.food/product/honey-mustard-sauce/)
 - [Korean-Style Doenjang](https://deesheng.food/product/korean-doenjang/)
 - [Korean Garlic Sauce](https://deesheng.food/product/korean-garlic-sauce/)
+- [Korean Cabbage Kimchi](https://deesheng.food/product/korean-cabbage-kimchi/)
+- [Jarred Cabbage Kimchi](https://deesheng.food/product/cabbage-kimchi-jars/)
+- [White, Washed & Stir-Fried Kimchi](https://deesheng.food/product/white-washed-stir-fried-kimchi/)
+- [Kkakdugi & Chonggak Radish Kimchi](https://deesheng.food/product/radish-kimchi/)
+- [Spring Onion & Scallion Kimchi](https://deesheng.food/product/scallion-kimchi/)
+- [Garlic Sprout Pickles](https://deesheng.food/product/garlic-sprout-pickles/)
+- [Pickled Green Pepper](https://deesheng.food/product/pickled-green-pepper/)
 - [Extra Hot Gochujang](https://deesheng.food/product/extra-hot-gochujang/)
 - [Stone Pot Bibimbap Sauce](https://deesheng.food/product/bibimbap-sauce/)
-- [Korean Cabbage Kimchi](https://deesheng.food/product/korean-cabbage-kimchi/)
 - [Coarse Korean Chili Powder](https://deesheng.food/product/coarse-korean-chili-powder/)
 - [Fine Korean Chili Powder](https://deesheng.food/product/fine-korean-chili-powder/)
 - [Fried Chicken Coating Mix](https://deesheng.food/product/fried-chicken-coating-mix/)

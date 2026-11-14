@@ -1,5 +1,7 @@
 import sauceCatalog from "./sauce-catalog.json";
 import aeoSauces from "./aeo-sauces.json";
+import aeoKimchi from "./aeo-kimchi.json";
+import kimchiSpecifications from "./kimchi-specifications.json";
 
 export type CatalogItem = {
   name: string;
@@ -9,6 +11,14 @@ export type CatalogItem = {
   storage: string;
   image?: string;
   detailSlug?: string;
+  nameKo?: string;
+  packSpecifications?: {
+    variant?: string;
+    pack: string;
+    dimensionsMm?: string;
+    shelfLife: string;
+    storage: string;
+  }[];
 };
 
 export type CatalogCategory = {
@@ -343,6 +353,47 @@ const kimchiBrochureItems = brochureItems("kimchi", [
   ["Sweet & Sour Yamakurage", "Pickled Vegetables", "sweet-sour-yamakurage", "5 kg / 10 kg"],
 ] as const, { packing: "Pack size confirmed per order", shelfLife: "Confirm for the selected SKU", storage: "Refrigerated; confirm SKU temperature" });
 
+// Names retain their existing citation anchors. Only source-confirmed matches
+// receive the supplemental packaging; similar names are not automatically merged.
+const kimchiSourceNumbers: Record<string, number> = {
+  "Cabbage Kimchi — Whole": 1,
+  "Cabbage Kimchi — Mat": 2,
+  "Cabbage Kimchi — Mini Mat": 3,
+  "Cabbage Kimchi — Retail Jar": 4,
+  "White Kimchi": 5,
+  "Washed Kimchi": 6,
+  "Chonggak Kimchi": 7,
+  "Spring Onion Kimchi": 8,
+  "Kkakdugi Kimchi": 9,
+  "Pickled Radish": 10,
+  "Stir-fried Kimchi": 11,
+  "Leaf Mustard Kimchi": 12,
+  "Green Onion Kimchi": 13,
+  "Soy Sauce Perilla Leaves": 31,
+};
+const currentKimchiSpecs = kimchiSpecifications.filter((item) =>
+  item.sourceNumber <= 32 && item.packSpecifications.length > 0,
+);
+const verifiedKimchiItem = (spec: typeof kimchiSpecifications[number], existing?: CatalogItem): CatalogItem => ({
+  name: existing?.name ?? spec.nameEn,
+  nameKo: spec.nameKo,
+  group: existing?.group ?? "Pickled Vegetables",
+  packing: spec.packSpecifications.map((pack) => pack.pack).join("; "),
+  packSpecifications: spec.packSpecifications,
+  shelfLife: "Confirm for the selected product and pack",
+  storage: "Confirm for the selected product and pack",
+  image: spec.image ?? existing?.image,
+  detailSlug: spec.detailSlug ?? undefined,
+});
+const kimchiCatalogueItems: CatalogItem[] = [
+  ...kimchiBrochureItems.map((item) => {
+    const spec = currentKimchiSpecs.find((record) => record.sourceNumber === kimchiSourceNumbers[item.name]);
+    return spec ? verifiedKimchiItem(spec, item) : item;
+  }),
+  ...currentKimchiSpecs.filter((spec) => !Object.values(kimchiSourceNumbers).includes(spec.sourceNumber))
+    .map((spec) => verifiedKimchiItem(spec)),
+];
+
 const frozenBrochureItems = brochureItems("frozen", [
   ["IQF Red Pepper — Dice / Slice", "Peppers & Aromatics", "iqf-red-pepper"],
   ["IQF Green Pepper — Dice / Slice", "Peppers & Aromatics", "iqf-green-pepper"],
@@ -454,7 +505,9 @@ export const catalogCategories: CatalogCategory[] = [
     eyebrow: "Korean kimchi series",
     image: "/media/categories/kimchi.webp",
     imageAlt: "Korean cabbage, radish and green onion kimchi selection",
-    items: kimchiBrochureItems,
+    description: "Browse Korean cabbage, radish and onion kimchi alongside garlic sprouts, green peppers and other pickled vegetables. Compare product-specific cuts, pack formats and carton dimensions for wholesale sourcing.",
+    buyerNote: "Select the exact product and pack. Storage, shelf life, ingredients, allergens and shipment conditions must be confirmed for the selected specification and destination.",
+    items: kimchiCatalogueItems,
   },
   {
     ...chiliSource,
@@ -496,6 +549,7 @@ export type ProductDetail = {
   applications: string[];
   packing: string[];
   packSpecifications?: {
+    variant?: string;
     pack: string;
     shelfLife: string;
     storage: string;
@@ -523,6 +577,7 @@ const standardFaq = (product: string) => [
 
 export const productDetails: ProductDetail[] = [
   ...aeoSauces,
+  ...aeoKimchi,
   {
     slug: "extra-hot-gochujang", name: "Extra Hot Gochujang", categorySlug: "korean-sauces", categoryName: "Korean Sauces", headline: "Extra-hot gochujang for retail and foodservice sourcing.", summary: "An extra-hot Korean-style chili paste for buyers who need a stronger heat profile while retaining the familiar fermented, savory and slightly sweet character of gochujang.",
     seoTitle: "Extra Hot Gochujang Supplier | Retail & Foodservice | Deesheng Food",
@@ -559,25 +614,6 @@ export const productDetails: ProductDetail[] = [
       { question: "Are classic and non-spicy bibimbap sauce the same SKU?", answer: "No. They are separate catalogue options. State the flavor and pack you want, and request the matching formula and sample rather than assuming that one specification covers both." },
       { question: "Are 1 kg × 10 and 1 kg × 12 the same carton?", answer: "No. This product specification lists 1 kg × 12, while the catalogue also lists 1 kg × 10. Specify the required count and request the corresponding carton data; do not transfer shipping data between them." },
       { question: "What should I include in a bibimbap sauce sample brief?", answer: "Include the classic or non-spicy option, rice-bowl recipe, target flavor, retail or foodservice channel, preferred pack, quantity and destination." },
-    ],
-  },
-  {
-    slug: "korean-cabbage-kimchi", name: "Korean Cabbage Kimchi", categorySlug: "kimchi", categoryName: "Korean Kimchi", headline: "Refrigerated cabbage kimchi in bagged and bulk formats.", summary: "Refrigerated cabbage kimchi in 1 kg bags packed 10 per carton and 10 kg bulk cartons. Confirm the cut, selected formula, shelf life and current availability for each order; retail jars are a separate catalogue format.",
-    seoTitle: "Korean Cabbage Kimchi Supplier | 1 kg & 10 kg | Deesheng Food",
-    metaDescription: "Source refrigerated cabbage kimchi in 1 kg × 10 bags and 10 kg bulk cartons. Storage at 0–4°C; shelf life confirmed for the selected product and pack.",
-    applications: ["Retail grocery", "Restaurants", "Korean menus", "Side dishes", "Foodservice distribution"], packing: ["1 kg bag × 10", "10 kg carton — confirm cut and current availability"], shelfLife: "Confirm for the selected product and pack", storage: "Refrigerated at 0–4°C", image: "/media/catalog-products/kimchi/cabbage-kimchi-mat.webp", imageAlt: "Cabbage kimchi shown in the catalogue for the 10 kg Mat format",
-    buyerAnswer: "Deesheng Food supplies refrigerated Korean cabbage kimchi in 1 kg bags packed 10 per carton and 10 kg bulk cartons. The storage requirement for these formats is 0–4°C. Shelf life must be confirmed for the selected product, formula and packaging before ordering. Share your required cut, pack, quantity, destination and refrigerated delivery route. Retail jars are listed separately and do not inherit the bagged product specification.",
-    packSpecifications: [
-      { pack: "1 kg bag × 10", shelfLife: "Confirm for the selected product and pack", storage: "Refrigerated at 0–4°C" },
-      { pack: "10 kg carton — confirm cut and current availability", shelfLife: "Confirm for the selected product and pack", storage: "Refrigerated at 0–4°C" },
-    ],
-    packingNote: "Confirm the cut, formula, shelf life and current availability for the selected bagged or bulk product. Retail jars require a separate specification. Carton logistics available on request.",
-    buyerQuestions: [
-      ...standardFaq("Korean cabbage kimchi"),
-      { question: "Which cabbage kimchi packs does this page cover?", answer: "This page covers 1 kg bags packed 10 per carton and 10 kg bulk cartons, with cut and availability confirmed for the order. The catalogue's retail jars are separate formats and require their own specification." },
-      { question: "What is the shelf life of cabbage kimchi?", answer: "Shelf life must be confirmed for the selected product, formula and packaging. Request the applicable specification and approved label before ordering; no single duration is stated for every cabbage kimchi format." },
-      { question: "What storage temperature applies to these cabbage kimchi formats?", answer: "The listed bagged and bulk cabbage kimchi formats require refrigeration at 0–4°C. Share the destination and delivery route so the refrigerated shipment requirements can be reviewed." },
-      { question: "Can I use the same specification for retail jars or frozen kimchi?", answer: "No. The bagged and bulk refrigerated specification does not establish a retail-jar or frozen product specification. Identify the exact format and request its applicable packing, storage and shelf-life information." },
     ],
   },
   {

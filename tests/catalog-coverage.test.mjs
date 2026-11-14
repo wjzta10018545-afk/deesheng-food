@@ -48,8 +48,9 @@ const publicProductFields = [
   "applications", "packing", "packSpecifications", "packingNote", "shelfLife", "storage", "image", "imageAlt",
   "buyerQuestions", "relatedProductSlugs", "resourceLinks", "url",
 ];
-const publicItemFields = ["name", "group", "packing", "shelfLife", "storage", "image", "detailSlug", "citation_url"];
-const publicPackFields = ["pack", "shelfLife", "storage", "netWeightKg", "grossWeightKg", "dimensionsMm"];
+const publicItemFields = ["name", "nameKo", "group", "packing", "packSpecifications", "shelfLife", "storage", "image", "detailSlug", "citation_url"];
+const publicCategoryPackFields = ["variant", "pack", "dimensionsMm", "shelfLife", "storage"];
+const publicPackFields = ["variant", "pack", "shelfLife", "storage", "netWeightKg", "grossWeightKg", "dimensionsMm"];
 const forbiddenPublicData = /\[HOLD\]|Sheet[13]\b|DS-\d{3}|\b(?:profound|athenahq)\b|FOB\s*\d|(?:USD|CNY|RMB|US\$|\$|¥)\s*\d|\d[\d,.]*\s*(?:USD|CNY|RMB)\b|"(?:price|unitPrice|unit_price|cost|costPrice|cost_price|offers|aggregateRating)"\s*:/i;
 
 const sitemap = await readFile(new URL("../public/sitemap.xml", import.meta.url), "utf8");
@@ -104,6 +105,18 @@ test("public catalogue preserves documented fields and every category citation r
       assert.equal(visibleText(card.match(/<h3\b[^>]*>([\s\S]*?)<\/h3>/)?.[1] ?? ""), item.name, `${item.name}: citation targets the named product`);
       const cardSpecs = Object.fromEntries([...card.matchAll(/<dt>([^<]+)<\/dt><dd>([\s\S]*?)<\/dd>/g)].map((match) => [match[1], visibleText(match[2])]));
       assert.deepEqual(cardSpecs, { Packing: normalizeText(item.packing), "Shelf life": normalizeText(item.shelfLife), Storage: normalizeText(item.storage) }, `${item.name}: each card preserves its own pack, shelf life and storage`);
+      if (item.nameKo) {
+        const koreanName = card.match(/<p\b[^>]*lang="ko"[^>]*>([\s\S]*?)<\/p>/)?.[1];
+        assert.equal(visibleText(koreanName ?? ""), item.nameKo, `${item.name}: Korean product name is preserved`);
+      }
+      if (item.packSpecifications?.length) {
+        const packTable = card.match(/<table class="catalogue-pack-table">([\s\S]*?)<\/table>/)?.[1];
+        assert.ok(packTable, `${item.name}: catalogue carton table is visible`);
+        const packBody = packTable.match(/<tbody>([\s\S]*?)<\/tbody>/)?.[1] ?? "";
+        const packRows = [...packBody.matchAll(/<tr>([\s\S]*?)<\/tr>/g)].map((row) => [...row[1].matchAll(/<(?:td|th)\b[^>]*>([\s\S]*?)<\/(?:td|th)>/g)].map((cell) => visibleText(cell[1])));
+        assert.deepEqual(packRows, item.packSpecifications.map((spec) => [spec.pack, spec.dimensionsMm ?? "Confirm for this pack"]), `${item.name}: each catalogue pack has its own carton dimensions`);
+        for (const spec of item.packSpecifications) assertOnlyFields(spec, publicCategoryPackFields, `${item.name}/${spec.pack}`);
+      }
       for (const field of ["name", "group", "packing", "shelfLife", "storage"]) {
         assert.equal(typeof item[field], "string", `${item.name}/${field}`);
         assert.ok(item[field].trim(), `${item.name}/${field} is not empty`);
@@ -149,14 +162,18 @@ test("each carton row retains its own specification and missing logistics stay e
     assert.ok(table, product.slug);
     const body = table.match(/<tbody>([\s\S]*?)<\/tbody>/)?.[1] ?? "";
     const rows = [...body.matchAll(/<tr>([\s\S]*?)<\/tr>/g)].map((row) => [...row[1].matchAll(/<(?:td|th)\b[^>]*>([\s\S]*?)<\/(?:td|th)>/g)].map((cell) => visibleText(cell[1])));
+    const hasVariants = product.packSpecifications.some((spec) => Boolean(spec.variant));
+    const headers = [...(table.match(/<thead>([\s\S]*?)<\/thead>/)?.[1] ?? "").matchAll(/<th\b[^>]*>([\s\S]*?)<\/th>/g)].map((cell) => visibleText(cell[1]));
+    assert.deepEqual(headers, [...(hasVariants ? ["Variant"] : []), "Pack per carton", "Shelf life", "Storage", "Net weight", "Gross weight", "Carton dimensions"], `${product.slug}: optional variant column preserves existing tables`);
     const expected = product.packSpecifications.map((spec) => [
+      ...(hasVariants ? [spec.variant ?? "Confirm variant"] : []),
       spec.pack, spec.shelfLife, spec.storage,
       spec.netWeightKg === undefined ? onRequest : `${spec.netWeightKg} kg`,
       spec.grossWeightKg === undefined ? onRequest : `${spec.grossWeightKg} kg`,
       spec.dimensionsMm ? `${spec.dimensionsMm} mm` : onRequest,
     ].map(normalizeText));
     assert.deepEqual(rows, expected, `${product.slug}: exact row/column values prevent borrowing another pack's logistics`);
-    assert.equal(new Set(product.packSpecifications.map((spec) => spec.pack)).size, product.packSpecifications.length, `${product.slug}: pack rows are unambiguous`);
+    assert.equal(new Set(product.packSpecifications.map((spec) => JSON.stringify([spec.variant ?? "", spec.pack]))).size, product.packSpecifications.length, `${product.slug}: variant/pack rows are unambiguous`);
   }
 
   // Compare JSON-backed source records too, so omissions in the public projection

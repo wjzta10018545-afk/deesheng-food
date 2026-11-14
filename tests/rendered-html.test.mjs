@@ -78,7 +78,25 @@ test("publishes one trailing-slash URL format for search engines", async () => {
 
   const sitemap = await readFile(new URL("../public/sitemap.xml", import.meta.url), "utf8");
   const locations = [...sitemap.matchAll(/<loc>(https:\/\/deesheng\.food\/[^<]*)<\/loc>/g)].map((match) => match[1]);
-  assert.equal(locations.length, 48);
+  const catalogueResponse = await worker.fetch(new Request("http://localhost/catalog.json/"), {
+    ASSETS: { fetch: async () => new Response("Not found", { status: 404 }) },
+  }, { waitUntil() {}, passThroughOnException() {} });
+  assert.equal(catalogueResponse.status, 200);
+  const catalogue = await catalogueResponse.json();
+  const retainedStaticPaths = [
+    "/", "/products/", "/halal-korean-sauce-manufacturer/", "/oem-private-label/", "/quality-certifications/",
+    "/resources/", "/about/", "/contact/", "/markets/mongolia/", "/markets/singapore/", "/buyer-faq/",
+    "/resources/korean-sauce-oem-guide/", "/resources/private-label-gochujang-supplier/",
+    "/resources/halal-korean-sauce-manufacturer/", "/resources/import-korean-sauces-from-china/",
+    "/resources/korean-fried-chicken-sauce-system/", "/resources/korean-chili-powder-sourcing/",
+  ];
+  const expectedUrls = [
+    ...retainedStaticPaths.map((path) => `https://deesheng.food${path}`),
+    ...catalogue.categories.map((category) => `https://deesheng.food/products/${category.slug}/`),
+    ...catalogue.detailed_products.map((product) => product.url),
+  ];
+  assert.equal(new Set(expectedUrls).size, expectedUrls.length, "Public route groups do not overlap or repeat");
+  assert.deepEqual(new Set(locations), new Set(expectedUrls), "Sitemap covers every public product, category and retained static page");
   assert.equal(new Set(locations).size, locations.length);
   assert.ok(locations.every((location) => new URL(location).pathname.endsWith("/")));
   assert.ok(locations.includes("https://deesheng.food/markets/mongolia/"));
@@ -86,6 +104,9 @@ test("publishes one trailing-slash URL format for search engines", async () => {
   const optimizedSauces = JSON.parse(await readFile(new URL("../app/data/aeo-sauces.json", import.meta.url), "utf8"));
   for (const product of optimizedSauces) {
     assert.ok(locations.includes(`https://deesheng.food/product/${product.slug}/`));
+  }
+  for (const slug of ["extra-hot-gochujang", "bibimbap-sauce", "korean-cabbage-kimchi", "coarse-korean-chili-powder", "fine-korean-chili-powder", "fried-chicken-coating-mix", "pure-sesame-oil", "frozen-spinach", "frozen-broccoli"]) {
+    assert.ok(locations.includes(`https://deesheng.food/product/${slug}/`), `${slug}: existing product page retained`);
   }
   assert.equal((sitemap.match(/<lastmod>\d{4}-\d{2}-\d{2}<\/lastmod>/g) ?? []).length, locations.length);
 });
@@ -114,16 +135,17 @@ test("renders every brochure product with its own catalogue image", async () => 
 
   for (const [path, expectedCount, folder] of [
     ["/products/korean-sauces/", 114, "sauces"],
-    ["/products/kimchi/", 24, "kimchi"],
+    ["/products/kimchi/", 37, "kimchi"],
     ["/products/chili-seasonings/", 31, "chili"],
     ["/products/frozen-vegetables/", 90, "frozen"],
   ]) {
     const html = await fetchHtml(worker, path);
     assert.equal((html.match(/class="product-card"/g) ?? []).length, expectedCount);
-    const images = [...html.matchAll(new RegExp(`/media/catalog-products/${folder}/[^"?]+\\.webp`, "g"))].map((match) => match[0]);
+    const images = [...html.matchAll(new RegExp(`/media/catalog-products/${folder}/[^"?]+\\.(?:webp|png|jpe?g|avif)`, "g"))].map((match) => match[0]);
     assert.equal(new Set(images).size, expectedCount);
     if (path === "/products/kimchi/") {
-      assert.match(html, /Source Korean kimchi for a refrigerated supply chain/);
+      assert.match(html, /Compare Korean kimchi and pickled vegetables by product and pack/);
+      assert.match(html, /storage, shelf life and shipping conditions must be confirmed for the selected product and order/);
       assert.match(html, /href="\/product\/korean-cabbage-kimchi\/"/);
     }
     if (path === "/products/korean-sauces/") {

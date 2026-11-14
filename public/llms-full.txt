@@ -13,7 +13,7 @@ WhatsApp / Tel: +86 156 2108 9573
 
 - Product and pack specifications are specific to the named variant. Catalogue entries can represent flavors or pack formats and are not a count of unique formulas.
 - Where a field requires confirmation, request the current specification for the exact SKU. Do not infer shelf life, storage, carton logistics, ingredients or allergens from another product or packaging format.
-- The cabbage kimchi detail page lists 1 kg bags × 10 and 10 kg bulk packs with 0–4°C storage. Shelf life is confirmed for the selected product and pack. Retail jars and frozen kimchi projects require separate specifications.
+- Kimchi and pickled-vegetable packs and carton dimensions are listed by named product or variant. Whole, cut and diced cabbage kimchi and retail jars have separate pack specifications. Shelf life, storage and transport conditions require confirmation for the selected product and order; frozen kimchi projects require their own specification.
 - MOQ, samples, quotation, production timing and shipment terms are confirmed for the selected product, formula, pack, quantity and destination. Prices are not published.
 - Relevant factory credentials include BRCGS Grade A, HACCP, HALAL and OU Kosher. Check current validity, manufacturing site, product and formula coverage, and destination recognition before order approval; a credential list does not certify every catalogue item.
 
@@ -970,50 +970,72 @@ Storage: Confirm for the selected SKU and pack
 ### Korean Kimchi
 
 URL: https://deesheng.food/products/kimchi/
-Korean-style cabbage, radish and specialty kimchi for retail, wholesale and foodservice distribution.
-Kimchi requires a refrigerated supply chain. Shelf life varies by product and final specification.
+Browse Korean cabbage, radish and onion kimchi alongside garlic sprouts, green peppers and other pickled vegetables. Compare product-specific cuts, pack formats and carton dimensions for wholesale sourcing.
+Select the exact product and pack. Storage, shelf life, ingredients, allergens and shipment conditions must be confirmed for the selected specification and destination.
 
 #### Cabbage Kimchi — Whole
 
 Selection URL: https://deesheng.food/products/kimchi/#kimchi-cabbage-kimchi-whole
+Korean name: 배추김치
 Group: Cabbage Kimchi
-Packing: 10 kg
-Shelf life: Confirm for the selected SKU
-Storage: Refrigerated; confirm SKU temperature
+Packing: 10 kg carton; 5 kg carton; 5 kg bag × 2
+Shelf life: Confirm for the selected product and pack
+Storage: Confirm for the selected product and pack
 Product details: https://deesheng.food/product/korean-cabbage-kimchi/
+
+- Cabbage Kimchi — Whole — 10 kg carton: carton 325 × 212 × 212 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
+- Cabbage Kimchi — Whole — 5 kg carton: carton 250 × 170 × 190 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
+- Cabbage Kimchi — Whole — 5 kg bag × 2: carton 333 × 220 × 217 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
 
 #### Cabbage Kimchi — Mat
 
 Selection URL: https://deesheng.food/products/kimchi/#kimchi-cabbage-kimchi-mat
+Korean name: 맛김치
 Group: Cabbage Kimchi
-Packing: 10 kg
-Shelf life: Confirm for the selected SKU
-Storage: Refrigerated; confirm SKU temperature
+Packing: 10 kg carton
+Shelf life: Confirm for the selected product and pack
+Storage: Confirm for the selected product and pack
 Product details: https://deesheng.food/product/korean-cabbage-kimchi/
+
+- Cabbage Kimchi — Mat — 10 kg carton: carton 325 × 212 × 212 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
 
 #### Cabbage Kimchi — Mini Mat
 
 Selection URL: https://deesheng.food/products/kimchi/#kimchi-cabbage-kimchi-mini-mat
+Korean name: 슬라이스김치
 Group: Cabbage Kimchi
-Packing: 10 kg
-Shelf life: Confirm for the selected SKU
-Storage: Refrigerated; confirm SKU temperature
+Packing: 10 kg carton
+Shelf life: Confirm for the selected product and pack
+Storage: Confirm for the selected product and pack
+Product details: https://deesheng.food/product/korean-cabbage-kimchi/
+
+- Cabbage Kimchi — Mini Mat — 10 kg carton: carton 325 × 212 × 212 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
 
 #### Cabbage Kimchi — Retail Jar
 
 Selection URL: https://deesheng.food/products/kimchi/#kimchi-cabbage-kimchi-retail-jar
+Korean name: 맛김치
 Group: Cabbage Kimchi
-Packing: 300 g / 400 g / 480 g / 1 kg
-Shelf life: Confirm for the selected SKU
-Storage: Refrigerated; confirm SKU temperature
+Packing: 300 g jar × 36; 480 g jar × 24; 1 kg jar × 12
+Shelf life: Confirm for the selected product and pack
+Storage: Confirm for the selected product and pack
+Product details: https://deesheng.food/product/cabbage-kimchi-jars/
+
+- Cabbage Kimchi — Retail Jars — 300 g jar × 36: carton 431 × 325 × 230 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
+- Cabbage Kimchi — Retail Jars — 480 g jar × 24: carton 470 × 355 × 185 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
+- Cabbage Kimchi — Retail Jars — 1 kg jar × 12: carton 350 × 250 × 260 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
 
 #### White Kimchi
 
 Selection URL: https://deesheng.food/products/kimchi/#kimchi-white-kimchi
+Korean name: 백김치
 Group: Cabbage Kimchi
-Packing: 10 kg
-Shelf life: Confirm for the selected SKU
-Storage: Refrigerated; confirm SKU temperature
+Packing: 10 kg carton
+Shelf life: Confirm for the selected product and pack
+Storage: Confirm for the selected product and pack
+Product details: https://deesheng.food/product/white-washed-stir-fried-kimchi/
+
+- White Kimchi — 10 kg carton: carton 325 × 215 × 217 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
 
 #### Seasoned Pepper Kimchi
 
@@ -1026,66 +1048,104 @@ Storage: Refrigerated; confirm SKU temperature
 #### Chonggak Kimchi
 
 Selection URL: https://deesheng.food/products/kimchi/#kimchi-chonggak-kimchi
+Korean name: 총각김치
 Group: Radish Kimchi
-Packing: 10 kg
-Shelf life: Confirm for the selected SKU
-Storage: Refrigerated; confirm SKU temperature
+Packing: 5 kg carton; 1 kg bottle × 12
+Shelf life: Confirm for the selected product and pack
+Storage: Confirm for the selected product and pack
+Product details: https://deesheng.food/product/radish-kimchi/
+
+- Chonggak Radish Kimchi — 5 kg carton: carton 250 × 190 × 200 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
+- Chonggak Radish Kimchi — 1 kg bottle × 12: carton 350 × 250 × 260 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
 
 #### Spring Onion Kimchi
 
 Selection URL: https://deesheng.food/products/kimchi/#kimchi-spring-onion-kimchi
+Korean name: 쪽파김치
 Group: Specialty Kimchi
-Packing: 5 kg / 10 kg
-Shelf life: Confirm for the selected SKU
-Storage: Refrigerated; confirm SKU temperature
+Packing: 5 kg carton; 1 kg bottle × 12
+Shelf life: Confirm for the selected product and pack
+Storage: Confirm for the selected product and pack
+Product details: https://deesheng.food/product/scallion-kimchi/
+
+- Spring Onion Kimchi — 5 kg carton: carton 250 × 190 × 200 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
+- Spring Onion Kimchi — 1 kg bottle × 12: carton 350 × 250 × 260 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
 
 #### Kkakdugi Kimchi
 
 Selection URL: https://deesheng.food/products/kimchi/#kimchi-kkakdugi-kimchi
+Korean name: 깍두기김치
 Group: Radish Kimchi
-Packing: 10 kg
-Shelf life: Confirm for the selected SKU
-Storage: Refrigerated; confirm SKU temperature
+Packing: 10 kg carton; 1 kg bottle × 12; 300 g bottle × 36; 500 g bottle × 24
+Shelf life: Confirm for the selected product and pack
+Storage: Confirm for the selected product and pack
+Product details: https://deesheng.food/product/radish-kimchi/
+
+- Kkakdugi Radish Kimchi — 10 kg carton: carton 325 × 212 × 207 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
+- Kkakdugi Radish Kimchi — 1 kg bottle × 12: carton 350 × 250 × 260 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
+- Kkakdugi Radish Kimchi — 300 g bottle × 36: carton 431 × 325 × 230 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
+- Kkakdugi Radish Kimchi — 500 g bottle × 24: carton 470 × 355 × 185 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
 
 #### Pickled Radish
 
 Selection URL: https://deesheng.food/products/kimchi/#kimchi-pickled-radish
+Korean name: 치킨무
 Group: Pickled Vegetables
-Packing: 2 kg × 6 bags
-Shelf life: Confirm for the selected SKU
-Storage: Refrigerated; confirm SKU temperature
+Packing: 1 kg × 10; 300 g bottle × 36; 500 g bottle × 24
+Shelf life: Confirm for the selected product and pack
+Storage: Confirm for the selected product and pack
+
+- Sweet and Sour Pickled Radish — 1 kg × 10: carton dimensions to be confirmed for this pack; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
+- Sweet and Sour Pickled Radish — 300 g bottle × 36: carton 431 × 325 × 230 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
+- Sweet and Sour Pickled Radish — 500 g bottle × 24: carton 470 × 355 × 185 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
 
 #### Soy Sauce Perilla Leaves
 
 Selection URL: https://deesheng.food/products/kimchi/#kimchi-soy-sauce-perilla-leaves
+Korean name: 간장깻잎
 Group: Pickled Vegetables
-Packing: 10 kg
-Shelf life: Confirm for the selected SKU
-Storage: Refrigerated; confirm SKU temperature
+Packing: 1 kg × 10; 180 g bag × 10; 3 kg bag × 4
+Shelf life: Confirm for the selected product and pack
+Storage: Confirm for the selected product and pack
+
+- Soy Sauce Perilla Leaves — 1 kg × 10: carton 380 × 285 × 150 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
+- Soy Sauce Perilla Leaves — 180 g bag × 10: carton 275x200x100 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
+- Soy Sauce Perilla Leaves — 3 kg bag × 4: carton 380 × 280 × 210 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
 
 #### Stir-fried Kimchi
 
 Selection URL: https://deesheng.food/products/kimchi/#kimchi-stir-fried-kimchi
+Korean name: 볶음김치
 Group: Specialty Kimchi
-Packing: 5 kg / 10 kg
-Shelf life: Confirm for the selected SKU
-Storage: Refrigerated; confirm SKU temperature
+Packing: 10 kg carton
+Shelf life: Confirm for the selected product and pack
+Storage: Confirm for the selected product and pack
+Product details: https://deesheng.food/product/white-washed-stir-fried-kimchi/
+
+- Stir-fried Kimchi — 10 kg carton: carton 325 × 212 × 212 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
 
 #### Leaf Mustard Kimchi
 
 Selection URL: https://deesheng.food/products/kimchi/#kimchi-leaf-mustard-kimchi
+Korean name: 갓김치
 Group: Specialty Kimchi
-Packing: 5 kg
-Shelf life: Confirm for the selected SKU
-Storage: Refrigerated; confirm SKU temperature
+Packing: 5 kg carton
+Shelf life: Confirm for the selected product and pack
+Storage: Confirm for the selected product and pack
+
+- Leaf Mustard Kimchi — 5 kg carton: carton 250 × 190 × 200 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
 
 #### Green Onion Kimchi
 
 Selection URL: https://deesheng.food/products/kimchi/#kimchi-green-onion-kimchi
+Korean name: 대파김치
 Group: Specialty Kimchi
-Packing: 5 kg / 10 kg
-Shelf life: Confirm for the selected SKU
-Storage: Refrigerated; confirm SKU temperature
+Packing: 5 kg carton
+Shelf life: Confirm for the selected product and pack
+Storage: Confirm for the selected product and pack
+Product details: https://deesheng.food/product/scallion-kimchi/
+
+- Scallion Kimchi (Daepa) — 5 kg carton: carton 250 × 190 × 200 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
 
 #### Nabak Kimchi
 
@@ -1106,10 +1166,14 @@ Storage: Refrigerated; confirm SKU temperature
 #### Washed Kimchi
 
 Selection URL: https://deesheng.food/products/kimchi/#kimchi-washed-kimchi
+Korean name: 씻은김치
 Group: Cabbage Kimchi
-Packing: 5 kg / 10 kg
-Shelf life: Confirm for the selected SKU
-Storage: Refrigerated; confirm SKU temperature
+Packing: 10 kg carton
+Shelf life: Confirm for the selected product and pack
+Storage: Confirm for the selected product and pack
+Product details: https://deesheng.food/product/white-washed-stir-fried-kimchi/
+
+- Washed Kimchi — 10 kg carton: carton 325 × 215 × 217 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
 
 #### Sweet & Sour Green Onion
 
@@ -1166,6 +1230,173 @@ Group: Pickled Vegetables
 Packing: 5 kg / 10 kg
 Shelf life: Confirm for the selected SKU
 Storage: Refrigerated; confirm SKU temperature
+
+#### Seasoned Korean Bitter Greens
+
+Selection URL: https://deesheng.food/products/kimchi/#kimchi-seasoned-korean-bitter-greens
+Korean name: 고들뺴기무침
+Group: Pickled Vegetables
+Packing: 10 kg carton
+Shelf life: Confirm for the selected product and pack
+Storage: Confirm for the selected product and pack
+
+- Seasoned Korean Bitter Greens — 10 kg carton: carton 325 × 212 × 212 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
+
+#### Seasoned Radish Strips
+
+Selection URL: https://deesheng.food/products/kimchi/#kimchi-seasoned-radish-strips
+Korean name: 보쌈무김치
+Group: Pickled Vegetables
+Packing: 1 kg × 10
+Shelf life: Confirm for the selected product and pack
+Storage: Confirm for the selected product and pack
+
+- Seasoned Radish Strips — 1 kg × 10: carton 380 × 285 × 150 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
+
+#### Seasoned Garlic Sprouts
+
+Selection URL: https://deesheng.food/products/kimchi/#kimchi-seasoned-garlic-sprouts
+Korean name: 마늘쫑무침
+Group: Pickled Vegetables
+Packing: 1 kg bag × 10; 200 g bag × 10; 3 kg bag × 4
+Shelf life: Confirm for the selected product and pack
+Storage: Confirm for the selected product and pack
+Product details: https://deesheng.food/product/garlic-sprout-pickles/
+
+- Seasoned Garlic Sprouts — 1 kg bag × 10: carton 380 × 285 × 150 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
+- Seasoned Garlic Sprouts — 200 g bag × 10: carton 275x200x100 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
+- Seasoned Garlic Sprouts — 3 kg bag × 4: carton 380 × 280 × 210 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
+
+#### Soy Sauce Garlic Sprouts
+
+Selection URL: https://deesheng.food/products/kimchi/#kimchi-soy-sauce-garlic-sprouts
+Korean name: 간장 마늘쫑
+Group: Pickled Vegetables
+Packing: 300 g bottle × 36; 500 g bottle × 24; 3 kg bag × 4
+Shelf life: Confirm for the selected product and pack
+Storage: Confirm for the selected product and pack
+Product details: https://deesheng.food/product/garlic-sprout-pickles/
+
+- Soy Sauce Garlic Sprouts — 300 g bottle × 36: carton 431x325x230 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
+- Soy Sauce Garlic Sprouts — 500 g bottle × 24: carton 470 × 355 × 185 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
+- Soy Sauce Garlic Sprouts — 3 kg bag × 4: carton 380 × 280 × 210 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
+
+#### Sweet and Sour Garlic Sprouts
+
+Selection URL: https://deesheng.food/products/kimchi/#kimchi-sweet-and-sour-garlic-sprouts
+Korean name: 마늘쫑초절임
+Group: Pickled Vegetables
+Packing: 300 g bottle × 36; 500 g bottle × 24; 3 kg bag × 4
+Shelf life: Confirm for the selected product and pack
+Storage: Confirm for the selected product and pack
+Product details: https://deesheng.food/product/garlic-sprout-pickles/
+
+- Sweet and Sour Garlic Sprouts — 300 g bottle × 36: carton 431x325x230 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
+- Sweet and Sour Garlic Sprouts — 500 g bottle × 24: carton 470 × 355 × 185 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
+- Sweet and Sour Garlic Sprouts — 3 kg bag × 4: carton 380 × 280 × 210 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
+
+#### Seasoned Green Pepper
+
+Selection URL: https://deesheng.food/products/kimchi/#kimchi-seasoned-green-pepper
+Korean name: 고추지무침
+Group: Pickled Vegetables
+Packing: 300 g bottle × 36; 500 g bottle × 24; 3 kg bag × 4
+Shelf life: Confirm for the selected product and pack
+Storage: Confirm for the selected product and pack
+Product details: https://deesheng.food/product/pickled-green-pepper/
+
+- Seasoned Green Pepper — 300 g bottle × 36: carton 431x325x230 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
+- Seasoned Green Pepper — 500 g bottle × 24: carton 470 × 355 × 185 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
+- Seasoned Green Pepper — 3 kg bag × 4: carton 380 × 280 × 210 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
+
+#### Soy Sauce Green Pepper
+
+Selection URL: https://deesheng.food/products/kimchi/#kimchi-soy-sauce-green-pepper
+Korean name: 간장고추절임
+Group: Pickled Vegetables
+Packing: 300 g bottle × 36; 500 g bottle × 24; 3 kg bag × 4
+Shelf life: Confirm for the selected product and pack
+Storage: Confirm for the selected product and pack
+Product details: https://deesheng.food/product/pickled-green-pepper/
+
+- Soy Sauce Green Pepper — 300 g bottle × 36: carton 431x325x230 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
+- Soy Sauce Green Pepper — 500 g bottle × 24: carton 470 × 355 × 185 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
+- Soy Sauce Green Pepper — 3 kg bag × 4: carton 380 × 280 × 210 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
+
+#### Sweet and Sour Green Pepper
+
+Selection URL: https://deesheng.food/products/kimchi/#kimchi-sweet-and-sour-green-pepper
+Korean name: 고추초절임
+Group: Pickled Vegetables
+Packing: 300 g bottle × 36; 500 g bottle × 24; 3 kg bag × 4
+Shelf life: Confirm for the selected product and pack
+Storage: Confirm for the selected product and pack
+Product details: https://deesheng.food/product/pickled-green-pepper/
+
+- Sweet and Sour Green Pepper — 300 g bottle × 36: carton 431x325x230 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
+- Sweet and Sour Green Pepper — 500 g bottle × 24: carton 470 × 355 × 185 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
+- Sweet and Sour Green Pepper — 3 kg bag × 4: carton 380 × 280 × 210 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
+
+#### Pickled Dried Radish
+
+Selection URL: https://deesheng.food/products/kimchi/#kimchi-pickled-dried-radish
+Korean name: 무말랭이장아찌
+Group: Pickled Vegetables
+Packing: 300 g bottle × 36; 500 g bottle × 24
+Shelf life: Confirm for the selected product and pack
+Storage: Confirm for the selected product and pack
+
+- Pickled Dried Radish — 300 g bottle × 36: carton 431x325x230 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
+- Pickled Dried Radish — 500 g bottle × 24: carton 470 × 355 × 185 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
+
+#### Seasoned Dried Radish
+
+Selection URL: https://deesheng.food/products/kimchi/#kimchi-seasoned-dried-radish
+Korean name: 무말랭이무침
+Group: Pickled Vegetables
+Packing: 1 kg bag × 10; 200 g bag × 10; 3 kg bag × 4
+Shelf life: Confirm for the selected product and pack
+Storage: Confirm for the selected product and pack
+
+- Seasoned Dried Radish — 1 kg bag × 10: carton 380 × 285 × 150 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
+- Seasoned Dried Radish — 200 g bag × 10: carton 275x200x100 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
+- Seasoned Dried Radish — 3 kg bag × 4: carton 380 × 280 × 210 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
+
+#### Seasoned Pepper Leaves
+
+Selection URL: https://deesheng.food/products/kimchi/#kimchi-seasoned-pepper-leaves
+Korean name: 고추잎무침
+Group: Pickled Vegetables
+Packing: 300 g bottle × 36; 3 kg bag × 4
+Shelf life: Confirm for the selected product and pack
+Storage: Confirm for the selected product and pack
+
+- Seasoned Pepper Leaves — 300 g bottle × 36: carton 431x325x230 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
+- Seasoned Pepper Leaves — 3 kg bag × 4: carton 380 × 280 × 210 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
+
+#### Seasoned Perilla Leaves
+
+Selection URL: https://deesheng.food/products/kimchi/#kimchi-seasoned-perilla-leaves
+Korean name: 양념깻잎
+Group: Pickled Vegetables
+Packing: 1 kg bag × 10; 180 g bag × 10
+Shelf life: Confirm for the selected product and pack
+Storage: Confirm for the selected product and pack
+
+- Seasoned Perilla Leaves — 1 kg bag × 10: carton 380 × 285 × 150 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
+- Seasoned Perilla Leaves — 180 g bag × 10: carton 275x200x100 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
+
+#### Soy Sauce Mountain Onion Leaves
+
+Selection URL: https://deesheng.food/products/kimchi/#kimchi-soy-sauce-mountain-onion-leaves
+Korean name: 명이나물 절임
+Group: Pickled Vegetables
+Packing: 1 kg × 10; 3 kg bag × 4
+Shelf life: Confirm for the selected product and pack
+Storage: Confirm for the selected product and pack
+
+- Soy Sauce Mountain Onion Leaves — 1 kg × 10: carton 380 × 285 × 150 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
+- Soy Sauce Mountain Onion Leaves — 3 kg bag × 4: carton 380 × 280 × 210 mm; shelf life: Confirm for the selected product and pack; storage: Confirm for the selected product and pack.
 
 ### Korean Chili Powder & Seasonings
 
@@ -2814,6 +3045,200 @@ A: OEM and private-label enquiries can cover the label, packaging and proposed f
 Q: How can I request samples and a quotation?
 A: Send the product name, destination, sales channel, intended application, selected pack and estimated quantity. We will confirm the sample arrangements, quotation, MOQ and lead time for that project. Sample and freight terms are agreed before dispatch.
 
+### Korean Cabbage Kimchi
+
+URL: https://deesheng.food/product/korean-cabbage-kimchi/
+Deesheng lists whole cabbage kimchi, mat cut cabbage kimchi and mini mat diced cabbage kimchi as three distinct cuts. Whole cabbage is listed in 10 kg and 5 kg cartons and as 5 kg bags packed two per carton. Mat cut and mini mat diced each have a 10 kg carton. The table gives the carton dimensions for each cut and pack. Shelf life, storage temperature and shipping conditions require confirmation for the selected product; jarred mat cut kimchi has a separate page.
+Applications: Wholesale pack comparison; Foodservice sourcing; Retail repacking enquiries.
+
+- Whole cabbage kimchi — 10 kg carton: Confirm for the selected product and pack; storage: Confirm for the selected product and pack; carton 325 × 212 × 212 mm; Carton logistics available on request.
+- Whole cabbage kimchi — 5 kg carton: Confirm for the selected product and pack; storage: Confirm for the selected product and pack; carton 250 × 170 × 190 mm; Carton logistics available on request.
+- Whole cabbage kimchi — 5 kg bag × 2: Confirm for the selected product and pack; storage: Confirm for the selected product and pack; carton 333 × 220 × 217 mm; Carton logistics available on request.
+- Mat cut cabbage kimchi — 10 kg carton: Confirm for the selected product and pack; storage: Confirm for the selected product and pack; carton 325 × 212 × 212 mm; Carton logistics available on request.
+- Mini mat diced cabbage kimchi — 10 kg carton: Confirm for the selected product and pack; storage: Confirm for the selected product and pack; carton 325 × 212 × 212 mm; Carton logistics available on request.
+
+Carton dimensions are listed in millimetres for each named product and pack. Confirm current availability, ingredients, shelf life and storage conditions for the selected order. Carton gross weights are available on request.
+
+Q: Which cabbage kimchi cuts are listed?
+A: Whole, mat cut and mini mat diced cabbage kimchi are separate catalogue entries. Specify the required cut, and request the selected product specification or sample to confirm piece size.
+
+Q: Which cut has a 5 kg option?
+A: Whole cabbage kimchi is listed in a 5 kg carton measuring 250 × 170 × 190 mm and as 5 kg bags packed two per carton measuring 333 × 220 × 217 mm. The listed mat cut and mini mat diced formats are 10 kg cartons.
+
+Q: Do all three cuts have the same 10 kg carton dimensions?
+A: The product list gives 325 × 212 × 212 mm for the 10 kg carton of whole, mat cut and mini mat diced cabbage kimchi. This shared carton size does not establish identical formulas or storage specifications.
+
+Q: Are jars and the previously listed 1 kg bags included in this table?
+A: Jarred mat cut kimchi is covered on the separate jar page. A 1 kg bag × 10 format appeared in the earlier catalogue; request its current specification and availability separately because it is not included in this pack table.
+
+Q: What storage and shelf life should I use for these bulk formats?
+A: Request the specification and approved label for the exact cut and pack. No single storage temperature or shelf-life duration is established by the listed carton dimensions, and another pack’s conditions should not be applied automatically.
+
+### Jarred Cabbage Kimchi
+
+URL: https://deesheng.food/product/cabbage-kimchi-jars/
+Deesheng lists mat cut cabbage kimchi in 300 g jars packed 36 per carton, 480 g jars packed 24 per carton and 1 kg jars packed 12 per carton. Their carton dimensions are 431 × 325 × 230 mm, 470 × 355 × 185 mm and 350 × 250 × 260 mm respectively. Confirm the selected jar’s ingredients, shelf life, storage conditions and label before ordering; specifications for bags or bulk cartons do not establish the jar specification.
+Applications: Retail jar sourcing; Distributor pack comparison; Foodservice jar enquiries.
+
+- Mat cut cabbage kimchi — jars — 300 g jar × 36: Confirm for the selected product and pack; storage: Confirm for the selected product and pack; carton 431 × 325 × 230 mm; Carton logistics available on request.
+- Mat cut cabbage kimchi — jars — 480 g jar × 24: Confirm for the selected product and pack; storage: Confirm for the selected product and pack; carton 470 × 355 × 185 mm; Carton logistics available on request.
+- Mat cut cabbage kimchi — jars — 1 kg jar × 12: Confirm for the selected product and pack; storage: Confirm for the selected product and pack; carton 350 × 250 × 260 mm; Carton logistics available on request.
+
+Carton dimensions are listed in millimetres for each named product and pack. Confirm current availability, ingredients, shelf life and storage conditions for the selected order. Carton gross weights are available on request.
+
+Q: Which cabbage kimchi jar sizes and carton counts are listed?
+A: The listed formats are 300 g jar × 36, 480 g jar × 24 and 1 kg jar × 12. The packaging table pairs each jar format with its own carton dimensions.
+
+Q: Is a 400 g cabbage kimchi jar confirmed?
+A: The current specification table lists 300 g, 480 g and 1 kg jars. A 400 g reference in the earlier catalogue is not confirmed by this table; ask for its current specification and availability if required.
+
+Q: Are these jars the same format as bulk whole cabbage kimchi?
+A: These jars are listed as mat cut cabbage kimchi. Whole cabbage, mat cut bulk cartons and mini mat diced bulk cartons are shown separately on the cabbage kimchi page; state both the cut and pack when ordering.
+
+Q: Can the storage conditions for bagged kimchi be used for these jars?
+A: No. Request the selected jar’s storage, shelf-life and transport specification. A specification for another bag, carton or frozen product does not confirm the conditions for this jar format.
+
+### White, Washed & Stir-Fried Kimchi
+
+URL: https://deesheng.food/product/white-washed-stir-fried-kimchi/
+Deesheng lists white kimchi, washed kimchi and stir-fried kimchi as three distinct products in 10 kg cartons. White kimchi and washed kimchi each have a listed carton size of 325 × 215 × 217 mm; stir-fried kimchi has a carton size of 325 × 212 × 212 mm. Each product needs its own ingredient, preparation, shelf-life and storage specification. The product names and shared pack weight do not establish identical formulas or handling requirements.
+Applications: Bulk kimchi sourcing; Foodservice product comparison; Distributor enquiries.
+
+- White kimchi — 10 kg carton: Confirm for the selected product and pack; storage: Confirm for the selected product and pack; carton 325 × 215 × 217 mm; Carton logistics available on request.
+- Washed kimchi — 10 kg carton: Confirm for the selected product and pack; storage: Confirm for the selected product and pack; carton 325 × 215 × 217 mm; Carton logistics available on request.
+- Stir-fried kimchi — 10 kg carton: Confirm for the selected product and pack; storage: Confirm for the selected product and pack; carton 325 × 212 × 212 mm; Carton logistics available on request.
+
+Carton dimensions are listed in millimetres for each named product and pack. Confirm current availability, ingredients, shelf life and storage conditions for the selected order. Carton gross weights are available on request.
+
+Q: Are white, washed and stir-fried kimchi one interchangeable product?
+A: No. They are three separate catalogue entries. Specify the exact product name when requesting a sample, ingredient list or quotation.
+
+Q: Do the three 10 kg packs use the same carton?
+A: White kimchi and washed kimchi list 325 × 215 × 217 mm cartons. Stir-fried kimchi lists 325 × 212 × 212 mm. Match shipping information to the named product.
+
+Q: Does the name confirm the heat level or preparation method?
+A: The product name alone does not confirm heat level, ingredients, processing parameters or serving instructions. Request the individual product specification and evaluate the matching sample.
+
+Q: Are smaller packs and common storage conditions confirmed?
+A: This table establishes a 10 kg carton for each product. Other pack sizes, storage temperatures and shelf-life periods require confirmation for the selected product and order.
+
+### Kkakdugi & Chonggak Radish Kimchi
+
+URL: https://deesheng.food/product/radish-kimchi/
+Deesheng lists kkakdugi cubed radish kimchi in a 10 kg carton and in 1 kg × 12, 300 g × 36 and 500 g × 24 bottles. Chonggak radish kimchi is listed in a 5 kg carton and 1 kg bottles packed 12 per carton. These are separate products: select the radish kimchi type before choosing its pack. The table records each product’s carton dimensions; ingredients, storage and shelf life require product-specific confirmation.
+Applications: Radish kimchi sourcing; Retail bottle comparison; Foodservice pack selection.
+
+- Chonggak radish kimchi — 5 kg carton: Confirm for the selected product and pack; storage: Confirm for the selected product and pack; carton 250 × 190 × 200 mm; Carton logistics available on request.
+- Chonggak radish kimchi — 1 kg bottle × 12: Confirm for the selected product and pack; storage: Confirm for the selected product and pack; carton 350 × 250 × 260 mm; Carton logistics available on request.
+- Kkakdugi cubed radish kimchi — 10 kg carton: Confirm for the selected product and pack; storage: Confirm for the selected product and pack; carton 325 × 212 × 207 mm; Carton logistics available on request.
+- Kkakdugi cubed radish kimchi — 1 kg bottle × 12: Confirm for the selected product and pack; storage: Confirm for the selected product and pack; carton 350 × 250 × 260 mm; Carton logistics available on request.
+- Kkakdugi cubed radish kimchi — 300 g bottle × 36: Confirm for the selected product and pack; storage: Confirm for the selected product and pack; carton 431 × 325 × 230 mm; Carton logistics available on request.
+- Kkakdugi cubed radish kimchi — 500 g bottle × 24: Confirm for the selected product and pack; storage: Confirm for the selected product and pack; carton 470 × 355 × 185 mm; Carton logistics available on request.
+
+Carton dimensions are listed in millimetres for each named product and pack. Confirm current availability, ingredients, shelf life and storage conditions for the selected order. Carton gross weights are available on request.
+
+Q: Which radish kimchi has 300 g and 500 g bottle options?
+A: Kkakdugi is listed in 300 g bottles × 36 and 500 g bottles × 24. The chonggak entry lists 1 kg bottles × 12 and a 5 kg carton; the smaller kkakdugi bottle sizes should not be assumed available for chonggak.
+
+Q: Are the 1 kg bottle cartons identical for both products?
+A: Both products list 1 kg bottles packed 12 per carton with dimensions of 350 × 250 × 260 mm. Their formulas and handling requirements still need separate confirmation.
+
+Q: Which bulk carton belongs to each radish kimchi?
+A: Chonggak has a 5 kg carton measuring 250 × 190 × 200 mm. Kkakdugi has a 10 kg carton measuring 325 × 212 × 207 mm.
+
+Q: Does this page also cover sweet-sour radish or dried radish?
+A: No. Sweet-sour radish and dried radish products are separate catalogue entries. Use their exact product names and request their own packing and ingredient specifications.
+
+Q: What should be confirmed before ordering radish kimchi?
+A: Confirm the product name, selected bottle or bulk pack, ingredient and allergen declaration, shelf life, storage requirements, quantity and destination. A shared bottle size does not make the products interchangeable.
+
+### Spring Onion & Scallion Kimchi
+
+URL: https://deesheng.food/product/scallion-kimchi/
+Deesheng lists spring onion kimchi (쪽파김치) and scallion kimchi (대파김치) as two separate products. Spring onion kimchi is listed in a 5 kg carton and 1 kg bottles × 12; scallion kimchi is listed in a 5 kg carton. Both 5 kg cartons measure 250 × 190 × 200 mm. The spring onion bottle carton measures 350 × 250 × 260 mm. State the exact product name when requesting ingredients, storage, shelf life and a matching sample.
+Applications: Onion kimchi sourcing; Foodservice carton comparison; Spring onion retail bottle enquiries.
+
+- Spring onion kimchi (쪽파김치) — 5 kg carton: Confirm for the selected product and pack; storage: Confirm for the selected product and pack; carton 250 × 190 × 200 mm; Carton logistics available on request.
+- Spring onion kimchi (쪽파김치) — 1 kg bottle × 12: Confirm for the selected product and pack; storage: Confirm for the selected product and pack; carton 350 × 250 × 260 mm; Carton logistics available on request.
+- Scallion kimchi (대파김치) — 5 kg carton: Confirm for the selected product and pack; storage: Confirm for the selected product and pack; carton 250 × 190 × 200 mm; Carton logistics available on request.
+
+Carton dimensions are listed in millimetres for each named product and pack. Confirm current availability, ingredients, shelf life and storage conditions for the selected order. Carton gross weights are available on request.
+
+Q: How do I distinguish the two onion kimchi entries?
+A: Use spring onion kimchi (쪽파김치) or scallion kimchi (대파김치) in the enquiry. The product list treats them as separate items; the English terms onion and scallion alone may be ambiguous.
+
+Q: Which onion kimchi is listed in 1 kg bottles?
+A: Spring onion kimchi (쪽파김치) is listed in 1 kg bottles × 12, with a carton measuring 350 × 250 × 260 mm. A bottle format is not established for scallion kimchi (대파김치) by this table.
+
+Q: Do the two 5 kg cartons have the same dimensions?
+A: Yes. Each entry lists a 5 kg carton measuring 250 × 190 × 200 mm. Identical dimensions do not establish identical recipes, shelf life or storage requirements.
+
+Q: Are sweet-sour and soy onion products covered by this specification?
+A: No. Those are separate catalogue entries and require their own product and pack confirmation. Do not apply these kimchi carton specifications to them.
+
+### Garlic Sprout Pickles
+
+URL: https://deesheng.food/product/garlic-sprout-pickles/
+Deesheng lists seasoned garlic sprouts in 1 kg bags × 10, 200 g bags × 10 and 3 kg bags × 4. Soy sauce garlic sprouts and sweet and sour garlic sprouts each list 300 g bottles × 36, 500 g bottles × 24 and 3 kg bags × 4. These are separate named product variants. Choose the variant and pack together, then request the applicable ingredients, allergens, shelf life and storage specification.
+Applications: Pickled vegetable sourcing; Retail pack comparison; Foodservice bag enquiries.
+
+- Seasoned garlic sprouts — 1 kg bag × 10: Confirm for the selected product and pack; storage: Confirm for the selected product and pack; carton 380 × 285 × 150 mm; Carton logistics available on request.
+- Seasoned garlic sprouts — 200 g bag × 10: Confirm for the selected product and pack; storage: Confirm for the selected product and pack; carton 275 × 200 × 100 mm; Carton logistics available on request.
+- Seasoned garlic sprouts — 3 kg bag × 4: Confirm for the selected product and pack; storage: Confirm for the selected product and pack; carton 380 × 280 × 210 mm; Carton logistics available on request.
+- Soy sauce garlic sprouts — 300 g bottle × 36: Confirm for the selected product and pack; storage: Confirm for the selected product and pack; carton 431 × 325 × 230 mm; Carton logistics available on request.
+- Soy sauce garlic sprouts — 500 g bottle × 24: Confirm for the selected product and pack; storage: Confirm for the selected product and pack; carton 470 × 355 × 185 mm; Carton logistics available on request.
+- Soy sauce garlic sprouts — 3 kg bag × 4: Confirm for the selected product and pack; storage: Confirm for the selected product and pack; carton 380 × 280 × 210 mm; Carton logistics available on request.
+- Sweet and sour garlic sprouts — 300 g bottle × 36: Confirm for the selected product and pack; storage: Confirm for the selected product and pack; carton 431 × 325 × 230 mm; Carton logistics available on request.
+- Sweet and sour garlic sprouts — 500 g bottle × 24: Confirm for the selected product and pack; storage: Confirm for the selected product and pack; carton 470 × 355 × 185 mm; Carton logistics available on request.
+- Sweet and sour garlic sprouts — 3 kg bag × 4: Confirm for the selected product and pack; storage: Confirm for the selected product and pack; carton 380 × 280 × 210 mm; Carton logistics available on request.
+
+Carton dimensions are listed in millimetres for each named product and pack. Confirm current availability, ingredients, shelf life and storage conditions for the selected order. Carton gross weights are available on request.
+
+Q: Which garlic sprouts are listed in 200 g bags?
+A: The seasoned garlic sprouts entry lists 200 g bags × 10, in a carton measuring 275 × 200 × 100 mm. That format is not established for soy sauce or sweet-sour garlic sprouts in this table.
+
+Q: Which variants come in bottles?
+A: Soy sauce and sweet-sour garlic sprouts each list 300 g bottles × 36 and 500 g bottles × 24. Their carton dimensions are 431 × 325 × 230 mm and 470 × 355 × 185 mm respectively.
+
+Q: Is a 3 kg bag format listed for all three variants?
+A: Yes. Seasoned, soy sauce and sweet-sour garlic sprouts each list 3 kg bags × 4 in cartons measuring 380 × 280 × 210 mm. Keep the variant name on the order even when the packing is the same.
+
+Q: Are garlic sprout products the same as spring onion kimchi?
+A: No. Garlic sprouts and onion kimchi are separate product families. Their names, ingredients and pack specifications should not be substituted for one another.
+
+Q: Do shared pack sizes confirm the same formula or storage?
+A: No. Confirm ingredients, allergens, shelf life and storage for the selected garlic sprout variant. Shared carton dimensions describe packing, not a common formula or handling specification.
+
+### Pickled Green Pepper
+
+URL: https://deesheng.food/product/pickled-green-pepper/
+Deesheng lists seasoned green pepper, soy sauce green pepper and sweet and sour green pepper as separate product variants. Each is listed in 300 g bottles × 36, 500 g bottles × 24 and 3 kg bags × 4. Their matching carton dimensions are 431 × 325 × 230 mm, 470 × 355 × 185 mm and 380 × 280 × 210 mm respectively. The common packing does not establish a common formula, heat level, ingredient declaration, shelf life or storage requirement.
+Applications: Pickled pepper sourcing; Retail bottle comparison; Foodservice bag selection.
+
+- Seasoned green pepper — 300 g bottle × 36: Confirm for the selected product and pack; storage: Confirm for the selected product and pack; carton 431 × 325 × 230 mm; Carton logistics available on request.
+- Seasoned green pepper — 500 g bottle × 24: Confirm for the selected product and pack; storage: Confirm for the selected product and pack; carton 470 × 355 × 185 mm; Carton logistics available on request.
+- Seasoned green pepper — 3 kg bag × 4: Confirm for the selected product and pack; storage: Confirm for the selected product and pack; carton 380 × 280 × 210 mm; Carton logistics available on request.
+- Soy sauce green pepper — 300 g bottle × 36: Confirm for the selected product and pack; storage: Confirm for the selected product and pack; carton 431 × 325 × 230 mm; Carton logistics available on request.
+- Soy sauce green pepper — 500 g bottle × 24: Confirm for the selected product and pack; storage: Confirm for the selected product and pack; carton 470 × 355 × 185 mm; Carton logistics available on request.
+- Soy sauce green pepper — 3 kg bag × 4: Confirm for the selected product and pack; storage: Confirm for the selected product and pack; carton 380 × 280 × 210 mm; Carton logistics available on request.
+- Sweet and sour green pepper — 300 g bottle × 36: Confirm for the selected product and pack; storage: Confirm for the selected product and pack; carton 431 × 325 × 230 mm; Carton logistics available on request.
+- Sweet and sour green pepper — 500 g bottle × 24: Confirm for the selected product and pack; storage: Confirm for the selected product and pack; carton 470 × 355 × 185 mm; Carton logistics available on request.
+- Sweet and sour green pepper — 3 kg bag × 4: Confirm for the selected product and pack; storage: Confirm for the selected product and pack; carton 380 × 280 × 210 mm; Carton logistics available on request.
+
+Carton dimensions are listed in millimetres for each named product and pack. Confirm current availability, ingredients, shelf life and storage conditions for the selected order. Carton gross weights are available on request.
+
+Q: Do all three green pepper variants list the same packs?
+A: Yes. Seasoned, soy sauce and sweet-sour green pepper each list 300 g bottles × 36, 500 g bottles × 24 and 3 kg bags × 4. Specify the product variant as well as the pack on your enquiry.
+
+Q: How do the bottle and bag carton dimensions compare?
+A: The 300 g bottle carton is 431 × 325 × 230 mm; the 500 g bottle carton is 470 × 355 × 185 mm; the 3 kg bag carton is 380 × 280 × 210 mm. The table repeats these dimensions for each named variant.
+
+Q: Does seasoned green pepper share a specification with Seasoned Pepper Kimchi?
+A: The catalogue contains a separate Seasoned Pepper Kimchi entry. Its identity has not been confirmed as the same product as seasoned green pepper, so the entries and specifications remain separate.
+
+Q: Is the heat level or dietary suitability confirmed for all variants?
+A: No. Request each variant’s ingredient list, allergen declaration and relevant product documents, and assess its sample. The product name and common packing do not establish a heat rating or dietary suitability.
+
 ### Extra Hot Gochujang
 
 URL: https://deesheng.food/product/extra-hot-gochujang/
@@ -2879,41 +3304,6 @@ A: No. This product specification lists 1 kg × 12, while the catalogue also lis
 
 Q: What should I include in a bibimbap sauce sample brief?
 A: Include the classic or non-spicy option, rice-bowl recipe, target flavor, retail or foodservice channel, preferred pack, quantity and destination.
-
-### Korean Cabbage Kimchi
-
-URL: https://deesheng.food/product/korean-cabbage-kimchi/
-Deesheng Food supplies refrigerated Korean cabbage kimchi in 1 kg bags packed 10 per carton and 10 kg bulk cartons. The storage requirement for these formats is 0–4°C. Shelf life must be confirmed for the selected product, formula and packaging before ordering. Share your required cut, pack, quantity, destination and refrigerated delivery route. Retail jars are listed separately and do not inherit the bagged product specification.
-Applications: Retail grocery; Restaurants; Korean menus; Side dishes; Foodservice distribution.
-
-- 1 kg bag × 10: Confirm for the selected product and pack; storage: Refrigerated at 0–4°C; Carton logistics available on request.
-- 10 kg carton — confirm cut and current availability: Confirm for the selected product and pack; storage: Refrigerated at 0–4°C; Carton logistics available on request.
-
-Confirm the cut, formula, shelf life and current availability for the selected bagged or bulk product. Retail jars require a separate specification. Carton logistics available on request.
-
-Q: Can Korean cabbage kimchi be private labelled?
-A: Yes. OEM/private-label service can cover the label, packaging and, where the project requires it, flavor adjustment.
-
-Q: What is the standard OEM MOQ?
-A: MOQ is confirmed for the selected product, formula and pack. Ask for the quantity and SKU scope in your quotation; trial orders are assessed separately.
-
-Q: How is an export quotation prepared?
-A: Quotations are prepared after the product, pack size, quantity and destination requirements are confirmed.
-
-Q: Is Korean cabbage kimchi available with HALAL documentation?
-A: Please identify the product, formula, destination and required documents. We will check the actual manufacturing site, current certificate and product scope before confirming applicability to your order.
-
-Q: Which cabbage kimchi packs does this page cover?
-A: This page covers 1 kg bags packed 10 per carton and 10 kg bulk cartons, with cut and availability confirmed for the order. The catalogue's retail jars are separate formats and require their own specification.
-
-Q: What is the shelf life of cabbage kimchi?
-A: Shelf life must be confirmed for the selected product, formula and packaging. Request the applicable specification and approved label before ordering; no single duration is stated for every cabbage kimchi format.
-
-Q: What storage temperature applies to these cabbage kimchi formats?
-A: The listed bagged and bulk cabbage kimchi formats require refrigeration at 0–4°C. Share the destination and delivery route so the refrigerated shipment requirements can be reviewed.
-
-Q: Can I use the same specification for retail jars or frozen kimchi?
-A: No. The bagged and bulk refrigerated specification does not establish a retail-jar or frozen product specification. Identify the exact format and request its applicable packing, storage and shelf-life information.
 
 ### Coarse Korean Chili Powder
 

@@ -30,7 +30,7 @@ const links = (items) => items.map(([label, path]) => `- [${label}](${origin}${p
 const qualification = [
   "Product and pack specifications are specific to the named variant. Catalogue entries can represent flavors or pack formats and are not a count of unique formulas.",
   "Where a field requires confirmation, request the current specification for the exact SKU. Do not infer shelf life, storage, carton logistics, ingredients or allergens from another product or packaging format.",
-  "The cabbage kimchi detail page lists 1 kg bags × 10 and 10 kg bulk packs with 0–4°C storage. Shelf life is confirmed for the selected product and pack. Retail jars and frozen kimchi projects require separate specifications.",
+  "Kimchi and pickled-vegetable packs and carton dimensions are listed by named product or variant. Whole, cut and diced cabbage kimchi and retail jars have separate pack specifications. Shelf life, storage and transport conditions require confirmation for the selected product and order; frozen kimchi projects require their own specification.",
   "MOQ, samples, quotation, production timing and shipment terms are confirmed for the selected product, formula, pack, quantity and destination. Prices are not published.",
   "Relevant factory credentials include BRCGS Grade A, HACCP, HALAL and OU Kosher. Check current validity, manufacturing site, product and formula coverage, and destination recognition before order approval; a credential list does not certify every catalogue item.",
 ];
@@ -68,7 +68,10 @@ const full = [`# Deesheng Food — Full B2B Reference`, `Last updated: ${date}\n
 for (const category of catalogCategories) {
   full.push(`### ${category.name}\n\nURL: ${origin}/products/${category.slug}/\n${category.description}\n${category.buyerNote}`);
   for (const item of category.items) {
-    full.push(`#### ${item.name}\n\nSelection URL: ${origin}/products/${category.slug}/#${getCatalogItemId(category.slug, item)}\nGroup: ${item.group}\nPacking: ${item.packing}\nShelf life: ${item.shelfLife}\nStorage: ${item.storage}${item.detailSlug ? `\nProduct details: ${origin}/product/${item.detailSlug}/` : ""}`);
+    full.push(`#### ${item.name}\n\nSelection URL: ${origin}/products/${category.slug}/#${getCatalogItemId(category.slug, item)}${item.nameKo ? `\nKorean name: ${item.nameKo}` : ""}\nGroup: ${item.group}\nPacking: ${item.packing}\nShelf life: ${item.shelfLife}\nStorage: ${item.storage}${item.detailSlug ? `\nProduct details: ${origin}/product/${item.detailSlug}/` : ""}`);
+    if (item.packSpecifications?.length) {
+      full.push(item.packSpecifications.map((spec) => `- ${spec.variant ? `${spec.variant} — ` : ""}${spec.pack}: carton ${spec.dimensionsMm ? `${spec.dimensionsMm} mm` : "dimensions to be confirmed for this pack"}; shelf life: ${spec.shelfLife}; storage: ${spec.storage}.`).join("\n"));
+    }
   }
 }
 full.push("## Detailed product specifications");
@@ -78,7 +81,7 @@ for (const product of productDetails) {
     full.push(product.packSpecifications.map((spec) => {
       const logistics = [spec.netWeightKg === undefined ? null : `net ${spec.netWeightKg} kg`, spec.grossWeightKg === undefined ? null : `gross ${spec.grossWeightKg} kg`, spec.dimensionsMm ? `carton ${spec.dimensionsMm} mm` : null].filter(Boolean);
       if (spec.netWeightKg === undefined || spec.grossWeightKg === undefined || !spec.dimensionsMm) logistics.push("Carton logistics available on request");
-      return `- ${spec.pack}: ${spec.shelfLife}; storage: ${spec.storage}; ${logistics.join("; ")}.`;
+      return `- ${spec.variant ? `${spec.variant} — ` : ""}${spec.pack}: ${spec.shelfLife}; storage: ${spec.storage}; ${logistics.join("; ")}.`;
     }).join("\n"));
   } else {
     full.push(`Packing: ${product.packing.join("; ")}\nShelf life: ${product.shelfLife}\nStorage: ${product.storage}`);

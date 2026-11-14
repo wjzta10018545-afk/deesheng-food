@@ -79,7 +79,7 @@ export const productFamilyGuides: Record<string, ProductFamilyGuide> = {
   "Cabbage Kimchi": {
     kind: "kimchi",
     summary: "Whole, mat, mini-mat, white and washed cabbage kimchi, plus a separately listed retail-jar format.",
-    selection: "Confirm the cut, recipe and container. The cabbage detail page lists 1 kg bags and 10 kg bulk packs; those specifications do not establish the retail-jar configuration or shelf life.",
+    selection: "Compare whole, cut and diced cabbage kimchi by pack. Retail jars have their own carton specifications; white, washed and stir-fried products remain separately named variants. Confirm storage and shelf life for the exact selection.",
   },
   "Radish Kimchi": {
     kind: "kimchi",
@@ -89,11 +89,11 @@ export const productFamilyGuides: Record<string, ProductFamilyGuide> = {
   "Specialty Kimchi": {
     kind: "kimchi",
     summary: "Seasoned pepper, spring onion, green onion, leaf mustard and stir-fried kimchi options.",
-    selection: "Keep each named vegetable and preparation separate. Confirm the ingredient list, process, pack and cold-chain requirements; similar onion names are not a confirmed SKU match.",
+    selection: "Keep each named vegetable and preparation separate. Use the Korean product name to distinguish spring onion (쪽파) from scallion (대파); confirm ingredients, pack, storage and shipping conditions for the selected product.",
   },
   "Pickled Vegetables": {
     kind: "kimchi",
-    summary: "Pickled radish, perilla leaves, onion, lettuce and yamakurage variants, including named sweet-sour and soy-sauce preparations.",
+    summary: "Pickled radish, garlic sprouts, green pepper, perilla leaves and other named vegetable preparations. Seasoned, sweet-sour and soy variants are listed separately.",
     selection: "Choose the exact vegetable, preparation and pack. Request SKU-specific shelf life and storage rather than using one temperature or shelf life for the complete range.",
   },
 };

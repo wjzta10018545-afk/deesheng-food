@@ -32,8 +32,16 @@ export function GET() {
       description: category.description,
       products: category.items.map((item) => ({
         name: item.name,
+        nameKo: item.nameKo,
         group: item.group,
         packing: item.packing,
+        packSpecifications: item.packSpecifications?.map((spec) => ({
+          variant: spec.variant,
+          pack: spec.pack,
+          dimensionsMm: spec.dimensionsMm,
+          shelfLife: spec.shelfLife,
+          storage: spec.storage,
+        })),
         shelfLife: item.shelfLife,
         storage: item.storage,
         image: item.image,
@@ -54,6 +62,7 @@ export function GET() {
       applications: product.applications,
       packing: product.packing,
       packSpecifications: product.packSpecifications?.map((spec) => ({
+        variant: spec.variant,
         pack: spec.pack,
         shelfLife: spec.shelfLife,
         storage: spec.storage,

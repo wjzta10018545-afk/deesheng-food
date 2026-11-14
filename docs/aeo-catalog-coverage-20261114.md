@@ -1,10 +1,12 @@
 # Sauce and kimchi catalogue coverage — 2026-11-14
 
-This is a catalogue coverage and evidence-gap register, not a report of rankings, traffic or completed monitoring. Entries include packaging and flavor variants; they are not unique-formula counts.
+This is a source-content coverage and evidence-gap register, not a report of deployment, rankings, traffic or completed monitoring. Entries include packaging and flavor variants; they are not unique-formula counts.
 
-Scope: 88 sauce/paste entries, 26 supporting ingredients and 24 kimchi/pickled-vegetable entries (138 total). Existing detailed product pages in scope: 25, including the separate extra-hot gochujang page. No new thin product pages were created.
+Scope: **151 target catalogue entries** — 88 sauce/paste entries, 26 supporting ingredients and 37 kimchi/pickled-vegetable entries. The whole site has 272 catalogue cards and 33 detail pages. All cards have stable citation anchors. Within this target catalogue, 47 cards link to 30 distinct detail pages; the separate extra-hot gochujang page remains a related sourcing option.
 
-All entries now have a stable catalogue citation target. Thirty-two cards link to 24 distinct product detail pages; the extra-hot page remains a separate linked sourcing option.
+The kimchi catalogue retains the original 24 card identities and adds 13 separately named products. Of its 37 cards, **27 use the supplemental source's packing data: 58 pack rows and 57 supplied carton dimensions**. The one suspect dimension is omitted. The other 10 legacy cards remain separate because this source does not establish an exact match; absence from the new file is not proof of discontinuation.
+
+Seven kimchi family/detail pages cover 17 source products with 38 variant-specific pack rows: six new pages plus the upgraded cabbage detail. Different cuts or preparations remain named variants; packaging sizes alone do not generate separate pages. See [the 45-row source audit](kimchi-source-audit-20261114.md) for exact source cells, mapping decisions and held records.
 
 ## Product-family coverage
 
@@ -24,24 +26,38 @@ All entries now have a stable catalogue citation target. Thirty-two cards link t
 | Cooking Oils | 6 | 1 | 6 | 6 |
 | Korean Cooking Essentials | 6 | 0 | 3 | 5 |
 | Supermarket Series | 24 | 4 | 21 | 21 |
-| Cabbage Kimchi | 6 | 2 | 6 | 6 |
-| Specialty Kimchi | 5 | 0 | 5 | 5 |
-| Radish Kimchi | 4 | 0 | 4 | 4 |
-| Pickled Vegetables | 9 | 0 | 9 | 9 |
+| Cabbage Kimchi | 6 | 6 | 6 | 6 |
+| Specialty Kimchi | 5 | 3 | 5 | 5 |
+| Radish Kimchi | 4 | 2 | 4 | 4 |
+| Pickled Vegetables | 22 | 6 | 22 | 22 |
+
+## New kimchi family pages
+
+| Page | Source products | Packaging treatment |
+|---|---|---|
+| [Cabbage kimchi](https://deesheng.food/product/korean-cabbage-kimchi/) — upgraded | Whole, mat cut, mini mat diced (#1–3) | 5 variant rows; older 1 kg bags require their own current specification |
+| [Jarred cabbage kimchi](https://deesheng.food/product/cabbage-kimchi-jars/) — new | Retail jarred mat cabbage (#4) | 300 g × 36, 480 g × 24, 1 kg × 12; 3 rows |
+| [White, washed and stir-fried kimchi](https://deesheng.food/product/white-washed-stir-fried-kimchi/) — new | #5, #6, #11 | 3 separately named 10 kg rows |
+| [Radish kimchi](https://deesheng.food/product/radish-kimchi/) — new | Chonggak and kkakdugi (#7, #9) | 6 rows; products retain separate specifications |
+| [Spring onion and scallion kimchi](https://deesheng.food/product/scallion-kimchi/) — new | Jjokpa and daepa (#8, #13) | 3 rows; Korean names distinguish the vegetables |
+| [Garlic sprout pickles](https://deesheng.food/product/garlic-sprout-pickles/) — new | Seasoned, soy sauce, sweet-and-sour (#18–20) | 9 rows; each preparation keeps its own packs |
+| [Green pepper pickles](https://deesheng.food/product/pickled-green-pepper/) — new | Seasoned, soy sauce, sweet-and-sour (#21–23) | 9 rows; shared pack formats do not imply shared recipes |
+
+These are intended canonical paths in the source release, not confirmation that the pages are live.
 
 ## Next evidence to collect
 
-- Match each requested flavor to its exact formula and packaging record. Similar names alone are insufficient for merging catalogue entries.
-- Confirm shelf life and storage for every record marked for confirmation. Obtain carton net/gross weight and dimensions for each exact pack; do not transfer 12-pouch data to a 10-pouch carton.
-- For cabbage kimchi, confirm shelf life for the actual formula and packaging. Keep retail jars, bags, bulk cartons and frozen projects separate.
-- For frozen kimchi, confirm product process, pack, shelf life, storage and shipping requirements before creating a specification page.
-- Obtain ingredients, allergens and applicable current product/certificate scope for the selected SKU and destination.
-- Confirm the extra-hot gochujang formula, and keep sesame oil litre and kilogram formats distinct.
-- Retain private price quotations outside the public repository and website.
+- Confirm shelf life, storage, ingredients, allergens and transport conditions for the exact kimchi product and pack. The supplemental sheet does not supply these fields, and no common temperature or shelf life is inferred.
+- Obtain the corrected carton dimension for sweet-and-sour radish's 1 kg × 10 pack. Its other two supplied dimensions remain usable.
+- Confirm unspecified inner packaging for source #10 and #31's 1 kg × 10 entries; do not relabel them as bags without evidence.
+- Confirm pack specifications for the 17 source records that have none. Source #34 has packing but awaits seafood/mixed-product classification; it is not treated as ordinary vegetable kimchi.
+- Keep older uncorroborated packs, source-specific product identities and frozen-seasoned products separate. Frozen seasoned spinach is not established as the existing IQF spinach SKU.
+- Confirm the extra-hot gochujang formula and keep sesame oil litre and kilogram formats distinct. Do not change the frozen gochujang page before its observation review.
+- Keep private quotations and source workbook headers outside public output. Validate certificate scope and order terms for the selected SKU and destination.
 
 ## Item-by-item mapping
 
-“Catalogue selection” means the page contains the named item and its available catalogue fields, with an inquiry link for further confirmation. A detail link is not a claim that all specifications, variants or certifications are complete.
+“Catalogue selection” means the page contains the named item and its available fields, with an inquiry link. A detail link is not a claim that all specifications or certifications are complete. The figures below are generated from the integrated source catalogue.
 
 | Item | Family | Citation target | Detail page | Confirmation still shown |
 |---|---|---|---|---|
@@ -161,21 +177,21 @@ All entries now have a stable catalogue citation target. Thirty-two cards link t
 | Sweet Salad Dressing | Supermarket Series | [Selection](https://deesheng.food/products/korean-sauces/#korean-sauces-sweet-salad-dressing) | Catalogue selection | Shelf life, Storage |
 | Cabbage Kimchi — Whole | Cabbage Kimchi | [Selection](https://deesheng.food/products/kimchi/#kimchi-cabbage-kimchi-whole) | [Detail](https://deesheng.food/product/korean-cabbage-kimchi/) | Shelf life, Storage |
 | Cabbage Kimchi — Mat | Cabbage Kimchi | [Selection](https://deesheng.food/products/kimchi/#kimchi-cabbage-kimchi-mat) | [Detail](https://deesheng.food/product/korean-cabbage-kimchi/) | Shelf life, Storage |
-| Cabbage Kimchi — Mini Mat | Cabbage Kimchi | [Selection](https://deesheng.food/products/kimchi/#kimchi-cabbage-kimchi-mini-mat) | Catalogue selection | Shelf life, Storage |
-| Cabbage Kimchi — Retail Jar | Cabbage Kimchi | [Selection](https://deesheng.food/products/kimchi/#kimchi-cabbage-kimchi-retail-jar) | Catalogue selection | Shelf life, Storage |
-| White Kimchi | Cabbage Kimchi | [Selection](https://deesheng.food/products/kimchi/#kimchi-white-kimchi) | Catalogue selection | Shelf life, Storage |
+| Cabbage Kimchi — Mini Mat | Cabbage Kimchi | [Selection](https://deesheng.food/products/kimchi/#kimchi-cabbage-kimchi-mini-mat) | [Detail](https://deesheng.food/product/korean-cabbage-kimchi/) | Shelf life, Storage |
+| Cabbage Kimchi — Retail Jar | Cabbage Kimchi | [Selection](https://deesheng.food/products/kimchi/#kimchi-cabbage-kimchi-retail-jar) | [Detail](https://deesheng.food/product/cabbage-kimchi-jars/) | Shelf life, Storage |
+| White Kimchi | Cabbage Kimchi | [Selection](https://deesheng.food/products/kimchi/#kimchi-white-kimchi) | [Detail](https://deesheng.food/product/white-washed-stir-fried-kimchi/) | Shelf life, Storage |
 | Seasoned Pepper Kimchi | Specialty Kimchi | [Selection](https://deesheng.food/products/kimchi/#kimchi-seasoned-pepper-kimchi) | Catalogue selection | Shelf life, Storage |
-| Chonggak Kimchi | Radish Kimchi | [Selection](https://deesheng.food/products/kimchi/#kimchi-chonggak-kimchi) | Catalogue selection | Shelf life, Storage |
-| Spring Onion Kimchi | Specialty Kimchi | [Selection](https://deesheng.food/products/kimchi/#kimchi-spring-onion-kimchi) | Catalogue selection | Shelf life, Storage |
-| Kkakdugi Kimchi | Radish Kimchi | [Selection](https://deesheng.food/products/kimchi/#kimchi-kkakdugi-kimchi) | Catalogue selection | Shelf life, Storage |
+| Chonggak Kimchi | Radish Kimchi | [Selection](https://deesheng.food/products/kimchi/#kimchi-chonggak-kimchi) | [Detail](https://deesheng.food/product/radish-kimchi/) | Shelf life, Storage |
+| Spring Onion Kimchi | Specialty Kimchi | [Selection](https://deesheng.food/products/kimchi/#kimchi-spring-onion-kimchi) | [Detail](https://deesheng.food/product/scallion-kimchi/) | Shelf life, Storage |
+| Kkakdugi Kimchi | Radish Kimchi | [Selection](https://deesheng.food/products/kimchi/#kimchi-kkakdugi-kimchi) | [Detail](https://deesheng.food/product/radish-kimchi/) | Shelf life, Storage |
 | Pickled Radish | Pickled Vegetables | [Selection](https://deesheng.food/products/kimchi/#kimchi-pickled-radish) | Catalogue selection | Shelf life, Storage |
 | Soy Sauce Perilla Leaves | Pickled Vegetables | [Selection](https://deesheng.food/products/kimchi/#kimchi-soy-sauce-perilla-leaves) | Catalogue selection | Shelf life, Storage |
-| Stir-fried Kimchi | Specialty Kimchi | [Selection](https://deesheng.food/products/kimchi/#kimchi-stir-fried-kimchi) | Catalogue selection | Shelf life, Storage |
+| Stir-fried Kimchi | Specialty Kimchi | [Selection](https://deesheng.food/products/kimchi/#kimchi-stir-fried-kimchi) | [Detail](https://deesheng.food/product/white-washed-stir-fried-kimchi/) | Shelf life, Storage |
 | Leaf Mustard Kimchi | Specialty Kimchi | [Selection](https://deesheng.food/products/kimchi/#kimchi-leaf-mustard-kimchi) | Catalogue selection | Shelf life, Storage |
-| Green Onion Kimchi | Specialty Kimchi | [Selection](https://deesheng.food/products/kimchi/#kimchi-green-onion-kimchi) | Catalogue selection | Shelf life, Storage |
+| Green Onion Kimchi | Specialty Kimchi | [Selection](https://deesheng.food/products/kimchi/#kimchi-green-onion-kimchi) | [Detail](https://deesheng.food/product/scallion-kimchi/) | Shelf life, Storage |
 | Nabak Kimchi | Radish Kimchi | [Selection](https://deesheng.food/products/kimchi/#kimchi-nabak-kimchi) | Catalogue selection | Shelf life, Storage |
 | Yeolmu Kimchi | Radish Kimchi | [Selection](https://deesheng.food/products/kimchi/#kimchi-yeolmu-kimchi) | Catalogue selection | Shelf life, Storage |
-| Washed Kimchi | Cabbage Kimchi | [Selection](https://deesheng.food/products/kimchi/#kimchi-washed-kimchi) | Catalogue selection | Shelf life, Storage |
+| Washed Kimchi | Cabbage Kimchi | [Selection](https://deesheng.food/products/kimchi/#kimchi-washed-kimchi) | [Detail](https://deesheng.food/product/white-washed-stir-fried-kimchi/) | Shelf life, Storage |
 | Sweet & Sour Green Onion | Pickled Vegetables | [Selection](https://deesheng.food/products/kimchi/#kimchi-sweet-sour-green-onion) | Catalogue selection | Shelf life, Storage |
 | Sweet & Sour Spring Onion | Pickled Vegetables | [Selection](https://deesheng.food/products/kimchi/#kimchi-sweet-sour-spring-onion) | Catalogue selection | Shelf life, Storage |
 | Soy Sauce Green Onion | Pickled Vegetables | [Selection](https://deesheng.food/products/kimchi/#kimchi-soy-sauce-green-onion) | Catalogue selection | Shelf life, Storage |
@@ -183,3 +199,16 @@ All entries now have a stable catalogue citation target. Thirty-two cards link t
 | Pickled Lettuce | Pickled Vegetables | [Selection](https://deesheng.food/products/kimchi/#kimchi-pickled-lettuce) | Catalogue selection | Shelf life, Storage |
 | Pickled Yamakurage | Pickled Vegetables | [Selection](https://deesheng.food/products/kimchi/#kimchi-pickled-yamakurage) | Catalogue selection | Shelf life, Storage |
 | Sweet & Sour Yamakurage | Pickled Vegetables | [Selection](https://deesheng.food/products/kimchi/#kimchi-sweet-sour-yamakurage) | Catalogue selection | Shelf life, Storage |
+| Seasoned Korean Bitter Greens | Pickled Vegetables | [Selection](https://deesheng.food/products/kimchi/#kimchi-seasoned-korean-bitter-greens) | Catalogue selection | Shelf life, Storage |
+| Seasoned Radish Strips | Pickled Vegetables | [Selection](https://deesheng.food/products/kimchi/#kimchi-seasoned-radish-strips) | Catalogue selection | Shelf life, Storage |
+| Seasoned Garlic Sprouts | Pickled Vegetables | [Selection](https://deesheng.food/products/kimchi/#kimchi-seasoned-garlic-sprouts) | [Detail](https://deesheng.food/product/garlic-sprout-pickles/) | Shelf life, Storage |
+| Soy Sauce Garlic Sprouts | Pickled Vegetables | [Selection](https://deesheng.food/products/kimchi/#kimchi-soy-sauce-garlic-sprouts) | [Detail](https://deesheng.food/product/garlic-sprout-pickles/) | Shelf life, Storage |
+| Sweet and Sour Garlic Sprouts | Pickled Vegetables | [Selection](https://deesheng.food/products/kimchi/#kimchi-sweet-and-sour-garlic-sprouts) | [Detail](https://deesheng.food/product/garlic-sprout-pickles/) | Shelf life, Storage |
+| Seasoned Green Pepper | Pickled Vegetables | [Selection](https://deesheng.food/products/kimchi/#kimchi-seasoned-green-pepper) | [Detail](https://deesheng.food/product/pickled-green-pepper/) | Shelf life, Storage |
+| Soy Sauce Green Pepper | Pickled Vegetables | [Selection](https://deesheng.food/products/kimchi/#kimchi-soy-sauce-green-pepper) | [Detail](https://deesheng.food/product/pickled-green-pepper/) | Shelf life, Storage |
+| Sweet and Sour Green Pepper | Pickled Vegetables | [Selection](https://deesheng.food/products/kimchi/#kimchi-sweet-and-sour-green-pepper) | [Detail](https://deesheng.food/product/pickled-green-pepper/) | Shelf life, Storage |
+| Pickled Dried Radish | Pickled Vegetables | [Selection](https://deesheng.food/products/kimchi/#kimchi-pickled-dried-radish) | Catalogue selection | Shelf life, Storage |
+| Seasoned Dried Radish | Pickled Vegetables | [Selection](https://deesheng.food/products/kimchi/#kimchi-seasoned-dried-radish) | Catalogue selection | Shelf life, Storage |
+| Seasoned Pepper Leaves | Pickled Vegetables | [Selection](https://deesheng.food/products/kimchi/#kimchi-seasoned-pepper-leaves) | Catalogue selection | Shelf life, Storage |
+| Seasoned Perilla Leaves | Pickled Vegetables | [Selection](https://deesheng.food/products/kimchi/#kimchi-seasoned-perilla-leaves) | Catalogue selection | Shelf life, Storage |
+| Soy Sauce Mountain Onion Leaves | Pickled Vegetables | [Selection](https://deesheng.food/products/kimchi/#kimchi-soy-sauce-mountain-onion-leaves) | Catalogue selection | Shelf life, Storage |

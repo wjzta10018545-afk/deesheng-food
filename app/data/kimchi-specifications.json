@@ -1,0 +1,801 @@
+[
+  {
+    "sourceNumber": 1,
+    "nameEn": "Cabbage Kimchi — Whole",
+    "nameZh": "颗泡菜",
+    "nameKo": "배추김치",
+    "packSpecifications": [
+      {
+        "variant": "Cabbage Kimchi — Whole",
+        "pack": "10 kg carton",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "325 × 212 × 212"
+      },
+      {
+        "variant": "Cabbage Kimchi — Whole",
+        "pack": "5 kg carton",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "250 × 170 × 190"
+      },
+      {
+        "variant": "Cabbage Kimchi — Whole",
+        "pack": "5 kg bag × 2",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "333 × 220 × 217"
+      }
+    ],
+    "image": "/media/catalog-products/kimchi/cabbage-kimchi-whole.webp",
+    "detailSlug": "korean-cabbage-kimchi"
+  },
+  {
+    "sourceNumber": 2,
+    "nameEn": "Cabbage Kimchi — Mat",
+    "nameZh": "切件泡菜",
+    "nameKo": "맛김치",
+    "packSpecifications": [
+      {
+        "variant": "Cabbage Kimchi — Mat",
+        "pack": "10 kg carton",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "325 × 212 × 212"
+      }
+    ],
+    "image": "/media/catalog-products/kimchi/cabbage-kimchi-mat.webp",
+    "detailSlug": "korean-cabbage-kimchi"
+  },
+  {
+    "sourceNumber": 3,
+    "nameEn": "Cabbage Kimchi — Mini Mat",
+    "nameZh": "丁泡菜",
+    "nameKo": "슬라이스김치",
+    "packSpecifications": [
+      {
+        "variant": "Cabbage Kimchi — Mini Mat",
+        "pack": "10 kg carton",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "325 × 212 × 212"
+      }
+    ],
+    "image": "/media/catalog-products/kimchi/cabbage-kimchi-mini-mat.webp",
+    "detailSlug": "korean-cabbage-kimchi"
+  },
+  {
+    "sourceNumber": 4,
+    "nameEn": "Cabbage Kimchi — Retail Jars",
+    "nameZh": "切件泡菜",
+    "nameKo": "맛김치",
+    "packSpecifications": [
+      {
+        "variant": "Cabbage Kimchi — Retail Jars",
+        "pack": "300 g jar × 36",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "431 × 325 × 230"
+      },
+      {
+        "variant": "Cabbage Kimchi — Retail Jars",
+        "pack": "480 g jar × 24",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "470 × 355 × 185"
+      },
+      {
+        "variant": "Cabbage Kimchi — Retail Jars",
+        "pack": "1 kg jar × 12",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "350 × 250 × 260"
+      }
+    ],
+    "image": "/media/catalog-products/kimchi/cabbage-kimchi-mat-retail.webp",
+    "detailSlug": "cabbage-kimchi-jars"
+  },
+  {
+    "sourceNumber": 5,
+    "nameEn": "White Kimchi",
+    "nameZh": "白泡菜",
+    "nameKo": "백김치",
+    "packSpecifications": [
+      {
+        "variant": "White Kimchi",
+        "pack": "10 kg carton",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "325 × 215 × 217"
+      }
+    ],
+    "image": "/media/catalog-products/kimchi/white-kimchi.webp",
+    "detailSlug": "white-washed-stir-fried-kimchi"
+  },
+  {
+    "sourceNumber": 6,
+    "nameEn": "Washed Kimchi",
+    "nameZh": "洗泡菜",
+    "nameKo": "씻은김치",
+    "packSpecifications": [
+      {
+        "variant": "Washed Kimchi",
+        "pack": "10 kg carton",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "325 × 215 × 217"
+      }
+    ],
+    "image": "/media/catalog-products/kimchi/washed-kimchi.webp",
+    "detailSlug": "white-washed-stir-fried-kimchi"
+  },
+  {
+    "sourceNumber": 7,
+    "nameEn": "Chonggak Radish Kimchi",
+    "nameZh": "青年萝卜泡菜",
+    "nameKo": "총각김치",
+    "packSpecifications": [
+      {
+        "variant": "Chonggak Radish Kimchi",
+        "pack": "5 kg carton",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "250 × 190 × 200"
+      },
+      {
+        "variant": "Chonggak Radish Kimchi",
+        "pack": "1 kg bottle × 12",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "350 × 250 × 260"
+      }
+    ],
+    "image": "/media/catalog-products/kimchi/chonggak-kimchi.webp",
+    "detailSlug": "radish-kimchi"
+  },
+  {
+    "sourceNumber": 8,
+    "nameEn": "Spring Onion Kimchi",
+    "nameZh": "小葱泡菜",
+    "nameKo": "쪽파김치",
+    "packSpecifications": [
+      {
+        "variant": "Spring Onion Kimchi",
+        "pack": "5 kg carton",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "250 × 190 × 200"
+      },
+      {
+        "variant": "Spring Onion Kimchi",
+        "pack": "1 kg bottle × 12",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "350 × 250 × 260"
+      }
+    ],
+    "image": "/media/catalog-products/kimchi/spring-onion-kimchi.webp",
+    "detailSlug": "scallion-kimchi"
+  },
+  {
+    "sourceNumber": 9,
+    "nameEn": "Kkakdugi Radish Kimchi",
+    "nameZh": "萝卜块泡菜",
+    "nameKo": "깍두기김치",
+    "packSpecifications": [
+      {
+        "variant": "Kkakdugi Radish Kimchi",
+        "pack": "10 kg carton",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "325 × 212 × 207"
+      },
+      {
+        "variant": "Kkakdugi Radish Kimchi",
+        "pack": "1 kg bottle × 12",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "350 × 250 × 260"
+      },
+      {
+        "variant": "Kkakdugi Radish Kimchi",
+        "pack": "300 g bottle × 36",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "431 × 325 × 230"
+      },
+      {
+        "variant": "Kkakdugi Radish Kimchi",
+        "pack": "500 g bottle × 24",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "470 × 355 × 185"
+      }
+    ],
+    "image": "/media/catalog-products/kimchi/kkakdugi-kimchi.webp",
+    "detailSlug": "radish-kimchi"
+  },
+  {
+    "sourceNumber": 10,
+    "nameEn": "Sweet and Sour Pickled Radish",
+    "nameZh": "酸甜萝卜",
+    "nameKo": "치킨무",
+    "packSpecifications": [
+      {
+        "variant": "Sweet and Sour Pickled Radish",
+        "pack": "1 kg × 10",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack"
+      },
+      {
+        "variant": "Sweet and Sour Pickled Radish",
+        "pack": "300 g bottle × 36",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "431 × 325 × 230"
+      },
+      {
+        "variant": "Sweet and Sour Pickled Radish",
+        "pack": "500 g bottle × 24",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "470 × 355 × 185"
+      }
+    ],
+    "image": "/media/catalog-products/kimchi/pickled-radish.webp"
+  },
+  {
+    "sourceNumber": 11,
+    "nameEn": "Stir-fried Kimchi",
+    "nameZh": "炒泡菜",
+    "nameKo": "볶음김치",
+    "packSpecifications": [
+      {
+        "variant": "Stir-fried Kimchi",
+        "pack": "10 kg carton",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "325 × 212 × 212"
+      }
+    ],
+    "image": "/media/catalog-products/kimchi/stir-fried-kimchi.webp",
+    "detailSlug": "white-washed-stir-fried-kimchi"
+  },
+  {
+    "sourceNumber": 12,
+    "nameEn": "Leaf Mustard Kimchi",
+    "nameZh": "芥菜泡菜",
+    "nameKo": "갓김치",
+    "packSpecifications": [
+      {
+        "variant": "Leaf Mustard Kimchi",
+        "pack": "5 kg carton",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "250 × 190 × 200"
+      }
+    ],
+    "image": "/media/catalog-products/kimchi/leaf-mustard-kimchi.webp"
+  },
+  {
+    "sourceNumber": 13,
+    "nameEn": "Scallion Kimchi (Daepa)",
+    "nameZh": "大葱泡菜",
+    "nameKo": "대파김치",
+    "packSpecifications": [
+      {
+        "variant": "Scallion Kimchi (Daepa)",
+        "pack": "5 kg carton",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "250 × 190 × 200"
+      }
+    ],
+    "image": "/media/catalog-products/kimchi/green-onion-kimchi.webp",
+    "detailSlug": "scallion-kimchi"
+  },
+  {
+    "sourceNumber": 14,
+    "nameEn": "Seasoned Korean Bitter Greens",
+    "nameZh": "拌苦菜",
+    "nameKo": "고들뺴기무침",
+    "packSpecifications": [
+      {
+        "variant": "Seasoned Korean Bitter Greens",
+        "pack": "10 kg carton",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "325 × 212 × 212"
+      }
+    ],
+    "image": "/media/catalog-products/kimchi/spec-14.png"
+  },
+  {
+    "sourceNumber": 15,
+    "nameEn": "Sweet and Sour Garlic Cloves",
+    "nameZh": "糖醋蒜米",
+    "nameKo": "알마늘 초절임",
+    "packSpecifications": []
+  },
+  {
+    "sourceNumber": 16,
+    "nameEn": "Seasoned Radish Strips",
+    "nameZh": "拌萝卜丝",
+    "nameKo": "보쌈무김치",
+    "packSpecifications": [
+      {
+        "variant": "Seasoned Radish Strips",
+        "pack": "1 kg × 10",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "380 × 285 × 150"
+      }
+    ],
+    "image": "/media/catalog-products/kimchi/spec-16.png"
+  },
+  {
+    "sourceNumber": 17,
+    "nameEn": "Sweet and Sour Radish Slices",
+    "nameZh": "冷面萝卜片",
+    "nameKo": "냉면무",
+    "packSpecifications": []
+  },
+  {
+    "sourceNumber": 18,
+    "nameEn": "Seasoned Garlic Sprouts",
+    "nameZh": "拌蒜苔",
+    "nameKo": "마늘쫑무침",
+    "packSpecifications": [
+      {
+        "variant": "Seasoned Garlic Sprouts",
+        "pack": "1 kg bag × 10",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "380 × 285 × 150"
+      },
+      {
+        "variant": "Seasoned Garlic Sprouts",
+        "pack": "200 g bag × 10",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "275x200x100"
+      },
+      {
+        "variant": "Seasoned Garlic Sprouts",
+        "pack": "3 kg bag × 4",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "380 × 280 × 210"
+      }
+    ],
+    "image": "/media/catalog-products/kimchi/spec-18.png",
+    "detailSlug": "garlic-sprout-pickles"
+  },
+  {
+    "sourceNumber": 19,
+    "nameEn": "Soy Sauce Garlic Sprouts",
+    "nameZh": "酱油蒜苔",
+    "nameKo": "간장 마늘쫑",
+    "packSpecifications": [
+      {
+        "variant": "Soy Sauce Garlic Sprouts",
+        "pack": "300 g bottle × 36",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "431x325x230"
+      },
+      {
+        "variant": "Soy Sauce Garlic Sprouts",
+        "pack": "500 g bottle × 24",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "470 × 355 × 185"
+      },
+      {
+        "variant": "Soy Sauce Garlic Sprouts",
+        "pack": "3 kg bag × 4",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "380 × 280 × 210"
+      }
+    ],
+    "image": "/media/catalog-products/kimchi/spec-19.png",
+    "detailSlug": "garlic-sprout-pickles"
+  },
+  {
+    "sourceNumber": 20,
+    "nameEn": "Sweet and Sour Garlic Sprouts",
+    "nameZh": "糖醋蒜苔",
+    "nameKo": "마늘쫑초절임",
+    "packSpecifications": [
+      {
+        "variant": "Sweet and Sour Garlic Sprouts",
+        "pack": "300 g bottle × 36",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "431x325x230"
+      },
+      {
+        "variant": "Sweet and Sour Garlic Sprouts",
+        "pack": "500 g bottle × 24",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "470 × 355 × 185"
+      },
+      {
+        "variant": "Sweet and Sour Garlic Sprouts",
+        "pack": "3 kg bag × 4",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "380 × 280 × 210"
+      }
+    ],
+    "image": "/media/catalog-products/kimchi/spec-20.png",
+    "detailSlug": "garlic-sprout-pickles"
+  },
+  {
+    "sourceNumber": 21,
+    "nameEn": "Seasoned Green Pepper",
+    "nameZh": "拌辣椒",
+    "nameKo": "고추지무침",
+    "packSpecifications": [
+      {
+        "variant": "Seasoned Green Pepper",
+        "pack": "300 g bottle × 36",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "431x325x230"
+      },
+      {
+        "variant": "Seasoned Green Pepper",
+        "pack": "500 g bottle × 24",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "470 × 355 × 185"
+      },
+      {
+        "variant": "Seasoned Green Pepper",
+        "pack": "3 kg bag × 4",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "380 × 280 × 210"
+      }
+    ],
+    "image": "/media/catalog-products/kimchi/spec-21.png",
+    "detailSlug": "pickled-green-pepper"
+  },
+  {
+    "sourceNumber": 22,
+    "nameEn": "Soy Sauce Green Pepper",
+    "nameZh": "酱油辣椒",
+    "nameKo": "간장고추절임",
+    "packSpecifications": [
+      {
+        "variant": "Soy Sauce Green Pepper",
+        "pack": "300 g bottle × 36",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "431x325x230"
+      },
+      {
+        "variant": "Soy Sauce Green Pepper",
+        "pack": "500 g bottle × 24",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "470 × 355 × 185"
+      },
+      {
+        "variant": "Soy Sauce Green Pepper",
+        "pack": "3 kg bag × 4",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "380 × 280 × 210"
+      }
+    ],
+    "image": "/media/catalog-products/kimchi/spec-22.png",
+    "detailSlug": "pickled-green-pepper"
+  },
+  {
+    "sourceNumber": 23,
+    "nameEn": "Sweet and Sour Green Pepper",
+    "nameZh": "糖醋辣椒",
+    "nameKo": "고추초절임",
+    "packSpecifications": [
+      {
+        "variant": "Sweet and Sour Green Pepper",
+        "pack": "300 g bottle × 36",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "431x325x230"
+      },
+      {
+        "variant": "Sweet and Sour Green Pepper",
+        "pack": "500 g bottle × 24",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "470 × 355 × 185"
+      },
+      {
+        "variant": "Sweet and Sour Green Pepper",
+        "pack": "3 kg bag × 4",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "380 × 280 × 210"
+      }
+    ],
+    "image": "/media/catalog-products/kimchi/spec-23.png",
+    "detailSlug": "pickled-green-pepper"
+  },
+  {
+    "sourceNumber": 24,
+    "nameEn": "Pickled Dried Radish",
+    "nameZh": "酱油萝卜干",
+    "nameKo": "무말랭이장아찌",
+    "packSpecifications": [
+      {
+        "variant": "Pickled Dried Radish",
+        "pack": "300 g bottle × 36",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "431x325x230"
+      },
+      {
+        "variant": "Pickled Dried Radish",
+        "pack": "500 g bottle × 24",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "470 × 355 × 185"
+      }
+    ],
+    "image": "/media/catalog-products/kimchi/spec-24.png"
+  },
+  {
+    "sourceNumber": 25,
+    "nameEn": "Seasoned Dried Radish",
+    "nameZh": "拌萝卜干",
+    "nameKo": "무말랭이무침",
+    "packSpecifications": [
+      {
+        "variant": "Seasoned Dried Radish",
+        "pack": "1 kg bag × 10",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "380 × 285 × 150"
+      },
+      {
+        "variant": "Seasoned Dried Radish",
+        "pack": "200 g bag × 10",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "275x200x100"
+      },
+      {
+        "variant": "Seasoned Dried Radish",
+        "pack": "3 kg bag × 4",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "380 × 280 × 210"
+      }
+    ],
+    "image": "/media/catalog-products/kimchi/spec-25.png"
+  },
+  {
+    "sourceNumber": 26,
+    "nameEn": "Seasoned Pepper Leaves",
+    "nameZh": "拌辣椒叶",
+    "nameKo": "고추잎무침",
+    "packSpecifications": [
+      {
+        "variant": "Seasoned Pepper Leaves",
+        "pack": "300 g bottle × 36",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "431x325x230"
+      },
+      {
+        "variant": "Seasoned Pepper Leaves",
+        "pack": "3 kg bag × 4",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "380 × 280 × 210"
+      }
+    ],
+    "image": "/media/catalog-products/kimchi/spec-26.png"
+  },
+  {
+    "sourceNumber": 27,
+    "nameEn": "Pickled Leaf Mustard",
+    "nameZh": "酱芥菜",
+    "nameKo": "갓장아찌",
+    "packSpecifications": []
+  },
+  {
+    "sourceNumber": 28,
+    "nameEn": "Pickled Celery",
+    "nameZh": "酱芹菜",
+    "nameKo": "샐러리장아찌",
+    "packSpecifications": []
+  },
+  {
+    "sourceNumber": 29,
+    "nameEn": "Pickled Gongcai Stems",
+    "nameZh": "酱贡菜",
+    "nameKo": "궁채장아찌",
+    "packSpecifications": []
+  },
+  {
+    "sourceNumber": 30,
+    "nameEn": "Seasoned Perilla Leaves",
+    "nameZh": "拌苏子叶",
+    "nameKo": "양념깻잎",
+    "packSpecifications": [
+      {
+        "variant": "Seasoned Perilla Leaves",
+        "pack": "1 kg bag × 10",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "380 × 285 × 150"
+      },
+      {
+        "variant": "Seasoned Perilla Leaves",
+        "pack": "180 g bag × 10",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "275x200x100"
+      }
+    ],
+    "image": "/media/catalog-products/kimchi/spec-30.png"
+  },
+  {
+    "sourceNumber": 31,
+    "nameEn": "Soy Sauce Perilla Leaves",
+    "nameZh": "酱油苏子叶",
+    "nameKo": "간장깻잎",
+    "packSpecifications": [
+      {
+        "variant": "Soy Sauce Perilla Leaves",
+        "pack": "1 kg × 10",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "380 × 285 × 150"
+      },
+      {
+        "variant": "Soy Sauce Perilla Leaves",
+        "pack": "180 g bag × 10",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "275x200x100"
+      },
+      {
+        "variant": "Soy Sauce Perilla Leaves",
+        "pack": "3 kg bag × 4",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "380 × 280 × 210"
+      }
+    ],
+    "image": "/media/catalog-products/kimchi/soy-sauce-perilla-leaves.webp"
+  },
+  {
+    "sourceNumber": 32,
+    "nameEn": "Soy Sauce Mountain Onion Leaves",
+    "nameZh": "酱油山葱叶",
+    "nameKo": "명이나물 절임",
+    "packSpecifications": [
+      {
+        "variant": "Soy Sauce Mountain Onion Leaves",
+        "pack": "1 kg × 10",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "380 × 285 × 150"
+      },
+      {
+        "variant": "Soy Sauce Mountain Onion Leaves",
+        "pack": "3 kg bag × 4",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "380 × 280 × 210"
+      }
+    ],
+    "image": "/media/catalog-products/kimchi/spec-32.png"
+  },
+  {
+    "sourceNumber": 33,
+    "nameEn": "Seasoned Cucumber",
+    "nameZh": "拌黄瓜",
+    "nameKo": "오이소박이",
+    "packSpecifications": []
+  },
+  {
+    "sourceNumber": 34,
+    "nameEn": "Korean Bitter Greens with Octopus Sauce",
+    "nameZh": "苦菜拌章鱼酱",
+    "nameKo": "고들 낙지 비빔장아찌",
+    "packSpecifications": [
+      {
+        "variant": "Korean Bitter Greens with Octopus Sauce",
+        "pack": "1 kg × 10",
+        "shelfLife": "Confirm for the selected product and pack",
+        "storage": "Confirm for the selected product and pack",
+        "dimensionsMm": "380 × 285 × 150"
+      }
+    ]
+  },
+  {
+    "sourceNumber": 35,
+    "nameEn": "Cheongyang Chili Sauce",
+    "nameZh": "青阳辣椒酱",
+    "nameKo": "청양고추장",
+    "packSpecifications": []
+  },
+  {
+    "sourceNumber": 36,
+    "nameEn": "Pickled Mixed Vegetables",
+    "nameZh": "腌什锦菜",
+    "nameKo": "모듬장아찌",
+    "packSpecifications": []
+  },
+  {
+    "sourceNumber": 37,
+    "nameEn": "Stir-fried Seasoned Squid",
+    "nameZh": "炒鱿鱼丝",
+    "nameKo": "진미채볶음",
+    "packSpecifications": []
+  },
+  {
+    "sourceNumber": 38,
+    "nameEn": "Stir-fried Anchovy",
+    "nameZh": "炒小银鱼",
+    "nameKo": "멸치볶음",
+    "packSpecifications": []
+  },
+  {
+    "sourceNumber": 39,
+    "nameEn": "Stir-fried Fish Cakes",
+    "nameZh": "炒鱼饼",
+    "nameKo": "어묵 볶음",
+    "packSpecifications": []
+  },
+  {
+    "sourceNumber": 40,
+    "nameEn": "Frozen Seasoned Bracken",
+    "nameZh": "速冻-调味蕨菜",
+    "nameKo": "양념 고사리 (냉동)",
+    "packSpecifications": []
+  },
+  {
+    "sourceNumber": 41,
+    "nameEn": "Frozen Seasoned Balloon Flower Root",
+    "nameZh": "速冻-调味桔梗",
+    "nameKo": "양념 도라지 (냉동)",
+    "packSpecifications": []
+  },
+  {
+    "sourceNumber": 42,
+    "nameEn": "Frozen Seasoned Shredded Carrots",
+    "nameZh": "调味胡萝卜丝",
+    "nameKo": "양념 당근채 (냉동)",
+    "packSpecifications": []
+  },
+  {
+    "sourceNumber": 43,
+    "nameEn": "Frozen Seasoned Spinach",
+    "nameZh": "速冻-调味菠菜",
+    "nameKo": "양념 시금치 (냉동)",
+    "packSpecifications": []
+  },
+  {
+    "sourceNumber": 44,
+    "nameEn": "Frozen Seasoned Soybean Sprouts",
+    "nameZh": "速冻-调味黄豆芽",
+    "nameKo": "양념 콩나물 (냉동)",
+    "packSpecifications": []
+  },
+  {
+    "sourceNumber": 45,
+    "nameEn": "Frozen Seasoned Osmund",
+    "nameZh": "速冻-调味微菜",
+    "nameKo": "양념 고비  (냉동)",
+    "packSpecifications": []
+  }
+]

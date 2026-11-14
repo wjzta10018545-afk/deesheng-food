@@ -1112,3 +1112,10 @@ button, input, select, textarea { font: inherit; }
 .buyer-faq-link .button { flex-shrink: 0; }
 @media (max-width: 800px) { .buyer-faq-topics { grid-template-columns: repeat(2, minmax(0, 1fr)); } .buyer-faq-link { align-items: flex-start; flex-direction: column; gap: 16px; } }
 @media (max-width: 480px) { .buyer-faq-topics { grid-template-columns: 1fr; } }
+
+/* Product-specific carton dimensions in the catalogue. */
+.catalogue-pack-details { margin: 1rem 0; overflow-x: auto; }
+.catalogue-pack-details summary { cursor: pointer; padding: .5rem 0; font-weight: 600; }
+.catalogue-pack-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.catalogue-pack-table th, .catalogue-pack-table td { text-align: left; vertical-align: top; padding: .5rem .35rem; border-bottom: 1px solid #dedbd5; }
+.catalogue-pack-table caption { text-align: left; padding: .5rem 0; }
