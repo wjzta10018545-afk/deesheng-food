@@ -41,7 +41,10 @@ function saveConsent(value: ConsentChoice) {
 
 function initializeAnalytics() {
   window.dataLayer = window.dataLayer || [];
+  // gtag queues Arguments objects; replacing this with a rest-array changes the command format.
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   window.gtag = window.gtag || function (..._args: unknown[]) {
+    // eslint-disable-next-line prefer-rest-params
     window.dataLayer?.push(arguments);
   };
 

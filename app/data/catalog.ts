@@ -169,15 +169,15 @@ const catalogCategorySource: CatalogCategory[] = [
     image: "/media/kimchi.webp",
     imageAlt: "Korean cabbage, radish and specialty kimchi range",
     items: [
-      { name: "Korean Cabbage Kimchi — 1 kg", group: "Cabbage", packing: "1 kg bag × 10", shelfLife: "4–6 months", storage: "0–4°C", detailSlug: "korean-cabbage-kimchi" },
-      { name: "Korean Cabbage Kimchi — 10 kg", group: "Cabbage", packing: "10 kg carton; whole or cut", shelfLife: "4–6 months", storage: "0–4°C" },
-      { name: "Green Onion Kimchi", group: "Specialty Kimchi", packing: "300 g bag × 30", shelfLife: "4–6 months", storage: "0–4°C" },
-      { name: "Chili Pepper Kimchi", group: "Specialty Kimchi", packing: "200 g bag × 40", shelfLife: "4–6 months", storage: "0–4°C" },
-      { name: "Young Radish Kimchi", group: "Radish", packing: "500 g bag × 20", shelfLife: "4–6 months", storage: "0–4°C" },
-      { name: "Diced Radish Kimchi", group: "Radish", packing: "500 g bag × 20", shelfLife: "4–6 months", storage: "0–4°C" },
+      { name: "Korean Cabbage Kimchi — 1 kg", group: "Cabbage", packing: "1 kg bag × 10", shelfLife: "Confirm for the selected SKU and pack", storage: "0–4°C", detailSlug: "korean-cabbage-kimchi" },
+      { name: "Korean Cabbage Kimchi — 10 kg", group: "Cabbage", packing: "10 kg carton; whole or cut", shelfLife: "Confirm for the selected SKU and pack", storage: "0–4°C" },
+      { name: "Green Onion Kimchi", group: "Specialty Kimchi", packing: "300 g bag × 30", shelfLife: "Confirm for the selected SKU and pack", storage: "0–4°C" },
+      { name: "Chili Pepper Kimchi", group: "Specialty Kimchi", packing: "200 g bag × 40", shelfLife: "Confirm for the selected SKU and pack", storage: "0–4°C" },
+      { name: "Young Radish Kimchi", group: "Radish", packing: "500 g bag × 20", shelfLife: "Confirm for the selected SKU and pack", storage: "0–4°C" },
+      { name: "Diced Radish Kimchi", group: "Radish", packing: "500 g bag × 20", shelfLife: "Confirm for the selected SKU and pack", storage: "0–4°C" },
       { name: "Sweet & Sour Radish", group: "Radish", packing: "2 kg bag × 6; 100 g tub × 100", shelfLife: "4 months", storage: "Refrigerated" },
-      { name: "Soy Sauce Radish", group: "Radish", packing: "500 g bag × 20", shelfLife: "4–6 months", storage: "0–4°C" },
-      { name: "Soy Sauce Perilla Leaves", group: "Specialty Kimchi", packing: "500 g bag × 20", shelfLife: "4–6 months", storage: "0–4°C" },
+      { name: "Soy Sauce Radish", group: "Radish", packing: "500 g bag × 20", shelfLife: "Confirm for the selected SKU and pack", storage: "0–4°C" },
+      { name: "Soy Sauce Perilla Leaves", group: "Specialty Kimchi", packing: "500 g bag × 20", shelfLife: "Confirm for the selected SKU and pack", storage: "0–4°C" },
       { name: "Mixed Chili Kimchi", group: "Specialty Kimchi", packing: "2 kg bag × 6", shelfLife: "6 months", storage: "0–10°C" },
       { name: "Sweet & Sour Garlic Scapes", group: "Specialty Kimchi", packing: "2 kg bag × 6", shelfLife: "6 months", storage: "0–10°C" },
       { name: "Seasoned Dried Radish", group: "Radish", packing: "2 kg bag × 6", shelfLife: "6 months", storage: "0–10°C" },
@@ -277,8 +277,8 @@ const sauceBrochureItems: CatalogItem[] = (sauceCatalog as SauceCatalogSourceIte
   group: item.group,
   image: `/media/catalog-products/sauces/${item.image}.webp`,
   packing: item.packing,
-  shelfLife: item.shelfLife ?? "12 months",
-  storage: item.storage ?? "Ambient",
+  shelfLife: item.shelfLife ?? "Confirm for the selected SKU and pack",
+  storage: item.storage ?? "Confirm for the selected SKU and pack",
   detailSlug: item.detailSlug ?? undefined,
 }));
 
@@ -317,10 +317,10 @@ const chiliBrochureItems = brochureItems("chili", [
 ] as const, { packing: "Bulk foodservice pack; specification confirmed per order", shelfLife: "12 months", storage: "Ambient; cool and dry" });
 
 const kimchiBrochureItems = brochureItems("kimchi", [
-  ["Cabbage Kimchi — Whole", "Cabbage Kimchi", "cabbage-kimchi-whole", "10 kg"],
-  ["Cabbage Kimchi — Mat", "Cabbage Kimchi", "cabbage-kimchi-mat", "10 kg"],
+  ["Cabbage Kimchi — Whole", "Cabbage Kimchi", "cabbage-kimchi-whole", "10 kg", "korean-cabbage-kimchi"],
+  ["Cabbage Kimchi — Mat", "Cabbage Kimchi", "cabbage-kimchi-mat", "10 kg", "korean-cabbage-kimchi"],
   ["Cabbage Kimchi — Mini Mat", "Cabbage Kimchi", "cabbage-kimchi-mini-mat", "10 kg"],
-  ["Cabbage Kimchi — Retail Jar", "Cabbage Kimchi", "cabbage-kimchi-mat-retail", "300 g / 400 g / 480 g / 1 kg", "korean-cabbage-kimchi"],
+  ["Cabbage Kimchi — Retail Jar", "Cabbage Kimchi", "cabbage-kimchi-mat-retail", "300 g / 400 g / 480 g / 1 kg"],
   ["White Kimchi", "Cabbage Kimchi", "white-kimchi", "10 kg"],
   ["Seasoned Pepper Kimchi", "Specialty Kimchi", "seasoned-pepper-kimchi", "5 kg / 10 kg"],
   ["Chonggak Kimchi", "Radish Kimchi", "chonggak-kimchi", "10 kg"],
@@ -480,6 +480,10 @@ export function getCatalogItemImage(categorySlug: string, item: Pick<CatalogItem
     ?? "/media/categories/korean-sauces.webp";
 }
 
+export function getCatalogItemId(categorySlug: string, item: Pick<CatalogItem, "name">): string {
+  return `${categorySlug}-${item.name.toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}`;
+}
+
 export type ProductDetail = {
   slug: string;
   name: string;
@@ -520,41 +524,136 @@ const standardFaq = (product: string) => [
 export const productDetails: ProductDetail[] = [
   ...aeoSauces,
   {
-    slug: "extra-hot-gochujang", name: "Extra Hot Gochujang", categorySlug: "korean-sauces", categoryName: "Korean Sauces", headline: "A hotter gochujang option for spice-led markets.", summary: "An extra-hot Korean-style chili paste for buyers who need a stronger heat profile while retaining the familiar fermented, savory and slightly sweet character of gochujang.", applications: ["Spicy bibimbap", "Hot marinades", "Korean fried chicken", "Stir-fry", "Foodservice sauces"], packing: ["500 g tub × 20 per carton", "14 kg foodservice carton"], shelfLife: "12 months", storage: "Ambient; cool and dry", image: "/media/catalog-products/sauces/gochujang-chili-sauce.webp", imageAlt: "Gochujang retail tub and foodservice carton used for the extra-hot specification", buyerQuestions: standardFaq("extra-hot gochujang"),
+    slug: "extra-hot-gochujang", name: "Extra Hot Gochujang", categorySlug: "korean-sauces", categoryName: "Korean Sauces", headline: "Extra-hot gochujang for retail and foodservice sourcing.", summary: "An extra-hot Korean-style chili paste for buyers who need a stronger heat profile while retaining the familiar fermented, savory and slightly sweet character of gochujang.",
+    seoTitle: "Extra Hot Gochujang Supplier | Retail & Foodservice | Deesheng Food",
+    metaDescription: "Source extra-hot gochujang in listed 500 g × 20 and 14 kg formats. Review the exact formula, sample, pack and product documents for your market.",
+    applications: ["Spicy bibimbap", "Hot marinades", "Korean fried chicken", "Stir-fry", "Foodservice sauces"], packing: ["500 g tub × 20 per carton", "14 kg foodservice carton"], shelfLife: "12 months", storage: "Ambient; cool and dry", image: "/media/catalog-products/sauces/gochujang-chili-sauce.webp", imageAlt: "Gochujang packaging reference; confirm the extra-hot formula and final pack",
+    buyerAnswer: "Deesheng Food lists extra-hot gochujang in 500 g tubs packed 20 per carton and a 14 kg foodservice format, with a listed 12-month shelf life and cool, dry ambient storage. Extra-hot is a product option, not a verified numerical heat rating. Share your application, target heat, pack, quantity and destination to request the matching sample and specification.",
+    packSpecifications: [
+      { pack: "500 g tub × 20 per carton", shelfLife: "12 months", storage: "Ambient; cool and dry" },
+      { pack: "14 kg foodservice carton", shelfLife: "12 months", storage: "Ambient; cool and dry" },
+    ],
+    packingNote: "Select the extra-hot formula explicitly; do not substitute another gochujang specification. Carton logistics available on request.",
+    buyerQuestions: [
+      ...standardFaq("extra-hot gochujang"),
+      { question: "Does extra-hot gochujang have a confirmed SHU rating?", answer: "No numerical SHU rating is listed here. Describe your target heat and request the selected formula's specification and a sample for evaluation in your recipe." },
+      { question: "Which extra-hot gochujang packs are listed?", answer: "The listed formats are 500 g tubs packed 20 per carton and a 14 kg foodservice carton. Confirm the extra-hot formula, final pack and label in the order specification." },
+      { question: "How should I compare an extra-hot gochujang sample?", answer: "Use the intended recipe and serving quantity, and compare the samples under the same preparation conditions. Approve the exact formula and pack before ordering." },
+    ],
   },
   {
-    slug: "bibimbap-sauce", name: "Stone Pot Bibimbap Sauce", categorySlug: "korean-sauces", categoryName: "Korean Sauces", headline: "Bibimbap sauce for retail bottles and restaurant kitchens.", summary: "A balanced Korean-style bibimbap sauce available in spicy and non-spicy versions for supermarkets, restaurants and private-label programs.", applications: ["Stone pot bibimbap", "Rice bowls", "Vegetable bowls", "Dipping", "Meal kits"], packing: ["200 g bottle × 24", "350 g bottle × 24", "400 g bottle × 30", "1 kg pouch × 12"], shelfLife: "12 months", storage: "Ambient", image: "/media/catalog-products/sauces/stone-pot-bibimbap-classic.webp", imageAlt: "Stone pot bibimbap sauce in retail bottle, pouch and sachet formats", buyerQuestions: standardFaq("bibimbap sauce"),
+    slug: "bibimbap-sauce", name: "Stone Pot Bibimbap Sauce", categorySlug: "korean-sauces", categoryName: "Korean Sauces", headline: "Bibimbap sauce for retail bottles and restaurant kitchens.", summary: "Stone pot bibimbap sauce for supermarkets, restaurant suppliers and private-label programs. Choose the exact flavor and carton configuration; the classic and non-spicy catalogue entries remain separate options.",
+    seoTitle: "Stone Pot Bibimbap Sauce Supplier | Wholesale & OEM | Deesheng Food",
+    metaDescription: "Compare listed retail bottles and 1 kg foodservice packs for stone pot bibimbap sauce. Confirm the flavor, carton configuration, sample and export label.",
+    applications: ["Stone pot bibimbap", "Rice bowls", "Vegetable bowls", "Dipping", "Meal kits"], packing: ["200 g bottle × 24", "350 g bottle × 24", "400 g bottle × 30", "1 kg pouch × 12"], shelfLife: "12 months", storage: "Ambient", image: "/media/catalog-products/sauces/stone-pot-bibimbap-classic.webp", imageAlt: "Classic stone pot bibimbap sauce catalogue image",
+    buyerAnswer: "Deesheng Food offers stone pot bibimbap sauce for retail and foodservice buyers. This specification lists 200 g × 24, 350 g × 24 and 400 g × 30 bottles, plus 1 kg pouches packed 12 per carton, with a 12-month shelf life and ambient storage. Select the flavor explicitly. The catalogue also shows a separate 1 kg × 10 configuration; its carton data must be requested separately.",
+    packSpecifications: [
+      { pack: "200 g bottle × 24", shelfLife: "12 months", storage: "Ambient" },
+      { pack: "350 g bottle × 24", shelfLife: "12 months", storage: "Ambient" },
+      { pack: "400 g bottle × 30", shelfLife: "12 months", storage: "Ambient" },
+      { pack: "1 kg pouch × 12", shelfLife: "12 months", storage: "Ambient" },
+    ],
+    packingNote: "Confirm the flavor for the selected format. The catalogue's 1 kg × 10 entry is a separate carton configuration. Carton logistics available on request.",
+    buyerQuestions: [
+      ...standardFaq("bibimbap sauce"),
+      { question: "Are classic and non-spicy bibimbap sauce the same SKU?", answer: "No. They are separate catalogue options. State the flavor and pack you want, and request the matching formula and sample rather than assuming that one specification covers both." },
+      { question: "Are 1 kg × 10 and 1 kg × 12 the same carton?", answer: "No. This product specification lists 1 kg × 12, while the catalogue also lists 1 kg × 10. Specify the required count and request the corresponding carton data; do not transfer shipping data between them." },
+      { question: "What should I include in a bibimbap sauce sample brief?", answer: "Include the classic or non-spicy option, rice-bowl recipe, target flavor, retail or foodservice channel, preferred pack, quantity and destination." },
+    ],
   },
   {
-    slug: "korean-cabbage-kimchi", name: "Korean Cabbage Kimchi", categorySlug: "kimchi", categoryName: "Korean Kimchi", headline: "Korean-style cabbage kimchi for retail and foodservice.", summary: "Refrigerated cabbage kimchi in 1 kg retail/foodservice bags and 10 kg bulk cartons, with cut and pack availability confirmed for each order.", applications: ["Retail grocery", "Restaurants", "Korean menus", "Side dishes", "Foodservice distribution"], packing: ["1 kg bag × 10", "10 kg carton — confirm cut and current availability"], shelfLife: "Typically 4–6 months", storage: "Refrigerated at 0–4°C", image: "/media/catalog-products/kimchi/cabbage-kimchi-mat-retail.webp", imageAlt: "Retail jar of cut Korean cabbage kimchi", buyerQuestions: standardFaq("Korean cabbage kimchi"),
+    slug: "korean-cabbage-kimchi", name: "Korean Cabbage Kimchi", categorySlug: "kimchi", categoryName: "Korean Kimchi", headline: "Refrigerated cabbage kimchi in bagged and bulk formats.", summary: "Refrigerated cabbage kimchi in 1 kg bags packed 10 per carton and 10 kg bulk cartons. Confirm the cut, selected formula, shelf life and current availability for each order; retail jars are a separate catalogue format.",
+    seoTitle: "Korean Cabbage Kimchi Supplier | 1 kg & 10 kg | Deesheng Food",
+    metaDescription: "Source refrigerated cabbage kimchi in 1 kg × 10 bags and 10 kg bulk cartons. Storage at 0–4°C; shelf life confirmed for the selected product and pack.",
+    applications: ["Retail grocery", "Restaurants", "Korean menus", "Side dishes", "Foodservice distribution"], packing: ["1 kg bag × 10", "10 kg carton — confirm cut and current availability"], shelfLife: "Confirm for the selected product and pack", storage: "Refrigerated at 0–4°C", image: "/media/catalog-products/kimchi/cabbage-kimchi-mat.webp", imageAlt: "Cabbage kimchi shown in the catalogue for the 10 kg Mat format",
+    buyerAnswer: "Deesheng Food supplies refrigerated Korean cabbage kimchi in 1 kg bags packed 10 per carton and 10 kg bulk cartons. The storage requirement for these formats is 0–4°C. Shelf life must be confirmed for the selected product, formula and packaging before ordering. Share your required cut, pack, quantity, destination and refrigerated delivery route. Retail jars are listed separately and do not inherit the bagged product specification.",
+    packSpecifications: [
+      { pack: "1 kg bag × 10", shelfLife: "Confirm for the selected product and pack", storage: "Refrigerated at 0–4°C" },
+      { pack: "10 kg carton — confirm cut and current availability", shelfLife: "Confirm for the selected product and pack", storage: "Refrigerated at 0–4°C" },
+    ],
+    packingNote: "Confirm the cut, formula, shelf life and current availability for the selected bagged or bulk product. Retail jars require a separate specification. Carton logistics available on request.",
+    buyerQuestions: [
+      ...standardFaq("Korean cabbage kimchi"),
+      { question: "Which cabbage kimchi packs does this page cover?", answer: "This page covers 1 kg bags packed 10 per carton and 10 kg bulk cartons, with cut and availability confirmed for the order. The catalogue's retail jars are separate formats and require their own specification." },
+      { question: "What is the shelf life of cabbage kimchi?", answer: "Shelf life must be confirmed for the selected product, formula and packaging. Request the applicable specification and approved label before ordering; no single duration is stated for every cabbage kimchi format." },
+      { question: "What storage temperature applies to these cabbage kimchi formats?", answer: "The listed bagged and bulk cabbage kimchi formats require refrigeration at 0–4°C. Share the destination and delivery route so the refrigerated shipment requirements can be reviewed." },
+      { question: "Can I use the same specification for retail jars or frozen kimchi?", answer: "No. The bagged and bulk refrigerated specification does not establish a retail-jar or frozen product specification. Identify the exact format and request its applicable packing, storage and shelf-life information." },
+    ],
   },
   {
     slug: "coarse-korean-chili-powder", name: "Coarse Korean Chili Powder", categorySlug: "chili-seasonings", categoryName: "Chili Powder & Dry Seasonings", headline: "Coarse Korean chili powder for kimchi and foodservice.", summary: "Grade A coarse Korean chili powder for kimchi and food production. Buyers sourcing gochugaru or Korean chili flakes can specify the cut, seed content, color and heat to match the selected grade.", applications: ["Kimchi production", "Marinades", "Soup bases", "Korean seasoning", "Further processing"], packing: ["100 g bottle × 110", "200 g bottle × 60", "1 kg pouch × 10"], shelfLife: "12 months", storage: "Ambient; cool and dry", image: "/media/catalog-products/chili/coarse-chili-powder-packaged.webp", imageAlt: "Coarse Korean chili powder in a 200 g retail bottle",
-    buyerAnswer: "For a gochugaru or Korean chili flakes sourcing brief, Deesheng Food can review a coarse chili powder grade for kimchi and foodservice. Specify particle size, seed content, color, heat, pack, quantity and destination; the exact grade is confirmed against the product specification.",
+    seoTitle: "Coarse Korean Chili Powder Supplier | Gochugaru | Deesheng Food",
+    metaDescription: "Source coarse Korean chili powder for kimchi and foodservice. Listed 100 g, 200 g and 1 kg packs; confirm particle size, seed content, color and heat.",
+    buyerAnswer: "Deesheng Food lists coarse Korean chili powder for kimchi and foodservice in 100 g bottles × 110, 200 g bottles × 60 and 1 kg pouches × 10. The listed shelf life is 12 months with cool, dry ambient storage. For a gochugaru or Korean chili flakes sourcing brief, specify particle size, seed content, color, heat, pack, quantity and destination; the exact grade is confirmed against the product specification.",
+    packSpecifications: [
+      { pack: "100 g bottle × 110", shelfLife: "12 months", storage: "Ambient; cool and dry" },
+      { pack: "200 g bottle × 60", shelfLife: "12 months", storage: "Ambient; cool and dry" },
+      { pack: "1 kg pouch × 10", shelfLife: "12 months", storage: "Ambient; cool and dry" },
+    ],
+    packingNote: "Confirm the selected coarse grade, cut and pack before ordering. Carton logistics available on request.",
     buyerQuestions: [
       ...standardFaq("coarse Korean chili powder"),
       { question: "What should I specify when asking for gochugaru or Korean chili flakes?", answer: "Tell us the intended use, target particle size or mesh, seed preference, color, heat level, pack size, expected quantity and destination. We will confirm the matching product specification before sampling or quoting." },
+      { question: "Can I use the fine chili powder specification for the coarse grade?", answer: "No. Coarse and fine are separate grade choices. Request the exact cut, seed content, color and heat for the intended application and assess the selected sample before ordering." },
+      { question: "How should I evaluate coarse chili powder for kimchi?", answer: "Use your intended kimchi recipe and preparation process when comparing samples. Record the selected grade, cut and pack so the approved sample can be matched to the order specification." },
     ],
   },
   {
     slug: "fine-korean-chili-powder", name: "Fine Korean Chili Powder", categorySlug: "chili-seasonings", categoryName: "Chili Powder & Dry Seasonings", headline: "Fine Korean chili powder for sauces and seasoning blends.", summary: "Grade A fine Korean chili powder for sauces, marinades and dry seasoning. Buyers using gochugaru as a sourcing term can specify a fine grind, color and heat for the intended application.", applications: ["Sauce production", "Dry seasoning", "Marinades", "Processed foods", "Retail spice packs"], packing: ["100 g bottle × 110", "200 g bottle × 60", "1 kg pouch × 10"], shelfLife: "12 months", storage: "Ambient; cool and dry", image: "/media/catalog-products/chili/fine-chili-powder-packaged.webp", imageAlt: "Fine Korean chili powder in a 200 g retail bottle",
-    buyerAnswer: "Deesheng Food offers a fine Korean chili powder option for sauces and seasoning blends. If your brief uses the term gochugaru, specify the fine grind, target color and heat, pack, quantity and destination so the matching grade can be confirmed before sampling.",
+    seoTitle: "Fine Korean Chili Powder Supplier | Wholesale | Deesheng Food",
+    metaDescription: "Source fine Korean chili powder for sauces and seasoning blends. Listed 100 g, 200 g and 1 kg packs; confirm the required grind, color and heat.",
+    buyerAnswer: "Deesheng Food offers fine Korean chili powder for sauces and seasoning blends in 100 g bottles × 110, 200 g bottles × 60 and 1 kg pouches × 10. The listed shelf life is 12 months with cool, dry ambient storage. If your brief uses the term gochugaru, specify the fine grind, target color and heat, pack, quantity and destination so the matching grade can be confirmed before sampling.",
+    packSpecifications: [
+      { pack: "100 g bottle × 110", shelfLife: "12 months", storage: "Ambient; cool and dry" },
+      { pack: "200 g bottle × 60", shelfLife: "12 months", storage: "Ambient; cool and dry" },
+      { pack: "1 kg pouch × 10", shelfLife: "12 months", storage: "Ambient; cool and dry" },
+    ],
+    packingNote: "Confirm the selected fine grade, grind and pack before ordering. Carton logistics available on request.",
     buyerQuestions: [
       ...standardFaq("fine Korean chili powder"),
       { question: "How do I choose a fine Korean chili powder grade?", answer: "Share the sauce or seasoning application, required fineness, color, heat level and pack. The selected grade and supporting specification are confirmed for the order rather than assumed from a generic product name." },
+      { question: "Does fine chili powder have one fixed mesh or heat rating?", answer: "No fixed mesh or numerical heat rating is stated on this page. Provide your required fineness and heat target and request the selected grade's specification before approving a sample." },
+      { question: "Which packing formats are listed for fine chili powder?", answer: "The listed formats are 100 g bottles packed 110 per carton, 200 g bottles packed 60 per carton and 1 kg pouches packed 10 per carton. Confirm the exact grade and final label for the selected pack." },
     ],
   },
   {
     slug: "fried-chicken-coating-mix", name: "Fried Chicken Coating Mix", categorySlug: "chili-seasonings", categoryName: "Chili Powder & Dry Seasonings", headline: "Wholesale 1 kg coating mix for fried-chicken foodservice.", summary: "A dry fried-chicken coating mix for restaurant chains, central kitchens and foodservice distributors. Compare the coating, marinade and finishing sauce together for your menu.", applications: ["Korean fried chicken", "Restaurant chains", "Central kitchens", "Cloud kitchens", "Foodservice distribution"], packing: ["1 kg pouch × 10"], shelfLife: "12 months", storage: "Ambient; cool and dry", image: "/media/catalog-products/sauces/fried-chicken-coating-powder-normal.webp", imageAlt: "One kilogram foodservice pouch of fried chicken coating powder",
+    seoTitle: "Fried Chicken Coating Mix Supplier | 1 kg Wholesale | Deesheng Food",
+    metaDescription: "Source fried chicken coating mix in 1 kg × 10 cartons. Listed 12-month shelf life and cool, dry storage; review the mix, sample and sauce pairing.",
     buyerAnswer: "Deesheng Food supplies fried chicken coating mix in 1 kg pouches, 10 per carton, with a listed 12-month shelf life and cool, dry storage. Share your chicken format, preparation method, expected usage and destination so the selected mix and matching sauces can be assessed before an order.",
+    packSpecifications: [
+      { pack: "1 kg pouch × 10", shelfLife: "12 months", storage: "Ambient; cool and dry" },
+    ],
+    packingNote: "Select the original coating mix explicitly; other coatings and marinades have their own specifications. Carton logistics available on request.",
     buyerQuestions: [
       ...standardFaq("fried chicken coating mix"),
       { question: "What information is needed to assess a coating-mix sample?", answer: "Share the chicken cut, your current preparation and frying method, target coating texture, and whether the chicken is served immediately or for takeaway. Compare samples using the same kitchen process; confirm preparation instructions for the selected mix with the factory." },
       { question: "Can I order a coating mix with fried-chicken sauces?", answer: "The range includes sweet-spicy and soy-garlic fried-chicken sauces. Share the quantities and packs needed for each item so the product mix and shipment requirements can be confirmed together." },
+      { question: "Does this specification also cover the golden coating mix or marinade?", answer: "No. This page is linked to the original fried chicken coating mix. Golden coating mix and chicken marinades are separate catalogue items; request the exact formula, preparation instructions and pack for each selected item." },
     ],
   },
   {
-    slug: "pure-sesame-oil", name: "Pure Sesame Oil", categorySlug: "korean-sauces", categoryName: "Korean Sauces & Essentials", headline: "Pure sesame oil from retail bottles to bulk foodservice packs.", summary: "A versatile Korean cooking essential offered across retail, foodservice and bulk formats for distributors and food manufacturers.", applications: ["Korean cooking", "Seasoning", "Marinades", "Salad dressing", "Further processing"], packing: ["180 ml bottle × 28", "245 ml bottle × 24", "500 ml can × 12", "1 L × 12", "1.8 L × 6", "5 L × 4", "16.5 kg pail"], shelfLife: "12 months", storage: "Ambient; away from light", image: "/media/catalog-products/sauces/sesame-oil.webp", imageAlt: "Pure sesame oil in a 245 ml retail bottle", buyerQuestions: standardFaq("pure sesame oil"),
+    slug: "pure-sesame-oil", name: "Pure Sesame Oil", categorySlug: "korean-sauces", categoryName: "Korean Sauces & Essentials", headline: "Pure sesame oil from retail bottles to bulk foodservice packs.", summary: "A Korean cooking essential offered across retail, foodservice and bulk formats for distributors and food manufacturers. Select the exact pack and keep litre and kilogram specifications distinct.",
+    seoTitle: "Pure Sesame Oil Supplier | Wholesale & Bulk | Deesheng Food",
+    metaDescription: "Compare listed retail, foodservice and bulk sesame oil packs. 12-month shelf life and storage away from light; confirm the exact volume or weight format.",
+    applications: ["Korean cooking", "Seasoning", "Marinades", "Salad dressing", "Further processing"], packing: ["180 ml bottle × 28", "245 ml bottle × 24", "500 ml can × 12", "1 L × 12", "1.8 L × 6", "5 L × 4", "16.5 kg pail"], shelfLife: "12 months", storage: "Ambient; away from light", image: "/media/catalog-products/sauces/sesame-oil.webp", imageAlt: "Pure sesame oil in a 245 ml retail bottle",
+    buyerAnswer: "Deesheng Food lists pure sesame oil in retail bottles, foodservice formats and a 16.5 kg bulk pail. The listed shelf life is 12 months with ambient storage away from light. Choose the exact format from the pack table and provide your sales channel, quantity and destination. The catalogue's separate 16.5 L item is not interchangeable with a 16.5 kg specification.",
+    packSpecifications: [
+      { pack: "180 ml bottle × 28", shelfLife: "12 months", storage: "Ambient; away from light" },
+      { pack: "245 ml bottle × 24", shelfLife: "12 months", storage: "Ambient; away from light" },
+      { pack: "500 ml can × 12", shelfLife: "12 months", storage: "Ambient; away from light" },
+      { pack: "1 L × 12", shelfLife: "12 months", storage: "Ambient; away from light" },
+      { pack: "1.8 L × 6", shelfLife: "12 months", storage: "Ambient; away from light" },
+      { pack: "5 L × 4", shelfLife: "12 months", storage: "Ambient; away from light" },
+      { pack: "16.5 kg pail", shelfLife: "12 months", storage: "Ambient; away from light" },
+    ],
+    packingNote: "Keep the 16.5 kg pail separate from the catalogue's 16.5 L entry. Confirm the exact unit and selected pack. Carton logistics available on request.",
+    buyerQuestions: [
+      ...standardFaq("pure sesame oil"),
+      { question: "Are 16.5 L and 16.5 kg sesame oil the same specification?", answer: "No. Litres describe volume and kilograms describe weight. This detail page lists a 16.5 kg pail, while the catalogue separately lists a 16.5 L item. Specify the required unit and request the matching product and shipping specification." },
+      { question: "Does this page cover bibimbap special oil or every sesame oil sachet?", answer: "No. Bibimbap special oil and sesame oil sachets are separate catalogue entries. Identify the exact item and pack so the corresponding formula and specification can be checked." },
+      { question: "What storage is listed for pure sesame oil?", answer: "The listed storage is ambient, away from light, with a 12-month shelf life. Confirm the selected pack's approved label and any instructions for use after opening." },
+    ],
   },
   {
     slug: "frozen-spinach", name: "Frozen Spinach", categorySlug: "frozen-vegetables", categoryName: "Frozen Vegetables", headline: "Frozen spinach prepared for bibimbap and foodservice.", summary: "Frozen spinach in a practical foodservice format for bibimbap, side dishes, central kitchens and further processing.", applications: ["Bibimbap", "Side dishes", "Central kitchens", "Foodservice distribution", "Further processing"], packing: ["500 g bag × 20"], shelfLife: "12 months", storage: "Frozen at −18°C", image: "/media/catalog-products/frozen/iqf-spinach.webp", imageAlt: "IQF frozen spinach balls and chopped spinach", buyerQuestions: standardFaq("frozen spinach"),

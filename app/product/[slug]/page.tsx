@@ -104,9 +104,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const product = getProduct(slug);
   if (!product) return {};
   const isKoreanSauce = product.categorySlug === "korean-sauces" || product.categorySlug === "gochujang-pastes";
-  const halalPrefix = isKoreanSauce ? "HALAL " : "";
   const isCoatingMix = product.slug === "fried-chicken-coating-mix";
-  const title = product.seoTitle ?? (isCoatingMix ? "Fried Chicken Coating Mix Supplier | 1 kg Wholesale" : `${halalPrefix}${product.name} Manufacturer & Wholesale Supplier`);
+  const title = product.seoTitle ?? (isCoatingMix ? "Fried Chicken Coating Mix Supplier | 1 kg Wholesale" : `${product.name} Manufacturer & Wholesale Supplier`);
   const qualification = isKoreanSauce
     ? "HALAL scope review, private label, samples and export packing"
     : "Wholesale supply, samples, export packing and private-label support";
@@ -241,7 +240,7 @@ export default async function ProductPage({ params }: Props) {
           <table className="pack-spec-table">
             <caption>{product.name} — weights per carton; dimensions in millimetres (L × W × H)</caption>
             <thead><tr><th scope="col">Pack per carton</th><th scope="col">Shelf life</th><th scope="col">Storage</th><th scope="col">Net weight</th><th scope="col">Gross weight</th><th scope="col">Carton dimensions</th></tr></thead>
-            <tbody>{product.packSpecifications.map((spec) => <tr key={spec.pack}><th scope="row">{spec.pack}</th><td>{spec.shelfLife}</td><td>{spec.storage}</td><td>{spec.netWeightKg !== undefined ? `${spec.netWeightKg} kg` : "Confirm"}</td><td>{spec.grossWeightKg !== undefined ? `${spec.grossWeightKg} kg` : "Confirm"}</td><td>{spec.dimensionsMm ? `${spec.dimensionsMm} mm` : "Confirm"}</td></tr>)}</tbody>
+            <tbody>{product.packSpecifications.map((spec) => <tr key={spec.pack}><th scope="row">{spec.pack}</th><td>{spec.shelfLife}</td><td>{spec.storage}</td><td>{spec.netWeightKg !== undefined ? `${spec.netWeightKg} kg` : "Carton logistics available on request"}</td><td>{spec.grossWeightKg !== undefined ? `${spec.grossWeightKg} kg` : "Carton logistics available on request"}</td><td>{spec.dimensionsMm ? `${spec.dimensionsMm} mm` : "Carton logistics available on request"}</td></tr>)}</tbody>
           </table>
         </div>
         <p className="pack-spec-note">{product.packingNote}</p>

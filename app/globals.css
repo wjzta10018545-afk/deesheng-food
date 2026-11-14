@@ -700,6 +700,12 @@ button, input, select, textarea { font: inherit; }
 .product-group-title { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 20px; padding-bottom: 14px; border-bottom: 1px solid var(--ink); }
 .product-group-title p { margin: 0; font-family: Georgia, serif; font-size: 29px; }
 .product-group-title span { color: var(--muted); font-size: 15px; }
+.product-family-guide { max-width: 78ch; margin: 0 0 24px; color: var(--muted); line-height: 1.65; }
+.product-family-guide p { margin: 0 0 10px; }
+.product-family-guide .eyebrow { color: var(--pepper); }
+.product-family-guide a, .catalogue-item-link { text-decoration: underline; text-underline-offset: 3px; }
+.catalogue-item-link { align-self: flex-start; margin-top: 16px; font-size: 14px; color: var(--muted); }
+.product-card[id] { scroll-margin-top: 110px; }
 .product-card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
 .product-card { display: flex; overflow: hidden; min-height: 500px; flex-direction: column; border: 1px solid var(--line); border-radius: 8px; background: white; box-shadow: 0 12px 35px rgba(23,56,43,.04); transition: transform .2s ease, box-shadow .2s ease; }
 .product-card:hover { transform: translateY(-4px); box-shadow: 0 22px 50px rgba(23,56,43,.1); }

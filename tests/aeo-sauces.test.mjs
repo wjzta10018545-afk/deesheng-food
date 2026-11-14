@@ -70,7 +70,7 @@ test("all 18 sauce pages render matching buyer answers, FAQs, specifications and
     assert.equal(tableRows(html).length, product.packSpecifications.length);
     for (const spec of product.packSpecifications) {
       const row = rowFor(html, spec.pack);
-      for (const value of [spec.shelfLife, spec.storage, spec.netWeightKg === undefined ? "Confirm" : `${spec.netWeightKg} kg`, spec.grossWeightKg === undefined ? "Confirm" : `${spec.grossWeightKg} kg`, spec.dimensionsMm ? `${spec.dimensionsMm} mm` : "Confirm"]) {
+      for (const value of [spec.shelfLife, spec.storage, spec.netWeightKg === undefined ? "Carton logistics available on request" : `${spec.netWeightKg} kg`, spec.grossWeightKg === undefined ? "Carton logistics available on request" : `${spec.grossWeightKg} kg`, spec.dimensionsMm ? `${spec.dimensionsMm} mm` : "Carton logistics available on request"]) {
         assert.ok(row.includes(`>${escapeHtml(value)}</td>`), `${product.slug} / ${spec.pack} / ${value}`);
       }
     }

@@ -4,7 +4,8 @@ import { notFound } from "next/navigation";
 import { BuyerFaqLink } from "../../components/BuyerFaqLink";
 import { faqTopicForCategory } from "../../data/buyer-faqs";
 import { JsonLd } from "../../components/JsonLd";
-import { catalogCategories, getCatalogItemImage, getCategory } from "../../data/catalog";
+import { catalogCategories, getCatalogItemId, getCatalogItemImage, getCategory } from "../../data/catalog";
+import { productFamilyGuides } from "../../data/product-family-guides";
 
 type Props = { params: Promise<{ category: string }> };
 
@@ -82,6 +83,10 @@ export default async function CategoryPage({ params }: Props) {
   if (!category) notFound();
 
   const groups = [...new Set(category.items.map((item) => item.group))];
+  const sauceCount = category.items.filter((item) => productFamilyGuides[item.group]?.kind === "sauce").length;
+  const supportingCount = category.items.filter((item) => productFamilyGuides[item.group]?.kind === "supporting").length;
+  const sauceGroupCount = groups.filter((group) => productFamilyGuides[group]?.kind === "sauce").length;
+  const supportingGroupCount = groups.filter((group) => productFamilyGuides[group]?.kind === "supporting").length;
   const sourcingGuide = sourcingGuides[category.slug];
   const faqs = [
     {
@@ -107,10 +112,22 @@ export default async function CategoryPage({ params }: Props) {
     ...(category.slug === "kimchi" ? [{
       question: "What temperature should imported kimchi be kept at?",
       answer: "Kimchi needs a refrigerated supply chain. The cabbage kimchi detail page lists 0–4°C, but temperature and shelf life must be checked against the current specification for each SKU. Confirm the complete refrigerated shipping plan before ordering.",
+    }, {
+      question: "Are the cabbage kimchi bag and retail jar the same specification?",
+      answer: "The cabbage detail page lists 1 kg bags packed 10 per carton and 10 kg bulk packs. Retail jars are listed separately in this catalogue. Confirm the recipe, container, units per carton, shelf life and storage for the exact selection before ordering.",
+    }, {
+      question: "Can we discuss a frozen kimchi project?",
+      answer: "Please send the intended application, destination, pack and volume. Frozen kimchi specifications, shelf life and cold-chain requirements must be confirmed for the project. The chilled cabbage specification does not establish a frozen product specification.",
     }] : []),
     ...(category.slug === "korean-sauces" ? [{
       question: "Which Korean sauces are suitable for restaurants or private label?",
       answer: "The range includes fried-chicken glazes, buldak, bibimbap, tteokbokki and Korean BBQ sauces. Share the application, flavor target, pack size, market and estimated volume to shortlist foodservice or retail options.",
+    }, {
+      question: "Do all sauce flavors and pack sizes have the same shelf life?",
+      answer: "No. Use the exact product and pack specification. Honey mustard, for example, has both 9- and 12-month configurations. Where a catalogue field asks for SKU confirmation, request the current specification rather than assuming a standard shelf life or storage condition.",
+    }, {
+      question: "Are fire noodle sauces finished noodles or branded instant-noodle products?",
+      answer: "The classic, creamy and mild fire noodle detail pages describe Deesheng sauces for noodle applications. They are sauce products, not finished instant noodles. Confirm the exact recipe, ingredients, heat and packaging for your own brand or foodservice project.",
     }] : []),
   ];
 
@@ -133,9 +150,7 @@ export default async function CategoryPage({ params }: Props) {
           position: index + 1,
           name: item.name,
           image: `https://deesheng.food${getCatalogItemImage(category.slug, item)}`,
-          url: item.detailSlug
-            ? `https://deesheng.food/product/${item.detailSlug}/`
-            : `https://deesheng.food/products/${category.slug}/`,
+          url: `https://deesheng.food/products/${category.slug}/#${getCatalogItemId(category.slug, item)}`,
         })),
       },
       {
@@ -172,15 +187,21 @@ export default async function CategoryPage({ params }: Props) {
       </section>}
 
       <section className="section shell">
-        <div className="section-heading compact-heading"><p className="eyebrow">Export selection</p><h2>{category.items.length} listed products and variants</h2><p>Choose products and standard packs below. Final carton specification, pricing and production details are confirmed for each inquiry.</p></div>
+        <div className="section-heading compact-heading"><p className="eyebrow">Export selection</p><h2>{category.items.length} listed products and variants</h2><p>Choose products and listed packs below. Entries can represent different flavors or packaging formats; the count is not a count of unique recipes. Final specifications are confirmed for the selected item and order.</p>{category.slug === "korean-sauces" && <p>The catalogue includes {sauceCount} sauce and paste entries across {sauceGroupCount} groups, plus {supportingCount} supporting seasoning, mix, oil and cooking-essential entries across {supportingGroupCount} groups.</p>}</div>
         <div className="group-nav" aria-label="Product groups">{groups.map((group) => <a key={group} href={`#${group.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}>{group}</a>)}</div>
         <div className="group-sections">
           {groups.map((group) => (
             <section className="product-group" id={group.toLowerCase().replace(/[^a-z0-9]+/g, "-")} key={group}>
               <div className="product-group-title"><p>{group}</p><span>{category.items.filter((item) => item.group === group).length} products</span></div>
+              {productFamilyGuides[group] && <div className="product-family-guide">
+                <p className="eyebrow">{productFamilyGuides[group].kind === "supporting" ? "Supporting ingredients" : "Product family"}</p>
+                <p>{productFamilyGuides[group].summary}</p>
+                <p><strong>Before requesting a sample:</strong> {productFamilyGuides[group].selection}</p>
+                {group === "Fried Chicken Sauces" && <p><Link href="/resources/korean-fried-chicken-sauce-system/">Compare sauce, marinade and coating for your kitchen ↗</Link></p>}
+              </div>}
               <div className="product-card-grid">
                 {category.items.filter((item) => item.group === group).map((item) => (
-                  <article className="product-card" key={item.name}>
+                  <article className="product-card" id={getCatalogItemId(category.slug, item)} key={item.name}>
                     <div className="product-card-media">
                       <img src={getCatalogItemImage(category.slug, item)} alt={`${item.name} from the Deesheng Food catalogue`} width="900" height="650" loading="lazy" />
                     </div>
@@ -188,6 +209,7 @@ export default async function CategoryPage({ params }: Props) {
                       <div className="product-card-top"><span>{category.shortName}</span>{item.detailSlug && <Link href={`/product/${item.detailSlug}/`} aria-label={`Open ${item.name}`}>↗</Link>}</div>
                       <h3>{item.name}</h3>
                       <dl><div><dt>Packing</dt><dd>{item.packing}</dd></div><div><dt>Shelf life</dt><dd>{item.shelfLife}</dd></div><div><dt>Storage</dt><dd>{item.storage}</dd></div></dl>
+                      <a className="catalogue-item-link" href={`#${getCatalogItemId(category.slug, item)}`} aria-label={`Link to ${item.name}`}>Link to this selection</a>
                       {item.detailSlug ? <Link className="card-link" href={`/product/${item.detailSlug}/`}>Product details <span>→</span></Link> : <Link className="card-link" href={`/contact/?product=${encodeURIComponent(item.name)}`}>Ask about this item <span>↗</span></Link>}
                     </div>
                   </article>

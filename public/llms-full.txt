@@ -1,314 +1,3113 @@
 # Deesheng Food — Full B2B Reference
 
-Last updated: 2026-11-12
+Last updated: 2026-11-14
 Canonical source: https://deesheng.food/
 
-## Company
-
 Legal company: Qingdao Deesheng Hengxin Food Co., Ltd.
-Export brand: Deesheng Food
 Location: Qingdao, Shandong, China
 Contact: Kevin Wang, Deesheng Food
-WhatsApp / Tel: +86 156 2108 9573
 Email: info@deesheng.food
-Audience: professional food importers, distributors, foodservice operators, retailers, food manufacturers and private-label brands.
+WhatsApp / Tel: +86 156 2108 9573
 
-## Product families
+## Product and order qualification
 
-### Korean sauces, gochujang and pastes
+- Product and pack specifications are specific to the named variant. Catalogue entries can represent flavors or pack formats and are not a count of unique formulas.
+- Where a field requires confirmation, request the current specification for the exact SKU. Do not infer shelf life, storage, carton logistics, ingredients or allergens from another product or packaging format.
+- The cabbage kimchi detail page lists 1 kg bags × 10 and 10 kg bulk packs with 0–4°C storage. Shelf life is confirmed for the selected product and pack. Retail jars and frozen kimchi projects require separate specifications.
+- MOQ, samples, quotation, production timing and shipment terms are confirmed for the selected product, formula, pack, quantity and destination. Prices are not published.
+- Relevant factory credentials include BRCGS Grade A, HACCP, HALAL and OU Kosher. Check current validity, manufacturing site, product and formula coverage, and destination recognition before order approval; a credential list does not certify every catalogue item.
 
-Stone pot bibimbap sauce; classic, creamy, cheese, sesame-paste, mild and non-spicy buldak sauce; original and creamy tteokbokki sauce; Korean BBQ marinades, dips and dressings; sweet-spicy, soy-garlic, amber, yuzu, honey-mustard, cheese, extra-hot, spicy and mala fried-chicken sauces; jajangmyeon and cold-noodle sauces; budae-jjigae, soft-tofu-stew, spicy-beef-soup, doenjang-soup and kimchi sauces; teriyaki, black-pepper, japchae, pork-belly, seafood-noodle, meat-marinade and other foodservice sauces; tomato, pizza, Thai sweet-chili, ketchup, chili-oil, mala-xiang-guo and dry-pot sauces; standard and extra-hot gochujang; doenjang; and Korean garlic sauce.
+## Product families and catalogue selections
 
-Common sauce packing: 200 g bottle × 24; 350 g bottle × 24; 400 g bottle × 30; 1 kg pouch × 12. Some creamy sauces use 180 g, 320 g and 360 g bottles. Noodle sauces can use 100 g pouches. Exact carton data is product-specific.
+### Korean Sauces
 
-Common packing: 500 g tub × 20 per carton; 14 kg foodservice carton.
-Shelf life is product- and pack-specific. Most sauce packs below list 12 months; honey mustard includes both 9- and 12-month configurations. Follow the exact pack table and the approved product label.
+URL: https://deesheng.food/products/korean-sauces/
+Wholesale Korean sauces from Qingdao for food importers, distributors, restaurant suppliers and private-label brands. Compare gochujang, fried-chicken glazes, buldak, BBQ sauces and related seasonings in retail and foodservice packs.
+Tell us your target market, sales channel, products, preferred packs and estimated cartons. We will confirm the formula, label requirements and quotation for your order.
 
-### Chili powder and dry seasonings
+#### Mild Spicy Bibimbap Sauce — Catering Sachets
 
-Coarse and fine Grade A Korean chili powder; shichimi togarashi; sansho pepper powder; roasted white and black sesame; perilla seed powder; beef seasoning; crispy frying mix; Korean pancake mix; fried-chicken coating mix; fried-chicken marinade seasoning; snow-cheese powder.
-Chili-powder packing: 100 g bottle × 110; 200 g bottle × 60; 1 kg pouch × 10.
-Dry-mix foodservice packing: commonly 1 kg pouch × 10.
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-mild-spicy-bibimbap-sauce-catering-sachets
+Group: Catering Small Packs
+Packing: 40 g × 300; 25 g × 350; 20 g × 350
+Shelf life: 8 months
+Storage: Confirm for the selected SKU and pack
 
-### Korean kimchi
+#### Non-spicy Bibimbap Sauce — Catering Sachets
 
-Cabbage kimchi in 1 kg bags and 10 kg cartons; green-onion kimchi; chili-pepper kimchi; young-radish and diced-radish kimchi; sweet-and-sour radish; soy-sauce radish; soy-sauce perilla leaves; mixed-chili kimchi; sweet-and-sour garlic scapes; seasoned dried radish.
-Storage: refrigerated. Many items use 0–4°C; selected items use 0–10°C.
-Typical shelf life: 4–6 months depending on product and final specification.
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-non-spicy-bibimbap-sauce-catering-sachets
+Group: Catering Small Packs
+Packing: 40 g × 300; 25 g × 350; 20 g × 350
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
 
-### Frozen vegetables
+#### Sesame Paste Turkey Noodle Sauce — Catering Sachets
 
-Seasoned frozen mushrooms, spinach, carrots, zucchini, corn kernels, broccoli, diced onions, chopped scallions, diced potatoes, mixed vegetables, green peas and tri-color bell peppers.
-Storage: frozen at −18°C.
-Typical shelf life: 12 months.
-Packing includes 500 g × 20 for selected bibimbap vegetables and 1 kg × 10, 2.5 kg × 4 or 10 kg cartons for selected bulk vegetables.
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-sesame-paste-turkey-noodle-sauce-catering-sachets
+Group: Catering Small Packs
+Packing: 30 g × 350
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
 
-## B2B sourcing language
+#### Extra Hot Turkey Noodle Sauce — Catering Sachets
 
-High-intent buyer requests usually combine an exact product with the supplier type, order route and destination. Useful examples include HALAL Korean sauce manufacturer in China; bulk or wholesale gochujang supplier; private-label Korean fried chicken sauce manufacturer; foodservice tteokbokki sauce; bibimbap sauce supplier; coarse or fine Korean chili powder supplier; kimchi wholesale supplier; and IQF frozen vegetable exporter.
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-extra-hot-turkey-noodle-sauce-catering-sachets
+Group: Catering Small Packs
+Packing: 25 g × 350
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
 
-For a useful answer, identify the buyer company and channel, whether it imports directly, the exact product or application, preferred pack, estimated cartons or container plan, OEM requirement, destination and intended purchase month.
+#### Teriyaki Sauce — Catering Sachets
 
-Country-specific buyer pages:
-- Mongolia: https://deesheng.food/markets/mongolia/
-- Singapore: https://deesheng.food/markets/singapore/
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-teriyaki-sauce-catering-sachets
+Group: Catering Small Packs
+Packing: 25 g × 350
+Shelf life: 8 months
+Storage: Confirm for the selected SKU and pack
 
-## OEM and private label
+#### Non-spicy Mushroom Sauce — Catering Sachets
 
-Available routes: existing export formula; selected flavor adjustment; new development from a clear reference or detailed brief.
-MOQ: Some standard-pack sauce OEM projects use 200 cartons per item as a quotation starting point. Confirm the formula, pack and SKU scope. Kimchi, bulk packs, dry ingredients and frozen products have separate conditions; trials are assessed individually.
-Customization may include flavor profile, label, artwork, export packaging and selected pack formats.
-Buyers should provide: company, destination market, sales channel, exact product, reference flavor or brand, pack size, estimated quantity, required certification and launch timing.
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-non-spicy-mushroom-sauce-catering-sachets
+Group: Catering Small Packs
+Packing: 25 g × 350
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
 
-## Commercial baseline
+#### Mild Spicy Mushroom Sauce — Catering Sachets
 
-Quotation currency: USD.
-Quotation basis: confirmed after product, pack, quantity and destination review.
-Payment baseline: T/T 50% advance and 50% before shipment; the signed contract controls the actual order.
-Production timing: about 14 days may be a planning estimate for selected confirmed standard sauce formulas and packs after label and payment approval. Confirm the order schedule; custom projects, kimchi and frozen products require separate scheduling.
-Mixed-product container planning can be discussed, subject to MOQ, carton data, storage temperature and production availability.
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-mild-spicy-mushroom-sauce-catering-sachets
+Group: Catering Small Packs
+Packing: 25 g × 350
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
 
-## Certifications and documents
+#### Classic Stone Pot Bibimbap Sauce
 
-Available factory credentials: BRCGS Grade A, HACCP, HALAL and OU Kosher.
-Deesheng Food maintains SHC HALAL certification for relevant Korean sauces and related products. Current signed documents and exact product scope are supplied to qualified B2B buyers after company and project verification.
-HALAL sauce examples named in the annex include Chili Sauce / Gochujang / Red Pepper Paste, soy-garlic, spicy and super-spicy fried chicken sauces, Honey Mustard Sauce, Japchae Sauce, normal and slightly spicy Jajangmyun Sauce, Kimchi Sauce, classic and non-spicy Stone Pot Bibimbap Sauce, Tteokbokki Sauce, Turkey Noodle Sauce, Tender Tofu Soup Sauce and Yukgaejang / Spicy Beef Soup Sauce.
-The product-name schedule also includes chili powder / red pepper powder / Korean chili powder, chili flakes, cabbage and radish kimchi, selected frozen vegetables, doenjang, ssamjang, Korean BBQ sauce, soup and stew sauces, sesame oil and seaweed products. This schedule helps identify possible items for review; it is not a substitute for the current signed certificate or product-level confirmation.
-Commercial HALAL sauce page: https://deesheng.food/halal-korean-sauce-manufacturer/
-HALAL document request: https://deesheng.food/contact/?product=halal-documents
-Certification is product-, formula- and scope-sensitive. A buyer should request the current document relevant to the selected product and destination.
-Qualified projects can request company information, relevant certificates, product specifications, ingredient and allergen information, packing data and export documents.
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-classic-stone-pot-bibimbap-sauce
+Group: Korean Bibimbap Sauces
+Packing: 400 g × 30; 1 kg × 10
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+Product details: https://deesheng.food/product/bibimbap-sauce/
 
-## Important qualification notes
+#### Non-spicy Stone Pot Bibimbap Sauce
 
-- Deesheng Food serves B2B buyers and does not sell individual retail units.
-- Prices are not published because the exact product, pack, quantity, label route and raw-material conditions must be confirmed.
-- Frozen-vegetable pricing is confirmed against product, cut, grade, pack and current raw-material market.
-- Kimchi and frozen products need cold-chain planning; they should not be treated like ambient sauce cargo.
-- Destination-market import and label compliance must be confirmed by the buyer and relevant local professionals or authorities.
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-non-spicy-stone-pot-bibimbap-sauce
+Group: Korean Bibimbap Sauces
+Packing: 400 g × 30; 1 kg × 10
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
 
-## Detailed sauce specifications
+#### Beef Brisket Sauce
 
-Use the product URL for the full buyer answer, applications, eight purchasing FAQs and carton specifications. Availability and documentation must be checked for the selected formula and destination. Carton weights and dimensions are not shared between different carton configurations.
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-beef-brisket-sauce
+Group: Korean Bibimbap Sauces
+Packing: 1 kg × 10
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Stone Griddle Egg Sauce
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-stone-griddle-egg-sauce
+Group: Korean Bibimbap Sauces
+Packing: 1 kg × 10
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Teppanyaki Chicken Sauce
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-teppanyaki-chicken-sauce
+Group: Korean Bibimbap Sauces
+Packing: 1 kg × 10
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Teriyaki Sauce — Foodservice
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-teriyaki-sauce-foodservice
+Group: Korean Bibimbap Sauces
+Packing: 1 kg × 10
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Korean Spicy Crab Sauce
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-korean-spicy-crab-sauce
+Group: Korean Bibimbap Sauces
+Packing: 1 kg × 10
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Sweet Fried Bean Paste Noodle Sauce
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-sweet-fried-bean-paste-noodle-sauce
+Group: Noodle Sauces
+Packing: 100 g × 128; 1 kg × 10
+Shelf life: 6 months
+Storage: Confirm for the selected SKU and pack
+
+#### Mild Spicy Fried Bean Paste Noodle Sauce
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-mild-spicy-fried-bean-paste-noodle-sauce
+Group: Noodle Sauces
+Packing: 100 g × 128; 1 kg × 10
+Shelf life: 6 months
+Storage: Confirm for the selected SKU and pack
+
+#### Cold Noodle Dressing
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-cold-noodle-dressing
+Group: Noodle Sauces
+Packing: 1 kg × 10
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Cold Noodle Sauce
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-cold-noodle-sauce
+Group: Noodle Sauces
+Packing: 1 kg × 10
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Spicy Seafood Noodle Sauce
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-spicy-seafood-noodle-sauce
+Group: Noodle Sauces
+Packing: 1 kg × 10
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Classic Korean-Style Fire Noodle Sauce — Foodservice
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-classic-korean-style-fire-noodle-sauce-foodservice
+Group: Turkey Noodle Sauces
+Packing: 400 g bottle × 30; 1 kg pouch × 10; 1 kg pouch × 12
+Shelf life: 12 months
+Storage: Ambient; away from light
+Product details: https://deesheng.food/product/classic-buldak-sauce/
+
+#### Creamy Korean-Style Noodle Sauce — Foodservice
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-creamy-korean-style-noodle-sauce-foodservice
+Group: Turkey Noodle Sauces
+Packing: 400 g bottle × 30; 1 kg pouch × 10; 1 kg pouch × 12
+Shelf life: 12 months
+Storage: Ambient; away from light
+Product details: https://deesheng.food/product/creamy-buldak-sauce/
+
+#### Mild Spicy Fire Noodle Sauce
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-mild-spicy-fire-noodle-sauce
+Group: Turkey Noodle Sauces
+Packing: 200 g bottle × 24; 350 g bottle × 24; 400 g bottle × 30; 1 kg pouch × 12; 1 kg pouch × 10
+Shelf life: 12 months
+Storage: Ambient; away from light
+Product details: https://deesheng.food/product/mild-spicy-fire-noodle-sauce/
+
+#### Non-spicy Turkey Noodle Sauce
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-non-spicy-turkey-noodle-sauce
+Group: Turkey Noodle Sauces
+Packing: 400 g × 30; 1 kg × 10
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Extra Hot Sesame Paste Turkey Noodle Sauce
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-extra-hot-sesame-paste-turkey-noodle-sauce
+Group: Turkey Noodle Sauces
+Packing: 30 g × 350; 400 g × 30
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Non-spicy Sesame Paste Turkey Noodle Sauce
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-non-spicy-sesame-paste-turkey-noodle-sauce
+Group: Turkey Noodle Sauces
+Packing: 30 g × 350; 400 g × 30
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Spicy BBQ Dipping Sauce
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-spicy-bbq-dipping-sauce
+Group: BBQ Sauces
+Packing: 400 g × 30; 1 kg × 10
+Shelf life: 12 months
+Storage: Ambient; away from light
+Product details: https://deesheng.food/product/spicy-bbq-dipping-sauce/
+
+#### Non-spicy BBQ Dipping Sauce
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-non-spicy-bbq-dipping-sauce
+Group: BBQ Sauces
+Packing: 400 g × 30; 1 kg × 10
+Shelf life: 12 months
+Storage: Ambient
+Product details: https://deesheng.food/product/non-spicy-bbq-dipping-sauce/
+
+#### Korean BBQ Sauce
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-korean-bbq-sauce
+Group: BBQ Sauces
+Packing: 200 g bottle × 24; 350 g bottle × 24; 400 g bottle × 30; 1 kg pouch × 12; 1 kg pouch × 10
+Shelf life: 12 months
+Storage: Ambient
+Product details: https://deesheng.food/product/korean-bbq-sauce/
+
+#### BBQ Dressing
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-bbq-dressing
+Group: BBQ Sauces
+Packing: 1 kg × 10
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Spicy BBQ Dip
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-spicy-bbq-dip
+Group: BBQ Sauces
+Packing: 7 g × 400; 120 g × 110; 1 kg × 10
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Original BBQ Dip
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-original-bbq-dip
+Group: BBQ Sauces
+Packing: 7 g × 400; 120 g × 110; 1 kg × 10
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Sichuan Pepper BBQ Dip
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-sichuan-pepper-bbq-dip
+Group: BBQ Sauces
+Packing: 1 kg × 10
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Black Pepper Sauce
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-black-pepper-sauce
+Group: BBQ Sauces
+Packing: 1 kg × 10
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Meat Marinade
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-meat-marinade
+Group: BBQ Sauces
+Packing: 1 kg × 10
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Marinade Paste
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-marinade-paste
+Group: BBQ Sauces
+Packing: 1 kg × 10
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Kimchi Sauce
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-kimchi-sauce
+Group: Soup & Stew Sauces
+Packing: 1 kg × 10
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Soft Tofu Soup Sauce
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-soft-tofu-soup-sauce
+Group: Soup & Stew Sauces
+Packing: 1 kg pouch × 12; 1 kg × 10
+Shelf life: 12 months
+Storage: Ambient; away from light
+Product details: https://deesheng.food/product/soft-tofu-soup-sauce/
+
+#### Spicy Beef Soup Sauce
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-spicy-beef-soup-sauce
+Group: Soup & Stew Sauces
+Packing: 1 kg × 10
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Doenjang Soup Special Sauce
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-doenjang-soup-special-sauce
+Group: Soup & Stew Sauces
+Packing: 400 g × 30; 1 kg × 10
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Classic Budae Jjigae Sauce
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-classic-budae-jjigae-sauce
+Group: Soup & Stew Sauces
+Packing: 100 g × 150; 400 g × 30; 1 kg × 10
+Shelf life: 12 months
+Storage: Ambient
+Product details: https://deesheng.food/product/classic-budae-jjigae-sauce/
+
+#### Non-spicy Budae Jjigae Sauce
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-non-spicy-budae-jjigae-sauce
+Group: Soup & Stew Sauces
+Packing: 400 g × 30; 1 kg × 10
+Shelf life: 12 months
+Storage: Ambient
+Product details: https://deesheng.food/product/non-spicy-budae-jjigae-sauce/
+
+#### Stir-fried Mixed Vegetable Sauce
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-stir-fried-mixed-vegetable-sauce
+Group: Stir-fry Sauces
+Packing: 1 kg × 10
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Spicy Stir-fried Squid Sauce
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-spicy-stir-fried-squid-sauce
+Group: Stir-fry Sauces
+Packing: 1 kg × 10
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Spicy Stir-fried Pork Belly Sauce
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-spicy-stir-fried-pork-belly-sauce
+Group: Stir-fry Sauces
+Packing: 1 kg pouch × 12; 1 kg × 10
+Shelf life: 12 months
+Storage: Ambient
+Product details: https://deesheng.food/product/spicy-pork-belly-sauce/
+
+#### Classic Stir-fried Rice Cake Sauce
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-classic-stir-fried-rice-cake-sauce
+Group: Stir-fry Sauces
+Packing: 200 g bottle × 24; 350 g bottle × 24; 400 g bottle × 30; 1 kg pouch × 12; 1 kg pouch × 10
+Shelf life: 12 months
+Storage: Ambient; away from light
+Product details: https://deesheng.food/product/tteokbokki-sauce/
+
+#### Creamy Stir-fried Rice Cake Sauce
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-creamy-stir-fried-rice-cake-sauce
+Group: Stir-fry Sauces
+Packing: 200 g bottle × 24; 350 g bottle × 24; 400 g bottle × 30; 1 kg pouch × 12; 1 kg pouch × 10
+Shelf life: 12 months
+Storage: Ambient
+Product details: https://deesheng.food/product/creamy-tteokbokki-sauce/
+
+#### Spicy Stir-fried Chicken Feet Sauce
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-spicy-stir-fried-chicken-feet-sauce
+Group: Stir-fry Sauces
+Packing: 400 g × 30; 1 kg × 10
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Honey Mustard Sauce — Foodservice
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-honey-mustard-sauce-foodservice
+Group: Fried Chicken Sauces
+Packing: 40 g × 300; 360 g × 30; 1 kg × 10
+Shelf life: 9 months
+Storage: Pack-specific; see product details
+Product details: https://deesheng.food/product/honey-mustard-sauce/
+
+#### Yuzu Fried Chicken Sauce — Foodservice
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-yuzu-fried-chicken-sauce-foodservice
+Group: Fried Chicken Sauces
+Packing: 400 g × 30; 1 kg × 10
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Extra Spicy Fried Chicken Sauce
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-extra-spicy-fried-chicken-sauce
+Group: Fried Chicken Sauces
+Packing: 400 g × 30; 1 kg × 10
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Creamy Cheese Fried Chicken Sauce
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-creamy-cheese-fried-chicken-sauce
+Group: Fried Chicken Sauces
+Packing: 40 g × 300; 360 g × 30; 1 kg × 10
+Shelf life: 9 months
+Storage: Confirm for the selected SKU and pack
+
+#### Amber Fried Chicken Sauce
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-amber-fried-chicken-sauce
+Group: Fried Chicken Sauces
+Packing: 40 g × 300; 400 g × 30; 1 kg × 10
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Mala Fried Chicken Sauce
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-mala-fried-chicken-sauce
+Group: Fried Chicken Sauces
+Packing: 40 g × 300; 400 g × 30; 1 kg × 10
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Garlic Soy Fried Chicken Sauce
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-garlic-soy-fried-chicken-sauce
+Group: Fried Chicken Sauces
+Packing: 40 g portion pack × 300; 200 g bottle × 24; 350 g bottle × 24; 400 g bottle × 30; 1 kg pouch × 12; 1 kg pouch × 10
+Shelf life: 12 months
+Storage: Ambient; away from light
+Product details: https://deesheng.food/product/soy-garlic-fried-chicken-sauce/
+
+#### Sweet & Spicy Fried Chicken Sauce
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-sweet-spicy-fried-chicken-sauce
+Group: Fried Chicken Sauces
+Packing: 200 g bottle × 24; 350 g bottle × 24; 400 g bottle × 30; 1 kg pouch × 12; 1 kg pouch × 10
+Shelf life: 12 months
+Storage: Ambient; away from light
+Product details: https://deesheng.food/product/sweet-spicy-fried-chicken-sauce/
+
+#### Sweet & Sour Fried Chicken Sauce
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-sweet-sour-fried-chicken-sauce
+Group: Fried Chicken Sauces
+Packing: 400 g × 30; 1 kg × 10
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Yogurt Cheese Fried Chicken Sauce
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-yogurt-cheese-fried-chicken-sauce
+Group: Fried Chicken Sauces
+Packing: 40 g × 300; 360 g × 30; 1 kg × 10
+Shelf life: 9 months
+Storage: Confirm for the selected SKU and pack
+
+#### Spicy Fried Chicken Sauce
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-spicy-fried-chicken-sauce
+Group: Fried Chicken Sauces
+Packing: 400 g × 30; 1 kg × 10
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Korean Gochujang — 500 g Retail Tub
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-korean-gochujang-500-g-retail-tub
+Group: Korean Basic Pastes
+Packing: 500 g tub × 20
+Shelf life: 12 months
+Storage: Ambient; away from light
+Product details: https://deesheng.food/product/gochujang/
+
+#### Korean Doenjang — 500 g Retail Tub
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-korean-doenjang-500-g-retail-tub
+Group: Korean Basic Pastes
+Packing: 500 g box × 20
+Shelf life: 12 months
+Storage: Ambient
+Product details: https://deesheng.food/product/korean-doenjang/
+
+#### Korean Garlic Sauce — 500 g Retail Tub
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-korean-garlic-sauce-500-g-retail-tub
+Group: Korean Basic Pastes
+Packing: 500 g tub × 20
+Shelf life: 12 months
+Storage: Ambient; away from light
+Product details: https://deesheng.food/product/korean-garlic-sauce/
+
+#### Korean Gochujang — 14 kg Foodservice
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-korean-gochujang-14-kg-foodservice
+Group: Korean Basic Pastes
+Packing: 14 kg foodservice carton
+Shelf life: 12 months
+Storage: Ambient; away from light
+Product details: https://deesheng.food/product/gochujang/
+
+#### Korean Doenjang — 14 kg Foodservice
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-korean-doenjang-14-kg-foodservice
+Group: Korean Basic Pastes
+Packing: 14 kg foodservice carton
+Shelf life: 12 months
+Storage: Ambient
+Product details: https://deesheng.food/product/korean-doenjang/
+
+#### Korean Garlic Sauce — 14 kg Foodservice
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-korean-garlic-sauce-14-kg-foodservice
+Group: Korean Basic Pastes
+Packing: 14 kg foodservice carton
+Shelf life: 12 months
+Storage: Ambient; away from light
+Product details: https://deesheng.food/product/korean-garlic-sauce/
+
+#### Fine Chili Powder — Packaged
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-fine-chili-powder-packaged
+Group: Korean Essential Dry Seasonings
+Packing: 1 kg × 10; 200 g × 60
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+Product details: https://deesheng.food/product/fine-korean-chili-powder/
+
+#### Coarse Chili Powder — Packaged
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-coarse-chili-powder-packaged
+Group: Korean Essential Dry Seasonings
+Packing: 1 kg × 10; 200 g × 60
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+Product details: https://deesheng.food/product/coarse-korean-chili-powder/
+
+#### Shichimi Togarashi
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-shichimi-togarashi
+Group: Korean Essential Dry Seasonings
+Packing: 300 g × 30; 17 g × 80
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Japanese Pepper Powder
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-japanese-pepper-powder
+Group: Korean Essential Dry Seasonings
+Packing: 14 g × 80; 100 g × 80
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Roasted White Sesame Seeds
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-roasted-white-sesame-seeds
+Group: Korean Essential Dry Seasonings
+Packing: 1 kg × 10; 200 g × 60
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Roasted Black Sesame Seeds
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-roasted-black-sesame-seeds
+Group: Korean Essential Dry Seasonings
+Packing: 1 kg × 10; 200 g × 60
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Perilla Seed Powder
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-perilla-seed-powder
+Group: Korean Essential Dry Seasonings
+Packing: 1 kg × 10; 200 g × 60
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Original Fried Chicken Coating Mix
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-original-fried-chicken-coating-mix
+Group: Coating, Marinade & Cooking Mixes
+Packing: 1 kg × 10
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+Product details: https://deesheng.food/product/fried-chicken-coating-mix/
+
+#### Golden Fried Chicken Coating Mix
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-golden-fried-chicken-coating-mix
+Group: Coating, Marinade & Cooking Mixes
+Packing: 1 kg × 10
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Original Fried Chicken Marinade
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-original-fried-chicken-marinade
+Group: Coating, Marinade & Cooking Mixes
+Packing: 1 kg × 10
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Spicy Fried Chicken Marinade
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-spicy-fried-chicken-marinade
+Group: Coating, Marinade & Cooking Mixes
+Packing: 1 kg × 10
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Crispy Frying Powder
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-crispy-frying-powder
+Group: Coating, Marinade & Cooking Mixes
+Packing: 1 kg × 10
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Pancake Mix
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-pancake-mix
+Group: Coating, Marinade & Cooking Mixes
+Packing: 1 kg × 10
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Beef Seasoning Powder
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-beef-seasoning-powder
+Group: Coating, Marinade & Cooking Mixes
+Packing: 1 kg × 10
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Sesame Oil — 4 g Sachet
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-sesame-oil-4-g-sachet
+Group: Cooking Oils
+Packing: 4 g × 1,300
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Sesame Oil — 245 ml Bottle
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-sesame-oil-245-ml-bottle
+Group: Cooking Oils
+Packing: 245 ml × 24
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+Product details: https://deesheng.food/product/pure-sesame-oil/
+
+#### Sesame Oil — 500 ml Tin
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-sesame-oil-500-ml-tin
+Group: Cooking Oils
+Packing: 500 ml × 12
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Bibimbap Special Oil — 5 L
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-bibimbap-special-oil-5-l
+Group: Cooking Oils
+Packing: 5 L × 4
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Sesame Oil — 5 L
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-sesame-oil-5-l
+Group: Cooking Oils
+Packing: 5 L × 4
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Sesame Oil — 16.5 L
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-sesame-oil-16-5-l
+Group: Cooking Oils
+Packing: 16.5 L × 1
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Malt Syrup
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-malt-syrup
+Group: Korean Cooking Essentials
+Packing: 13.5 kg pail
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Red Malt Syrup
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-red-malt-syrup
+Group: Korean Cooking Essentials
+Packing: 13.5 kg pail
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Dried Wakame
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-dried-wakame
+Group: Korean Cooking Essentials
+Packing: 100 g × 24
+Shelf life: 24 months
+Storage: Confirm for the selected SKU and pack
+
+#### Crushed Seaweed
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-crushed-seaweed
+Group: Korean Cooking Essentials
+Packing: 10 g bag
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Jajangmyeon Noodles
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-jajangmyeon-noodles
+Group: Korean Cooking Essentials
+Packing: 500 g bag
+Shelf life: 45 days refrigerated; 12 months frozen
+Storage: Refrigerated or −18°C
+
+#### Rice Cake Strips
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-rice-cake-strips
+Group: Korean Cooking Essentials
+Packing: 1 kg bag
+Shelf life: 4 months
+Storage: Confirm for the selected SKU and pack
+
+#### Sweet & Spicy Bibimbap Sauce — Retail
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-sweet-spicy-bibimbap-sauce-retail
+Group: Supermarket Series
+Packing: 200 g × 24
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Non-spicy Bibimbap Sauce — Retail
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-non-spicy-bibimbap-sauce-retail
+Group: Supermarket Series
+Packing: 200 g × 24
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Classic Korean-Style Fire Noodle Sauce — Retail
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-classic-korean-style-fire-noodle-sauce-retail
+Group: Supermarket Series
+Packing: 200 g bottle × 24; 350 g bottle × 24
+Shelf life: 12 months
+Storage: Ambient; away from light
+Product details: https://deesheng.food/product/classic-buldak-sauce/
+
+#### Creamy Korean-Style Noodle Sauce — Retail
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-creamy-korean-style-noodle-sauce-retail
+Group: Supermarket Series
+Packing: 200 g bottle × 24; 350 g bottle × 24
+Shelf life: 12 months
+Storage: Ambient; away from light
+Product details: https://deesheng.food/product/creamy-buldak-sauce/
+
+#### Scallion Pancake Sauce
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-scallion-pancake-sauce
+Group: Supermarket Series
+Packing: 200 g × 24
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Egg Pancake Sauce
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-egg-pancake-sauce
+Group: Supermarket Series
+Packing: 200 g × 24
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Grilled Cold Noodle Sauce
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-grilled-cold-noodle-sauce
+Group: Supermarket Series
+Packing: 180 g × 24
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Chinese Crepe Sauce
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-chinese-crepe-sauce
+Group: Supermarket Series
+Packing: 200 g × 24
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Pasta Sauce
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-pasta-sauce
+Group: Supermarket Series
+Packing: 200 g × 24
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Pizza Sauce
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-pizza-sauce
+Group: Supermarket Series
+Packing: 200 g × 24
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Angus Beef Sauce
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-angus-beef-sauce
+Group: Supermarket Series
+Packing: 200 g × 24
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Tomato Sauce
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-tomato-sauce
+Group: Supermarket Series
+Packing: 6 g × 600; 9 g × 600; 500 g × 12
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Korean Gochujang — Small Retail Pack Inquiry
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-korean-gochujang-small-retail-pack-inquiry
+Group: Supermarket Series
+Packing: Confirm net weight and carton quantity
+Shelf life: Confirm for selected pack
+Storage: Confirm for selected pack
+Product details: https://deesheng.food/product/gochujang/
+
+#### Crispy Spicy Chili Oil
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-crispy-spicy-chili-oil
+Group: Supermarket Series
+Packing: 210 g × 12
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Cold Noodle Seasoning
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-cold-noodle-seasoning
+Group: Supermarket Series
+Packing: 210 g × 12
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Nut Chili Oil
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-nut-chili-oil
+Group: Supermarket Series
+Packing: 210 g × 12
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Dry Pot Sauce
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-dry-pot-sauce
+Group: Supermarket Series
+Packing: 240 g × 12
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Spicy Pot Sauce
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-spicy-pot-sauce
+Group: Supermarket Series
+Packing: 240 g × 12
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Honey Mustard Sauce — Retail
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-honey-mustard-sauce-retail
+Group: Supermarket Series
+Packing: 180 g bottle × 24; 320 g bottle × 24; 360 g bottle × 24
+Shelf life: 12 months
+Storage: Ambient
+Product details: https://deesheng.food/product/honey-mustard-sauce/
+
+#### Yogurt Cheese Sauce — Retail
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-yogurt-cheese-sauce-retail
+Group: Supermarket Series
+Packing: 180 g × 24
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Yuzu Fried Chicken Sauce — Retail
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-yuzu-fried-chicken-sauce-retail
+Group: Supermarket Series
+Packing: 200 g × 24
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Thai Sweet Chili Sauce
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-thai-sweet-chili-sauce
+Group: Supermarket Series
+Packing: 350 g × 24
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Roasted Sesame Salad Dressing
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-roasted-sesame-salad-dressing
+Group: Supermarket Series
+Packing: 250 g × 24
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+#### Sweet Salad Dressing
+
+Selection URL: https://deesheng.food/products/korean-sauces/#korean-sauces-sweet-salad-dressing
+Group: Supermarket Series
+Packing: 250 g × 24
+Shelf life: Confirm for the selected SKU and pack
+Storage: Confirm for the selected SKU and pack
+
+### Korean Kimchi
+
+URL: https://deesheng.food/products/kimchi/
+Korean-style cabbage, radish and specialty kimchi for retail, wholesale and foodservice distribution.
+Kimchi requires a refrigerated supply chain. Shelf life varies by product and final specification.
+
+#### Cabbage Kimchi — Whole
+
+Selection URL: https://deesheng.food/products/kimchi/#kimchi-cabbage-kimchi-whole
+Group: Cabbage Kimchi
+Packing: 10 kg
+Shelf life: Confirm for the selected SKU
+Storage: Refrigerated; confirm SKU temperature
+Product details: https://deesheng.food/product/korean-cabbage-kimchi/
+
+#### Cabbage Kimchi — Mat
+
+Selection URL: https://deesheng.food/products/kimchi/#kimchi-cabbage-kimchi-mat
+Group: Cabbage Kimchi
+Packing: 10 kg
+Shelf life: Confirm for the selected SKU
+Storage: Refrigerated; confirm SKU temperature
+Product details: https://deesheng.food/product/korean-cabbage-kimchi/
+
+#### Cabbage Kimchi — Mini Mat
+
+Selection URL: https://deesheng.food/products/kimchi/#kimchi-cabbage-kimchi-mini-mat
+Group: Cabbage Kimchi
+Packing: 10 kg
+Shelf life: Confirm for the selected SKU
+Storage: Refrigerated; confirm SKU temperature
+
+#### Cabbage Kimchi — Retail Jar
+
+Selection URL: https://deesheng.food/products/kimchi/#kimchi-cabbage-kimchi-retail-jar
+Group: Cabbage Kimchi
+Packing: 300 g / 400 g / 480 g / 1 kg
+Shelf life: Confirm for the selected SKU
+Storage: Refrigerated; confirm SKU temperature
+
+#### White Kimchi
+
+Selection URL: https://deesheng.food/products/kimchi/#kimchi-white-kimchi
+Group: Cabbage Kimchi
+Packing: 10 kg
+Shelf life: Confirm for the selected SKU
+Storage: Refrigerated; confirm SKU temperature
+
+#### Seasoned Pepper Kimchi
+
+Selection URL: https://deesheng.food/products/kimchi/#kimchi-seasoned-pepper-kimchi
+Group: Specialty Kimchi
+Packing: 5 kg / 10 kg
+Shelf life: Confirm for the selected SKU
+Storage: Refrigerated; confirm SKU temperature
+
+#### Chonggak Kimchi
+
+Selection URL: https://deesheng.food/products/kimchi/#kimchi-chonggak-kimchi
+Group: Radish Kimchi
+Packing: 10 kg
+Shelf life: Confirm for the selected SKU
+Storage: Refrigerated; confirm SKU temperature
+
+#### Spring Onion Kimchi
+
+Selection URL: https://deesheng.food/products/kimchi/#kimchi-spring-onion-kimchi
+Group: Specialty Kimchi
+Packing: 5 kg / 10 kg
+Shelf life: Confirm for the selected SKU
+Storage: Refrigerated; confirm SKU temperature
+
+#### Kkakdugi Kimchi
+
+Selection URL: https://deesheng.food/products/kimchi/#kimchi-kkakdugi-kimchi
+Group: Radish Kimchi
+Packing: 10 kg
+Shelf life: Confirm for the selected SKU
+Storage: Refrigerated; confirm SKU temperature
+
+#### Pickled Radish
+
+Selection URL: https://deesheng.food/products/kimchi/#kimchi-pickled-radish
+Group: Pickled Vegetables
+Packing: 2 kg × 6 bags
+Shelf life: Confirm for the selected SKU
+Storage: Refrigerated; confirm SKU temperature
+
+#### Soy Sauce Perilla Leaves
+
+Selection URL: https://deesheng.food/products/kimchi/#kimchi-soy-sauce-perilla-leaves
+Group: Pickled Vegetables
+Packing: 10 kg
+Shelf life: Confirm for the selected SKU
+Storage: Refrigerated; confirm SKU temperature
+
+#### Stir-fried Kimchi
+
+Selection URL: https://deesheng.food/products/kimchi/#kimchi-stir-fried-kimchi
+Group: Specialty Kimchi
+Packing: 5 kg / 10 kg
+Shelf life: Confirm for the selected SKU
+Storage: Refrigerated; confirm SKU temperature
+
+#### Leaf Mustard Kimchi
+
+Selection URL: https://deesheng.food/products/kimchi/#kimchi-leaf-mustard-kimchi
+Group: Specialty Kimchi
+Packing: 5 kg
+Shelf life: Confirm for the selected SKU
+Storage: Refrigerated; confirm SKU temperature
+
+#### Green Onion Kimchi
+
+Selection URL: https://deesheng.food/products/kimchi/#kimchi-green-onion-kimchi
+Group: Specialty Kimchi
+Packing: 5 kg / 10 kg
+Shelf life: Confirm for the selected SKU
+Storage: Refrigerated; confirm SKU temperature
+
+#### Nabak Kimchi
+
+Selection URL: https://deesheng.food/products/kimchi/#kimchi-nabak-kimchi
+Group: Radish Kimchi
+Packing: 5 kg / 10 kg
+Shelf life: Confirm for the selected SKU
+Storage: Refrigerated; confirm SKU temperature
+
+#### Yeolmu Kimchi
+
+Selection URL: https://deesheng.food/products/kimchi/#kimchi-yeolmu-kimchi
+Group: Radish Kimchi
+Packing: 10 kg
+Shelf life: Confirm for the selected SKU
+Storage: Refrigerated; confirm SKU temperature
+
+#### Washed Kimchi
+
+Selection URL: https://deesheng.food/products/kimchi/#kimchi-washed-kimchi
+Group: Cabbage Kimchi
+Packing: 5 kg / 10 kg
+Shelf life: Confirm for the selected SKU
+Storage: Refrigerated; confirm SKU temperature
+
+#### Sweet & Sour Green Onion
+
+Selection URL: https://deesheng.food/products/kimchi/#kimchi-sweet-sour-green-onion
+Group: Pickled Vegetables
+Packing: 10 kg
+Shelf life: Confirm for the selected SKU
+Storage: Refrigerated; confirm SKU temperature
+
+#### Sweet & Sour Spring Onion
+
+Selection URL: https://deesheng.food/products/kimchi/#kimchi-sweet-sour-spring-onion
+Group: Pickled Vegetables
+Packing: 5 kg / 10 kg
+Shelf life: Confirm for the selected SKU
+Storage: Refrigerated; confirm SKU temperature
+
+#### Soy Sauce Green Onion
+
+Selection URL: https://deesheng.food/products/kimchi/#kimchi-soy-sauce-green-onion
+Group: Pickled Vegetables
+Packing: 10 kg
+Shelf life: Confirm for the selected SKU
+Storage: Refrigerated; confirm SKU temperature
+
+#### Soy Sauce Spring Onion
+
+Selection URL: https://deesheng.food/products/kimchi/#kimchi-soy-sauce-spring-onion
+Group: Pickled Vegetables
+Packing: 10 kg
+Shelf life: Confirm for the selected SKU
+Storage: Refrigerated; confirm SKU temperature
+
+#### Pickled Lettuce
+
+Selection URL: https://deesheng.food/products/kimchi/#kimchi-pickled-lettuce
+Group: Pickled Vegetables
+Packing: 10 kg
+Shelf life: Confirm for the selected SKU
+Storage: Refrigerated; confirm SKU temperature
+
+#### Pickled Yamakurage
+
+Selection URL: https://deesheng.food/products/kimchi/#kimchi-pickled-yamakurage
+Group: Pickled Vegetables
+Packing: 10 kg
+Shelf life: Confirm for the selected SKU
+Storage: Refrigerated; confirm SKU temperature
+
+#### Sweet & Sour Yamakurage
+
+Selection URL: https://deesheng.food/products/kimchi/#kimchi-sweet-sour-yamakurage
+Group: Pickled Vegetables
+Packing: 5 kg / 10 kg
+Shelf life: Confirm for the selected SKU
+Storage: Refrigerated; confirm SKU temperature
+
+### Korean Chili Powder & Seasonings
+
+URL: https://deesheng.food/products/chili-seasonings/
+Korean chili powders, sesame products, coating mixes and dry seasonings for retail, foodservice and further processing.
+Tell us the required mesh, color, heat level and application when sourcing chili powder.
+
+#### Sweet Paprika — With Stem / Stemless
+
+Selection URL: https://deesheng.food/products/chili-seasonings/#chili-seasonings-sweet-paprika-with-stem-stemless
+Group: Whole Dried Chilies
+Packing: Bulk foodservice pack; specification confirmed per order
+Shelf life: 12 months
+Storage: Ambient; cool and dry
+
+#### Yidu Chili — With Stem / Stem-cut / Stemless
+
+Selection URL: https://deesheng.food/products/chili-seasonings/#chili-seasonings-yidu-chili-with-stem-stem-cut-stemless
+Group: Whole Dried Chilies
+Packing: Bulk foodservice pack; specification confirmed per order
+Shelf life: 12 months
+Storage: Ambient; cool and dry
+
+#### Jinta Chili — With Stem / Stemless
+
+Selection URL: https://deesheng.food/products/chili-seasonings/#chili-seasonings-jinta-chili-with-stem-stemless
+Group: Whole Dried Chilies
+Packing: Bulk foodservice pack; specification confirmed per order
+Shelf life: 12 months
+Storage: Ambient; cool and dry
+
+#### Tanying Chili — Stemless
+
+Selection URL: https://deesheng.food/products/chili-seasonings/#chili-seasonings-tanying-chili-stemless
+Group: Whole Dried Chilies
+Packing: Bulk foodservice pack; specification confirmed per order
+Shelf life: 12 months
+Storage: Ambient; cool and dry
+
+#### Yunnan Chili — With Stem / Stemless
+
+Selection URL: https://deesheng.food/products/chili-seasonings/#chili-seasonings-yunnan-chili-with-stem-stemless
+Group: Whole Dried Chilies
+Packing: Bulk foodservice pack; specification confirmed per order
+Shelf life: 12 months
+Storage: Ambient; cool and dry
+
+#### Dry Xian Chili — With Stem / Stemless
+
+Selection URL: https://deesheng.food/products/chili-seasonings/#chili-seasonings-dry-xian-chili-with-stem-stemless
+Group: Whole Dried Chilies
+Packing: Bulk foodservice pack; specification confirmed per order
+Shelf life: 12 months
+Storage: Ambient; cool and dry
+
+#### Teja / S-17 Chili — With Stem / Stemless
+
+Selection URL: https://deesheng.food/products/chili-seasonings/#chili-seasonings-teja-s-17-chili-with-stem-stemless
+Group: Whole Dried Chilies
+Packing: Bulk foodservice pack; specification confirmed per order
+Shelf life: 12 months
+Storage: Ambient; cool and dry
+
+#### Sanam / S-4 Chili — With Stem / Stemless
+
+Selection URL: https://deesheng.food/products/chili-seasonings/#chili-seasonings-sanam-s-4-chili-with-stem-stemless
+Group: Whole Dried Chilies
+Packing: Bulk foodservice pack; specification confirmed per order
+Shelf life: 12 months
+Storage: Ambient; cool and dry
+
+#### Paprika Powder — 20–240 ASTA
+
+Selection URL: https://deesheng.food/products/chili-seasonings/#chili-seasonings-paprika-powder-20-240-asta
+Group: Paprika Ingredients
+Packing: Bulk foodservice pack; specification confirmed per order
+Shelf life: 12 months
+Storage: Ambient; cool and dry
+
+#### Paprika Crushed — With / Without Seeds
+
+Selection URL: https://deesheng.food/products/chili-seasonings/#chili-seasonings-paprika-crushed-with-without-seeds
+Group: Paprika Ingredients
+Packing: Bulk foodservice pack; specification confirmed per order
+Shelf life: 12 months
+Storage: Ambient; cool and dry
+
+#### Paprika Flakes — With / Without Seeds
+
+Selection URL: https://deesheng.food/products/chili-seasonings/#chili-seasonings-paprika-flakes-with-without-seeds
+Group: Paprika Ingredients
+Packing: Bulk foodservice pack; specification confirmed per order
+Shelf life: 12 months
+Storage: Ambient; cool and dry
+
+#### Paprika Chopped — 180–240 ASTA
+
+Selection URL: https://deesheng.food/products/chili-seasonings/#chili-seasonings-paprika-chopped-180-240-asta
+Group: Paprika Ingredients
+Packing: Bulk foodservice pack; specification confirmed per order
+Shelf life: 12 months
+Storage: Ambient; cool and dry
+
+#### Chili Powder — 3,000–50,000 SHU
+
+Selection URL: https://deesheng.food/products/chili-seasonings/#chili-seasonings-chili-powder-3-000-50-000-shu
+Group: Chili Powder & Flakes
+Packing: Bulk foodservice pack; specification confirmed per order
+Shelf life: 12 months
+Storage: Ambient; cool and dry
+
+#### Chili Crushed — With / Without Seeds
+
+Selection URL: https://deesheng.food/products/chili-seasonings/#chili-seasonings-chili-crushed-with-without-seeds
+Group: Chili Powder & Flakes
+Packing: Bulk foodservice pack; specification confirmed per order
+Shelf life: 12 months
+Storage: Ambient; cool and dry
+
+#### Chili Flakes — With / Without Seeds
+
+Selection URL: https://deesheng.food/products/chili-seasonings/#chili-seasonings-chili-flakes-with-without-seeds
+Group: Chili Powder & Flakes
+Packing: Bulk foodservice pack; specification confirmed per order
+Shelf life: 12 months
+Storage: Ambient; cool and dry
+
+#### Chili Chopped
+
+Selection URL: https://deesheng.food/products/chili-seasonings/#chili-seasonings-chili-chopped
+Group: Chili Powder & Flakes
+Packing: Bulk foodservice pack; specification confirmed per order
+Shelf life: 12 months
+Storage: Ambient; cool and dry
+
+#### Paprika / Chili Seeds
+
+Selection URL: https://deesheng.food/products/chili-seasonings/#chili-seasonings-paprika-chili-seeds
+Group: Chili Cuts & Seeds
+Packing: Bulk foodservice pack; specification confirmed per order
+Shelf life: 12 months
+Storage: Ambient; cool and dry
+
+#### Seed Powder
+
+Selection URL: https://deesheng.food/products/chili-seasonings/#chili-seasonings-seed-powder
+Group: Chili Cuts & Seeds
+Packing: Bulk foodservice pack; specification confirmed per order
+Shelf life: 12 months
+Storage: Ambient; cool and dry
+
+#### Chili Segment
+
+Selection URL: https://deesheng.food/products/chili-seasonings/#chili-seasonings-chili-segment
+Group: Chili Cuts & Seeds
+Packing: Bulk foodservice pack; specification confirmed per order
+Shelf life: 12 months
+Storage: Ambient; cool and dry
+
+#### Chili Slice
+
+Selection URL: https://deesheng.food/products/chili-seasonings/#chili-seasonings-chili-slice
+Group: Chili Cuts & Seeds
+Packing: Bulk foodservice pack; specification confirmed per order
+Shelf life: 12 months
+Storage: Ambient; cool and dry
+
+#### Chili Ring
+
+Selection URL: https://deesheng.food/products/chili-seasonings/#chili-seasonings-chili-ring
+Group: Korean Seasonings
+Packing: Bulk foodservice pack; specification confirmed per order
+Shelf life: 12 months
+Storage: Ambient; cool and dry
+
+#### Shichimi
+
+Selection URL: https://deesheng.food/products/chili-seasonings/#chili-seasonings-shichimi
+Group: Korean Seasonings
+Packing: Bulk foodservice pack; specification confirmed per order
+Shelf life: 12 months
+Storage: Ambient; cool and dry
+
+#### Ichimi
+
+Selection URL: https://deesheng.food/products/chili-seasonings/#chili-seasonings-ichimi
+Group: Korean Seasonings
+Packing: Bulk foodservice pack; specification confirmed per order
+Shelf life: 12 months
+Storage: Ambient; cool and dry
+
+#### Korean Gochujang Powder
+
+Selection URL: https://deesheng.food/products/chili-seasonings/#chili-seasonings-korean-gochujang-powder
+Group: Korean Seasonings
+Packing: Bulk foodservice pack; specification confirmed per order
+Shelf life: 12 months
+Storage: Ambient; cool and dry
+
+#### Fine Chili Powder — Retail Pack
+
+Selection URL: https://deesheng.food/products/chili-seasonings/#chili-seasonings-fine-chili-powder-retail-pack
+Group: Packaged Dry Seasonings
+Packing: 200 g × 60
+Shelf life: 12 months
+Storage: Ambient; cool and dry
+Product details: https://deesheng.food/product/fine-korean-chili-powder/
+
+#### Coarse Chili Powder — Retail Pack
+
+Selection URL: https://deesheng.food/products/chili-seasonings/#chili-seasonings-coarse-chili-powder-retail-pack
+Group: Packaged Dry Seasonings
+Packing: 200 g × 60
+Shelf life: 12 months
+Storage: Ambient; cool and dry
+Product details: https://deesheng.food/product/coarse-korean-chili-powder/
+
+#### Shichimi Togarashi — Foodservice Pack
+
+Selection URL: https://deesheng.food/products/chili-seasonings/#chili-seasonings-shichimi-togarashi-foodservice-pack
+Group: Packaged Dry Seasonings
+Packing: 300 g × 30
+Shelf life: 12 months
+Storage: Ambient; cool and dry
+
+#### Roasted White Sesame
+
+Selection URL: https://deesheng.food/products/chili-seasonings/#chili-seasonings-roasted-white-sesame
+Group: Packaged Dry Seasonings
+Packing: 200 g × 60
+Shelf life: 12 months
+Storage: Ambient; cool and dry
+
+#### Roasted Black Sesame
+
+Selection URL: https://deesheng.food/products/chili-seasonings/#chili-seasonings-roasted-black-sesame
+Group: Packaged Dry Seasonings
+Packing: 200 g × 60
+Shelf life: 12 months
+Storage: Ambient; cool and dry
+
+#### Perilla Seed Powder
+
+Selection URL: https://deesheng.food/products/chili-seasonings/#chili-seasonings-perilla-seed-powder
+Group: Packaged Dry Seasonings
+Packing: 200 g × 60
+Shelf life: 12 months
+Storage: Ambient; cool and dry
+
+#### Beef Seasoning Powder
+
+Selection URL: https://deesheng.food/products/chili-seasonings/#chili-seasonings-beef-seasoning-powder
+Group: Packaged Dry Seasonings
+Packing: Foodservice pack; specification confirmed per order
+Shelf life: 12 months
+Storage: Ambient; cool and dry
+
+### Frozen Vegetables
+
+URL: https://deesheng.food/products/frozen-vegetables/
+Frozen vegetables for bibimbap, central kitchens, foodservice distribution and industrial food production.
+Frozen vegetable pricing is confirmed against the selected item, cut, grade, pack and current raw-material market.
+
+#### IQF Red Pepper — Dice / Slice
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-red-pepper-dice-slice
+Group: Peppers & Aromatics
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Green Pepper — Dice / Slice
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-green-pepper-dice-slice
+Group: Peppers & Aromatics
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Yellow Pepper — Dice / Slice
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-yellow-pepper-dice-slice
+Group: Peppers & Aromatics
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Onion — Dice / Slice
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-onion-dice-slice
+Group: Peppers & Aromatics
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Carrot — Dice / Slice
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-carrot-dice-slice
+Group: Roots, Tubers & Squash
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Green Beans — Whole / Cut
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-green-beans-whole-cut
+Group: Beans, Peas & Corn
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Spinach — Ball / Chopped
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-spinach-ball-chopped
+Group: Leafy & Green Vegetables
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+Product details: https://deesheng.food/product/frozen-spinach/
+
+#### IQF Pumpkin — Blanching / Steamed
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-pumpkin-blanching-steamed
+Group: Roots, Tubers & Squash
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Garlic — Clove / Purée
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-garlic-clove-puree
+Group: Peppers & Aromatics
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Ginger — Block / Purée
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-ginger-block-puree
+Group: Peppers & Aromatics
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Green Onion
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-green-onion
+Group: Peppers & Aromatics
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Green Peas
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-green-peas
+Group: Beans, Peas & Corn
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Broccoli
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-broccoli
+Group: Leafy & Green Vegetables
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+Product details: https://deesheng.food/product/frozen-broccoli/
+
+#### IQF Cauliflower
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-cauliflower
+Group: Leafy & Green Vegetables
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Chungyang Chili Rings
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-chungyang-chili-rings
+Group: Peppers & Aromatics
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Jalapeño
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-jalapeno
+Group: Peppers & Aromatics
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Cabbage
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-cabbage
+Group: Leafy & Green Vegetables
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Sweet Corn
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-sweet-corn
+Group: Beans, Peas & Corn
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF French Fries
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-french-fries
+Group: Roots, Tubers & Squash
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Potato
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-potato
+Group: Roots, Tubers & Squash
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Sugar Snap Peas
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-sugar-snap-peas
+Group: Beans, Peas & Corn
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Green Asparagus
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-green-asparagus
+Group: Leafy & Green Vegetables
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Soy Peas
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-soy-peas
+Group: Beans, Peas & Corn
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Celery — Diced
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-celery-diced
+Group: Leafy & Green Vegetables
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Spring Onion
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-spring-onion
+Group: Peppers & Aromatics
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Rape Flower
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-rape-flower
+Group: Leafy & Green Vegetables
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### 3-way Mixed Vegetables
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-3-way-mixed-vegetables
+Group: Prepared & Mixed Vegetables
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### 4-way Mixed Vegetables
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-4-way-mixed-vegetables
+Group: Prepared & Mixed Vegetables
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### California Mixed Vegetables
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-california-mixed-vegetables
+Group: Prepared & Mixed Vegetables
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### Pepper Dice Mix
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-pepper-dice-mix
+Group: Prepared & Mixed Vegetables
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Carrot Slices
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-carrot-slices
+Group: Roots, Tubers & Squash
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Shredded Carrot
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-shredded-carrot
+Group: Roots, Tubers & Squash
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Green Beans — Cut
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-green-beans-cut
+Group: Beans, Peas & Corn
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Soybean
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-soybean
+Group: Beans, Peas & Corn
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Broccoli Stems
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-broccoli-stems
+Group: Leafy & Green Vegetables
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Sweet Corn Dice
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-sweet-corn-dice
+Group: Beans, Peas & Corn
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Sweet Potato — Cut
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-sweet-potato-cut
+Group: Roots, Tubers & Squash
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Lotus Root Slices
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-lotus-root-slices
+Group: Roots, Tubers & Squash
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Lotus Root Block
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-lotus-root-block
+Group: Roots, Tubers & Squash
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Water Chestnut Granules
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-water-chestnut-granules
+Group: Roots, Tubers & Squash
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Water Chestnut Stems
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-water-chestnut-stems
+Group: Roots, Tubers & Squash
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Water Chestnut Slices
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-water-chestnut-slices
+Group: Roots, Tubers & Squash
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Fungus Block
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-fungus-block
+Group: Mushrooms & Specialty Vegetables
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Mung Bean Sprouts
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-mung-bean-sprouts
+Group: Beans, Peas & Corn
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Mushroom
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-mushroom
+Group: Mushrooms & Specialty Vegetables
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Agaricus Bisporus
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-agaricus-bisporus
+Group: Mushrooms & Specialty Vegetables
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Baby Corn
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-baby-corn
+Group: Beans, Peas & Corn
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Baby Corn — Cut
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-baby-corn-cut
+Group: Beans, Peas & Corn
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Okra
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-okra
+Group: Leafy & Green Vegetables
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Chinese Chives
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-chinese-chives
+Group: Leafy & Green Vegetables
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Yellow Zucchini Slices
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-yellow-zucchini-slices
+Group: Roots, Tubers & Squash
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Zucchini Slices
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-zucchini-slices
+Group: Roots, Tubers & Squash
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Zucchini Dices
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-zucchini-dices
+Group: Roots, Tubers & Squash
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Broad Bean
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-broad-bean
+Group: Beans, Peas & Corn
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Shepherd's Purse
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-shepherd-s-purse
+Group: Leafy & Green Vegetables
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Boiled Peanuts
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-boiled-peanuts
+Group: Beans, Peas & Corn
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Garlic — Diced
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-garlic-diced
+Group: Peppers & Aromatics
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Garlic Purée
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-garlic-puree
+Group: Peppers & Aromatics
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Ginger — Diced
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-ginger-diced
+Group: Peppers & Aromatics
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Ginger Purée
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-ginger-puree
+Group: Peppers & Aromatics
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Taro Purée Block
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-taro-puree-block
+Group: Roots, Tubers & Squash
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Red Onion Dice
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-red-onion-dice
+Group: Peppers & Aromatics
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Wave French Fries
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-wave-french-fries
+Group: Roots, Tubers & Squash
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Chinese Cabbage Dice
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-chinese-cabbage-dice
+Group: Leafy & Green Vegetables
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Green Radish Dice
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-green-radish-dice
+Group: Roots, Tubers & Squash
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Green Radish Slices
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-green-radish-slices
+Group: Roots, Tubers & Squash
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF White Radish Dice
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-white-radish-dice
+Group: Roots, Tubers & Squash
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF White Radish Slices
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-white-radish-slices
+Group: Roots, Tubers & Squash
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF White Radish Block
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-white-radish-block
+Group: Roots, Tubers & Squash
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Potato Purée
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-potato-puree
+Group: Roots, Tubers & Squash
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Pumpkin Purée
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-pumpkin-puree
+Group: Roots, Tubers & Squash
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Garlic Sprout
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-garlic-sprout
+Group: Peppers & Aromatics
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Coriander Dice
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-coriander-dice
+Group: Leafy & Green Vegetables
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Spinach Dice
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-spinach-dice
+Group: Leafy & Green Vegetables
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Spinach Segment
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-spinach-segment
+Group: Leafy & Green Vegetables
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Elm Seed
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-elm-seed
+Group: Mushrooms & Specialty Vegetables
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Sophora Flower
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-sophora-flower
+Group: Mushrooms & Specialty Vegetables
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Purple Sweet Potato
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-purple-sweet-potato
+Group: Roots, Tubers & Squash
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Golden Potato Ball
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-golden-potato-ball
+Group: Roots, Tubers & Squash
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Maple Leaf Pumpkin
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-maple-leaf-pumpkin
+Group: Roots, Tubers & Squash
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Taro Ball
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-taro-ball
+Group: Roots, Tubers & Squash
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Burdock Shred
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-burdock-shred
+Group: Roots, Tubers & Squash
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Tomato Dice
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-tomato-dice
+Group: Peppers & Aromatics
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Toon Sprouts
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-toon-sprouts
+Group: Leafy & Green Vegetables
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Bamboo Shoot Slices
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-bamboo-shoot-slices
+Group: Mushrooms & Specialty Vegetables
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Whole Bamboo Shoot
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-whole-bamboo-shoot
+Group: Mushrooms & Specialty Vegetables
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### IQF Bamboo Shoot Shred
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-iqf-bamboo-shoot-shred
+Group: Mushrooms & Specialty Vegetables
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### Mirepoix Mixed Vegetables
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-mirepoix-mixed-vegetables
+Group: Prepared & Mixed Vegetables
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### Hawaiian Mixed Vegetables
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-hawaiian-mixed-vegetables
+Group: Prepared & Mixed Vegetables
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+#### Winter Mixed Vegetables
+
+Selection URL: https://deesheng.food/products/frozen-vegetables/#frozen-vegetables-winter-mixed-vegetables
+Group: Prepared & Mixed Vegetables
+Packing: Confirm pack and carton quantity by SKU
+Shelf life: Confirm for the selected SKU
+Storage: Frozen; confirm SKU temperature
+
+## Detailed product specifications
 
 ### Gochujang — Korean Chili Paste
 
 URL: https://deesheng.food/product/gochujang/
 Deesheng Food supplies Korean-style gochujang, a red pepper paste for importers, distributors, restaurant suppliers and private-label brands. The confirmed formats are 500 g tubs packed 20 per carton and a 14 kg foodservice carton. Both have a 12-month shelf life with ambient storage away from light. Choose the smaller format for retail distribution or the bulk format for commercial kitchens. Evaluate the selected formula for your desired balance of heat and sweetness. Share your destination, sales channel, selected pack and estimated quantity to request a matching sample, product documents and a quotation.
+Applications: Bibimbap; Marinades; Stir-fry; Dipping sauces; Soup and stew bases.
 
 - 500 g tub × 20: 12 months; storage: Ambient; away from light; net 10 kg; gross 11.5 kg; carton 490 × 260 × 175 mm.
 - 14 kg foodservice carton: 12 months; storage: Ambient; away from light; net 14 kg; gross 14.8 kg; carton 245 × 240 × 255 mm.
 
 Carton dimensions are length × width × height. Confirm the selected retail pack or 14 kg inner-container construction and final label with your order.
+
+Q: Can it be supplied for private label?
+A: OEM and private-label enquiries can cover the label, packaging and proposed flavor adjustments. Share the destination, required format and expected volume so the formula, artwork, documents and production scope can be agreed for your project.
+
+Q: Which gochujang packs are available?
+A: The confirmed formats are 500 g tubs × 20 per carton and 14 kg foodservice cartons. The 500 g carton has a net weight of 10 kg and gross weight of 11.5 kg; the 14 kg carton has a gross weight of 14.8 kg. Request a separate specification for any other retail size.
+
+Q: What are the shelf life and storage conditions?
+A: The listed shelf life is 12 months with ambient storage away from light. Follow the selected product label for handling, temperature limits and storage after opening; the unopened shelf life is not an after-opening period.
+
+Q: What heat level should I choose?
+A: Select the heat and sweetness balance by testing the proposed formula in your intended dish. No measured Scoville value is specified here. Extra Hot Gochujang is a separate product and requires its own sample and specification.
+
+Q: Is Korean-style a statement of origin?
+A: Korean-style describes the product style. Deesheng Food is based in Qingdao, China. Request the product-specific manufacturing-site and origin documents for your order.
+
+Q: Can I compare it with other Korean pastes?
+A: Korean Garlic Sauce and Korean Doenjang are separate products with their own formulas and specifications. Choose by the intended recipe and approve a sample instead of treating the pastes as interchangeable.
+
+Q: How do I check ingredients, allergens and certification?
+A: Request the current ingredient list, allergen declaration and any documents required for your destination. Certification must match the manufacturing site, selected product, formula and current certificate scope. A product name or pack size does not establish dietary suitability.
+
+Q: How can I request samples and a quotation?
+A: Send the product name, destination, sales channel, intended application, selected pack and estimated quantity. We will confirm the sample arrangements, quotation, MOQ and lead time for that project. Sample and freight terms are agreed before dispatch.
 
 ### Classic Korean-Style Fire Noodle Sauce
 
 URL: https://deesheng.food/product/classic-buldak-sauce/
 Deesheng Food supplies classic Korean-style fire noodle sauce for importers, distributors, noodle brands and foodservice buyers. This is a sauce for noodle dishes, not finished instant noodles. Available formats are 200 g bottles × 24, 350 g bottles × 24, 400 g bottles × 30, and 1 kg pouches in 10- or 12-pouch cartons. The listed shelf life is 12 months under ambient storage away from light. Approve the formula in your intended recipe before ordering. Share your destination, sales channel, selected pack and estimated quantity to request a matching sample, product documents and a quotation.
+Applications: Spicy noodles; Fried chicken; Rice bowls; Dipping; Restaurant sauce programs.
 
 - 200 g bottle × 24: 12 months; storage: Ambient; away from light; net 4.8 kg; gross 5.75 kg; carton 270 × 270 × 135 mm.
 - 350 g bottle × 24: 12 months; storage: Ambient; away from light; net 8.4 kg; gross 9.8 kg; carton 345 × 285 × 180 mm.
 - 400 g bottle × 30: 12 months; storage: Ambient; away from light; net 12 kg; gross 13.7 kg; carton 485 × 285 × 183 mm.
 - 1 kg pouch × 12: 12 months; storage: Ambient; away from light; net 12 kg; gross 12.85 kg; carton 320 × 240 × 250 mm.
-- 1 kg pouch × 10: 12 months; storage: Ambient; away from light; carton weights and dimensions: confirm.
+- 1 kg pouch × 10: 12 months; storage: Ambient; away from light; Carton logistics available on request.
 
-Carton dimensions are length × width × height. Request shipping data for any configuration marked “Confirm”; do not reuse the 12-pouch carton data for the 10-pouch option.
+Carton dimensions are length × width × height. Carton logistics available on request. Do not reuse the 12-pouch carton data for the 10-pouch option.
+
+Q: Is this sauce or finished instant noodles?
+A: It is a sauce for preparing fire-noodle dishes. Noodles and finished meal kits are not included in this product specification.
+
+Q: Which retail and foodservice packs are available?
+A: Choose 200 g bottles × 24, 350 g bottles × 24, 400 g bottles × 30, or 1 kg pouches in 10- or 12-pouch cartons. Specify the carton configuration in your inquiry. Shipping data for the 12-pouch carton must not be applied to the 10-pouch carton.
+
+Q: How hot is the classic version?
+A: The catalogue describes the classic direction as extra hot. No measured Scoville value is supplied. Confirm the selected formula and evaluate its heat in your actual recipe and portion size.
+
+Q: Are other flavor or heat options available?
+A: Creamy and mild spicy fire noodle sauces have separate product pages. Choose the named version you need. A separately listed extra-hot portion pack is not assumed to use the classic formula.
+
+Q: Does Turkey Noodle Sauce mean that it contains turkey?
+A: The catalogue name identifies the fire-noodle sauce range and is not an ingredient declaration. Request the current ingredient list and allergen statement before making meat-content or dietary claims.
+
+Q: What are the shelf life and storage conditions?
+A: The listed shelf life is 12 months with ambient storage away from light. Follow the selected product label for handling, temperature limits and storage after opening; the unopened shelf life is not an after-opening period.
+
+Q: Can it be supplied for private label?
+A: OEM and private-label enquiries can cover the label, packaging and proposed flavor adjustments. Share the destination, required format and expected volume so the formula, artwork, documents and production scope can be agreed for your project.
+
+Q: How can I request samples and a quotation?
+A: Send the product name, destination, sales channel, intended application, selected pack and estimated quantity. We will confirm the sample arrangements, quotation, MOQ and lead time for that project. Sample and freight terms are agreed before dispatch.
 
 ### Creamy Korean-Style Noodle Sauce
 
 URL: https://deesheng.food/product/creamy-buldak-sauce/
 Deesheng Food supplies creamy Korean-style noodle sauce for importers, distributors, restaurant suppliers and private-label brands. Select 200 g bottles × 24, 350 g bottles × 24, 400 g bottles × 30, or 1 kg pouches packed 10 or 12 per carton. Each listed option has a 12-month shelf life under ambient storage away from light. Creamy describes the flavor style and does not establish one heat level for every pack; select and sample the exact formula. Share your destination, sales channel, selected pack and estimated quantity to request a matching sample, product documents and a quotation.
+Applications: Noodle recipe trials; Restaurant noodle menus; Meal-kit development; Retail sauce ranges.
 
 - 200 g bottle × 24: 12 months; storage: Ambient; away from light; net 4.8 kg; gross 5.75 kg; carton 270 × 270 × 135 mm.
 - 350 g bottle × 24: 12 months; storage: Ambient; away from light; net 8.4 kg; gross 9.8 kg; carton 345 × 285 × 180 mm.
 - 400 g bottle × 30: 12 months; storage: Ambient; away from light; net 12 kg; gross 13.7 kg; carton 485 × 285 × 183 mm.
 - 1 kg pouch × 12: 12 months; storage: Ambient; away from light; net 12 kg; gross 12.85 kg; carton 320 × 240 × 250 mm.
-- 1 kg pouch × 10: 12 months; storage: Ambient; away from light; carton weights and dimensions: confirm.
+- 1 kg pouch × 10: 12 months; storage: Ambient; away from light; Carton logistics available on request.
 
-Carton dimensions are length × width × height. Request shipping data for any configuration marked “Confirm”; do not reuse the 12-pouch carton data for the 10-pouch option.
+Carton dimensions are length × width × height. Carton logistics available on request. Do not reuse the 12-pouch carton data for the 10-pouch option.
+
+Q: Is this a sauce or a finished noodle product?
+A: It is the creamy noodle sauce direction. Choose the exact formula and pack; noodles and a finished meal kit are not part of this specification.
+
+Q: Which retail and foodservice packs are available?
+A: Choose 200 g bottles × 24, 350 g bottles × 24, 400 g bottles × 30, or 1 kg pouches in 10- or 12-pouch cartons. Specify the carton configuration in your inquiry. Shipping data for the 12-pouch carton must not be applied to the 10-pouch carton.
+
+Q: Is every creamy version mild?
+A: No single heat level is assigned across the range. The catalogue describes different creamy formats differently. Tell us your target heat profile and approve a sample of the selected formula.
+
+Q: Does the creamy version contain milk?
+A: Request the formula-specific ingredient list and allergen declaration. The creamy or milk-flavor name alone does not establish milk content, dairy-free status or dietary suitability.
+
+Q: Does Turkey Noodle Sauce mean it contains turkey?
+A: The catalogue name describes a sauce range. It is not evidence of turkey or other meat ingredients. Use the current ingredient declaration for the selected formula.
+
+Q: What are the shelf life and storage conditions?
+A: The listed shelf life is 12 months with ambient storage away from light. Follow the selected product label for handling, temperature limits and storage after opening; the unopened shelf life is not an after-opening period.
+
+Q: Can it be supplied for private label?
+A: OEM and private-label enquiries can cover the label, packaging and proposed flavor adjustments. Share the destination, required format and expected volume so the formula, artwork, documents and production scope can be agreed for your project.
+
+Q: How can I request samples and a quotation?
+A: Send the product name, destination, sales channel, intended application, selected pack and estimated quantity. We will confirm the sample arrangements, quotation, MOQ and lead time for that project. Sample and freight terms are agreed before dispatch.
 
 ### Mild Spicy Fire Noodle Sauce
 
 URL: https://deesheng.food/product/mild-spicy-fire-noodle-sauce/
 Deesheng Food supplies mild spicy Korean-style fire noodle sauce for importers, distributors, noodle operators and private-label buyers. It is a sauce for tossing with noodles, not finished instant noodles. Available formats are 200 g bottles × 24, 350 g bottles × 24, 400 g bottles × 30, and 1 kg pouches in 10- or 12-pouch cartons. The listed shelf life is 12 months at ambient conditions away from light. Evaluate the mild heat in your intended recipe. Share your destination, sales channel, selected pack and estimated quantity to request a matching sample, product documents and a quotation.
+Applications: Noodle shops; Mild-heat noodle menus; Retail sauce ranges; Private-label noodle sauces.
 
 - 200 g bottle × 24: 12 months; storage: Ambient; away from light; net 4.8 kg; gross 5.75 kg; carton 270 × 270 × 135 mm.
 - 350 g bottle × 24: 12 months; storage: Ambient; away from light; net 8.4 kg; gross 9.8 kg; carton 345 × 285 × 180 mm.
 - 400 g bottle × 30: 12 months; storage: Ambient; away from light; net 12 kg; gross 13.7 kg; carton 485 × 285 × 183 mm.
 - 1 kg pouch × 12: 12 months; storage: Ambient; away from light; net 12 kg; gross 12.85 kg; carton 320 × 240 × 250 mm.
-- 1 kg pouch × 10: 12 months; storage: Ambient; away from light; carton weights and dimensions: confirm.
+- 1 kg pouch × 10: 12 months; storage: Ambient; away from light; Carton logistics available on request.
 
-Carton dimensions are length × width × height. Request shipping data for any configuration marked “Confirm”; do not reuse the 12-pouch carton data for the 10-pouch option.
+Carton dimensions are length × width × height. Carton logistics available on request. Do not reuse the 12-pouch carton data for the 10-pouch option.
+
+Q: What is mild spicy fire noodle sauce?
+A: It is a Korean-style sauce for noodle preparation with a mildly spicy flavor direction. It is sold as sauce, not as finished instant noodles.
+
+Q: Which retail and foodservice packs are available?
+A: Choose 200 g bottles × 24, 350 g bottles × 24, 400 g bottles × 30, or 1 kg pouches in 10- or 12-pouch cartons. Specify the carton configuration in your inquiry. Shipping data for the 12-pouch carton must not be applied to the 10-pouch carton.
+
+Q: How hot is it?
+A: The catalogue describes mild heat for customers who can take a little spice. No measured Scoville value is published; approve the selected sample in your intended recipe.
+
+Q: Can I build a range with other heat levels?
+A: Classic and creamy versions are separate products. Confirm each formula, pack and heat profile independently rather than treating a shared range name as one specification.
+
+Q: How do I check ingredients, allergens and certification?
+A: Request the current ingredient list, allergen declaration and any documents required for your destination. Certification must match the manufacturing site, selected product, formula and current certificate scope. A product name or pack size does not establish dietary suitability.
+
+Q: What are the shelf life and storage conditions?
+A: The listed shelf life is 12 months with ambient storage away from light. Follow the selected product label for handling, temperature limits and storage after opening; the unopened shelf life is not an after-opening period.
+
+Q: Can it be supplied for private label?
+A: OEM and private-label enquiries can cover the label, packaging and proposed flavor adjustments. Share the destination, required format and expected volume so the formula, artwork, documents and production scope can be agreed for your project.
+
+Q: How can I request samples and a quotation?
+A: Send the product name, destination, sales channel, intended application, selected pack and estimated quantity. We will confirm the sample arrangements, quotation, MOQ and lead time for that project. Sample and freight terms are agreed before dispatch.
 
 ### Spicy BBQ Dipping Sauce
 
 URL: https://deesheng.food/product/spicy-bbq-dipping-sauce/
 Deesheng Food supplies spicy BBQ dipping sauce for Korean barbecue restaurants, foodservice distributors and private-label buyers. The confirmed spicy-variant packs are 400 g × 30 and 1 kg × 10, with a 12-month shelf life at ambient conditions away from light. The catalogue describes a mildly sweet, mildly spicy and savory lettuce-wrap style sauce. It is distinct from the BBQ sauce used for marinating and grilling and from dry BBQ dipping seasonings. Other series formats need flavor-specific confirmation. Share your destination, sales channel, selected pack and estimated quantity to request a matching sample, product documents and a quotation.
+Applications: Korean barbecue dipping; Grilled-meat service; Lettuce wraps; Foodservice distribution.
 
-- 400 g × 30: 12 months; storage: Ambient; away from light; carton weights and dimensions: confirm.
-- 1 kg × 10: 12 months; storage: Ambient; away from light; carton weights and dimensions: confirm.
+- 400 g × 30: 12 months; storage: Ambient; away from light; Carton logistics available on request.
+- 1 kg × 10: 12 months; storage: Ambient; away from light; Carton logistics available on request.
 
-The wider BBQ dipping sauce series also lists 200 g × 24, 350 g × 24, 400 g × 30 and 1 kg × 12. Ask for written flavor-to-pack confirmation before ordering a series format not listed for this specific variant. Carton logistics are confirmed for the selected variant.
+The wider BBQ dipping sauce series also lists 200 g × 24, 350 g × 24, 400 g × 30 and 1 kg × 12. Ask for written flavor-to-pack confirmation before ordering a series format not listed for this specific variant. Carton logistics available on request for the selected variant.
+
+Q: Which packs are confirmed for the spicy variant?
+A: The confirmed spicy-variant options are 400 g × 30 and 1 kg × 10. Other sizes in the broader dipping-sauce series, including portion packs, require flavor-to-pack confirmation.
+
+Q: How spicy is it?
+A: The catalogue describes a mildly sweet, mildly spicy and savory profile. No Scoville value is specified. Evaluate a sample against your intended menu and sensory requirements.
+
+Q: Is there a non-spicy version?
+A: Non-spicy BBQ Dipping Sauce is a separate product with its own variant specification. Select the required flavor explicitly.
+
+Q: Is this the same as BBQ Sauce or dry BBQ Dip?
+A: No. This page covers the dipping sauce for barbecue and lettuce wraps. The marinating/grilling BBQ Sauce and dry dipping seasonings are separate catalogue products.
+
+Q: What are the shelf life and storage conditions?
+A: The listed shelf life is 12 months with ambient storage away from light. Follow the selected product label for handling, temperature limits and storage after opening; the unopened shelf life is not an after-opening period.
+
+Q: How do I check ingredients, allergens and certification?
+A: Request the current ingredient list, allergen declaration and any documents required for your destination. Certification must match the manufacturing site, selected product, formula and current certificate scope. A product name or pack size does not establish dietary suitability.
+
+Q: Can it be supplied for private label?
+A: OEM and private-label enquiries can cover the label, packaging and proposed flavor adjustments. Share the destination, required format and expected volume so the formula, artwork, documents and production scope can be agreed for your project.
+
+Q: How can I request samples and a quotation?
+A: Send the product name, destination, sales channel, intended application, selected pack and estimated quantity. We will confirm the sample arrangements, quotation, MOQ and lead time for that project. Sample and freight terms are agreed before dispatch.
 
 ### Non-spicy BBQ Dipping Sauce
 
 URL: https://deesheng.food/product/non-spicy-bbq-dipping-sauce/
 Deesheng Food supplies non-spicy BBQ dipping sauce for restaurant, distribution and private-label enquiries. Its confirmed formats are 400 g × 30 and 1 kg × 10, each with a 12-month shelf life and ambient storage. These are variant-specific options; additional sizes in the wider dipping-sauce series need separate confirmation. Test the sauce with the intended barbecue menu items and serving method. Non-spicy identifies the flavor direction and does not establish zero chilli content or a measured heat threshold. Share your destination, sales channel, selected pack and estimated quantity to request a matching sample, product documents and a quotation.
+Applications: Barbecue dipping trials; Restaurant table service; Foodservice distribution; Private-label sauce projects.
 
-- 400 g × 30: 12 months; storage: Ambient; carton weights and dimensions: confirm.
-- 1 kg × 10: 12 months; storage: Ambient; carton weights and dimensions: confirm.
+- 400 g × 30: 12 months; storage: Ambient; Carton logistics available on request.
+- 1 kg × 10: 12 months; storage: Ambient; Carton logistics available on request.
 
-The wider BBQ dipping sauce series also lists 200 g × 24, 350 g × 24, 400 g × 30 and 1 kg × 12. Ask for written flavor-to-pack confirmation before ordering a series format not listed for this specific variant. Carton logistics are confirmed for the selected variant.
+The wider BBQ dipping sauce series also lists 200 g × 24, 350 g × 24, 400 g × 30 and 1 kg × 12. Ask for written flavor-to-pack confirmation before ordering a series format not listed for this specific variant. Carton logistics available on request for the selected variant.
+
+Q: Is this the same as the general BBQ Sauce?
+A: No. This is the non-spicy dipping variant. The BBQ Sauce offered for marinating, dipping and grilling has a separate formula and specification.
+
+Q: Does non-spicy mean zero chilli or zero SHU?
+A: The name does not establish those claims. Request the ingredient declaration and evaluate a sample against your sensory requirements.
+
+Q: Which packs are confirmed for this flavor?
+A: The confirmed non-spicy packs are 400 g × 30 and 1 kg × 10. Ask for flavor-specific confirmation of any additional series format.
+
+Q: Can I use it as a marinade or grilling glaze?
+A: Those applications require separate product guidance and testing. This dipping-sauce specification does not establish a marinade ratio or grilling performance.
+
+Q: What shelf life and storage apply?
+A: Both confirmed packs have a 12-month shelf life with ambient storage. Request the approved label for temperature limits and handling after opening.
+
+Q: How do I check ingredients, allergens and certification?
+A: Request the current ingredient list, allergen declaration and any documents required for your destination. Certification must match the manufacturing site, selected product, formula and current certificate scope. A product name or pack size does not establish dietary suitability.
+
+Q: Can it be supplied for private label?
+A: OEM and private-label enquiries can cover the label, packaging and proposed flavor adjustments. Share the destination, required format and expected volume so the formula, artwork, documents and production scope can be agreed for your project.
+
+Q: How can I request samples and a quotation?
+A: Send the product name, destination, sales channel, intended application, selected pack and estimated quantity. We will confirm the sample arrangements, quotation, MOQ and lead time for that project. Sample and freight terms are agreed before dispatch.
 
 ### Korean BBQ Sauce
 
 URL: https://deesheng.food/product/korean-bbq-sauce/
 Deesheng Food supplies Korean BBQ Sauce for marinating, dipping and grilling applications. Available formats include 200 g bottles × 24, 350 g bottles × 24, 400 g bottles × 30, and 1 kg pouches in 10- or 12-pouch cartons. Each listed option has a 12-month shelf life with ambient storage. Importers, distributors and restaurant suppliers can select a pack for evaluation in the intended recipe. Keep this sauce separate from the named spicy and non-spicy BBQ dipping variants. Share your destination, sales channel, selected pack and estimated quantity to request a matching sample, product documents and a quotation.
+Applications: Marinating trials; Dipping; Grilling trials; Foodservice supply; Private-label ranges.
 
 - 200 g bottle × 24: 12 months; storage: Ambient; net 4.8 kg; gross 5.75 kg; carton 270 × 270 × 135 mm.
 - 350 g bottle × 24: 12 months; storage: Ambient; net 8.4 kg; gross 9.8 kg; carton 345 × 285 × 180 mm.
 - 400 g bottle × 30: 12 months; storage: Ambient; net 12 kg; gross 13.7 kg; carton 485 × 285 × 183 mm.
 - 1 kg pouch × 12: 12 months; storage: Ambient; net 12 kg; gross 12.85 kg; carton 320 × 240 × 250 mm.
-- 1 kg pouch × 10: 12 months; storage: Ambient; carton weights and dimensions: confirm.
+- 1 kg pouch × 10: 12 months; storage: Ambient; Carton logistics available on request.
 
-Carton dimensions are length × width × height. Request shipping data for any configuration marked “Confirm”; do not reuse the 12-pouch carton data for the 10-pouch option.
+Carton dimensions are length × width × height. Carton logistics available on request. Do not reuse the 12-pouch carton data for the 10-pouch option.
+
+Q: Is this the same as Non-spicy BBQ Dipping Sauce?
+A: No. This page covers BBQ Sauce for marinating, dipping and grilling. The non-spicy dipping sauce is a separate product; do not assume identical formulas or flavor profiles.
+
+Q: Which retail and foodservice packs are available?
+A: Choose 200 g bottles × 24, 350 g bottles × 24, 400 g bottles × 30, or 1 kg pouches in 10- or 12-pouch cartons. Specify the carton configuration in your inquiry. Shipping data for the 12-pouch carton must not be applied to the 10-pouch carton.
+
+Q: What shelf life and storage apply?
+A: All five listed pack configurations have a 12-month shelf life with ambient storage. Request the selected product label for temperature limits and after-opening instructions.
+
+Q: What marinade ratio or grilling instructions should I use?
+A: Describe the ingredients, contact time, cooking method and portion size. Request guidance for the selected formula and evaluate a sample before fixing a production recipe; no universal application rate is specified.
+
+Q: What heat level should I expect?
+A: The packaging specification does not establish one measured heat level. Tell us your preferred flavor profile and agree on sample acceptance before ordering.
+
+Q: How do I check ingredients, allergens and certification?
+A: Request the current ingredient list, allergen declaration and any documents required for your destination. Certification must match the manufacturing site, selected product, formula and current certificate scope. A product name or pack size does not establish dietary suitability.
+
+Q: Can it be supplied for private label?
+A: OEM and private-label enquiries can cover the label, packaging and proposed flavor adjustments. Share the destination, required format and expected volume so the formula, artwork, documents and production scope can be agreed for your project.
+
+Q: How can I request samples and a quotation?
+A: Send the product name, destination, sales channel, intended application, selected pack and estimated quantity. We will confirm the sample arrangements, quotation, MOQ and lead time for that project. Sample and freight terms are agreed before dispatch.
 
 ### Soft Tofu Soup Sauce
 
 URL: https://deesheng.food/product/soft-tofu-soup-sauce/
 Deesheng Food supplies soft tofu soup sauce for Korean restaurants, central kitchens, importers and meal-kit projects. It is a sauce base for preparing soft tofu soup, not tofu or a finished soup. Available formats are 1 kg packs in cartons of 10 or 12, with a 12-month shelf life at ambient conditions away from light. The 12-pouch carton has a net weight of 12 kg, gross weight of 12.9 kg and dimensions of 320 × 240 × 250 mm. Share your destination, sales channel, selected pack and estimated quantity to request a matching sample, product documents and a quotation.
+Applications: Soft tofu soup; Restaurant soup menus; Central-kitchen trials; Meal-kit development.
 
 - 1 kg pouch × 12: 12 months; storage: Ambient; away from light; net 12 kg; gross 12.9 kg; carton 320 × 240 × 250 mm.
-- 1 kg × 10: 12 months; storage: Ambient; away from light; carton weights and dimensions: confirm.
+- 1 kg × 10: 12 months; storage: Ambient; away from light; Carton logistics available on request.
 
-Carton dimensions are length × width × height. Request shipping data for any configuration marked “Confirm”; do not reuse the 12-pouch carton data for the 10-pouch option.
+Carton dimensions are length × width × height. Carton logistics available on request. Do not reuse the 12-pouch carton data for the 10-pouch option.
+
+Q: Is this tofu or a finished soup?
+A: It is a sauce base for preparing soft tofu soup. Tofu, other ingredients and the finished soup are not included in this product specification.
+
+Q: Which carton options are available?
+A: Choose 1 kg packs × 10 or 1 kg pouches × 12. The 12-pouch carton has a net weight of 12 kg, gross weight of 12.9 kg and dimensions of 320 × 240 × 250 mm. Request separate logistics for the 10-pack carton.
+
+Q: How spicy is it?
+A: The catalogue describes a savory, mildly spicy profile. No measured Scoville value is supplied; test the sauce in your intended soup recipe.
+
+Q: What are the shelf life and storage conditions?
+A: The listed shelf life is 12 months with ambient storage away from light. Follow the selected product label for handling, temperature limits and storage after opening; the unopened shelf life is not an after-opening period.
+
+Q: Does it contain meat or seafood?
+A: The soup application does not establish the sauce ingredients. Request the current ingredient list, allergen statement and any animal-origin information required for your destination.
+
+Q: What dilution ratio should I use?
+A: Request preparation guidance for the selected formula and test your broth, tofu and portion size. No fixed dilution ratio or finished-meal shelf life is specified here.
+
+Q: Can it be supplied for private label?
+A: OEM and private-label enquiries can cover the label, packaging and proposed flavor adjustments. Share the destination, required format and expected volume so the formula, artwork, documents and production scope can be agreed for your project.
+
+Q: How can I request samples and a quotation?
+A: Send the product name, destination, sales channel, intended application, selected pack and estimated quantity. We will confirm the sample arrangements, quotation, MOQ and lead time for that project. Sample and freight terms are agreed before dispatch.
 
 ### Classic Budae Jjigae Sauce
 
 URL: https://deesheng.food/product/classic-budae-jjigae-sauce/
 Deesheng Food supplies classic budae jjigae sauce for restaurant stew menus, foodservice distributors and import buyers. Confirmed classic-variant formats are 100 g × 150, 400 g × 30 and 1 kg × 10. Each has a 12-month shelf life with ambient storage. The broader series also lists other bottle and pouch configurations, which require flavor-to-pack confirmation. Evaluate the selected sauce with your broth, other ingredients and serving portion; the dish name does not establish meat content or a preparation ratio. Share your destination, sales channel, selected pack and estimated quantity to request a matching sample, product documents and a quotation.
+Applications: Budae jjigae menu trials; Restaurant stew bases; Foodservice distribution; Meal-kit development.
 
-- 100 g × 150: 12 months; storage: Ambient; carton weights and dimensions: confirm.
-- 400 g × 30: 12 months; storage: Ambient; carton weights and dimensions: confirm.
-- 1 kg × 10: 12 months; storage: Ambient; carton weights and dimensions: confirm.
+- 100 g × 150: 12 months; storage: Ambient; Carton logistics available on request.
+- 400 g × 30: 12 months; storage: Ambient; Carton logistics available on request.
+- 1 kg × 10: 12 months; storage: Ambient; Carton logistics available on request.
 
-The wider budae jjigae sauce series lists 200 g × 24, 350 g × 24, 400 g × 30 and 1 kg × 12. These series entries do not confirm every format for each flavor. Request written flavor-to-pack confirmation and variant-specific carton logistics.
+The wider budae jjigae sauce series lists 200 g × 24, 350 g × 24, 400 g × 30 and 1 kg × 12. These series entries do not confirm every format for each flavor. Request written flavor-to-pack confirmation. Carton logistics available on request for the selected variant.
+
+Q: Which flavor and packs does this page cover?
+A: This page covers the classic flavor in 100 g × 150, 400 g × 30 and 1 kg × 10 formats. The non-spicy variant has a separate specification.
+
+Q: Does it contain pork, beef or other meat?
+A: The dish name and pack specification do not establish meat content. Request the current ingredient declaration and any animal-origin information needed for your destination.
+
+Q: What sauce-to-water ratio should I use?
+A: Request the selected formula’s preparation guidance, then test it with your broth, ingredients and serving portion. No universal ratio is specified.
+
+Q: Can I order other series formats?
+A: The wider series lists additional bottle and pouch packs. Their availability for the classic formula needs written confirmation before ordering.
+
+Q: Can it be used in meal kits?
+A: Submit the proposed components, handling and preparation process for assessment. The sauce shelf life does not establish the shelf life of the finished kit.
+
+Q: What shelf life, storage and documents apply?
+A: The three confirmed classic packs have a 12-month shelf life with ambient storage. Request the approved label, ingredient and allergen statements and any applicable product-scope documents.
+
+Q: Can it be supplied for private label?
+A: OEM and private-label enquiries can cover the label, packaging and proposed flavor adjustments. Share the destination, required format and expected volume so the formula, artwork, documents and production scope can be agreed for your project.
+
+Q: How can I request samples and a quotation?
+A: Send the product name, destination, sales channel, intended application, selected pack and estimated quantity. We will confirm the sample arrangements, quotation, MOQ and lead time for that project. Sample and freight terms are agreed before dispatch.
 
 ### Non-spicy Budae Jjigae Sauce
 
 URL: https://deesheng.food/product/non-spicy-budae-jjigae-sauce/
 Deesheng Food supplies non-spicy budae jjigae sauce for buyers developing restaurant stew menus and foodservice ranges. The confirmed non-spicy formats are 400 g × 30 and 1 kg × 10, each with a 12-month shelf life and ambient storage. These variant-specific packs are separate from the wider series packaging list. Evaluate the sauce with your intended broth, ingredients and portion size. Non-spicy describes the flavor direction; it does not establish zero chilli, a measured Scoville value, meat content or dietary suitability. Share your destination, sales channel, selected pack and estimated quantity to request a matching sample, product documents and a quotation.
+Applications: Non-spicy stew menu trials; Restaurant supply; Foodservice distribution; Meal-kit assessment.
 
-- 400 g × 30: 12 months; storage: Ambient; carton weights and dimensions: confirm.
-- 1 kg × 10: 12 months; storage: Ambient; carton weights and dimensions: confirm.
+- 400 g × 30: 12 months; storage: Ambient; Carton logistics available on request.
+- 1 kg × 10: 12 months; storage: Ambient; Carton logistics available on request.
 
-The wider budae jjigae sauce series lists 200 g × 24, 350 g × 24, 400 g × 30 and 1 kg × 12. These series entries do not confirm every format for each flavor. Request written flavor-to-pack confirmation and variant-specific carton logistics.
+The wider budae jjigae sauce series lists 200 g × 24, 350 g × 24, 400 g × 30 and 1 kg × 12. These series entries do not confirm every format for each flavor. Request written flavor-to-pack confirmation. Carton logistics available on request for the selected variant.
+
+Q: How is this different from Classic Budae Jjigae Sauce?
+A: This page covers the non-spicy flavor direction. The classic version has a separate specification. Select the flavor explicitly and evaluate its own sample.
+
+Q: Which packs are confirmed?
+A: The confirmed non-spicy formats are 400 g × 30 and 1 kg × 10, both with a 12-month shelf life and ambient storage.
+
+Q: Can I order 200 g, 350 g or 1 kg × 12 in this flavor?
+A: Those sizes appear in the wider series but are not confirmed for every flavor. Request written confirmation for the non-spicy formula before selecting them.
+
+Q: Does non-spicy mean zero chilli or suitability for children?
+A: The name does not establish zero chilli, zero SHU or an age-related suitability claim. Request ingredient information and assess a sample against your requirements.
+
+Q: Does budae jjigae sauce contain meat?
+A: The dish name does not establish the sauce ingredients. Request the current ingredient list, allergen declaration and relevant animal-origin information.
+
+Q: What preparation and storage instructions apply?
+A: Request preparation guidance and the approved label for the selected formula. The two confirmed packs have a 12-month shelf life at ambient conditions; no fixed dilution ratio or after-opening period is specified here.
+
+Q: Can it be supplied for private label?
+A: OEM and private-label enquiries can cover the label, packaging and proposed flavor adjustments. Share the destination, required format and expected volume so the formula, artwork, documents and production scope can be agreed for your project.
+
+Q: How can I request samples and a quotation?
+A: Send the product name, destination, sales channel, intended application, selected pack and estimated quantity. We will confirm the sample arrangements, quotation, MOQ and lead time for that project. Sample and freight terms are agreed before dispatch.
 
 ### Spicy Pork Belly Sauce
 
 URL: https://deesheng.food/product/spicy-pork-belly-sauce/
 Deesheng Food supplies spicy pork belly cooking sauce for evaluating stir-fried pork belly recipes in restaurants and central kitchens. Available configurations are 1 kg pouches × 12 and 1 kg × 10, both with a 12-month shelf life and ambient storage. The 12-pouch carton has a net weight of 12 kg, gross weight of 12.9 kg and dimensions of 320 × 240 × 250 mm. The dish application does not prove that the sauce contains pork or other meat. Share your destination, sales channel, selected pack and estimated quantity to request a matching sample, product documents and a quotation.
+Applications: Stir-fried pork belly recipe trials; Restaurant portioning; Central-kitchen assessment; Foodservice distribution.
 
 - 1 kg pouch × 12: 12 months; storage: Ambient; net 12 kg; gross 12.9 kg; carton 320 × 240 × 250 mm.
-- 1 kg × 10: 12 months; storage: Ambient; carton weights and dimensions: confirm.
+- 1 kg × 10: 12 months; storage: Ambient; Carton logistics available on request.
 
-Carton dimensions are length × width × height. Request shipping data for any configuration marked “Confirm”; do not reuse the 12-pouch carton data for the 10-pouch option.
+Carton dimensions are length × width × height. Carton logistics available on request. Do not reuse the 12-pouch carton data for the 10-pouch option.
+
+Q: Does Spicy Pork Belly Sauce contain pork?
+A: The name describes an intended dish application. Request the current ingredient declaration and relevant animal-origin documents to establish the actual sauce composition.
+
+Q: Which packaging options are available?
+A: Choose 1 kg pouches × 12 or 1 kg × 10. Both have a 12-month shelf life with ambient storage; confirm the inner-pack construction and final label for your order.
+
+Q: What are the carton weight and dimensions?
+A: For 1 kg pouches × 12, the carton net weight is 12 kg, gross weight 12.9 kg and dimensions 320 × 240 × 250 mm. Request separate shipping data for 1 kg × 10.
+
+Q: How spicy is it?
+A: Spicy describes the product direction. No measured Scoville value is supplied. Explain your target flavor and test a sample in the intended dish.
+
+Q: Can I use it for other dishes?
+A: Additional applications require product guidance and a recipe trial. The specification on this page covers the pork belly cooking-sauce direction.
+
+Q: What sauce ratio and cooking instructions apply?
+A: Request preparation guidance for the exact formula and validate the intended ingredients, quantity and cooking process. No universal dosage or cooking instruction is specified.
+
+Q: How do I check ingredients, allergens and certification?
+A: Request the current ingredient list, allergen declaration and any documents required for your destination. Certification must match the manufacturing site, selected product, formula and current certificate scope. A product name or pack size does not establish dietary suitability.
+
+Q: How can I request samples and a quotation?
+A: Send the product name, destination, sales channel, intended application, selected pack and estimated quantity. We will confirm the sample arrangements, quotation, MOQ and lead time for that project. Sample and freight terms are agreed before dispatch.
 
 ### Classic Tteokbokki Sauce
 
 URL: https://deesheng.food/product/tteokbokki-sauce/
 Deesheng Food supplies classic stir-fried rice cake sauce, also called tteokbokki sauce, for importers, street-food operators and private-label brands. It is sauce only and does not include rice cakes. Available packs are 200 g bottles × 24, 350 g bottles × 24, 400 g bottles × 30, and 1 kg pouches packed 10 or 12 per carton. The listed shelf life is 12 months with ambient storage away from light. The creamy version is a separate flavor specification. Share your destination, sales channel, selected pack and estimated quantity to request a matching sample, product documents and a quotation.
+Applications: Tteokbokki menus; Korean street food; Rice cake meal-kit development; Foodservice supply.
 
 - 200 g bottle × 24: 12 months; storage: Ambient; away from light; net 4.8 kg; gross 5.75 kg; carton 270 × 270 × 135 mm.
 - 350 g bottle × 24: 12 months; storage: Ambient; away from light; net 8.4 kg; gross 9.8 kg; carton 345 × 285 × 180 mm.
 - 400 g bottle × 30: 12 months; storage: Ambient; away from light; net 12 kg; gross 13.7 kg; carton 485 × 285 × 183 mm.
 - 1 kg pouch × 12: 12 months; storage: Ambient; away from light; net 12 kg; gross 12.85 kg; carton 320 × 240 × 250 mm.
-- 1 kg pouch × 10: 12 months; storage: Ambient; away from light; carton weights and dimensions: confirm.
+- 1 kg pouch × 10: 12 months; storage: Ambient; away from light; Carton logistics available on request.
 
-Carton dimensions are length × width × height. Request shipping data for any configuration marked “Confirm”; do not reuse the 12-pouch carton data for the 10-pouch option.
+Carton dimensions are length × width × height. Carton logistics available on request. Do not reuse the 12-pouch carton data for the 10-pouch option.
+
+Q: Does this product include rice cakes?
+A: No. This specification covers the sauce only. Rice cakes and finished meal kits require separate product specifications.
+
+Q: Which retail and foodservice packs are available?
+A: Choose 200 g bottles × 24, 350 g bottles × 24, 400 g bottles × 30, or 1 kg pouches in 10- or 12-pouch cartons. Specify the carton configuration in your inquiry. Shipping data for the 12-pouch carton must not be applied to the 10-pouch carton.
+
+Q: Is there a creamy version?
+A: Creamy Tteokbokki Sauce is a separate product page and formula direction. Select classic or creamy explicitly when requesting samples.
+
+Q: How spicy is the classic sauce?
+A: The catalogue describes a mildly spicy, savory profile. No measured Scoville value is specified; evaluate the proposed formula in your intended recipe.
+
+Q: What are the shelf life and storage conditions?
+A: The listed shelf life is 12 months with ambient storage away from light. Follow the selected product label for handling, temperature limits and storage after opening; the unopened shelf life is not an after-opening period.
+
+Q: What recipe ratio or meal-kit shelf life applies?
+A: Request the selected sauce’s preparation guidance and validate the recipe. Its 12-month shelf life does not establish a combined meal kit’s shelf life.
+
+Q: Can it be supplied for private label?
+A: OEM and private-label enquiries can cover the label, packaging and proposed flavor adjustments. Share the destination, required format and expected volume so the formula, artwork, documents and production scope can be agreed for your project.
+
+Q: How can I request samples and a quotation?
+A: Send the product name, destination, sales channel, intended application, selected pack and estimated quantity. We will confirm the sample arrangements, quotation, MOQ and lead time for that project. Sample and freight terms are agreed before dispatch.
 
 ### Creamy Tteokbokki Sauce
 
 URL: https://deesheng.food/product/creamy-tteokbokki-sauce/
 Deesheng Food supplies creamy stir-fried rice cake sauce for rice cake menus, foodservice distribution and private-label projects. This milk-flavor sauce is a separate option from classic tteokbokki sauce. Available formats are 200 g bottles × 24, 350 g bottles × 24, 400 g bottles × 30, and 1 kg packs in 10- or 12-pack cartons. All listed formats have a 12-month shelf life and ambient storage. Confirm the selected formula’s ingredients, allergens and preparation instructions before recipe approval. Share your destination, sales channel, selected pack and estimated quantity to request a matching sample, product documents and a quotation.
+Applications: Creamy rice cake menu trials; Takeaway foodservice evaluation; Ready-to-cook project development; Retail sauce ranges.
 
 - 200 g bottle × 24: 12 months; storage: Ambient; net 4.8 kg; gross 5.75 kg; carton 270 × 270 × 135 mm.
 - 350 g bottle × 24: 12 months; storage: Ambient; net 8.4 kg; gross 9.8 kg; carton 345 × 285 × 180 mm.
 - 400 g bottle × 30: 12 months; storage: Ambient; net 12 kg; gross 13.7 kg; carton 485 × 285 × 183 mm.
 - 1 kg pouch × 12: 12 months; storage: Ambient; net 12 kg; gross 12.85 kg; carton 320 × 240 × 250 mm.
-- 1 kg pouch × 10: 12 months; storage: Ambient; carton weights and dimensions: confirm.
+- 1 kg pouch × 10: 12 months; storage: Ambient; Carton logistics available on request.
 
-Carton dimensions are length × width × height. Request shipping data for any configuration marked “Confirm”; do not reuse the 12-pouch carton data for the 10-pouch option.
+Carton dimensions are length × width × height. Carton logistics available on request. Do not reuse the 12-pouch carton data for the 10-pouch option.
+
+Q: Are Milky and Creamy the same direction here?
+A: Creamy is used here for the milk-flavor rice cake sauce direction. Confirm the selected formula and order specification when comparing differently named products.
+
+Q: Is this the original tteokbokki sauce?
+A: No. This page covers the creamy flavor. Classic Tteokbokki Sauce is a separate product and should not be substituted without approval.
+
+Q: Does it contain milk?
+A: The name alone is not an ingredient declaration. Request the current ingredient list and allergen statement for the exact formula.
+
+Q: How much sauce should I use?
+A: Request the selected product’s preparation guidance and validate the dose, any dilution and cooking steps with your rice cakes and serving method.
+
+Q: Can it be packed with rice cakes in a meal kit?
+A: Submit the proposed components and preparation method for assessment. The sauce’s 12-month shelf life does not establish the shelf life of a combined kit.
+
+Q: Which retail and foodservice packs are available?
+A: Choose 200 g bottles × 24, 350 g bottles × 24, 400 g bottles × 30, or 1 kg pouches in 10- or 12-pouch cartons. Specify the carton configuration in your inquiry. Shipping data for the 12-pouch carton must not be applied to the 10-pouch carton.
+
+Q: What shelf life and storage apply?
+A: All five listed configurations have a 12-month shelf life with ambient storage. Request the approved label for temperature limits and after-opening instructions.
+
+Q: How can I request samples and a quotation?
+A: Send the product name, destination, sales channel, intended application, selected pack and estimated quantity. We will confirm the sample arrangements, quotation, MOQ and lead time for that project. Sample and freight terms are agreed before dispatch.
 
 ### Soy Garlic Fried Chicken Sauce
 
 URL: https://deesheng.food/product/soy-garlic-fried-chicken-sauce/
 Deesheng Food supplies soy garlic fried chicken sauce for importers, restaurant suppliers, takeaway operators and private-label brands. The catalogue describes sweet and soy flavors with garlic aroma. Available formats include 40 g portion packs × 300, 200 g bottles × 24, 350 g bottles × 24, 400 g bottles × 30, and 1 kg pouches in 10- or 12-pouch cartons. The listed shelf life is 12 months at ambient conditions away from light. Confirm the formula and dispensing format for your service process. Share your destination, sales channel, selected pack and estimated quantity to request a matching sample, product documents and a quotation.
+Applications: Korean fried chicken; Takeaway portioning; Restaurant kitchens; Fried chicken sauce ranges.
 
-- 40 g portion pack × 300: 12 months; storage: Ambient; away from light; carton weights and dimensions: confirm.
+- 40 g portion pack × 300: 12 months; storage: Ambient; away from light; Carton logistics available on request.
 - 200 g bottle × 24: 12 months; storage: Ambient; away from light; net 4.8 kg; gross 5.75 kg; carton 270 × 270 × 135 mm.
 - 350 g bottle × 24: 12 months; storage: Ambient; away from light; net 8.4 kg; gross 9.8 kg; carton 345 × 285 × 180 mm.
 - 400 g bottle × 30: 12 months; storage: Ambient; away from light; net 12 kg; gross 13.7 kg; carton 485 × 285 × 183 mm.
 - 1 kg pouch × 12: 12 months; storage: Ambient; away from light; net 12 kg; gross 12.85 kg; carton 320 × 240 × 250 mm.
-- 1 kg pouch × 10: 12 months; storage: Ambient; away from light; carton weights and dimensions: confirm.
+- 1 kg pouch × 10: 12 months; storage: Ambient; away from light; Carton logistics available on request.
 
-Carton dimensions are length × width × height. Request shipping data for any configuration marked “Confirm”; do not reuse the 12-pouch carton data for the 10-pouch option.
+Carton dimensions are length × width × height. Carton logistics available on request. Do not reuse the 12-pouch carton data for the 10-pouch option.
+
+Q: What flavor does this sauce have?
+A: The catalogue describes sweet and soy flavors with garlic aroma. It is intended for Korean-style fried chicken; evaluate the selected sample for your recipe.
+
+Q: Which packs are available?
+A: Choose 40 g portion packs × 300, 200 g bottles × 24, 350 g bottles × 24, 400 g bottles × 30, or 1 kg pouches packed 10 or 12 per carton. Confirm the 40 g pack construction for your service needs.
+
+Q: What are the shelf life and storage conditions?
+A: The listed shelf life is 12 months with ambient storage away from light. Follow the selected product label for handling, temperature limits and storage after opening; the unopened shelf life is not an after-opening period.
+
+Q: Is it spicy?
+A: The catalogue does not assign a measured heat level to this flavor. Confirm the desired heat profile with the selected sample rather than inferring it from the soy-garlic name.
+
+Q: How do I check ingredients, allergens and certification?
+A: Request the current ingredient list, allergen declaration and any documents required for your destination. Certification must match the manufacturing site, selected product, formula and current certificate scope. A product name or pack size does not establish dietary suitability.
+
+Q: Can I source a complete fried chicken sauce range?
+A: Compare the separate sweet and spicy sauce, honey mustard sauce and fried chicken coating mix pages. Each product has its own pack, shelf life and formula specification.
+
+Q: Can it be supplied for private label?
+A: OEM and private-label enquiries can cover the label, packaging and proposed flavor adjustments. Share the destination, required format and expected volume so the formula, artwork, documents and production scope can be agreed for your project.
+
+Q: How can I request samples and a quotation?
+A: Send the product name, destination, sales channel, intended application, selected pack and estimated quantity. We will confirm the sample arrangements, quotation, MOQ and lead time for that project. Sample and freight terms are agreed before dispatch.
 
 ### Sweet & Spicy Fried Chicken Sauce
 
 URL: https://deesheng.food/product/sweet-spicy-fried-chicken-sauce/
 Deesheng Food supplies sweet and spicy fried chicken sauce for fried-chicken restaurants, importers, foodservice distributors and private-label brands. The catalogue describes moderate sweetness and mild heat. Confirmed formats are 200 g bottles × 24, 350 g bottles × 24, 400 g bottles × 30, and 1 kg pouches packed 10 or 12 per carton. The listed shelf life is 12 months at ambient conditions away from light. Evaluate the sauce on your intended chicken format, portion size and serving process. Share your destination, sales channel, selected pack and estimated quantity to request a matching sample, product documents and a quotation.
+Applications: Fried chicken coating; Chicken tenders; Rice bowls; Dipping; Central-kitchen trials.
 
 - 200 g bottle × 24: 12 months; storage: Ambient; away from light; net 4.8 kg; gross 5.75 kg; carton 270 × 270 × 135 mm.
 - 350 g bottle × 24: 12 months; storage: Ambient; away from light; net 8.4 kg; gross 9.8 kg; carton 345 × 285 × 180 mm.
 - 400 g bottle × 30: 12 months; storage: Ambient; away from light; net 12 kg; gross 13.7 kg; carton 485 × 285 × 183 mm.
 - 1 kg pouch × 12: 12 months; storage: Ambient; away from light; net 12 kg; gross 12.85 kg; carton 320 × 240 × 250 mm.
-- 1 kg pouch × 10: 12 months; storage: Ambient; away from light; carton weights and dimensions: confirm.
+- 1 kg pouch × 10: 12 months; storage: Ambient; away from light; Carton logistics available on request.
 
-Carton dimensions are length × width × height. Request shipping data for any configuration marked “Confirm”; do not reuse the 12-pouch carton data for the 10-pouch option.
+Carton dimensions are length × width × height. Carton logistics available on request. Do not reuse the 12-pouch carton data for the 10-pouch option.
+
+Q: Which retail and foodservice packs are available?
+A: Choose 200 g bottles × 24, 350 g bottles × 24, 400 g bottles × 30, or 1 kg pouches in 10- or 12-pouch cartons. Specify the carton configuration in your inquiry. Shipping data for the 12-pouch carton must not be applied to the 10-pouch carton.
+
+Q: How spicy and sweet is the sauce?
+A: The catalogue describes moderate sweetness and mild heat. No measured Scoville value is supplied. Approve the balance by testing a sample with your chicken and serving method.
+
+Q: What are the shelf life and storage conditions?
+A: The listed shelf life is 12 months with ambient storage away from light. Follow the selected product label for handling, temperature limits and storage after opening; the unopened shelf life is not an after-opening period.
+
+Q: Can I request portion packs?
+A: Ask for the current net-weight, pack construction and carton specification for the exact portion-pack formula. This page’s confirmed ordering table lists the five bottle and pouch configurations.
+
+Q: Can I build a fried chicken sauce system?
+A: Soy Garlic Fried Chicken Sauce, Honey Mustard Sauce and Fried Chicken Coating Mix are separate products for comparison. Select and sample each product against your menu requirements.
+
+Q: How do I check ingredients, allergens and certification?
+A: Request the current ingredient list, allergen declaration and any documents required for your destination. Certification must match the manufacturing site, selected product, formula and current certificate scope. A product name or pack size does not establish dietary suitability.
+
+Q: Can it be supplied for private label?
+A: OEM and private-label enquiries can cover the label, packaging and proposed flavor adjustments. Share the destination, required format and expected volume so the formula, artwork, documents and production scope can be agreed for your project.
+
+Q: How can I request samples and a quotation?
+A: Send the product name, destination, sales channel, intended application, selected pack and estimated quantity. We will confirm the sample arrangements, quotation, MOQ and lead time for that project. Sample and freight terms are agreed before dispatch.
 
 ### Honey Mustard Sauce
 
 URL: https://deesheng.food/product/honey-mustard-sauce/
 Deesheng Food supplies honey mustard sauce for fried chicken, snacks, sandwiches and dipping applications. Available configurations include retail bottles, foodservice packs and portion packs. Shelf life depends on the pack: 180 g × 24, 320 g × 24, 360 g × 24 and 1 kg × 12 have 12 months; 1 kg × 10, 40 g × 300 and 360 g × 30 have 9 months. Compare the exact pack and shelf-life combination when selecting a product for distribution or private label. Share your destination, sales channel, selected pack and estimated quantity to request a matching sample, product documents and a quotation.
+Applications: Fried chicken; Snack dipping; Sandwiches; Retail and foodservice supply.
 
-- 180 g bottle × 24: 12 months; storage: Ambient; carton weights and dimensions: confirm.
-- 320 g bottle × 24: 12 months; storage: Ambient; carton weights and dimensions: confirm.
-- 360 g bottle × 24: 12 months; storage: Ambient; carton weights and dimensions: confirm.
-- 1 kg pouch × 12: 12 months; storage: Ambient; carton weights and dimensions: confirm.
-- 1 kg × 10: 9 months; storage: Ambient; carton weights and dimensions: confirm.
-- 40 g × 300: 9 months; storage: Confirm for this pack; carton weights and dimensions: confirm.
-- 360 g × 30: 9 months; storage: Confirm for this pack; carton weights and dimensions: confirm.
+- 180 g bottle × 24: 12 months; storage: Ambient; Carton logistics available on request.
+- 320 g bottle × 24: 12 months; storage: Ambient; Carton logistics available on request.
+- 360 g bottle × 24: 12 months; storage: Ambient; Carton logistics available on request.
+- 1 kg pouch × 12: 12 months; storage: Ambient; Carton logistics available on request.
+- 1 kg × 10: 9 months; storage: Ambient; Carton logistics available on request.
+- 40 g × 300: 9 months; storage: Confirm for this pack; Carton logistics available on request.
+- 360 g × 30: 9 months; storage: Confirm for this pack; Carton logistics available on request.
 
-Keep shelf life attached to the selected pack. In particular, 360 g × 24 with 12 months and 360 g × 30 with 9 months are separate configurations. Request exact carton weights and dimensions for your order.
+Keep shelf life attached to the selected pack. In particular, 360 g × 24 with 12 months and 360 g × 30 with 9 months are separate configurations. Carton logistics available on request.
+
+Q: Which applications can I evaluate?
+A: The product range describes fried chicken, snacks, sandwiches and dipping. Test flavor, portioning and handling in your intended recipe and service process.
+
+Q: What ingredients and allergens apply?
+A: Request the exact formula’s ingredient list and allergen declaration. The product name is not a substitute for those documents.
+
+Q: Which packaging options are available?
+A: The seven configurations are 180 g × 24, 320 g × 24, 360 g × 24, 1 kg × 12, 1 kg × 10, 40 g × 300 and 360 g × 30. Use the table to match the pack to its shelf life and storage instructions.
+
+Q: Is the shelf life nine or twelve months?
+A: Both apply to different packs. The 180 g × 24, 320 g × 24, 360 g × 24 and 1 kg × 12 formats have 12 months. The 1 kg × 10, 40 g × 300 and 360 g × 30 formats have 9 months.
+
+Q: What storage instructions apply?
+A: Ambient storage is specified for the four 12-month formats and 1 kg × 10. Confirm storage for 40 g × 300 and 360 g × 30. Request the approved label for temperature limits and after-opening instructions for every pack.
+
+Q: Can I request certification documents?
+A: State the destination and required documents. Check current certification against the actual manufacturing site, selected formula and product scope before making a claim.
+
+Q: Can it be supplied for private label?
+A: OEM and private-label enquiries can cover the label, packaging and proposed flavor adjustments. Share the destination, required format and expected volume so the formula, artwork, documents and production scope can be agreed for your project.
+
+Q: How can I request samples and a quotation?
+A: Send the product name, destination, sales channel, intended application, selected pack and estimated quantity. We will confirm the sample arrangements, quotation, MOQ and lead time for that project. Sample and freight terms are agreed before dispatch.
 
 ### Korean-Style Doenjang
 
 URL: https://deesheng.food/product/korean-doenjang/
 Deesheng Food supplies Korean-style doenjang for retail distribution, foodservice buyers and private-label projects. Confirmed formats are 500 g boxes packed 20 per carton and 14 kg per foodservice carton, both with a 12-month shelf life and ambient storage. The 500 g carton has a net weight of 10 kg and gross weight of 11.5 kg; the 14 kg carton has a gross weight of 14.8 kg. This product is separate from the named Doenjang Soup Special Sauce. Share your destination, sales channel, selected pack and estimated quantity to request a matching sample, product documents and a quotation.
+Applications: Retail distribution; Soup and stew recipe trials; Foodservice portioning; Private-label paste ranges.
 
 - 500 g box × 20: 12 months; storage: Ambient; net 10 kg; gross 11.5 kg; carton 490 × 260 × 175 mm.
 - 14 kg foodservice carton: 12 months; storage: Ambient; net 14 kg; gross 14.8 kg; carton 245 × 240 × 255 mm.
 
-Carton dimensions are length × width × height. Confirm the selected retail pack or 14 kg inner-container construction and final label with your order.
+Carton dimensions are length × width × height. Confirm the selected retail pack or 14 kg inner-container construction and final label with your order. Carton logistics available on request.
+
+Q: Is this Doenjang Soup Special Sauce?
+A: No. Korean Doenjang is listed as a separate product. Specify the intended product by name and approve its own formula and order specification.
+
+Q: Which retail and foodservice packs are available?
+A: Choose 500 g boxes × 20 or 14 kg per carton. Confirm the inner-container construction of the 14 kg format and the final order label.
+
+Q: Does it contain soy or wheat?
+A: Request the current ingredient list and allergen declaration for the exact formula. A product name and packaging record are not sufficient for an ingredient or dietary claim.
+
+Q: Is it fermented and how is it made?
+A: If fermentation or a particular process is a purchasing requirement, request the supplier’s product and process specification. No fermentation duration or method is stated here.
+
+Q: Does Korean-style mean made in Korea?
+A: No. Korean-style describes the product style. Request product-specific origin and manufacturing-site documents for your import and label review.
+
+Q: What shelf life and storage apply?
+A: Both confirmed formats have a 12-month shelf life with ambient storage. Request the approved label for specific temperature limits and handling after opening.
+
+Q: Can it be supplied for private label?
+A: OEM and private-label enquiries can cover the label, packaging and proposed flavor adjustments. Share the destination, required format and expected volume so the formula, artwork, documents and production scope can be agreed for your project.
+
+Q: How can I request samples and a quotation?
+A: Send the product name, destination, sales channel, intended application, selected pack and estimated quantity. We will confirm the sample arrangements, quotation, MOQ and lead time for that project. Sample and freight terms are agreed before dispatch.
 
 ### Korean Garlic Sauce
 
 URL: https://deesheng.food/product/korean-garlic-sauce/
 Deesheng Food supplies Korean garlic sauce for importers, distributors, restaurant suppliers and private-label brands. The catalogue describes a savory garlic sauce with a non-spicy flavor direction. Available formats are 500 g tubs × 20 and 14 kg foodservice cartons, with a 12-month shelf life at ambient conditions away from light. The retail carton has a net weight of 10 kg and gross weight of 11.5 kg; the bulk carton has a gross weight of 14.8 kg. Select a sample for your intended cooking application. Share your destination, sales channel, selected pack and estimated quantity to request a matching sample, product documents and a quotation.
+Applications: Marinades; Grilled meat; Stir-fry; Rice dishes; Foodservice sauce bases.
 
 - 500 g tub × 20: 12 months; storage: Ambient; away from light; net 10 kg; gross 11.5 kg; carton 490 × 260 × 175 mm.
 - 14 kg foodservice carton: 12 months; storage: Ambient; away from light; net 14 kg; gross 14.8 kg; carton 245 × 240 × 255 mm.
 
-Carton dimensions are length × width × height. Confirm the selected retail pack or 14 kg inner-container construction and final label with your order.
+Carton dimensions are length × width × height. Confirm the selected retail pack or 14 kg inner-container construction and final label with your order. Carton logistics available on request.
 
-## Contact
+Q: What is Korean Garlic Sauce used for?
+A: Applications include marinades, grilled meat, stir-fry, rice dishes and foodservice sauce bases. Validate the selected formula in your own recipe and preparation process.
 
-Request a quote: https://deesheng.food/contact/
-WhatsApp: https://wa.me/8615621089573
+Q: Which pack sizes are available?
+A: Choose 500 g tubs × 20 per carton or a 14 kg foodservice carton. The pack table lists the corresponding net weight, gross weight and carton dimensions.
+
+Q: Is it spicy?
+A: The catalogue describes it as non-spicy. This flavor description does not establish zero chilli ingredients or a measured Scoville value. Evaluate the selected sample against your requirements.
+
+Q: How do I check ingredients, allergens and certification?
+A: Request the current ingredient list, allergen declaration and any documents required for your destination. Certification must match the manufacturing site, selected product, formula and current certificate scope. A product name or pack size does not establish dietary suitability.
+
+Q: What are the shelf life and storage conditions?
+A: The listed shelf life is 12 months with ambient storage away from light. Follow the selected product label for handling, temperature limits and storage after opening; the unopened shelf life is not an after-opening period.
+
+Q: Is it the same as ssamjang or another Korean paste?
+A: It is offered as its own product, Korean Garlic Sauce. It is not identified here as ssamjang, gochujang or doenjang; do not substitute formulas based on a similar pack or name.
+
+Q: Can it be supplied for private label?
+A: OEM and private-label enquiries can cover the label, packaging and proposed flavor adjustments. Share the destination, required format and expected volume so the formula, artwork, documents and production scope can be agreed for your project.
+
+Q: How can I request samples and a quotation?
+A: Send the product name, destination, sales channel, intended application, selected pack and estimated quantity. We will confirm the sample arrangements, quotation, MOQ and lead time for that project. Sample and freight terms are agreed before dispatch.
+
+### Extra Hot Gochujang
+
+URL: https://deesheng.food/product/extra-hot-gochujang/
+Deesheng Food lists extra-hot gochujang in 500 g tubs packed 20 per carton and a 14 kg foodservice format, with a listed 12-month shelf life and cool, dry ambient storage. Extra-hot is a product option, not a verified numerical heat rating. Share your application, target heat, pack, quantity and destination to request the matching sample and specification.
+Applications: Spicy bibimbap; Hot marinades; Korean fried chicken; Stir-fry; Foodservice sauces.
+
+- 500 g tub × 20 per carton: 12 months; storage: Ambient; cool and dry; Carton logistics available on request.
+- 14 kg foodservice carton: 12 months; storage: Ambient; cool and dry; Carton logistics available on request.
+
+Select the extra-hot formula explicitly; do not substitute another gochujang specification. Carton logistics available on request.
+
+Q: Can extra-hot gochujang be private labelled?
+A: Yes. OEM/private-label service can cover the label, packaging and, where the project requires it, flavor adjustment.
+
+Q: What is the standard OEM MOQ?
+A: MOQ is confirmed for the selected product, formula and pack. Ask for the quantity and SKU scope in your quotation; trial orders are assessed separately.
+
+Q: How is an export quotation prepared?
+A: Quotations are prepared after the product, pack size, quantity and destination requirements are confirmed.
+
+Q: Is extra-hot gochujang available with HALAL documentation?
+A: Please identify the product, formula, destination and required documents. We will check the actual manufacturing site, current certificate and product scope before confirming applicability to your order.
+
+Q: Does extra-hot gochujang have a confirmed SHU rating?
+A: No numerical SHU rating is listed here. Describe your target heat and request the selected formula's specification and a sample for evaluation in your recipe.
+
+Q: Which extra-hot gochujang packs are listed?
+A: The listed formats are 500 g tubs packed 20 per carton and a 14 kg foodservice carton. Confirm the extra-hot formula, final pack and label in the order specification.
+
+Q: How should I compare an extra-hot gochujang sample?
+A: Use the intended recipe and serving quantity, and compare the samples under the same preparation conditions. Approve the exact formula and pack before ordering.
+
+### Stone Pot Bibimbap Sauce
+
+URL: https://deesheng.food/product/bibimbap-sauce/
+Deesheng Food offers stone pot bibimbap sauce for retail and foodservice buyers. This specification lists 200 g × 24, 350 g × 24 and 400 g × 30 bottles, plus 1 kg pouches packed 12 per carton, with a 12-month shelf life and ambient storage. Select the flavor explicitly. The catalogue also shows a separate 1 kg × 10 configuration; its carton data must be requested separately.
+Applications: Stone pot bibimbap; Rice bowls; Vegetable bowls; Dipping; Meal kits.
+
+- 200 g bottle × 24: 12 months; storage: Ambient; Carton logistics available on request.
+- 350 g bottle × 24: 12 months; storage: Ambient; Carton logistics available on request.
+- 400 g bottle × 30: 12 months; storage: Ambient; Carton logistics available on request.
+- 1 kg pouch × 12: 12 months; storage: Ambient; Carton logistics available on request.
+
+Confirm the flavor for the selected format. The catalogue's 1 kg × 10 entry is a separate carton configuration. Carton logistics available on request.
+
+Q: Can bibimbap sauce be private labelled?
+A: Yes. OEM/private-label service can cover the label, packaging and, where the project requires it, flavor adjustment.
+
+Q: What is the standard OEM MOQ?
+A: MOQ is confirmed for the selected product, formula and pack. Ask for the quantity and SKU scope in your quotation; trial orders are assessed separately.
+
+Q: How is an export quotation prepared?
+A: Quotations are prepared after the product, pack size, quantity and destination requirements are confirmed.
+
+Q: Is bibimbap sauce available with HALAL documentation?
+A: Please identify the product, formula, destination and required documents. We will check the actual manufacturing site, current certificate and product scope before confirming applicability to your order.
+
+Q: Are classic and non-spicy bibimbap sauce the same SKU?
+A: No. They are separate catalogue options. State the flavor and pack you want, and request the matching formula and sample rather than assuming that one specification covers both.
+
+Q: Are 1 kg × 10 and 1 kg × 12 the same carton?
+A: No. This product specification lists 1 kg × 12, while the catalogue also lists 1 kg × 10. Specify the required count and request the corresponding carton data; do not transfer shipping data between them.
+
+Q: What should I include in a bibimbap sauce sample brief?
+A: Include the classic or non-spicy option, rice-bowl recipe, target flavor, retail or foodservice channel, preferred pack, quantity and destination.
+
+### Korean Cabbage Kimchi
+
+URL: https://deesheng.food/product/korean-cabbage-kimchi/
+Deesheng Food supplies refrigerated Korean cabbage kimchi in 1 kg bags packed 10 per carton and 10 kg bulk cartons. The storage requirement for these formats is 0–4°C. Shelf life must be confirmed for the selected product, formula and packaging before ordering. Share your required cut, pack, quantity, destination and refrigerated delivery route. Retail jars are listed separately and do not inherit the bagged product specification.
+Applications: Retail grocery; Restaurants; Korean menus; Side dishes; Foodservice distribution.
+
+- 1 kg bag × 10: Confirm for the selected product and pack; storage: Refrigerated at 0–4°C; Carton logistics available on request.
+- 10 kg carton — confirm cut and current availability: Confirm for the selected product and pack; storage: Refrigerated at 0–4°C; Carton logistics available on request.
+
+Confirm the cut, formula, shelf life and current availability for the selected bagged or bulk product. Retail jars require a separate specification. Carton logistics available on request.
+
+Q: Can Korean cabbage kimchi be private labelled?
+A: Yes. OEM/private-label service can cover the label, packaging and, where the project requires it, flavor adjustment.
+
+Q: What is the standard OEM MOQ?
+A: MOQ is confirmed for the selected product, formula and pack. Ask for the quantity and SKU scope in your quotation; trial orders are assessed separately.
+
+Q: How is an export quotation prepared?
+A: Quotations are prepared after the product, pack size, quantity and destination requirements are confirmed.
+
+Q: Is Korean cabbage kimchi available with HALAL documentation?
+A: Please identify the product, formula, destination and required documents. We will check the actual manufacturing site, current certificate and product scope before confirming applicability to your order.
+
+Q: Which cabbage kimchi packs does this page cover?
+A: This page covers 1 kg bags packed 10 per carton and 10 kg bulk cartons, with cut and availability confirmed for the order. The catalogue's retail jars are separate formats and require their own specification.
+
+Q: What is the shelf life of cabbage kimchi?
+A: Shelf life must be confirmed for the selected product, formula and packaging. Request the applicable specification and approved label before ordering; no single duration is stated for every cabbage kimchi format.
+
+Q: What storage temperature applies to these cabbage kimchi formats?
+A: The listed bagged and bulk cabbage kimchi formats require refrigeration at 0–4°C. Share the destination and delivery route so the refrigerated shipment requirements can be reviewed.
+
+Q: Can I use the same specification for retail jars or frozen kimchi?
+A: No. The bagged and bulk refrigerated specification does not establish a retail-jar or frozen product specification. Identify the exact format and request its applicable packing, storage and shelf-life information.
+
+### Coarse Korean Chili Powder
+
+URL: https://deesheng.food/product/coarse-korean-chili-powder/
+Deesheng Food lists coarse Korean chili powder for kimchi and foodservice in 100 g bottles × 110, 200 g bottles × 60 and 1 kg pouches × 10. The listed shelf life is 12 months with cool, dry ambient storage. For a gochugaru or Korean chili flakes sourcing brief, specify particle size, seed content, color, heat, pack, quantity and destination; the exact grade is confirmed against the product specification.
+Applications: Kimchi production; Marinades; Soup bases; Korean seasoning; Further processing.
+
+- 100 g bottle × 110: 12 months; storage: Ambient; cool and dry; Carton logistics available on request.
+- 200 g bottle × 60: 12 months; storage: Ambient; cool and dry; Carton logistics available on request.
+- 1 kg pouch × 10: 12 months; storage: Ambient; cool and dry; Carton logistics available on request.
+
+Confirm the selected coarse grade, cut and pack before ordering. Carton logistics available on request.
+
+Q: Can coarse Korean chili powder be private labelled?
+A: Yes. OEM/private-label service can cover the label, packaging and, where the project requires it, flavor adjustment.
+
+Q: What is the standard OEM MOQ?
+A: MOQ is confirmed for the selected product, formula and pack. Ask for the quantity and SKU scope in your quotation; trial orders are assessed separately.
+
+Q: How is an export quotation prepared?
+A: Quotations are prepared after the product, pack size, quantity and destination requirements are confirmed.
+
+Q: Is coarse Korean chili powder available with HALAL documentation?
+A: Please identify the product, formula, destination and required documents. We will check the actual manufacturing site, current certificate and product scope before confirming applicability to your order.
+
+Q: What should I specify when asking for gochugaru or Korean chili flakes?
+A: Tell us the intended use, target particle size or mesh, seed preference, color, heat level, pack size, expected quantity and destination. We will confirm the matching product specification before sampling or quoting.
+
+Q: Can I use the fine chili powder specification for the coarse grade?
+A: No. Coarse and fine are separate grade choices. Request the exact cut, seed content, color and heat for the intended application and assess the selected sample before ordering.
+
+Q: How should I evaluate coarse chili powder for kimchi?
+A: Use your intended kimchi recipe and preparation process when comparing samples. Record the selected grade, cut and pack so the approved sample can be matched to the order specification.
+
+### Fine Korean Chili Powder
+
+URL: https://deesheng.food/product/fine-korean-chili-powder/
+Deesheng Food offers fine Korean chili powder for sauces and seasoning blends in 100 g bottles × 110, 200 g bottles × 60 and 1 kg pouches × 10. The listed shelf life is 12 months with cool, dry ambient storage. If your brief uses the term gochugaru, specify the fine grind, target color and heat, pack, quantity and destination so the matching grade can be confirmed before sampling.
+Applications: Sauce production; Dry seasoning; Marinades; Processed foods; Retail spice packs.
+
+- 100 g bottle × 110: 12 months; storage: Ambient; cool and dry; Carton logistics available on request.
+- 200 g bottle × 60: 12 months; storage: Ambient; cool and dry; Carton logistics available on request.
+- 1 kg pouch × 10: 12 months; storage: Ambient; cool and dry; Carton logistics available on request.
+
+Confirm the selected fine grade, grind and pack before ordering. Carton logistics available on request.
+
+Q: Can fine Korean chili powder be private labelled?
+A: Yes. OEM/private-label service can cover the label, packaging and, where the project requires it, flavor adjustment.
+
+Q: What is the standard OEM MOQ?
+A: MOQ is confirmed for the selected product, formula and pack. Ask for the quantity and SKU scope in your quotation; trial orders are assessed separately.
+
+Q: How is an export quotation prepared?
+A: Quotations are prepared after the product, pack size, quantity and destination requirements are confirmed.
+
+Q: Is fine Korean chili powder available with HALAL documentation?
+A: Please identify the product, formula, destination and required documents. We will check the actual manufacturing site, current certificate and product scope before confirming applicability to your order.
+
+Q: How do I choose a fine Korean chili powder grade?
+A: Share the sauce or seasoning application, required fineness, color, heat level and pack. The selected grade and supporting specification are confirmed for the order rather than assumed from a generic product name.
+
+Q: Does fine chili powder have one fixed mesh or heat rating?
+A: No fixed mesh or numerical heat rating is stated on this page. Provide your required fineness and heat target and request the selected grade's specification before approving a sample.
+
+Q: Which packing formats are listed for fine chili powder?
+A: The listed formats are 100 g bottles packed 110 per carton, 200 g bottles packed 60 per carton and 1 kg pouches packed 10 per carton. Confirm the exact grade and final label for the selected pack.
+
+### Fried Chicken Coating Mix
+
+URL: https://deesheng.food/product/fried-chicken-coating-mix/
+Deesheng Food supplies fried chicken coating mix in 1 kg pouches, 10 per carton, with a listed 12-month shelf life and cool, dry storage. Share your chicken format, preparation method, expected usage and destination so the selected mix and matching sauces can be assessed before an order.
+Applications: Korean fried chicken; Restaurant chains; Central kitchens; Cloud kitchens; Foodservice distribution.
+
+- 1 kg pouch × 10: 12 months; storage: Ambient; cool and dry; Carton logistics available on request.
+
+Select the original coating mix explicitly; other coatings and marinades have their own specifications. Carton logistics available on request.
+
+Q: Can fried chicken coating mix be private labelled?
+A: Yes. OEM/private-label service can cover the label, packaging and, where the project requires it, flavor adjustment.
+
+Q: What is the standard OEM MOQ?
+A: MOQ is confirmed for the selected product, formula and pack. Ask for the quantity and SKU scope in your quotation; trial orders are assessed separately.
+
+Q: How is an export quotation prepared?
+A: Quotations are prepared after the product, pack size, quantity and destination requirements are confirmed.
+
+Q: Is fried chicken coating mix available with HALAL documentation?
+A: Please identify the product, formula, destination and required documents. We will check the actual manufacturing site, current certificate and product scope before confirming applicability to your order.
+
+Q: What information is needed to assess a coating-mix sample?
+A: Share the chicken cut, your current preparation and frying method, target coating texture, and whether the chicken is served immediately or for takeaway. Compare samples using the same kitchen process; confirm preparation instructions for the selected mix with the factory.
+
+Q: Can I order a coating mix with fried-chicken sauces?
+A: The range includes sweet-spicy and soy-garlic fried-chicken sauces. Share the quantities and packs needed for each item so the product mix and shipment requirements can be confirmed together.
+
+Q: Does this specification also cover the golden coating mix or marinade?
+A: No. This page is linked to the original fried chicken coating mix. Golden coating mix and chicken marinades are separate catalogue items; request the exact formula, preparation instructions and pack for each selected item.
+
+### Pure Sesame Oil
+
+URL: https://deesheng.food/product/pure-sesame-oil/
+Deesheng Food lists pure sesame oil in retail bottles, foodservice formats and a 16.5 kg bulk pail. The listed shelf life is 12 months with ambient storage away from light. Choose the exact format from the pack table and provide your sales channel, quantity and destination. The catalogue's separate 16.5 L item is not interchangeable with a 16.5 kg specification.
+Applications: Korean cooking; Seasoning; Marinades; Salad dressing; Further processing.
+
+- 180 ml bottle × 28: 12 months; storage: Ambient; away from light; Carton logistics available on request.
+- 245 ml bottle × 24: 12 months; storage: Ambient; away from light; Carton logistics available on request.
+- 500 ml can × 12: 12 months; storage: Ambient; away from light; Carton logistics available on request.
+- 1 L × 12: 12 months; storage: Ambient; away from light; Carton logistics available on request.
+- 1.8 L × 6: 12 months; storage: Ambient; away from light; Carton logistics available on request.
+- 5 L × 4: 12 months; storage: Ambient; away from light; Carton logistics available on request.
+- 16.5 kg pail: 12 months; storage: Ambient; away from light; Carton logistics available on request.
+
+Keep the 16.5 kg pail separate from the catalogue's 16.5 L entry. Confirm the exact unit and selected pack. Carton logistics available on request.
+
+Q: Can pure sesame oil be private labelled?
+A: Yes. OEM/private-label service can cover the label, packaging and, where the project requires it, flavor adjustment.
+
+Q: What is the standard OEM MOQ?
+A: MOQ is confirmed for the selected product, formula and pack. Ask for the quantity and SKU scope in your quotation; trial orders are assessed separately.
+
+Q: How is an export quotation prepared?
+A: Quotations are prepared after the product, pack size, quantity and destination requirements are confirmed.
+
+Q: Is pure sesame oil available with HALAL documentation?
+A: Please identify the product, formula, destination and required documents. We will check the actual manufacturing site, current certificate and product scope before confirming applicability to your order.
+
+Q: Are 16.5 L and 16.5 kg sesame oil the same specification?
+A: No. Litres describe volume and kilograms describe weight. This detail page lists a 16.5 kg pail, while the catalogue separately lists a 16.5 L item. Specify the required unit and request the matching product and shipping specification.
+
+Q: Does this page cover bibimbap special oil or every sesame oil sachet?
+A: No. Bibimbap special oil and sesame oil sachets are separate catalogue entries. Identify the exact item and pack so the corresponding formula and specification can be checked.
+
+Q: What storage is listed for pure sesame oil?
+A: The listed storage is ambient, away from light, with a 12-month shelf life. Confirm the selected pack's approved label and any instructions for use after opening.
+
+### Frozen Spinach
+
+URL: https://deesheng.food/product/frozen-spinach/
+Frozen spinach in a practical foodservice format for bibimbap, side dishes, central kitchens and further processing.
+Applications: Bibimbap; Side dishes; Central kitchens; Foodservice distribution; Further processing.
+
+Packing: 500 g bag × 20
+Shelf life: 12 months
+Storage: Frozen at −18°C
+
+Q: Can frozen spinach be private labelled?
+A: Yes. OEM/private-label service can cover the label, packaging and, where the project requires it, flavor adjustment.
+
+Q: What is the standard OEM MOQ?
+A: MOQ is confirmed for the selected product, formula and pack. Ask for the quantity and SKU scope in your quotation; trial orders are assessed separately.
+
+Q: How is an export quotation prepared?
+A: Quotations are prepared after the product, pack size, quantity and destination requirements are confirmed.
+
+Q: Is frozen spinach available with HALAL documentation?
+A: Please identify the product, formula, destination and required documents. We will check the actual manufacturing site, current certificate and product scope before confirming applicability to your order.
+
+### Frozen Broccoli
+
+URL: https://deesheng.food/product/frozen-broccoli/
+Frozen broccoli for importers, distributors, central kitchens and industrial food production.
+Applications: Foodservice; Meal production; Retail repacking; Central kitchens; Further processing.
+
+Packing: 1 kg bag × 10; 2.5 kg bag × 4; 10 kg carton
+Shelf life: 12 months
+Storage: Frozen at −18°C
+
+Q: Can frozen broccoli be private labelled?
+A: Yes. OEM/private-label service can cover the label, packaging and, where the project requires it, flavor adjustment.
+
+Q: What is the standard OEM MOQ?
+A: MOQ is confirmed for the selected product, formula and pack. Ask for the quantity and SKU scope in your quotation; trial orders are assessed separately.
+
+Q: How is an export quotation prepared?
+A: Quotations are prepared after the product, pack size, quantity and destination requirements are confirmed.
+
+Q: Is frozen broccoli available with HALAL documentation?
+A: Please identify the product, formula, destination and required documents. We will check the actual manufacturing site, current certificate and product scope before confirming applicability to your order.
+
+## Buyer resources and contact
+
+- [Complete product catalogue](https://deesheng.food/products/)
+- [Korean Sauces](https://deesheng.food/products/korean-sauces/)
+- [Korean Kimchi](https://deesheng.food/products/kimchi/)
+- [Korean Chili Powder & Seasonings](https://deesheng.food/products/chili-seasonings/)
+- [Frozen Vegetables](https://deesheng.food/products/frozen-vegetables/)
+- [OEM and private label](https://deesheng.food/oem-private-label/)
+- [Quality and certification scope](https://deesheng.food/quality-certifications/)
+- [HALAL Korean sauce sourcing](https://deesheng.food/halal-korean-sauce-manufacturer/)
+- [Buyer resources](https://deesheng.food/resources/)
+- [Food importer FAQ](https://deesheng.food/buyer-faq/)
+- [Mongolia buyer guide](https://deesheng.food/markets/mongolia/)
+- [Singapore buyer guide](https://deesheng.food/markets/singapore/)
+- [Request a quotation](https://deesheng.food/contact/)
+
 Email: info@deesheng.food
-
-## Buyer questions
-- Food importer FAQ: https://deesheng.food/buyer-faq/
-- Topics: orders and shipping, kimchi, Korean sauces, private label, documents and ingredients, chili products, frozen vegetables.
-- Product availability, specifications, certificates, MOQ and sample transport must be confirmed for the actual SKU and order.
+WhatsApp: https://wa.me/8615621089573
