@@ -39,9 +39,12 @@ test("all 18 sauce pages render matching buyer answers, FAQs, specifications and
   // Vinext normalizes route handlers to a trailing slash; the canonical export
   // also writes the extension URL as out/catalog.json for the public host.
   const catalogue = JSON.parse(await fetchPage("/catalog.json/"));
-  assert.equal(catalogue.detailed_products.length, 27);
+  const catalogueUrls = catalogue.detailed_products.map((product) => product.url);
+  assert.equal(new Set(catalogueUrls).size, catalogueUrls.length, "Every detail product has one unique public URL");
+  for (const product of sauces) assert.ok(catalogueUrls.includes(`https://deesheng.food/product/${product.slug}/`), `${product.slug}: original sauce detail retained`);
   const productUrls = [...sitemap.matchAll(/<loc>(https:\/\/deesheng\.food\/product\/[^<]+)<\/loc>/g)].map((match) => match[1]);
-  assert.deepEqual(new Set(productUrls), new Set(catalogue.detailed_products.map((product) => product.url)));
+  assert.equal(new Set(productUrls).size, productUrls.length, "Sitemap product URLs are unique");
+  assert.deepEqual(new Set(productUrls), new Set(catalogueUrls));
 
   for (const product of sauces) {
     const path = `/product/${product.slug}/`;
@@ -70,7 +73,7 @@ test("all 18 sauce pages render matching buyer answers, FAQs, specifications and
     assert.equal(tableRows(html).length, product.packSpecifications.length);
     for (const spec of product.packSpecifications) {
       const row = rowFor(html, spec.pack);
-      for (const value of [spec.shelfLife, spec.storage, spec.netWeightKg === undefined ? "Confirm" : `${spec.netWeightKg} kg`, spec.grossWeightKg === undefined ? "Confirm" : `${spec.grossWeightKg} kg`, spec.dimensionsMm ? `${spec.dimensionsMm} mm` : "Confirm"]) {
+      for (const value of [spec.shelfLife, spec.storage, spec.netWeightKg === undefined ? "Carton logistics available on request" : `${spec.netWeightKg} kg`, spec.grossWeightKg === undefined ? "Carton logistics available on request" : `${spec.grossWeightKg} kg`, spec.dimensionsMm ? `${spec.dimensionsMm} mm` : "Carton logistics available on request"]) {
         assert.ok(row.includes(`>${escapeHtml(value)}</td>`), `${product.slug} / ${spec.pack} / ${value}`);
       }
     }

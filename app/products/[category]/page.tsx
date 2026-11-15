@@ -4,7 +4,8 @@ import { notFound } from "next/navigation";
 import { BuyerFaqLink } from "../../components/BuyerFaqLink";
 import { faqTopicForCategory } from "../../data/buyer-faqs";
 import { JsonLd } from "../../components/JsonLd";
-import { catalogCategories, getCatalogItemImage, getCategory } from "../../data/catalog";
+import { catalogCategories, getCatalogItemId, getCatalogItemImage, getCategory } from "../../data/catalog";
+import { productFamilyGuides } from "../../data/product-family-guides";
 
 type Props = { params: Promise<{ category: string }> };
 
@@ -15,14 +16,22 @@ const sourcingGuides: Record<string, {
   startingPoints: { name: string; slug: string }[];
 }> = {
   kimchi: {
-    heading: "Source Korean kimchi for a refrigerated supply chain",
-    introduction: "Compare retail and foodservice formats first, then confirm the SKU-specific shelf life and temperature plan for your destination.",
+    heading: "Compare Korean kimchi and pickled vegetables by product and pack",
+    introduction: "Compare the named product, cut and container first. Pack sizes and carton dimensions are listed separately for each selection; storage, shelf life and shipping conditions must be confirmed for the selected product and order.",
     steps: [
-      { title: "Choose the format", description: "Start with 1 kg cabbage kimchi bags for retail or a 10 kg carton for foodservice. Radish and specialty variants can complete the range." },
-      { title: "Plan cold-chain delivery", description: "Share the destination and refrigerated route. Storage ranges and shelf life differ by item; request the current specification before ordering." },
+      { title: "Choose the product and format", description: "Compare whole, cut or diced cabbage kimchi with jarred cabbage, radish, onion and other named vegetables. Different cuts, recipes and pack formats remain separate selections." },
+      { title: "Check carton and transport requirements", description: "Use the pack-specific carton dimensions when planning your order. Request the applicable storage temperature, shelf life and transport conditions before arranging samples or shipment." },
       { title: "Brief the OEM project", description: "Specify cut, flavor target, pack, label language and estimated cartons. MOQ and trial quantities depend on the kimchi specification and packaging and must be confirmed in the quotation." },
     ],
-    startingPoints: [{ name: "Cabbage kimchi specification", slug: "korean-cabbage-kimchi" }],
+    startingPoints: [
+      { name: "Whole, cut and diced cabbage kimchi", slug: "korean-cabbage-kimchi" },
+      { name: "Jarred cabbage kimchi", slug: "cabbage-kimchi-jars" },
+      { name: "White, washed and stir-fried kimchi", slug: "white-washed-stir-fried-kimchi" },
+      { name: "Radish kimchi", slug: "radish-kimchi" },
+      { name: "Spring onion and scallion kimchi", slug: "scallion-kimchi" },
+      { name: "Garlic sprout pickles", slug: "garlic-sprout-pickles" },
+      { name: "Green pepper pickles", slug: "pickled-green-pepper" },
+    ],
   },
   "korean-sauces": {
     heading: "Choose Korean sauces for wholesale and private label",
@@ -61,7 +70,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       : `${halalPrefix}${category.name} Manufacturer & OEM Supplier`,
     description: isKoreanSauce
       ? "Source Korean sauces from Qingdao: gochujang, fried-chicken, buldak and BBQ. Compare retail and foodservice packs, private label and product-specific order quantities."
-      : isKimchi ? "Source wholesale Korean cabbage, radish and specialty kimchi from Qingdao. Compare retail and 10 kg foodservice packs, refrigerated shipping, OEM options and samples."
+      : isKimchi ? "Compare Deesheng Korean kimchi and pickled vegetables, retail jars, bulk packs and carton dimensions. Confirm shelf life and storage for the selected product."
       : `${category.description} Review standard export packs, OEM/private-label support and quotation requirements for B2B buyers.`,
     alternates: { canonical: `/products/${category.slug}/` },
     openGraph: {
@@ -82,6 +91,10 @@ export default async function CategoryPage({ params }: Props) {
   if (!category) notFound();
 
   const groups = [...new Set(category.items.map((item) => item.group))];
+  const sauceCount = category.items.filter((item) => productFamilyGuides[item.group]?.kind === "sauce").length;
+  const supportingCount = category.items.filter((item) => productFamilyGuides[item.group]?.kind === "supporting").length;
+  const sauceGroupCount = groups.filter((group) => productFamilyGuides[group]?.kind === "sauce").length;
+  const supportingGroupCount = groups.filter((group) => productFamilyGuides[group]?.kind === "supporting").length;
   const sourcingGuide = sourcingGuides[category.slug];
   const faqs = [
     {
@@ -106,11 +119,23 @@ export default async function CategoryPage({ params }: Props) {
     },
     ...(category.slug === "kimchi" ? [{
       question: "What temperature should imported kimchi be kept at?",
-      answer: "Kimchi needs a refrigerated supply chain. The cabbage kimchi detail page lists 0–4°C, but temperature and shelf life must be checked against the current specification for each SKU. Confirm the complete refrigerated shipping plan before ordering.",
+      answer: "Request the applicable storage temperature, shelf life and transport conditions for the exact product, recipe and pack before ordering. The listed packaging and carton dimensions do not establish a temperature or shelf life for the whole range.",
+    }, {
+      question: "Are bulk cabbage kimchi and retail jars the same specification?",
+      answer: "No. Whole cabbage kimchi is listed in 10 kg and 5 kg cartons and 5 kg × 2 bags; cut and diced cabbage kimchi have 10 kg cartons. Jarred cut cabbage kimchi has its own page with 300 g × 36, 480 g × 24 and 1 kg × 12 jars. Confirm the selected product and container before ordering.",
+    }, {
+      question: "Can we discuss a frozen kimchi project?",
+      answer: "Please send the intended application, destination, pack and volume. Frozen kimchi specifications, shelf life and cold-chain requirements must be confirmed for the project. The cabbage packaging list does not establish a frozen product specification.",
     }] : []),
     ...(category.slug === "korean-sauces" ? [{
       question: "Which Korean sauces are suitable for restaurants or private label?",
       answer: "The range includes fried-chicken glazes, buldak, bibimbap, tteokbokki and Korean BBQ sauces. Share the application, flavor target, pack size, market and estimated volume to shortlist foodservice or retail options.",
+    }, {
+      question: "Do all sauce flavors and pack sizes have the same shelf life?",
+      answer: "No. Use the exact product and pack specification. Honey mustard, for example, has both 9- and 12-month configurations. Where a catalogue field asks for SKU confirmation, request the current specification rather than assuming a standard shelf life or storage condition.",
+    }, {
+      question: "Are fire noodle sauces finished noodles or branded instant-noodle products?",
+      answer: "The classic, creamy and mild fire noodle detail pages describe Deesheng sauces for noodle applications. They are sauce products, not finished instant noodles. Confirm the exact recipe, ingredients, heat and packaging for your own brand or foodservice project.",
     }] : []),
   ];
 
@@ -133,9 +158,7 @@ export default async function CategoryPage({ params }: Props) {
           position: index + 1,
           name: item.name,
           image: `https://deesheng.food${getCatalogItemImage(category.slug, item)}`,
-          url: item.detailSlug
-            ? `https://deesheng.food/product/${item.detailSlug}/`
-            : `https://deesheng.food/products/${category.slug}/`,
+          url: `https://deesheng.food/products/${category.slug}/#${getCatalogItemId(category.slug, item)}`,
         })),
       },
       {
@@ -172,22 +195,38 @@ export default async function CategoryPage({ params }: Props) {
       </section>}
 
       <section className="section shell">
-        <div className="section-heading compact-heading"><p className="eyebrow">Export selection</p><h2>{category.items.length} listed products and variants</h2><p>Choose products and standard packs below. Final carton specification, pricing and production details are confirmed for each inquiry.</p></div>
+        <div className="section-heading compact-heading"><p className="eyebrow">Export selection</p><h2>{category.items.length} listed products and variants</h2><p>Choose products and listed packs below. Entries can represent different flavors or packaging formats; the count is not a count of unique recipes. Final specifications are confirmed for the selected item and order.</p>{category.slug === "korean-sauces" && <p>The catalogue includes {sauceCount} sauce and paste entries across {sauceGroupCount} groups, plus {supportingCount} supporting seasoning, mix, oil and cooking-essential entries across {supportingGroupCount} groups.</p>}</div>
         <div className="group-nav" aria-label="Product groups">{groups.map((group) => <a key={group} href={`#${group.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}>{group}</a>)}</div>
         <div className="group-sections">
           {groups.map((group) => (
             <section className="product-group" id={group.toLowerCase().replace(/[^a-z0-9]+/g, "-")} key={group}>
               <div className="product-group-title"><p>{group}</p><span>{category.items.filter((item) => item.group === group).length} products</span></div>
+              {productFamilyGuides[group] && <div className="product-family-guide">
+                <p className="eyebrow">{productFamilyGuides[group].kind === "supporting" ? "Supporting ingredients" : "Product family"}</p>
+                <p>{productFamilyGuides[group].summary}</p>
+                <p><strong>Before requesting a sample:</strong> {productFamilyGuides[group].selection}</p>
+                {group === "Fried Chicken Sauces" && <p><Link href="/resources/korean-fried-chicken-sauce-system/">Compare sauce, marinade and coating for your kitchen ↗</Link></p>}
+              </div>}
               <div className="product-card-grid">
                 {category.items.filter((item) => item.group === group).map((item) => (
-                  <article className="product-card" key={item.name}>
+                  <article className="product-card" id={getCatalogItemId(category.slug, item)} key={item.name}>
                     <div className="product-card-media">
                       <img src={getCatalogItemImage(category.slug, item)} alt={`${item.name} from the Deesheng Food catalogue`} width="900" height="650" loading="lazy" />
                     </div>
                     <div className="product-card-body">
                       <div className="product-card-top"><span>{category.shortName}</span>{item.detailSlug && <Link href={`/product/${item.detailSlug}/`} aria-label={`Open ${item.name}`}>↗</Link>}</div>
                       <h3>{item.name}</h3>
+                      {item.nameKo && <p lang="ko" className="catalogue-product-name-ko">{item.nameKo}</p>}
                       <dl><div><dt>Packing</dt><dd>{item.packing}</dd></div><div><dt>Shelf life</dt><dd>{item.shelfLife}</dd></div><div><dt>Storage</dt><dd>{item.storage}</dd></div></dl>
+                      {item.packSpecifications && item.packSpecifications.length > 0 && <details className="catalogue-pack-details">
+                        <summary>View packing and carton dimensions</summary>
+                        <div className="product-table-wrap"><table className="catalogue-pack-table">
+                          <caption>{item.name} — carton dimensions in mm</caption>
+                          <thead><tr><th scope="col">Pack</th><th scope="col">Carton (mm)</th></tr></thead>
+                          <tbody>{item.packSpecifications.map((spec) => <tr key={`${spec.variant ?? item.name}:${spec.pack}`}><th scope="row">{spec.pack}</th><td>{spec.dimensionsMm ?? "Confirm for this pack"}</td></tr>)}</tbody>
+                        </table></div>
+                      </details>}
+                      <a className="catalogue-item-link" href={`#${getCatalogItemId(category.slug, item)}`} aria-label={`Link to ${item.name}`}>Link to this selection</a>
                       {item.detailSlug ? <Link className="card-link" href={`/product/${item.detailSlug}/`}>Product details <span>→</span></Link> : <Link className="card-link" href={`/contact/?product=${encodeURIComponent(item.name)}`}>Ask about this item <span>↗</span></Link>}
                     </div>
                   </article>
