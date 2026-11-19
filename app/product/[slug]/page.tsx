@@ -245,6 +245,19 @@ export default async function ProductPage({ params }: Props) {
           </table>
         </div>
         <p className="pack-spec-note">{product.packingNote}</p>
+        {product.slug === "gochujang" && (
+          <aside aria-labelledby="bulk-gochujang-halal">
+            <h3 id="bulk-gochujang-halal">Halal documentation for 14 kg foodservice gochujang</h3>
+            <p>
+              The certificate annex issued by Shandong Halal Certification Service (SHC) lists gochujang
+              (red pepper paste) from Qingdao Deesheng Hengxin Food Co., Ltd. at its Pingdu factory.
+              On 20 November 2026, <a href="https://s.ehalal.cn/query.html">SHC’s register</a> showed the factory certificate
+              as valid with an expiry date of 19 October 2027.
+              For a 14 kg foodservice order, <Link href="/quality-certifications/">request the current halal documents and product specification</Link>.
+              Include your destination market and specify the standard recipe or your proposed private-label formula.
+            </p>
+          </aside>
+        )}
       </section>}
 
       <section className="section section-tint">
