@@ -3,6 +3,8 @@ import { GoogleAnalytics } from "./components/GoogleAnalytics";
 import { InquiryAttribution } from "./components/InquiryAttribution";
 import { SiteFooter } from "./components/SiteFooter";
 import { SiteHeader } from "./components/SiteHeader";
+import { ExportAnnouncement } from "./components/ExportAnnouncement";
+import { exportOrganization } from "./lib/export-organization";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -61,7 +63,15 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          id="deesheng-export-organization"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(exportOrganization).replace(/</g, "\\u003c") }}
+        />
+      </head>
       <body>
+        <ExportAnnouncement />
         <SiteHeader />
         {children}
         <SiteFooter />

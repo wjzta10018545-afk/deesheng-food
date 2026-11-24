@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ExportCta, ExportDeskNote } from "./ExportCta";
 import { catalogCategories } from "../data/catalog";
 
 export function SiteHeader() {
@@ -32,7 +33,7 @@ export function SiteHeader() {
           <Link href="/resources/">Buyer Resources</Link>
           <Link href="/about/">About</Link>
         </nav>
-        <Link className="nav-cta" href="/contact/">Get a quote <span aria-hidden="true">↗</span></Link>
+        <ExportCta className="nav-cta" note={false}>Get a quote <span aria-hidden="true">↗</span></ExportCta>
         <details className="mobile-menu">
           <summary aria-label="Open menu"><span /><span /></summary>
           <nav aria-label="Mobile navigation">
@@ -48,10 +49,11 @@ export function SiteHeader() {
             <Link href="/resources/">Buyer Resources</Link>
             <Link href="/buyer-faq/">Buyer FAQ</Link>
             <Link href="/about/">About</Link>
-            <Link href="/contact/">Get a quote</Link>
+            <ExportCta>Get a quote</ExportCta>
           </nav>
         </details>
       </div>
+      <div className="shell header-export-note"><ExportDeskNote /></div>
     </header>
   );
 }

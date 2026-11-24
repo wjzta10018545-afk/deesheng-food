@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ExportCta } from "../components/ExportCta";
 import { JsonLd } from "../components/JsonLd";
 import { buyerFaqs, faqTopics } from "../data/buyer-faqs";
 
@@ -21,7 +22,7 @@ export default function BuyerFaqPage() {
       <section className="inner-hero shell"><div><nav className="breadcrumbs" aria-label="Breadcrumb"><Link href="/">Home</Link><span>/</span><Link href="/resources/">Buyer Resources</Link><span>/</span><b>Buyer FAQ</b></nav><p className="eyebrow">Food importer questions</p><h1>Clear answers before your next order.</h1></div><div className="inner-hero-aside"><p>Practical sourcing questions for importers, distributors, food manufacturers and private-label brands. Choose a topic to compare products and prepare a useful inquiry.</p><p>Updated October 9, 2026. Availability, specifications and commercial terms are confirmed for the selected product and order.</p></div></section>
       <nav id="topics" className="shell buyer-faq-topics" aria-label="FAQ topics">{faqTopics.map((topic) => <a href={`#${topic.id}`} key={topic.id}><strong>{topic.title}</strong><span>{buyerFaqs.filter((faq) => faq.topic === topic.id).length} questions ↓</span></a>)}</nav>
       {faqTopics.map((topic) => <section id={topic.id} className="section shell buyer-faq-topic" key={topic.id}><div className="faq-layout"><div><p className="eyebrow">Buyer FAQ</p><h2>{topic.title}</h2><p>{topic.description}</p><p><Link className="text-link" href={topic.href}>{topic.link} →</Link></p><a href="#topics">Back to topics ↑</a></div><div className="faq-list">{buyerFaqs.filter((faq) => faq.topic === topic.id).map((faq) => <details id={faq.id.toLowerCase()} key={faq.id}><summary>{faq.question}<span aria-hidden="true">+</span></summary><p>{faq.answer}</p></details>)}</div></div></section>)}
-      <section className="section shell"><div className="cta-panel"><div><p className="eyebrow eyebrow-light">Ready to discuss a project?</p><h2>Send the product, pack, quantity and destination.</h2></div><div><p>Add your intended use, label and document requirements so we can check the right specification and quotation.</p><Link className="button button-light" href="/contact/?product=buyer-faq">Ask our export team ↗</Link></div></div></section>
+      <section className="section shell"><div className="cta-panel"><div><p className="eyebrow eyebrow-light">Ready to discuss a project?</p><h2>Send the product, pack, quantity and destination.</h2></div><div><p>Add your intended use, label and document requirements so we can check the right specification and quotation.</p><ExportCta className="button button-light" product="buyer-faq">Ask our export team ↗</ExportCta></div></div></section>
     </main>
   );
 }

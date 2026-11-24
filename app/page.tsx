@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ExportCta } from "./components/ExportCta";
 import { JsonLd } from "./components/JsonLd";
 import { FactoryHero } from "./components/FactoryHero";
 import { officialSocialProfileUrls } from "./components/SocialLinks";
@@ -284,7 +285,7 @@ export default function Home() {
                 <h3>{group.title}</h3>
                 <nav aria-label={group.title}>
                   {group.links.map(([name, href]) => (
-                    <Link href={href} key={href}>
+                    href === "/contact/" ? <ExportCta key={href}><span>{name}</span></ExportCta> : <Link href={href} key={href}>
                       <span>{name}</span><b aria-hidden="true">→</b>
                     </Link>
                   ))}
@@ -338,9 +339,9 @@ export default function Home() {
                 <div><dt>Product scope</dt><dd>Confirmed per selected item</dd></div>
                 <div><dt>Document access</dt><dd>Qualified B2B buyers</dd></div>
               </dl>
-              <Link className="button button-light" href="/contact/?product=halal-documents">
+              <ExportCta className="button button-light" product="halal-documents">
                 Request current documents <span aria-hidden="true">→</span>
-              </Link>
+              </ExportCta>
             </aside>
           </div>
 
@@ -423,9 +424,9 @@ export default function Home() {
               Send your product, pack size, destination market and estimated quantity.
               We will confirm the suitable product and document route.
             </p>
-            <Link className="button button-light" href="/contact/">
+            <ExportCta className="button button-light">
               Contact Deesheng Food <span aria-hidden="true">↗</span>
-            </Link>
+            </ExportCta>
           </div>
         </div>
       </section>

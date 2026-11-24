@@ -33,6 +33,32 @@ h1, h2, h3, p { margin-top: 0; }
 h1, h2 { font-family: Georgia, "Times New Roman", serif; font-weight: 500; letter-spacing: -0.045em; }
 button, input, select, textarea { font: inherit; }
 
+.export-announcement { background: var(--ink); color: #fff; text-align: center; }
+.export-announcement a { display: block; padding: 12px 24px; font-size: .875rem; line-height: 1.55; text-wrap: balance; }
+.export-announcement a:hover { background: var(--ink-2); text-decoration: underline; text-underline-offset: 3px; }
+.export-announcement a:focus-visible { outline: 3px solid var(--gold); outline-offset: -3px; }
+.export-cta { display: inline-flex; max-width: min(100%, 30rem); flex-direction: column; align-items: flex-start; gap: 10px; vertical-align: top; }
+.export-desk-note { display: block; max-width: 45rem; color: var(--muted); font-size: .875rem; line-height: 1.55; font-weight: 400; }
+.export-partner-intro { max-width: 45rem; color: var(--muted); font-size: 1rem; line-height: 1.65; }
+.export-partner-intro a { color: var(--leaf); font-weight: 650; text-decoration: underline; text-underline-offset: 3px; }
+.header-export-note { padding-bottom: 10px; }
+.header-export-note .export-desk-note { max-width: none; font-size: .875rem; }
+.button-row { align-items: flex-start; }
+.factory-showcase .export-partner-intro { color: rgba(255,255,255,.88); }
+.factory-showcase .export-partner-intro a { color: white; }
+.factory-showcase .export-desk-note, .cta-panel .export-desk-note, .site-footer .export-desk-note { color: #cbd8d1; }
+.factory-actions > .export-cta { flex: 1 1 23rem; }
+.export-contact-panel { padding: 30px; border: 1px solid var(--line); background: white; }
+@media (max-width: 980px) {
+  .nav-shell > .export-cta { display: none; }
+}
+@media (max-width: 640px) {
+  .export-announcement a { padding: 11px 20px; }
+  .header-export-note { padding-bottom: 12px; }
+  .factory-actions > .export-cta { width: 100%; max-width: none; }
+  .factory-actions > .export-cta > .button { width: 100%; }
+}
+
 .analytics-consent {
   position: fixed;
   z-index: 100;

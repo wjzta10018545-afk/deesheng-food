@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ExportCta } from "../../components/ExportCta";
 import { notFound } from "next/navigation";
 import { JsonLd } from "../../components/JsonLd";
 import { BuyerFaqLink } from "../../components/BuyerFaqLink";
@@ -224,7 +225,7 @@ export default async function ProductPage({ params }: Props) {
           <h1>{product.name}</h1>
           <h2>{product.headline}</h2>
           <p>{product.buyerAnswer ?? product.summary}</p>
-          <div className="button-row"><Link className="button button-primary" href={`/contact/?product=${product.slug}`}>Request price & samples</Link><Link className="button button-ghost" href={`/products/${product.categorySlug}/`}>View full range</Link></div>
+          <div className="button-row"><ExportCta className="button button-primary" product={product.slug}>Request price & samples</ExportCta><Link className="button button-ghost" href={`/products/${product.categorySlug}/`}>View full range</Link></div>
         </div>
       </section>
 
@@ -253,7 +254,7 @@ export default async function ProductPage({ params }: Props) {
               (red pepper paste) from Qingdao Deesheng Hengxin Food Co., Ltd. at its Pingdu factory.
               On 20 November 2026, <a href="https://s.ehalal.cn/query.html">SHC’s register</a> showed the factory certificate
               as valid with an expiry date of 19 October 2027.
-              For a 14 kg foodservice order, <Link href="/quality-certifications/">request the current halal documents and product specification</Link>.
+              For a 14 kg foodservice order, <ExportCta product="halal-documents" note={false}>request the current halal documents and product specification</ExportCta>.
               Include your destination market and specify the standard recipe or your proposed private-label formula.
             </p>
           </aside>
@@ -276,7 +277,7 @@ export default async function ProductPage({ params }: Props) {
 
       {related.length > 0 && <section className="section shell"><div className="section-heading compact-heading"><p className="eyebrow">Related products</p><h2>Build a stronger product mix</h2></div><div className="related-grid">{related.map((item) => <Link href={`/product/${item.slug}/`} key={item.slug}><span>{item.categoryName}</span><h3>{item.name}</h3><p>{item.summary}</p><b>View product →</b></Link>)}</div></section>}
 
-      <section className="section shell"><div className="cta-panel"><div><p className="eyebrow eyebrow-light">Qualified B2B inquiry</p><h2>Share your market, pack and target quantity.</h2></div><div><p>We will confirm the best-fit format, sample route and quotation for your project.</p><Link className="button button-light" href={`/contact/?product=${product.slug}`}>Ask about {product.name} ↗</Link></div></div></section>
+      <section className="section shell"><div className="cta-panel"><div><p className="eyebrow eyebrow-light">Qualified B2B inquiry</p><h2>Share your market, pack and target quantity.</h2></div><div><p>We will confirm the best-fit format, sample route and quotation for your project.</p><ExportCta className="button button-light" product={product.slug}>Ask about {product.name} ↗</ExportCta></div></div></section>
       <BuyerFaqLink topic={faqTopicForCategory[product.categorySlug] ?? "ordering"} />
     </main>
   );

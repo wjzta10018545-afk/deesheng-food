@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ExportCta } from "../components/ExportCta";
+import { ExportPartnerIntro } from "../components/ExportPartnerIntro";
 import { JsonLd } from "../components/JsonLd";
 
 export const metadata: Metadata = {
@@ -171,11 +173,12 @@ export default function HalalSaucePage() {
             private-label brands. Contact the Deesheng export team for products,
             samples, documents and quotations.
           </p>
+          <ExportPartnerIntro range="halal" />
           <div className="button-row">
-            <a className="button button-primary" href="https://wa.me/8615621089573" target="_blank" rel="noreferrer">
-              WhatsApp our export team <span aria-hidden="true">↗</span>
-            </a>
-            <Link className="button button-ghost" href="/contact/?product=halal-sauces">Request a quotation</Link>
+            <ExportCta className="button button-primary" product="halal-sauces">
+              Contact our export desk
+            </ExportCta>
+            <ExportCta className="button button-ghost" product="halal-sauces">Request a quotation</ExportCta>
           </div>
         </div>
         <aside className="halal-certificate-card">
@@ -187,9 +190,9 @@ export default function HalalSaucePage() {
             <div><dt>Document access</dt><dd>Qualified B2B buyers</dd></div>
             <div><dt>Verification</dt><dd>Company & project review</dd></div>
           </dl>
-          <Link className="text-link" href="/contact/?product=halal-documents">
+          <ExportCta className="text-link" product="halal-documents">
             Request current documents <span aria-hidden="true">→</span>
-          </Link>
+          </ExportCta>
           <small>Signed documents are not published openly. Approved buyers receive the current set relevant to their project.</small>
         </aside>
       </section>
@@ -229,7 +232,7 @@ export default function HalalSaucePage() {
         </div>
         <div className="halal-scope-actions">
           <Link className="button button-primary" href="/products/korean-sauces/">Browse the full sauce catalogue</Link>
-          <Link className="button button-ghost" href="/contact/?product=halal-documents">Request current HALAL documents</Link>
+          <ExportCta className="button button-ghost" product="halal-documents">Request current HALAL documents</ExportCta>
         </div>
       </section>
 
@@ -249,8 +252,7 @@ export default function HalalSaucePage() {
             </p>
             <div className="contact-inline-card">
               <span>Kevin Wang · Deesheng Food export sales</span>
-              <a href="https://wa.me/8615621089573" target="_blank" rel="noreferrer">WhatsApp / Tel: +86 156 2108 9573</a>
-              <a href="mailto:info@deesheng.food">info@deesheng.food</a>
+              <ExportCta product="halal-sauces">NexusPoint international export desk</ExportCta>
               <small>Qingdao, Shandong, China</small>
             </div>
           </div>
@@ -270,7 +272,7 @@ export default function HalalSaucePage() {
       <section className="section shell">
         <div className="cta-panel">
           <div><p className="eyebrow eyebrow-light">HALAL sauce inquiry</p><h2>Send the product, market, pack and quantity.</h2></div>
-          <div><p>We will confirm the relevant certificate entry, available packing, sample route and quotation.</p><Link className="button button-light" href="/contact/?product=halal-sauces">Contact our export team ↗</Link></div>
+          <div><p>We will confirm the relevant certificate entry, available packing, sample route and quotation.</p><ExportCta className="button button-light" product="halal-sauces">Contact our export team ↗</ExportCta></div>
         </div>
       </section>
     </main>

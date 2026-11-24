@@ -7,6 +7,14 @@ Official export website source for **Qingdao Deesheng Hengxin Food Co., Ltd.**
 **Canonical domain:** https://deesheng.food  
 **Contact:** Kevin Wang · WhatsApp +86 156 2108 9573 · info@deesheng.food
 
+## Official international export desk — 2026-11-25
+
+International quotations, samples, current documents, OEM/private-label briefs and consolidated FOB Qingdao shipping now go through [NexusPoint Food Trade](https://nexuspointtrade.com/request?utm_source=deesheng_food&utm_medium=cta&utm_campaign=export_desk). The manufacturer's product, certification, resource and contact URLs remain available with their original canonicals. The retained contact page provides an explicit handoff, without an automatic redirect. Legacy form/API code below remains available for compatibility but is no longer rendered on the contact page. The game URL remains available, while its unrelated footer link has been removed.
+
+The announcement and all quotation CTAs carry the requested source/medium/campaign attribution. Six early editorial links map to verified food category/certification destinations. Every professional page includes the manufacturer's Organization with the NexusPoint export department in its head. Consented source-side `quote_click` tracking continues with `channel=export_desk`. The machine-readable catalogue and LLM reference files use the same export desk.
+
+Release checks: `npm run export:canonical`, `npm run export:verify`, `node scripts/verify-export-desk.mjs`, and `node --test tests/*.test.mjs` after `npm run build`. See [the release handoff](docs/export-desk-release-20261125.md) for canonical-server deployment and rollback instructions.
+
 ## Product ranges
 
 - HALAL Korean sauces and gochujang

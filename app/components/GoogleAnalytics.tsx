@@ -99,6 +99,9 @@ function classifyLink(anchor: HTMLAnchorElement): { eventName: string; params: A
   if (url.origin === window.location.origin && /\/(?:deesheng-food\/)?contact\/?$/.test(url.pathname)) {
     return { eventName: "quote_click", params: { channel: "contact_page" } };
   }
+  if (url.origin === "https://nexuspointtrade.com" && /^\/request\/?$/.test(url.pathname) && url.searchParams.get("utm_campaign") === "export_desk") {
+    return { eventName: "quote_click", params: { channel: "export_desk" } };
+  }
   if (anchor.hasAttribute("download") || url.pathname.startsWith("/downloads/")) {
     return { eventName: "catalog_download", params: { asset_type: "product_catalogue" } };
   }

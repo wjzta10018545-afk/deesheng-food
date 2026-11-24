@@ -1,6 +1,8 @@
 "use client";
 
 import Link from "next/link";
+import { ExportCta } from "./ExportCta";
+import { ExportPartnerIntro } from "./ExportPartnerIntro";
 import { useEffect, useState } from "react";
 
 const factorySlides = [
@@ -74,15 +76,11 @@ export function FactoryHero() {
             Factory-direct Korean sauces, kimchi, chili seasonings and frozen vegetables,
             with OEM and private-label support for importers, distributors and foodservice buyers.
           </p>
+          <ExportPartnerIntro />
           <div className="button-row factory-actions">
-            <a
-              className="button button-primary"
-              href="https://wa.me/8615621089573?text=Hello%20Kevin%2C%20I%20am%20interested%20in%20Deesheng%20Food%20products%20and%20OEM%2Fprivate-label%20solutions."
-              target="_blank"
-              rel="noreferrer"
-            >
+            <ExportCta className="button button-primary">
               Contact our export team <span aria-hidden="true">↗</span>
-            </a>
+            </ExportCta>
             <Link className="button button-ghost" href="/products/">
               Explore 250+ products & variants
             </Link>

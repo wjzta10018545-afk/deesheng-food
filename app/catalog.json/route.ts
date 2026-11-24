@@ -1,4 +1,5 @@
 import { catalogCategories, getCatalogItemId, productDetails } from "../data/catalog";
+import { exportQuoteUrl } from "../lib/export-desk";
 
 export const dynamic = "force-static";
 
@@ -9,7 +10,13 @@ export function GET() {
     canonical_url: "https://deesheng.food/products/",
     updated: "2026-11-14",
     buyer_faq_url: "https://deesheng.food/buyer-faq/",
-    contact: { name: "Kevin Wang", website: "https://deesheng.food/", whatsapp: "+86 156 2108 9573", email: "info@deesheng.food" },
+    contact: {
+      name: "Kevin Wang",
+      organization: "NexusPoint Food Trade (International Export & Private-Label Desk)",
+      website: "https://nexuspointtrade.com/",
+      request_url: exportQuoteUrl(),
+      email: "info@nexuspointtrade.com",
+    },
     commercial_baseline: { business_type: "B2B export", standard_oem_moq: "Some standard-pack sauce OEM projects use 200 cartons per item as a quotation starting point. Confirm SKU, formula and pack. Kimchi, bulk packs, dry ingredients and frozen products have separate conditions.", quotation_basis: "Confirmed for the selected product, pack, quantity and destination", currency: "USD", typical_standard_product_lead_time: "About 14 days may be a planning estimate for selected confirmed standard sauce formulas and packs after label and payment approval; confirm the actual order schedule. Other products and custom projects require separate scheduling." },
     certifications: ["BRCGS Grade A", "HACCP", "HALAL", "OU Kosher"],
     certification_scope: "Check current validity, actual manufacturing site, product and formula coverage, and destination recognition. Listed credentials do not imply coverage of every catalogue product.",
@@ -17,7 +24,7 @@ export function GET() {
       issuer: "Shandong Halal Certification Service (SHC)",
       access: "Provided to qualified B2B buyers after company and project verification",
       sauce_scope_url: "https://deesheng.food/halal-korean-sauce-manufacturer/",
-      request_url: "https://deesheng.food/contact/?product=halal-documents",
+      request_url: exportQuoteUrl("halal-documents"),
       note: "Confirm current documents and exact product scope for the selected product, formula and order.",
     },
     market_pages: [

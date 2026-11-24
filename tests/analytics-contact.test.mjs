@@ -10,12 +10,30 @@ function moduleFor(file, context, modules) {
  const exports={};vm.runInNewContext(code,{exports,require:n=>modules[n],...context});return exports;
 }
 const source={source:'chatgpt',medium:'paid',campaign:'qa',content:'qa',landingPath:'/products/'};
-test('analytics uses Arguments commands and respects consent even with blocked storage',()=>{
- const effects=[];let state;const window={localStorage:{getItem(){throw Error()},setItem(){throw Error()}},location:{pathname:'/contact/',href:'https://deesheng.food/contact/'},requestAnimationFrame:()=>1,cancelAnimationFrame(){}};
- const api=moduleFor('../app/components/GoogleAnalytics.tsx',{window,document:{title:'Contact',createElement:()=>({}),head:{appendChild(){}}}},{'react':{useEffect:f=>effects.push(f),useState:()=>[state,v=>state=v]},'next/navigation':{usePathname:()=>'/contact/'},'../lib/inquiry-source':{getInquirySource:()=>source},'react/jsx-runtime':{jsx:(type,props)=>({type,props}),jsxs:(type,props)=>({type,props})}});
+test('analytics uses Arguments commands and tracks export quote clicks only with consent, even with blocked storage',()=>{
+ const effects=[];let state;let click;
+ class Element { closest(){return null} }
+ class Anchor extends Element {
+  constructor(href){super();this.href=href;this.dataset={}}
+  closest(selector){return selector==='a'?this:null}
+  hasAttribute(){return false}
+ }
+ const window={localStorage:{getItem(){throw Error()},setItem(){throw Error()}},location:{origin:'https://deesheng.food',pathname:'/contact/',href:'https://deesheng.food/contact/'},requestAnimationFrame:()=>1,cancelAnimationFrame(){}};
+ const document={title:'Contact',createElement:()=>({}),head:{appendChild(){}},addEventListener:(name,handler)=>{if(name==='click')click=handler},removeEventListener(){}};
+ const api=moduleFor('../app/components/GoogleAnalytics.tsx',{window,document,Element,HTMLAnchorElement:Anchor,URL},{'react':{useEffect:f=>effects.push(f),useState:()=>[state,v=>state=v]},'next/navigation':{usePathname:()=>'/contact/'},'../lib/inquiry-source':{getInquirySource:()=>source},'react/jsx-runtime':{jsx:(type,props)=>({type,props}),jsxs:(type,props)=>({type,props})}});
  api.trackAnalyticsEvent('blocked');assert.equal(window.dataLayer,undefined);
- state='pending';const tree=api.GoogleAnalytics();const buttons=tree.props.children[1].props.children;buttons[0].props.onClick();api.trackAnalyticsEvent('allowed');assert.equal(Object.prototype.toString.call(window.dataLayer[0]),'[object Arguments]');assert.ok(window.dataLayer.some(x=>x[1]==='allowed'));
- buttons[1].props.onClick();let n=window.dataLayer.length;api.trackAnalyticsEvent('blocked');assert.equal(window.dataLayer.length,n);
+ state='pending';const tree=api.GoogleAnalytics();const buttons=tree.props.children[1].props.children;
+ // With pending consent, delegated navigation clicks do not load or send analytics.
+ effects[2]();click({target:new Anchor('https://nexuspointtrade.com/request?utm_campaign=export_desk')});assert.equal(window.dataLayer,undefined);
+ buttons[0].props.onClick();api.trackAnalyticsEvent('allowed');assert.equal(Object.prototype.toString.call(window.dataLayer[0]),'[object Arguments]');assert.ok(window.dataLayer.some(x=>x[1]==='allowed'));
+ effects.length=0;api.GoogleAnalytics();effects[2]();
+ const eventCount=()=>window.dataLayer.filter(x=>x[0]==='event').length;
+ let n=eventCount();
+ click({target:new Anchor('https://nexuspointtrade.com/request?utm_source=deesheng_food&utm_medium=cta&utm_campaign=export_desk&product=QA-private-product')});
+ assert.equal(eventCount(),n+1);let tracked=window.dataLayer.at(-1);assert.equal(tracked[1],'quote_click');assert.equal(tracked[2].channel,'export_desk');assert.ok(!JSON.stringify(tracked).includes('QA-private-product'));
+ n=eventCount();click({target:new Anchor('https://nexuspointtrade.com/request?utm_campaign=other')});click({target:new Anchor('https://nexuspointtrade.com/food/kimchi?utm_campaign=export_desk')});click({target:new Anchor('https://nexuspointtrade.com.example/request?utm_campaign=export_desk')});assert.equal(eventCount(),n);
+ click({target:new Anchor('/contact/?product=kimchi')});assert.equal(window.dataLayer.at(-1)[1],'quote_click');assert.equal(window.dataLayer.at(-1)[2].channel,'contact_page');
+ buttons[1].props.onClick();n=window.dataLayer.length;api.trackAnalyticsEvent('blocked');click({target:new Anchor('https://nexuspointtrade.com/request?utm_campaign=export_desk')});assert.equal(window.dataLayer.length,n);
 });
 for(const popup of [true,false]) test(`WhatsApp opens immediately, independent of failed save (popup=${popup})`,async()=>{
  const calls=[],events=[];let reject;const pending=new Promise((_,r)=>reject=r);const window={location:{search:'',assign:url=>calls.push(['assign',url])},open:url=>{calls.push(['open',url]);return popup?{}:null}};

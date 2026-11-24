@@ -74,7 +74,7 @@ test("publishes one trailing-slash URL format for search engines", async () => {
   assert.match(productHtml, /<link rel="canonical" href="https:\/\/deesheng\.food\/product\/gochujang\/"/);
   assert.match(productHtml, /<meta property="og:url" content="https:\/\/deesheng\.food\/product\/gochujang\/"/);
   assert.match(productHtml, /href="\/products\/korean-sauces\/"/);
-  assert.match(productHtml, /href="\/contact\/\?product=gochujang"/);
+  assert.match(productHtml, /href="https:\/\/nexuspointtrade\.com\/request\?utm_source=deesheng_food&amp;utm_medium=cta&amp;utm_campaign=export_desk&amp;product=gochujang"/);
 
   const sitemap = await readFile(new URL("../public/sitemap.xml", import.meta.url), "utf8");
   const locations = [...sitemap.matchAll(/<loc>(https:\/\/deesheng\.food\/[^<]*)<\/loc>/g)].map((match) => match[1]);

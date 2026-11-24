@@ -14,6 +14,7 @@ vm.runInNewContext(compiled, { module: catalogModule, exports: catalogModule.exp
 const { catalogCategories, productDetails, getCatalogItemId } = catalogModule.exports;
 const origin = "https://deesheng.food";
 const date = "2026-11-14";
+const exportRequestUrl = "https://nexuspointtrade.com/request?utm_source=deesheng_food&utm_medium=cta&utm_campaign=export_desk";
 const mainPages = [
   ["Complete product catalogue", "/products/"],
   ...catalogCategories.map((category) => [category.name, `/products/${category.slug}/`]),
@@ -24,9 +25,9 @@ const mainPages = [
   ["Food importer FAQ", "/buyer-faq/"],
   ["Mongolia buyer guide", "/markets/mongolia/"],
   ["Singapore buyer guide", "/markets/singapore/"],
-  ["Request a quotation", "/contact/"],
+  ["Request a quotation through the official NexusPoint export desk", exportRequestUrl],
 ];
-const links = (items) => items.map(([label, path]) => `- [${label}](${origin}${path})`).join("\n");
+const links = (items) => items.map(([label, path]) => `- [${label}](${/^https?:\/\//.test(path) ? path : `${origin}${path}`})`).join("\n");
 const qualification = [
   "Product and pack specifications are specific to the named variant. Catalogue entries can represent flavors or pack formats and are not a count of unique formulas.",
   "Where a field requires confirmation, request the current specification for the exact SKU. Do not infer shelf life, storage, carton logistics, ingredients or allergens from another product or packaging format.",
@@ -34,7 +35,7 @@ const qualification = [
   "MOQ, samples, quotation, production timing and shipment terms are confirmed for the selected product, formula, pack, quantity and destination. Prices are not published.",
   "Relevant factory credentials include BRCGS Grade A, HACCP, HALAL and OU Kosher. Check current validity, manufacturing site, product and formula coverage, and destination recognition before order approval; a credential list does not certify every catalogue item.",
 ];
-const contact = `Legal company: Qingdao Deesheng Hengxin Food Co., Ltd.\nLocation: Qingdao, Shandong, China\nContact: Kevin Wang, Deesheng Food\nEmail: info@deesheng.food\nWhatsApp / Tel: +86 156 2108 9573`;
+const contact = `Legal manufacturer: Qingdao Deesheng Hengxin Food Co., Ltd.\nLocation: Qingdao, Shandong, China\nOfficial International Export & Private-Label Desk: NexusPoint Food Trade\nExport desk website: https://nexuspointtrade.com/\nContact: Kevin Wang, NexusPoint international export desk\nEmail: info@nexuspointtrade.com\nDirect export quotations, OEM Studio and consolidated FOB Qingdao shipping are handled by the official NexusPoint export desk. U.S. & China contracting.\nExport inquiry: ${exportRequestUrl}`;
 
 const short = `# Deesheng Food
 
@@ -89,7 +90,7 @@ for (const product of productDetails) {
   if (product.packingNote) full.push(product.packingNote);
   full.push(product.buyerQuestions.map((faq) => `Q: ${faq.question}\nA: ${faq.answer}`).join("\n\n"));
 }
-full.push(`## Buyer resources and contact\n\n${links(mainPages)}\n\nEmail: info@deesheng.food\nWhatsApp: https://wa.me/8615621089573`);
+full.push(`## Buyer resources and contact\n\n${links(mainPages)}\n\nOfficial international export and private-label desk: [NexusPoint Food Trade](https://nexuspointtrade.com/)\nEmail: info@nexuspointtrade.com\nQuotation and samples: ${exportRequestUrl}`);
 
 const outputs = [["llms.txt", short], ["llms-full.txt", `${full.join("\n\n")}\n`]];
 const check = process.argv.includes("--check");

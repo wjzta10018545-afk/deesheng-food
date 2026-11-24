@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ExportCta } from "../../components/ExportCta";
 import { notFound } from "next/navigation";
 import { JsonLd } from "../../components/JsonLd";
 
@@ -224,7 +225,7 @@ export default async function MarketPage({ params }: Props) {
         </div>
         <div className="inner-hero-aside">
           <p>{market.summary}</p>
-          <Link className="button button-primary" href={`/contact/?product=Korean%20food%20supply%20for%20${market.country}`}>Request a B2B quotation</Link>
+          <ExportCta className="button button-primary" product={`Korean food supply for ${market.country}`}>Request a B2B quotation</ExportCta>
         </div>
       </section>
 
@@ -258,7 +259,7 @@ export default async function MarketPage({ params }: Props) {
       <section className="section shell">
         <div className="cta-panel">
           <div><p className="eyebrow eyebrow-light">Quote qualification</p><h2>Company, product, pack, quantity and purchase month.</h2></div>
-          <div><p>Deesheng Food does not claim destination-market approval on this page. The buyer and relevant local professionals or authorities must confirm import, label and certification acceptance.</p><Link className="button button-light" href={`/contact/?product=Korean%20food%20supply%20for%20${market.country}`}>Send the buyer brief ↗</Link></div>
+          <div><p>Deesheng Food does not claim destination-market approval on this page. The buyer and relevant local professionals or authorities must confirm import, label and certification acceptance.</p><ExportCta className="button button-light" product={`Korean food supply for ${market.country}`}>Send the buyer brief ↗</ExportCta></div>
         </div>
       </section>
     </main>

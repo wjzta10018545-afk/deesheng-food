@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { ExportCta } from "../components/ExportCta";
 import { useMemo, useState } from "react";
 import { allCatalogItems, catalogCategories } from "../data/catalog";
 
@@ -62,14 +63,14 @@ export function ProductExplorer() {
                   <td><Link href={`/products/${item.categorySlug}/`}>{item.categoryName}</Link></td>
                   <td>{item.packing}</td>
                   <td>{item.storage}<span>{item.shelfLife}</span></td>
-                  <td>{item.detailSlug ? <Link className="row-link" href={`/product/${item.detailSlug}/`} aria-label={`View ${item.name}`}>→</Link> : <Link className="row-link" href="/contact/" aria-label={`Ask about ${item.name}`}>↗</Link>}</td>
+                  <td>{item.detailSlug ? <Link className="row-link" href={`/product/${item.detailSlug}/`} aria-label={`View ${item.name}`}>→</Link> : <ExportCta className="row-link" product={item.name} note={false} aria-label={`Ask about ${item.name}`}>↗</ExportCta>}</td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
       ) : (
-        <div className="empty-state"><h2>No exact match yet.</h2><p>Try a broader term or send us the product you want to source.</p><Link className="button button-primary" href="/contact/">Ask our export team</Link></div>
+        <div className="empty-state"><h2>No exact match yet.</h2><p>Try a broader term or send us the product you want to source.</p><ExportCta className="button button-primary">Ask our export team</ExportCta></div>
       )}
     </section>
   );

@@ -3,7 +3,7 @@ import { BuyerFaqLink } from "../components/BuyerFaqLink";
 import { ContactLinks } from "../components/ContactLinks";
 import { JsonLd } from "../components/JsonLd";
 import { officialSocialProfileUrls, SocialLinks } from "../components/SocialLinks";
-import { QuoteForm } from "./QuoteForm";
+import { ExportCta } from "../components/ExportCta";
 
 export const metadata: Metadata = {
   title: "Request a B2B Quote",
@@ -44,10 +44,10 @@ export default function ContactPage() {
             <small>Official social media</small>
             <SocialLinks variant="contact" />
           </div>
-          <p><strong>Kevin Wang</strong><br />Deesheng Food export sales<br /><a href="https://deesheng.food/">deesheng.food</a><br />Qingdao, Shandong, China</p>
+          <p><strong>Kevin Wang</strong><br />NexusPoint international export desk<br /><a href="https://nexuspointtrade.com/">nexuspointtrade.com</a><br />Qingdao, Shandong, China</p>
         </div>
       </section>
-      <section className="section section-tint"><div className="shell quote-layout"><div><p className="eyebrow">Request price or samples</p><h2>Build a complete inquiry</h2><p>This form records your B2B request and prepares a structured WhatsApp message. We use the details to qualify your project and reply with the right product, pack and commercial route.</p><ul><li><span>1</span>Company and market</li><li><span>2</span>Product and pack</li><li><span>3</span>Estimated quantity</li><li><span>4</span>OEM or sample requirement</li></ul></div><QuoteForm /></div></section>
+      <section className="section section-tint"><div className="shell quote-layout"><div><p className="eyebrow">Request price or samples</p><h2>Build a complete inquiry</h2><p>Our official international export and private-label desk at NexusPoint handles quotations, samples, OEM briefs and consolidated FOB Qingdao shipping. Prepare the details below and continue to the export inquiry form.</p><ul><li><span>1</span>Company and market</li><li><span>2</span>Product and pack</li><li><span>3</span>Estimated quantity</li><li><span>4</span>OEM or sample requirement</li></ul></div><div className="export-contact-panel"><h3>NexusPoint international export desk</h3><p>U.S. & China contracting · FOB Qingdao</p><ExportCta className="button button-primary">Continue to quotation & samples</ExportCta></div></div></section>
       <section className="section shell contact-expect"><div><p className="eyebrow">What happens next</p><h2>A practical response, not a generic catalogue dump.</h2></div><ol><li><span>01</span><h3>We qualify the request</h3><p>We check whether the buyer, product, quantity and target market fit our export range.</p></li><li><span>02</span><h3>We narrow the products</h3><p>We confirm the most relevant product variants and packing before quoting or sampling.</p></li><li><span>03</span><h3>We agree the next step</h3><p>Depending on the project, this may be specifications, certificates, samples, quotation or OEM development.</p></li></ol></section>
       <BuyerFaqLink />
     </main>

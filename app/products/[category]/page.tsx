@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ExportCta } from "../../components/ExportCta";
+import { ExportPartnerIntro } from "../../components/ExportPartnerIntro";
 import { notFound } from "next/navigation";
 import { BuyerFaqLink } from "../../components/BuyerFaqLink";
 import { faqTopicForCategory } from "../../data/buyer-faqs";
@@ -181,7 +183,8 @@ export default async function CategoryPage({ params }: Props) {
           <p className="eyebrow">{category.eyebrow}</p>
           <h1>{category.slug === "korean-sauces" ? "Wholesale Korean sauces & private-label supply." : category.name}</h1>
           <p>{category.description}</p>
-          <div className="button-row"><Link className="button button-primary" href={`/contact/?product=${category.slug}`}>Request a quote</Link><a className="button button-ghost" href="/downloads/Deesheng-Food-Product-Catalogue-2026.pdf" download>Download catalogue</a></div>
+          <ExportPartnerIntro range={category.slug} />
+          <div className="button-row"><ExportCta className="button button-primary" product={category.slug}>Request a quote</ExportCta><a className="button button-ghost" href="/downloads/Deesheng-Food-Product-Catalogue-2026.pdf" download>Download catalogue</a></div>
         </div>
         <div className="category-hero-image"><img src={category.image} alt={category.imageAlt} width="1200" height="537" /></div>
       </section>
@@ -227,7 +230,7 @@ export default async function CategoryPage({ params }: Props) {
                         </table></div>
                       </details>}
                       <a className="catalogue-item-link" href={`#${getCatalogItemId(category.slug, item)}`} aria-label={`Link to ${item.name}`}>Link to this selection</a>
-                      {item.detailSlug ? <Link className="card-link" href={`/product/${item.detailSlug}/`}>Product details <span>→</span></Link> : <Link className="card-link" href={`/contact/?product=${encodeURIComponent(item.name)}`}>Ask about this item <span>↗</span></Link>}
+                      {item.detailSlug ? <Link className="card-link" href={`/product/${item.detailSlug}/`}>Product details <span>→</span></Link> : <ExportCta className="card-link" product={item.name} note={false}>Ask about this item <span>↗</span></ExportCta>}
                     </div>
                   </article>
                 ))}
@@ -244,7 +247,7 @@ export default async function CategoryPage({ params }: Props) {
         </div>
       </section>
 
-      <section className="section shell"><div className="cta-panel"><div><p className="eyebrow eyebrow-light">Ready to shortlist?</p><h2>Send your channel, pack and estimated quantity.</h2></div><div><p>We will recommend a practical starting mix and confirm sample or quotation details for your market.</p><Link className="button button-light" href={`/contact/?product=${category.slug}`}>Discuss this range ↗</Link></div></div></section>
+      <section className="section shell"><div className="cta-panel"><div><p className="eyebrow eyebrow-light">Ready to shortlist?</p><h2>Send your channel, pack and estimated quantity.</h2></div><div><p>We will recommend a practical starting mix and confirm sample or quotation details for your market.</p><ExportCta className="button button-light" product={category.slug}>Discuss this range ↗</ExportCta></div></div></section>
       <BuyerFaqLink topic={faqTopicForCategory[category.slug] ?? "ordering"} />
     </main>
   );
